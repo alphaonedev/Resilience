@@ -3338,11 +3338,196 @@ footer a:hover { text-decoration: underline; }
 .holistic-learn-note { font-size: 0.85rem; color: var(--text-muted); margin: 0; }
 
 .holistic-one-sentence {
-  font-size: 1.15rem;
+  font-size: 1.12rem;
   font-weight: 600;
   color: var(--text);
+  line-height: 1.5;
+  margin: 0 0 1.25rem;
+  padding: 1rem 1.15rem;
+  background: rgba(16, 185, 129, 0.1);
+  border-left: 4px solid #10b981;
+  border-radius: 0 12px 12px 0;
+}
+
+.holistic-distill-intro {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.holistic-distill-sources {
+  margin: 0 0 1.15rem;
+  padding-left: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.25rem 1.5rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.holistic-distill-sources li { margin-bottom: 0.2rem; }
+
+.holistic-distill-verdict {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.holistic-gain-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.holistic-gain-item {
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.holistic-gain-habits {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+.holistic-gain-physical {
+  background: rgba(245, 158, 11, 0.08);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.holistic-gain-pct {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.holistic-gain-habits .holistic-gain-pct { color: #10b981; }
+.holistic-gain-physical .holistic-gain-pct { color: #f59e0b; }
+
+.holistic-gain-lbl {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+  line-height: 1.35;
+}
+
+.holistic-layer-bullets {
+  list-style: none;
+  margin: 0 0 1.15rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.holistic-layer-bullet {
+  padding: 0.85rem 1rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--layer-color);
+  border-radius: 0 10px 10px 0;
+}
+
+.holistic-layer-bullet-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.6rem;
+  margin-bottom: 0.35rem;
+}
+
+.holistic-layer-bullet-num {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: var(--layer-color);
+}
+
+.holistic-layer-bullet-name {
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+.holistic-layer-bullet-action {
+  margin: 0 0 0.3rem;
+  font-size: 0.85rem;
+  color: var(--text);
   line-height: 1.45;
+}
+
+.holistic-layer-bullet-ev {
   margin: 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.holistic-weapon-rule {
+  padding: 0.85rem 1rem;
+  margin-bottom: 1rem;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 10px;
+}
+
+.holistic-weapon-label {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #f87171;
+  margin-bottom: 0.3rem;
+}
+
+.holistic-weapon-text {
+  margin: 0 0 0.35rem;
+  font-size: 0.88rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.holistic-weapon-tier {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.holistic-distill-cut {
+  margin-bottom: 1rem;
+  padding: 0.85rem 1rem;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.holistic-cut-head {
+  margin: 0 0 0.5rem;
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+.holistic-cut-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.holistic-cut-list li { margin-bottom: 0.2rem; }
+
+.holistic-training-order {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #10b981;
+  line-height: 1.45;
 }
 
 .holistic-layers-grid {
@@ -4356,6 +4541,14 @@ footer a:hover { text-decoration: underline; }
 }
 
 @media (max-width: 600px) {
+  .holistic-gain-split {
+    grid-template-columns: 1fr;
+  }
+
+  .holistic-distill-sources {
+    grid-template-columns: 1fr;
+  }
+
   .etg-head,
   .etg-spectrum,
   .etg-foot {

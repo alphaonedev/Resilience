@@ -6,9 +6,61 @@ function renderHolisticExecutive() {
   const h = evidenceData?.holisticSurvivalSystem;
   const el = document.getElementById('holistic-executive');
   if (!el || !h) return;
+
+  const d = h.executiveDistill;
+  if (!d) {
+    el.innerHTML = `
+      <p class="holistic-one-sentence">${h.oneSentence}</p>
+      <p style="margin-top:1rem">${h.executiveSummary}</p>`;
+    return;
+  }
+
+  const tierCls = t => `tier tier-${t.replace(/[^A-D+]/g, '').replace('+', 'plus').toLowerCase() || 'b'}`;
+
   el.innerHTML = `
-    <p class="holistic-one-sentence">${h.oneSentence}</p>
-    <p style="margin-top:1rem">${h.executiveSummary}</p>`;
+    <blockquote class="holistic-one-sentence">${h.oneSentence}</blockquote>
+
+    <p class="holistic-distill-intro">${d.sourcesIntro}</p>
+    <ul class="holistic-distill-sources">${d.sources.map(s => `<li>${s}</li>`).join('')}</ul>
+
+    <p class="holistic-distill-verdict"><strong>${d.verdict}</strong></p>
+
+    <div class="holistic-gain-split">
+      <div class="holistic-gain-item holistic-gain-habits">
+        <span class="holistic-gain-pct">${d.gainSplit.habitsPercent}%</span>
+        <span class="holistic-gain-lbl">${d.gainSplit.habitsLabel}</span>
+      </div>
+      <div class="holistic-gain-item holistic-gain-physical">
+        <span class="holistic-gain-pct">${d.gainSplit.physicalPercent}%</span>
+        <span class="holistic-gain-lbl">${d.gainSplit.physicalLabel}</span>
+      </div>
+    </div>
+
+    <ul class="holistic-layer-bullets">
+      ${d.layerBullets.map((l, i) => `
+        <li class="holistic-layer-bullet" style="--layer-color:${HOLISTIC_COLORS[i] || '#10b981'}">
+          <div class="holistic-layer-bullet-head">
+            <span class="holistic-layer-bullet-num">L${l.layer}</span>
+            <strong class="holistic-layer-bullet-name">${l.name}</strong>
+            <span class="${tierCls(l.tier)}">${l.tier}</span>
+          </div>
+          <p class="holistic-layer-bullet-action">${l.action}</p>
+          <p class="holistic-layer-bullet-ev">${l.evidence}</p>
+        </li>`).join('')}
+    </ul>
+
+    <div class="holistic-weapon-rule">
+      <span class="holistic-weapon-label">${d.weaponRule.label}</span>
+      <p class="holistic-weapon-text">${d.weaponRule.text}</p>
+      <span class="holistic-weapon-tier">${d.weaponRule.tier}</span>
+    </div>
+
+    <div class="holistic-distill-cut">
+      <p class="holistic-cut-head"><strong>Distilled to:</strong> ${d.distilledTo}</p>
+      <ul class="holistic-cut-list">${d.rejected.map(r => `<li>${r}</li>`).join('')}</ul>
+    </div>
+
+    <p class="holistic-training-order">${d.trainingOrder}</p>`;
 }
 
 function renderHolisticHero() {

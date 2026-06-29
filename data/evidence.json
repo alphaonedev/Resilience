@@ -2494,6 +2494,69 @@
     "oneSentence": "See it early, leave first, burst 3–5 times only if trapped, then sprint — everything else on this site is commentary on those four moves.",
     "tagline": "The simplest fastest-learned system that holistically shifts survival odds — distilled from EAAA, Cooper, OODA, boxing, Muay Thai, karate, Rutten, PTK, and 3×7 adversarial voting.",
     "executiveSummary": "After reconciling every NHI section on this site — karate masters, Tyson/Cus boxing, kicking legends, Rutten Lethal Street, Muay Thai, Pekiti-Tirsia Kali, Cooper Color, OODA, EAAA, weapon data, and adversarial 3×7 voting — one system survives every argument: a four-layer stack where 90% of your gain comes from habits you can start today, and 10% from seven physical skills you add only if you want a contact backup. Layer 0 MIND (AAA daily + Cooper/OODA) is Tier A+ proven — 50–57% fewer assaults. Layer 1 AVOID (verbal boundaries, exit routes, leave at first wrong feeling) is structurally dominant even where not perfectly measured. Layer 2 BURST (3–5 strikes max: jab/palm → cross → teep/calf kick → optional 3 knees) is Tier A delivery borrowed from boxing + Muay Thai + Rutten — only if Layers 0–1 failed. Layer 3 ESCAPE (sprint to people/light) doubles odds when outnumbered. Parallel rule: gun or knife shown = comply and run, never disarm heroics (Tier C–D). We cut 200+ techniques across all systems down to seven skills. No BJJ sport guard. No Krav scripts. No prolonged clinch. No head-kick hunting. Train the brain first; add the body only after leaving early is automatic.",
+    "executiveDistill": {
+      "sourcesIntro": "We reconciled every major section on this site:",
+      "sources": [
+        "Karate masters & bunkai",
+        "Tyson / Cus boxing",
+        "Kicking legends (Wallace, Buakaw, Oyama)",
+        "Rutten Lethal Street",
+        "Muay Thai & PTK / Kali",
+        "Cooper Color & OODA Loop",
+        "EAAA medical trial",
+        "Weapon data & 3×7 adversarial voting"
+      ],
+      "verdict": "One four-layer stack survives every argument.",
+      "gainSplit": {
+        "habitsPercent": 90,
+        "habitsLabel": "habits you can start today",
+        "physicalPercent": 10,
+        "physicalLabel": "seven optional physical skills (contact backup only)"
+      },
+      "layerBullets": [
+        {
+          "layer": 0,
+          "name": "MIND",
+          "action": "AAA daily + Cooper Yellow→Orange→Red + OODA speed",
+          "evidence": "Tier A+ proven — 50–57% fewer assaults (EAAA RCT)",
+          "tier": "A+"
+        },
+        {
+          "layer": 1,
+          "name": "AVOID",
+          "action": "Verbal boundaries · exit routes · leave at first wrong feeling",
+          "evidence": "Structurally dominant — highest leverage even where not perfectly measured",
+          "tier": "A+"
+        },
+        {
+          "layer": 2,
+          "name": "BURST",
+          "action": "3–5 strikes max: jab/palm → cross → teep/calf kick → optional 3 knees",
+          "evidence": "Tier A delivery (boxing + Muay Thai + Rutten) — only if Layers 0–1 failed",
+          "tier": "A/B"
+        },
+        {
+          "layer": 3,
+          "name": "ESCAPE",
+          "action": "Sprint to people, light, open space",
+          "evidence": "Doubles escape odds when outnumbered (22% vs 11%)",
+          "tier": "A/B"
+        }
+      ],
+      "weaponRule": {
+        "label": "Parallel weapon rule",
+        "text": "Gun or knife shown → comply and run. Never disarm heroics.",
+        "tier": "Tier A avoid · Tier C–D disarm"
+      },
+      "distilledTo": "200+ techniques across all systems → seven skills",
+      "rejected": [
+        "No BJJ sport guard",
+        "No Krav marketing scripts",
+        "No prolonged clinch on pavement",
+        "No head-kick hunting as primary"
+      ],
+      "trainingOrder": "Train the brain first. Add the body only after leaving early is automatic."
+    },
     "timeToLearn": {
       "habitsAutomatic": "1 week",
       "aaaSolid": "4 weeks",
