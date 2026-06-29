@@ -3824,6 +3824,70 @@ footer a:hover { text-decoration: underline; }
   border-color: rgba(59, 130, 246, 0.35);
 }
 
+/* Forge — men's week technique diagrams */
+.forge-week-diagram-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.forge-week-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  border-left: 4px solid #3b82f6;
+}
+
+.forge-week-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 0.75rem;
+  padding: 0.85rem 1.1rem;
+  background: rgba(59, 130, 246, 0.06);
+  border-bottom: 1px solid var(--border);
+}
+
+.forge-week-badge {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #3b82f6;
+  white-space: nowrap;
+}
+
+.forge-week-card-head strong {
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.forge-week-meta {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .forge-week-meta { width: auto; margin-left: auto; }
+}
+
+.forge-week-svg-wrap {
+  padding: 0.75rem 0.5rem 0.5rem;
+  overflow-x: auto;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.forge-week-svg {
+  display: block;
+  width: 100%;
+  min-width: 640px;
+  max-width: 720px;
+  height: auto;
+  margin: 0 auto;
+}
+
 /* Resilience One System — holistic distill */
 .holistic-section { scroll-margin-top: 5rem; }
 

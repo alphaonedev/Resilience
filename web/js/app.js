@@ -574,6 +574,9 @@ function renderAll() {
   if (typeof renderAllDualSystemsVisualizations === 'function') {
     renderAllDualSystemsVisualizations();
   }
+  if (typeof renderAllForgeWeekDiagrams === 'function') {
+    renderAllForgeWeekDiagrams();
+  }
   if (typeof renderAllHolisticSurvivalVisualizations === 'function') {
     renderAllHolisticSurvivalVisualizations();
   }
