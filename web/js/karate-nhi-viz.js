@@ -120,6 +120,57 @@ function renderKarateFinal() {
   if (h) h.innerHTML = `<p>${k.historicalContext.plainEnglish}</p><p style="font-size:0.85rem;margin-top:0.5rem"><em>Note: ${k.historicalContext.note}</em></p>`;
 }
 
+function renderOnePunchOneKick() {
+  const op = evidenceData?.karateNhiAnalysis?.onePunchOneKick;
+  if (!op) return;
+
+  const el = document.getElementById('karate-one-punch-kick');
+  if (el) {
+    const p = op.techniques.straightPunch;
+    const k = op.techniques.frontKick;
+    el.innerHTML = `
+      <div class="karate-opk-quote">
+        <blockquote>"${op.sources[0].quote}"</blockquote>
+        <cite>— ${op.sources[0].figure}</cite>
+      </div>
+      <div class="karate-opk-duo">
+        <div class="karate-opk-card">
+          <h4>Straight Punch</h4>
+          <p>${p.karateNames.join(' · ')}</p>
+          <p>${p.plainEnglish}</p>
+          <span class="karate-opk-stat">${p.peakForceN}N lab · Resilience score ${p.resilienceScore}/5</span>
+        </div>
+        <div class="karate-opk-card">
+          <h4>Front Kick</h4>
+          <p>${k.karateNames.join(' · ')}</p>
+          <p>${k.plainEnglish}</p>
+          <span class="karate-opk-stat">Teep ${k.resilienceScore}</span>
+        </div>
+      </div>
+      <div class="karate-opk-combos">
+        <h5>Classic combos → Resilience mapping</h5>
+        ${op.combos.map(c => `<div class="karate-combo-row"><strong>${c.sequence}</strong><span>${c.resilienceFit} — ${c.mapsTo}</span><em>${c.exitRequired}</em></div>`).join('')}
+      </div>`;
+  }
+
+  const audit = document.getElementById('karate-claims-audit');
+  if (audit) {
+    audit.innerHTML = `<table class="fp-reject-table karate-table"><thead><tr><th>Claim</th><th>Verdict</th><th>Evidence</th></tr></thead><tbody>
+      ${op.claimsAudit.map(c => `<tr><td>${c.claim}</td><td class="karate-match-${c.verdict.includes('CONFIRM') ? 'strong' : c.verdict.includes('REJECT') ? 'partial' : 'partial'}">${c.verdict}</td><td>${c.evidence}</td></tr>`).join('')}
+    </tbody></table>`;
+  }
+
+  const drill = document.getElementById('karate-minimal-drill');
+  if (drill) {
+    drill.innerHTML = `
+      <p class="fp-tagline" style="font-size:0.95rem!important">${op.minimalWeaponsStack.oneSentence}</p>
+      <ol class="fp-rebuild-list">${op.minimalWeaponsStack.order.map(s => `<li><strong>${s.skill}</strong> (${s.hours}) — Tier ${s.tier}</li>`).join('')}</ol>`;
+  }
+
+  const v = document.getElementById('karate-opk-verdict');
+  if (v) v.innerHTML = `<p>${op.nhiVerdict}</p><p style="font-size:0.85rem;margin-top:0.75rem;color:var(--text-muted)">${op.honestLimits}</p>`;
+}
+
 function renderAllKarateNhiVisualizations() {
   if (!evidenceData?.karateNhiAnalysis) return;
   renderKarateExecutive();
@@ -128,5 +179,6 @@ function renderAllKarateNhiVisualizations() {
   renderKarateTechniques();
   renderKarateDrift();
   renderKarateStack();
+  renderOnePunchOneKick();
   renderKarateFinal();
 }

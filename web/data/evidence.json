@@ -1037,6 +1037,60 @@
       ]
     },
     "nhiFinalVerdict": "You are largely correct about what the Okinawan masters intended — and Resilience data vindicates that intent more than it vindicates the average modern karate school. Funakoshi's 'no first attack' is avoidance-first (A+ logic). Motobu's simultaneous close-range violence is fight-science contact phase. Oyama's full-contact low kicks and ikken hissatsu match the 10-second KO window and Tier A kicking data. Miyagi's Bubishi is a sound chaos toolkit IF pressure-tested. The fracture is historical: original karate was escape-oriented peasant self-defense; exported sport karate became point dancing. Our adversarial vote ranked 'Traditional MA (low-contact)' last not because karate history is wrong — but because most gyms no longer train what Motobu and Oyama actually did. Train like Oyama, think like Funakoshi, bunkai like Abernathy, measure like EAAA — and the traditions reconcile with the numbers.",
-    "honestLimits": "Master biographies and Bubishi claims are Tier C historical sources. No study isolates 'Okinawan-style karate' vs 'boxing' for civilian victimization. Kyusho effectiveness remains unsubstantiated in peer review. This analysis reconciles philosophy and technique overlap — it does not elevate karate above EAAA on outcomes without an RCT."
+    "honestLimits": "Master biographies and Bubishi claims are Tier C historical sources. No study isolates 'Okinawan-style karate' vs 'boxing' for civilian victimization. Kyusho effectiveness remains unsubstantiated in peer review. This analysis reconciles philosophy and technique overlap — it does not elevate karate above EAAA on outcomes without an RCT.",
+    "onePunchOneKick": {
+      "title": "One Punch + One Kick — Tomoyose / Egami / Ikken Hissatsu vs Evidence",
+      "sources": [
+        { "figure": "Ryuko Tomoyose (Uechi-Ryu)", "quote": "In the old days, karate focused on one punch and one kick. People have gotten away from this philosophy.", "tier": "C", "via": "Pat Nakata and Uechi-Ryu oral tradition" },
+        { "figure": "Shigeru Egami (Shotokai)", "teaching": "Concentrated on choku-zuki/gyaku-zuki and mae-geri for rapid soldier training", "tier": "C", "note": "Historical pedagogy — no measured street outcome trial" },
+        { "figure": "Motobu / Oyama", "teaching": "Master few techniques deeply; ikken hissatsu one-strike finish", "tier": "B/C philosophy, A contact if full-contact trained" }
+      ],
+      "techniques": {
+        "straightPunch": {
+          "karateNames": ["Gyaku-zuki", "Oi-zuki", "Choku-zuki"],
+          "resilienceEquivalent": "Boxing cross / karate reverse punch",
+          "peakForceN": 2645,
+          "resilienceScore": 3,
+          "fightValidated": false,
+          "boxingCrossValidated": true,
+          "tier": "B lab / A if boxing-style sparring delivery",
+          "plainEnglish": "Physics supports the punch. Our data supports the delivery system when trained against resistance — boxing cross ranks #1; karate gyaku-zuki ranks #5 with same lab newtons but unproven street transfer."
+        },
+        "frontKick": {
+          "karateNames": ["Mae-geri keage (snap)", "Mae-geri kekomi (thrust)"],
+          "resilienceEquivalent": "Teep push kick / front kick to groin-knee",
+          "resilienceScore": "Teep 4, front-kick-to-knee 3",
+          "tier": "A for escape teep; B for groin thrust",
+          "plainEnglish": "Tomoyose's one kick maps best to mae-geri kekomi (groin/solar plexus) for stun and teep-style kekomi for push-away escape. Calf kick outranks both for sport proof, but front kick is faster to deploy — matches your 'quickest kick' claim."
+        }
+      },
+      "combos": [
+        { "sequence": "Mae-geri (groin/solar plexus) → straight punch (face/neck)", "resilienceFit": "STRONG", "mapsTo": "D3 ten-second burst; first 10 sec decides 64% KOs", "exitRequired": "Run after combo — not stand and admire" },
+        { "sequence": "Straight punch distraction → front kick push-away", "resilienceFit": "STRONG", "mapsTo": "AAA contact protocol step 4; teep creates distance", "exitRequired": "Push-step to crowd/light immediately" }
+      ],
+      "trainingMethods": [
+        { "method": "Makiwara thousands of reps", "resilienceView": "Builds kime and bone conditioning — Tier B for force; fails C6 alone without live partner", "upgrade": "Add heavy bag + resisting partner after makiwara base" },
+        { "method": "Ippon kumite one-step", "resilienceView": "Tier B if attacker commits full force; Tier D if choreographed", "upgrade": "Oyama-style full-contact ippon; add third-party/multi-attacker scenarios" },
+        { "method": "Uechi/Oyama body conditioning", "resilienceView": "Supports burst toughness inference — not substitute for awareness or gun defense", "tier": "C inference" }
+      ],
+      "claimsAudit": [
+        { "claim": "Perfection of basics wins over fancy techniques", "verdict": "CONFIRMED", "evidence": "A7 finite training time; fight duration science; traditional MA drift to many low-value techniques ranked last", "tier": "A/B" },
+        { "claim": "Ikken hissatsu — one decisive strike", "verdict": "CONFIRMED for contact window", "evidence": "64% street KOs in first 10 seconds; ikken hissatsu = fight-science burst", "tier": "B" },
+        { "claim": "Awareness + two techniques handle 90% of street situations", "verdict": "PARTIALLY REJECT the 90%", "evidence": "Awareness confirmed EAAA 50-57%; '90%' unmeasured — proactive avoidance still a data gap; guns/groups negate technique %", "tier": "A+ for awareness half; D for unverified 90% statistic" },
+        { "claim": "Palm/elbow/knee are refinements of punch/kick", "verdict": "CONFIRMED", "evidence": "Same kinetic chain, closer range variants in technique reconciliation", "tier": "B" }
+      ],
+      "minimalWeaponsStack": {
+        "order": [
+          { "step": 1, "skill": "AAA awareness — leave before punch/kick needed", "hours": "3 min/day", "tier": "A+" },
+          { "step": 2, "skill": "Mae-geri kekomi — groin or push teep on pad", "hours": "2-4 weeks daily", "tier": "A/B" },
+          { "step": 3, "skill": "Gyaku-zuki/cross on bag + makiwara", "hours": "2-4 weeks", "tier": "B→A with sparring" },
+          { "step": 4, "skill": "Combo: kick → punch → sprint exit", "hours": "Weekly scenario", "tier": "B" },
+          { "step": 5, "skill": "Ippon kumite full-commit attacker", "hours": "Ongoing", "tier": "B if live" }
+        ],
+        "oneSentence": "Tomoyose's two weapons are the contact-layer capsule — not the whole system. Funakoshi's avoidance is still layer zero."
+      },
+      "nhiVerdict": "The 'one punch, one kick' philosophy is one of the strongest historical alignments with Resilience fight science. Tomoyose and Egami independently converged on depth over breadth (first principle A7), ikken hissatsu matches the 64% first-10-second KO window, and mae-geri → gyaku-zuki is a legitimate burst-and-exit combo. Resilience adds three corrections: (1) the straight punch must be trained with boxing-level delivery, not point-karate snap; (2) the front kick's highest-value street role is push-away escape (teep logic), not a Hollywood groin-only finisher; (3) awareness still outranks both — Egami's soldiers needed fast skills, but civilians need EAAA-style detection more. Reject the '90% of situations' marketing fraction unless someone measures it. Accept the Okinawan minimalism as the correct contact-phase curriculum after AAA habits exist.",
+      "honestLimits": "Tomoyose quote is oral tradition (Tier C). Egami soldier training has no victimization RCT. Makiwara excellence does not automatically transfer to adrenalized unknown attackers without C6 testing."
+    }
   }
 }
