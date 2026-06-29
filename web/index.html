@@ -16,6 +16,7 @@
   <script src="js/fight-science-viz.js" defer></script>
   <script src="js/fitness-viz.js" defer></script>
   <script src="js/first-principles-viz.js" defer></script>
+  <script src="js/karate-nhi-viz.js" defer></script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
@@ -30,6 +31,7 @@
         <li><a href="#adversarial">How We Scored</a></li>
         <li><a href="#systems">Strategies & Systems</a></li>
         <li><a href="#techniques">Techniques</a></li>
+        <li><a href="#karate-nhi">Karate NHI</a></li>
         <li><a href="#posture">Stance & Weapons</a></li>
         <li><a href="#fight-science">Fight Science</a></li>
         <li><a href="#fitness-survival">Fitness & Survival</a></li>
@@ -596,6 +598,66 @@
     <div class="chart-container tall">
       <div class="chart-title">Police Grappling Training — What Improved</div>
       <canvas id="leChart"></canvas>
+    </div>
+  </section>
+
+  <!-- KARATE NHI RECONCILIATION -->
+  <section id="karate-nhi" class="container">
+    <div class="section-header">
+      <h2>Okinawan Karate vs the Evidence — AI NHI Reconciliation</h2>
+      <p class="section-intro">
+        Historical karate masters emphasized avoidance, vital strikes, stun-and-escape, and close-range tools. We tested that narrative against Resilience data, first principles, and 3×7 adversarial voting — honestly.
+      </p>
+    </div>
+
+    <div class="nhi-voice" style="border-left-color:#f59e0b">
+      <div class="nhi-voice-label">AI NHI — Executive summary</div>
+      <div id="karate-executive"></div>
+    </div>
+
+    <div id="karate-historical" class="plain-box"></div>
+
+    <div class="fs-section">
+      <h3>Four Masters — Alignment With Resilience</h3>
+      <div class="karate-masters-grid" id="karate-masters"></div>
+    </div>
+
+    <div class="chart-row-2">
+      <div class="chart-container compact">
+        <div class="chart-title">Core Karate Principles — Evidence Alignment</div>
+        <canvas id="karatePrinciplesChart"></canvas>
+      </div>
+      <div class="fp-rebuild-box">
+        <h4>Principle-by-Principle Table</h4>
+        <div id="karate-principles-table" class="fp-reject-wrap"></div>
+      </div>
+    </div>
+
+    <div class="fs-section">
+      <h3>Your Top Techniques — Confirmed, Partial, or Overclaimed</h3>
+      <div class="karate-tech-grid" id="karate-techniques"></div>
+    </div>
+
+    <div class="chart-row-2">
+      <div class="fp-rebuild-box" id="karate-drift"></div>
+      <div class="fp-rebuild-box">
+        <h4>Synthesis Stack — Funakoshi Brain + Oyama Body</h4>
+        <div id="karate-synthesis-stack"></div>
+      </div>
+    </div>
+
+    <div id="karate-final-verdict" class="nhi-voice" style="border-left-color:#10b981;margin-top:2rem"></div>
+    <p id="karate-honest-limits" class="chart-explainer" style="margin-top:1rem"></p>
+
+    <div class="dialogue">
+      <p class="dialogue-q">"So historical karate was right and your site ranks traditional MA last?"</p>
+      <p class="dialogue-a">
+        Both can be true. <strong>Original Okinawan intent</strong> matches our first principles. <strong>Modern low-contact point karate</strong> — what most schools actually teach — scored rank 7 in adversarial voting because snap punches score 600N in lab, fail C6 stress transfer, and skip Funakoshi's avoidance. Kyokushin and resisted bunkai recover much of what was lost.
+      </p>
+      <p class="dialogue-q">"Is bunkai from kata enough?"</p>
+      <p class="dialogue-a">
+        Only with pressure. Abernathy/Enkamp-style resisted bunkai passes our C6 criterion. Compliant two-step kata applications do not — same tier problem as Krav demos without outcomes. EAAA wrist releases have RCT proof; your Bubishi flow needs live partners to earn the same tier.
+      </p>
     </div>
   </section>
 

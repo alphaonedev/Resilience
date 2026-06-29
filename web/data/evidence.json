@@ -952,5 +952,91 @@
       "Special-case weapons (A8) → compliance protocols"
     ],
     "nhiSummary": "First principles destroys the martial arts industry's default stack. You do not start with 'which art is best?' You start with: What is winning? (leaving unharmed.) What is the threat? (unfair, often armed, often known.) When is leverage highest? (before contact.) What proof exists? (RCTs and NCVS, not demos.) Everything on this site — EAAA first, AAA daily habits, escape over ground fighting, weapon compliance — is rebuilt from those truths. Tradition is consulted only where evidence confirms it (boxing delivery, wrestling sprawls). Everything else is ranked or rejected."
+  },
+  "karateNhiAnalysis": {
+    "title": "Historical Okinawan Karate vs Resilience Evidence — AI NHI Reconciliation",
+    "date": "2026-06-29",
+    "tier": "B",
+    "executiveSummary": "The Okinawan masters' original intent aligns surprisingly well with Resilience first principles and top findings — avoidance first, stun-and-escape, close-range tools, low kicks, no first attack. Where modern karate often fails is implementation drift: point sparring, compliant bunkai, and vital-point folklore without pressure testing. Historical philosophy scores high; low-contact modern traditional MA scored last (rank 7) in 3×7 adversarial voting. Kyokushin and bunkai-focused full-contact training partially recover what sport karate lost.",
+    "historicalContext": {
+      "plainEnglish": "Okinawa's peasant-class history produced karate as concealed, decisive, escape-oriented fighting — not trophies. That original design matches our data. Japan-era sportification and global McDojo compliance drills are a different product sharing the same name.",
+      "tier": "C",
+      "note": "Historical narrative — not independently quantified in NCVS/RCT"
+    },
+    "masterAnalysis": [
+      {
+        "master": "Gichin Funakoshi",
+        "coreTeaching": "Karate ni sente nashi (no first attack); character; kata with vital strikes/throws",
+        "resilienceAlignment": "HIGH",
+        "aligns": ["A1 civilian win = avoid engagement", "A3 pre-contact leverage", "Funakoshi's avoidance mirrors EAAA/AAA philosophy"],
+        "tensions": ["Modern Shotokan often emphasizes long-range kihon and sport kata over his written de-escalation emphasis", "No RCT links Shotokan training to reduced victimization"],
+        "nhiVerdict": "Funakoshi's philosophy is Tier A+ compatible with avoidance-first. Most Shotokan gyms today teach his techniques without his exit mindset."
+      },
+      {
+        "master": "Choki Motobu",
+        "coreTeaching": "Street-proven fighter; face first; simultaneous block-counter; Naihanchi/Tekki; one-knuckle; centerline",
+        "resilienceAlignment": "HIGH for contact phase",
+        "aligns": ["A4 action-reaction — simultaneous counter beats sequential block-then-punch", "Close-range palm/elbow/forearm matches our guard and clinch data", "D3 ten-second burst mindset"],
+        "tensions": ["Motobu's era anecdotes are Tier C/D as outcome data", "Simultaneous counter still loses to pre-contact exit when available"],
+        "nhiVerdict": "Motobu is the historical karateka closest to fight-science contact principles. His method assumes you are already in range — Resilience still prefers you never get there."
+      },
+      {
+        "master": "Chojun Miyagi (Goju-Ryu)",
+        "coreTeaching": "Hard/soft; close power; Bubishi 48 techniques; vital points; grappling",
+        "resilienceAlignment": "MEDIUM-HIGH philosophy / MEDIUM evidence",
+        "aligns": ["Palm, elbow, knee close-range toolkit matches top SD technique lists", "Hard/soft = frame/create distance then strike (escape-stack)", "Bubishi grappling parallels wrestling/LE control concepts"],
+        "tensions": ["Kyusho/vital-point pressure tactics lack peer-reviewed street outcome RCTs (Tier C-D)", "Bubishi bunkai without live resistance = traditional MA rank 7 problem"],
+        "nhiVerdict": "Goju's curriculum content is well-designed for chaos IF trained with Kyokushin-level pressure. The Bubishi is a technique library — not proof."
+      },
+      {
+        "master": "Mas Oyama (Kyokushin)",
+        "coreTeaching": "Full-contact conditioning; ikken hissatsu; low kicks; body hardening; goshin-jutsu throws",
+        "resilienceAlignment": "HIGH for physical layer / LOW for avoidance",
+        "aligns": ["C6 stress transfer — full-contact is what Resilience demands for technique validation", "Low kicks match calf-kick/teep evidence (Tier A)", "Ikken hissatsu = first 10 sec KO science (64% street KOs)", "Conditioning supports escape-burst fitness inference"],
+        "tensions": ["Kyokushin culture rewards standing trade — weak on A3 avoidance", "No victimization RCT for Kyokushin practitioners", "Body hardening ≠ gun or multi-attacker solution"],
+        "nhiVerdict": "Oyama solved the delivery problem Motobu cared about. Best historical karate path for contact-phase evidence — still secondary to AAA/EAAA brain work."
+      }
+    ],
+    "principleReconciliation": [
+      { "karatePrinciple": "Awareness and avoidance first", "resilienceMatch": "STRONG", "evidence": "A1, A3, EAAA A+, Funakoshi sente nashi", "tier": "A+" },
+      { "karatePrinciple": "Target vulnerabilities (kyusho)", "resilienceMatch": "PARTIAL", "evidence": "Jaw/temple/groin align with knockout mechanics; pressure-point mythology unvalidated", "tier": "B/C" },
+      { "karatePrinciple": "Close-range elbows/knees/palms", "resilienceMatch": "STRONG", "evidence": "Elbow Tier A score 4; palm heel streetSafety 4; front knee Tier B", "tier": "A/B" },
+      { "karatePrinciple": "Stun + escape (not prolonged fight)", "resilienceMatch": "STRONG", "evidence": "D2 escape-priority; 64% KOs in 10 sec then leave; AAA contact protocol", "tier": "A/B" },
+      { "karatePrinciple": "Hip rotation / full-body power", "resilienceMatch": "STRONG", "evidence": "Kinetic chain science; gyaku-zuki 2645N — delivery under resistance is the gap", "tier": "A" },
+      { "karatePrinciple": "Bunkai from kata", "resilienceMatch": "CONDITIONAL", "evidence": "Valid IF pressure-tested (Abernathy/Enkamp method); invalid if compliant two-step", "tier": "B if tested, D if compliant" },
+      { "karatePrinciple": "Conditioning / pressure testing", "resilienceMatch": "STRONG", "evidence": "C6 adversarial criterion; Kyokushin full-contact; traditional low-contact ranked last", "tier": "A" }
+    ],
+    "techniqueReconciliation": [
+      { "technique": "Palm heel (Teisho)", "karateClaim": "Top opener; safer than fist", "resilienceRank": "#6 strikes, streetSafety 4", "verdict": "CONFIRMED — in AAA optional burst and escape-stack", "tier": "B" },
+      { "technique": "Elbow (Empi)", "karateClaim": "Clinch devastator", "resilienceRank": "#4 strikes, score 4", "verdict": "CONFIRMED at close range — rotational KO risk to you and them", "tier": "A" },
+      { "technique": "Knee (Hiza)", "karateClaim": "Groin/solar plexus", "resilienceRank": "Front kick to knee #4 kicks", "verdict": "CONFIRMED in clinch — then exit, not Muay Thai plum exchange", "tier": "B" },
+      { "technique": "Groin/low shin kick", "karateClaim": "Low fail rate", "resilienceRank": "Calf kick #1, teep #2", "verdict": "CONFIRMED — Oyama low kick aligns with Muay/MMA street data", "tier": "A" },
+      { "technique": "Forearm fence/block-counter", "karateClaim": "Motobu simultaneous action", "resilienceRank": "Compact guard + framing in posture section", "verdict": "CONFIRMED — matches exit-ready guard, not extended karate block", "tier": "B" },
+      { "technique": "Grab/choke defenses", "karateClaim": "Bubishi bunkai flows", "resilienceRank": "EAAA wrist release; 2hr Act unit", "verdict": "PARTIAL — EAAA has RCT proof (A+); kata bunkai alone untested (C-D)", "tier": "B" },
+      { "technique": "Slip + counter punch", "karateClaim": "Get off line + offense", "resilienceRank": "Boxing jab/cross #1-3", "verdict": "CONFIRMED concept — boxing delivers it under live resistance better", "tier": "A" },
+      { "technique": "Bubishi throws/locks", "karateClaim": "Ancient grappling", "resilienceRank": "Wrestling/BJJ-LE for control; judo throw Tier D street", "verdict": "PARTIAL — low throws OK; aerial throws dangerous on concrete", "tier": "B/A for control role only" }
+    ],
+    "driftProblem": {
+      "title": "Why modern karate often scores Tier D while Okinawan intent scores Tier B+",
+      "drifts": [
+        "Point sparring rewards snap contact — trains opposite of effective mass (snap punch 600N vs cross 2500N)",
+        "Compliant bunkai partners — fails C6 stress transfer criterion",
+        "Kata as performance — not scenario + resistance",
+        "Belt timeline economics — violates A7 finite training time vs EAAA 12 hours",
+        "Kyusho seminars — Tier D without outcomes",
+        "Missing Funakoshi's sente nashi in competitive culture"
+      ],
+      "recoveryPath": "Kyokushin or bunkai-focused dojo (Enkamp/Abernathy/McCarthy) + explicit escape drills + Funakoshi/Oyama philosophy read alongside EAAA-style awareness"
+    },
+    "synthesisStack": {
+      "order": [
+        { "priority": 1, "layer": "AAA / EAAA brain work", "why": "Funakoshi avoidance + only RCT proof", "hours": "3 min/day + optional 12hr program" },
+        { "priority": 2, "layer": "Motobu/Oyama contact toolkit", "why": "Palm, elbow, knee, low kick, forearm — if trapped", "hours": "Kyokushin-style pressure months" },
+        { "priority": 3, "layer": "Bunkai with resistance", "why": "Bubishi content valid only under C6 testing", "hours": "Ongoing scenario drills" },
+        { "priority": 4, "layer": "Boxing delivery upgrade", "why": "Same hip physics, better live-proof chain", "hours": "3-6 months sparring" }
+      ]
+    },
+    "nhiFinalVerdict": "You are largely correct about what the Okinawan masters intended — and Resilience data vindicates that intent more than it vindicates the average modern karate school. Funakoshi's 'no first attack' is avoidance-first (A+ logic). Motobu's simultaneous close-range violence is fight-science contact phase. Oyama's full-contact low kicks and ikken hissatsu match the 10-second KO window and Tier A kicking data. Miyagi's Bubishi is a sound chaos toolkit IF pressure-tested. The fracture is historical: original karate was escape-oriented peasant self-defense; exported sport karate became point dancing. Our adversarial vote ranked 'Traditional MA (low-contact)' last not because karate history is wrong — but because most gyms no longer train what Motobu and Oyama actually did. Train like Oyama, think like Funakoshi, bunkai like Abernathy, measure like EAAA — and the traditions reconcile with the numbers.",
+    "honestLimits": "Master biographies and Bubishi claims are Tier C historical sources. No study isolates 'Okinawan-style karate' vs 'boxing' for civilian victimization. Kyusho effectiveness remains unsubstantiated in peer review. This analysis reconciles philosophy and technique overlap — it does not elevate karate above EAAA on outcomes without an RCT."
   }
 }

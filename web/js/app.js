@@ -438,6 +438,9 @@ function renderAll() {
   if (typeof renderAllTechniqueVisualizations === 'function') {
     renderAllTechniqueVisualizations();
   }
+  if (typeof renderAllKarateNhiVisualizations === 'function') {
+    renderAllKarateNhiVisualizations();
+  }
   if (typeof renderAllPostureVisualizations === 'function') {
     renderAllPostureVisualizations();
   }

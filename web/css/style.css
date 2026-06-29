@@ -1909,6 +1909,109 @@ footer a:hover { text-decoration: underline; }
   font-weight: 500;
 }
 
+/* Karate NHI reconciliation */
+.karate-masters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.karate-master-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--align-color, #f59e0b);
+  border-radius: 12px;
+  padding: 1.2rem;
+  font-size: 0.82rem;
+}
+
+.karate-master-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.karate-master-header h4 { font-size: 1rem; margin: 0; }
+
+.karate-align-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--align-color, #10b981);
+  white-space: nowrap;
+}
+
+.karate-teaching,
+.karate-aligns,
+.karate-tensions,
+.karate-verdict {
+  margin: 0.4rem 0;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.karate-aligns { color: #10b981; }
+.karate-tensions { color: #f59e0b; }
+.karate-verdict { color: var(--text); margin-top: 0.65rem; padding-top: 0.5rem; border-top: 1px solid var(--border); }
+
+.karate-match {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.karate-match-strong, .karate-match-high { color: #10b981; }
+.karate-match-partial, .karate-match-conditional { color: #f59e0b; }
+
+.karate-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.karate-tech-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+.karate-tech-card h5 { margin: 0 0 0.5rem; font-size: 0.95rem; }
+.karate-tech-card p { margin: 0.3rem 0; color: var(--text-muted); line-height: 1.45; }
+.karate-tech-verdict { color: var(--text) !important; font-weight: 500; margin-top: 0.5rem !important; }
+
+.karate-recovery {
+  margin-top: 1rem !important;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+  color: #10b981 !important;
+}
+
+.karate-stack-item {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.82rem;
+}
+
+.karate-stack-item:last-child { border-bottom: none; }
+
+.karate-stack-pri {
+  font-family: var(--font-mono);
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.karate-stack-item p { margin: 0.25rem 0; color: var(--text-muted); }
+.karate-stack-hours { font-size: 0.72rem; color: var(--accent); }
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav-links { display: none; }
