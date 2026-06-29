@@ -1585,5 +1585,163 @@
     },
     "nhiFinalVerdict": "The kicking expert consensus is one of the cleanest alignments on Resilience: teep for escape, calf/low roundhouse for mobility destruction, hands to set up, instant retraction, and high kicks demoted to elite finisher status. Wallace proves speed can bend the rule — Rutten, Buakaw, Oyama, and Abernethy prove the rule itself. Resilience adds: awareness still layer zero; one kick then run beats kick exchanges; boxing owns punch range, kicks own leg reach; wrestling sprawl still required for ground risk. Train Rutten's teep, Buakaw's calf line, Lewis's jab-kick, Oyama's commitment — with Funakoshi's exit and Tyson's burst hands.",
     "honestLimits": "Expert interviews and training videos are Tier C pedagogy. No RCT measures 'kick-trained civilians' vs others for assault victimization. Wallace high-kick exception is n=1 elite athlete. Shin conditioning timelines are years in Muay Thai/Kyokushin — not 8-week shortcuts. This reconciles expert consensus with existing technique tiers; it does not elevate kicking above EAAA avoidance."
+  },
+  "ruttenNhiAnalysis": {
+    "title": "Bas Rutten Lethal Street Fighting vs Resilience Evidence — AI NHI Reconciliation",
+    "date": "2026-06-29",
+    "tier": "B",
+    "sources": [
+      { "name": "Lethal Street Fighting / Lethal Self Defense", "type": "DVD/instructional program", "tier": "C pedagogy" },
+      { "name": "Tim Ferriss Show #621", "type": "Interview — mindset, training, faith", "tier": "C oral tradition" },
+      { "name": "Pancrase / UFC / Muay Thai career", "type": "Full-contact fight record", "tier": "A sport validation" }
+    ],
+    "executiveSummary": "Bas Rutten's Lethal Street Fighting is one of the strongest no-rules SD syntheses on record — and it aligns with Resilience more than most commercial systems because Rutten explicitly ranks avoidance first, then explosive finish-and-escape. His Tier 1 maps to EAAA/AAA (A+). His teep, low kicks, boxing hands, clinch knees/elbows, and fence posture map to Tier A techniques already on this site. Where Resilience pushes back: (1) 75+ technique breadth violates A7 finite training time — distill to Rutten's actual staples; (2) knife disarm and continuous barrage without exit conflict with weapon Tier C–D data and D2 escape-priority; (3) eye/throat lethal targets need legal proportional-force framing; (4) faith/spiritual dimension is powerful personal philosophy (Tier C) not outcome evidence. Rutten is the street-proven glue between Tyson boxing, expert kicking, and karate vitals — with Resilience adding measured exit discipline.",
+    "historicalContext": {
+      "plainEnglish": "Rutten forged his system in Pancrase bare-knuckle, Dutch kickboxing, UFC pioneering, and real bar/bouncer scenarios — then packaged it as explicit dirty survival, not sport honor. Unlike Krav marketing scripts, his avoidance-first framing and Muay Thai delivery are pressure-tested. Unlike pure boxing, he owns kicks, clinch, and ground strikes. Unlike McDojo karate, he demands aggression under adrenal stress.",
+      "tier": "B/C",
+      "note": "Instructional outcomes not measured in civilian victimization RCTs"
+    },
+    "threeTierStrategy": [
+      {
+        "tier": 1,
+        "rutten": "Avoidance — awareness, leave early, de-escalate verbally, confident body language",
+        "resilienceMap": "EAAA Assess/Acknowledge/Act + AAA daily habits",
+        "resilienceMatch": "STRONG",
+        "evidence": "A+ RCT 50-57% assault reduction; A1/A3 first principles",
+        "tierEvidence": "A+"
+      },
+      {
+        "tier": 2,
+        "rutten": "If unavoidable — pre-empt or counter explosively; be finisher; fight dirty (eyes, groin, throat); overwhelm in seconds",
+        "resilienceMap": "D3 ten-second burst + standup-finish + dirty close tools",
+        "resilienceMatch": "PARTIAL",
+        "evidence": "64% KOs first 10 sec confirms burst; dirty tools Tier B/C; throat/eye = legal variance; pre-empt = context-dependent",
+        "tierEvidence": "A/B contact, C legal/dirty"
+      },
+      {
+        "tier": 3,
+        "rutten": "Finish & escape — damage then disengage; protect loved ones (sheepdog); use environment",
+        "resilienceMap": "D2 escape-priority + minimalSystem AAA Exit Protocol",
+        "resilienceMatch": "STRONG",
+        "evidence": "Escape stack; 22% escape when outnumbered proxy; run conditioning",
+        "tierEvidence": "A/B"
+      }
+    ],
+    "coreRule": "Do everything in your power to avoid it… but once it's on, you better be the one who finishes it.",
+    "tacticReconciliation": [
+      { "tactic": "Fence / conversational guard", "resilienceMatch": "STRONG", "evidence": "defensivePosture compact guard; jab streetSafety 5", "tier": "A/B" },
+      { "tactic": "Verbal stall + explosive entry", "resilienceMatch": "STRONG", "evidence": "EAAA Act unit verbal tools; action beats reaction A4", "tier": "A/B" },
+      { "tactic": "Angle control — never back to corner", "resilienceMatch": "STRONG", "evidence": "Ali/Rutten footwork; A3 pre-contact leverage", "tier": "A/B" },
+      { "tactic": "Continuous pressure chains", "resilienceMatch": "PARTIAL", "evidence": "Good for 1v1 burst; conflicts with exit after stun — cap at 3-5 beats", "tier": "B" },
+      { "tactic": "Range management: teep → clinch → ground → stand", "resilienceMatch": "PARTIAL", "evidence": "Teep/knee/elbow Tier A; ground stay Tier D risk — stand-up priority", "tier": "A/B mixed" },
+      { "tactic": "Multiples: shield + low kicks + angles", "resilienceMatch": "PARTIAL", "evidence": "Low kick mobility kill; shielding inference Tier C; escape still primary", "tier": "B/C" },
+      { "tactic": "Weapon counters (knife/gun)", "resilienceMatch": "PARTIAL", "evidence": "Distance + run Tier A; disarm drills Tier C-D same as Krav gap", "tier": "A avoid, D disarm" },
+      { "tactic": "Breathing under adrenaline", "resilienceMatch": "STRONG", "evidence": "Supports fear control; Cus/Rutten calm aggression; fitness inference", "tier": "B/C" }
+    ],
+    "techniqueArsenal": {
+      "emphasized": [
+        { "category": "Hands", "techniques": ["Palm heel / finger jab / eye disruptor", "Boxing straight/hook/uppercut", "Elbows (horizontal, downward)"], "resilienceRank": "Palm #6, cross #1, elbow #4", "verdict": "CONFIRMED disruptors + Tier A delivery", "tier": "A/B" },
+        { "category": "Kicks", "techniques": ["Teep push", "Low roundhouse/oblique", "Groin snap", "Stomp on downed"], "resilienceRank": "Teep #2, calf #1, groin B", "verdict": "CONFIRMED — core Rutten=kicking NHI consensus", "tier": "A" },
+        { "category": "Clinch", "techniques": ["Head control → knee barrage", "Elbow barrage + knees", "Headbutt from grab"], "resilienceRank": "Elbow #4; knee B; headbutt rotational risk", "verdict": "CONFIRMED one-barrage then break — not plum war", "tier": "A/B" },
+        { "category": "Defenses", "techniques": ["Rear grab → elbow + turn + knee", "Knife: distance + kick + run", "Ground: G&P then stand"], "resilienceRank": "EAAA wrist Tier A+; knife comply/run; ground 41% stand-up", "verdict": "PARTIAL — rear grab OK; knife disarm caution; ground exit mandatory", "tier": "B/C mixed" },
+        { "category": "Dirty / lethal", "techniques": ["Eye gouge", "Throat strike", "Groin destruction"], "resilienceRank": "Groin kick confirmed; eye/throat legal Tier C", "verdict": "PARTIAL — survival context only; proportional force laws vary", "tier": "B/C legal" }
+      ],
+      "curriculumNote": "Rutten teaches 75+ techniques. Resilience distills to ~12 staples under A7 finite time: fence, jab, cross, elbow, teep, calf kick, groin kick, head-control knee (×3 max), sprawl/stand-up, sprint exit."
+    },
+    "mindsetReconciliation": [
+      { "mindset": "Calm aggression — relaxed ruthless", "resilienceMatch": "STRONG", "evidence": "Cus D'Amato fear channeling; AAA habit under stress", "tier": "B/C" },
+      { "mindset": "It's only pain — keep going", "resilienceMatch": "PARTIAL", "evidence": "Conditioning inference; Resilience prefers not getting hit", "tier": "B" },
+      { "mindset": "Sheepdog protector — fight only when necessary", "resilienceMatch": "STRONG", "evidence": "Aligns Funakoshi sente nashi + third-party EAAA context", "tier": "B/C philosophy" },
+      { "mindset": "No mercy once engaged — finish decisively", "resilienceMatch": "PARTIAL", "evidence": "Ikken hissatsu burst yes; legal proportional force caps duration", "tier": "B" },
+      { "mindset": "Skill beats size — train like life depends on it", "resilienceMatch": "STRONG", "evidence": "C6 pressure testing; delivery > raw size in technique data", "tier": "A/B" }
+    ],
+    "spiritualDimension": {
+      "ruttenTeaching": "Catholic faith, rosary, prayer for calm; inner battle vs vices; protector ethos as spiritual duty; humility and character outside the fight",
+      "resilienceView": "Valid personal resilience framework (Tier C) — supports consistency, fear control, and protector motivation. Not substitute for EAAA measurable outcomes. Resilience separates: faith builds the person who keeps training; EAAA builds the habits that prevent the fight.",
+      "tier": "C personal philosophy",
+      "note": "Documented in Ferriss #621 and public interviews — not peer-reviewed SD science"
+    },
+    "legendComparisons": [
+      { "legend": "Mike Tyson", "ruttenOverlap": "Explosive hands, forward disruption, psychological collapse", "ruttenAdds": "Teep, low kicks, clinch knees, dirty tools, explicit avoidance tier", "resilienceFit": "Rutten = Tyson burst + Muay Thai range + exit rules" },
+      { "legend": "Bill Wallace", "ruttenOverlap": "Kick setup/retraction, low-line preference", "ruttenAdds": "Clinch destruction, boxing base, bar-scenario scripts", "resilienceFit": "Rutten agrees Wallace low-kick logic; less high-kick reliance" },
+      { "legend": "Mas Oyama", "ruttenOverlap": "Low kick commitment, conditioning, finish-fast", "ruttenAdds": "Boxing hands, dirty boxing, weapon/multiple scenarios", "resilienceFit": "Oyama body + Rutten brain + boxing delivery" }
+    ],
+    "claimsAudit": [
+      { "claim": "Avoid if possible — then be the finisher", "verdict": "CONFIRMED", "evidence": "Three-tier maps EAAA → burst → escape; Rutten quotes match site stack", "tier": "A+/B" },
+      { "claim": "Teep + low kicks are staples", "verdict": "CONFIRMED", "evidence": "Kicking NHI consensus; ranks #1-2", "tier": "A" },
+      { "claim": "Fight dirty when survival demands", "verdict": "PARTIAL", "evidence": "Groin/palm/elbow confirmed; eye/throat legal context required", "tier": "B/C" },
+      { "claim": "Continuous barrage until threat stops", "verdict": "PARTIAL", "evidence": "Burst window 10 sec yes; standing trade risks ground/multiples", "tier": "B" },
+      { "claim": "Knife: distance + kicks + disarm", "verdict": "PARTIAL", "evidence": "Distance/run Tier A; disarm Tier C-D unmeasured", "tier": "A/D split" },
+      { "claim": "75+ technique mastery required", "verdict": "REJECTED for civilians", "evidence": "A7 finite training time; AAA Exit + 12 staples sufficient", "tier": "A principle" },
+      { "claim": "Faith/prayer improves survival outcomes", "verdict": "UNMEASURED", "evidence": "Tier C personal philosophy; no victimization RCT", "tier": "C" },
+      { "claim": "Synthesizes boxing + karate + kicking", "verdict": "CONFIRMED", "evidence": "Cross/elbow/teep/calf/groin cover all three NHI sections", "tier": "B" }
+    ],
+    "drillProgression": {
+      "title": "8-Week Rutten Lethal Street Stack (Distilled)",
+      "prerequisite": "AAA awareness; legal proportional-force literacy",
+      "phases": [
+        {
+          "phase": "Weeks 1–2 — Tier 1: Fence + verbal (avoidance layer)",
+          "daily": "8 min",
+          "drills": [
+            "Conversational fence: hands chest-high, calm voice, angle step",
+            "Verbal de-escalation scripts + exit route scan",
+            "Shadow: 'I don't want trouble' → lateral step → walk away"
+          ],
+          "exitTest": "Verbal stall + exit without stiffening guard"
+        },
+        {
+          "phase": "Weeks 3–4 — Tier 2a: Rutten staples (hands + kicks)",
+          "daily": "15 min",
+          "drills": [
+            "Jab → palm → cross on mitts (disrupt chain)",
+            "Teep → calf kick → guard recovery",
+            "Groin snap after hand frame — one only"
+          ],
+          "exitTest": "3-beat chain in under 2 sec then RUN cue"
+        },
+        {
+          "phase": "Weeks 5–6 — Tier 2b: Clinch destruction (capped barrage)",
+          "daily": "15 min",
+          "weekly": "1 pressure scenario",
+          "drills": [
+            "Head control → 3 knees max → push-off teep",
+            "Rear grab feed → elbow back → turn → knee → exit",
+            "Bar scenario: verbal → explosive palm → teep → sprint"
+          ],
+          "exitTest": "Never exceed 5 strikes before mandatory exit"
+        },
+        {
+          "phase": "Weeks 7–8 — Tier 3: Weapons/multiples/ground awareness",
+          "daily": "12 min",
+          "weekly": "2 scenario sessions",
+          "drills": [
+            "Knife shown: comply + distance + run (no disarm heroics)",
+            "Two attackers: one calf kick + angle between + sprint",
+            "Ground taken: cover → elbow/knee burst → stand-up drill → run"
+          ],
+          "exitTest": "Correct weapon response 100%; ground time under 3 sec"
+        }
+      ],
+      "maintenance": "Monthly bar-scenario pressure test + daily Tier 1 habits. Rutten full 75+ catalog for advanced C6 only."
+    },
+    "videoResources": [
+      { "title": "Lethal Street Fighting excerpts", "creator": "Bas Rutten", "url": "https://www.youtube.com/results?search_query=Bas+Rutten+Lethal+Street+Fighting", "focus": "Core system demos — fence, teep, clinch knees", "tier": "C pedagogy" },
+      { "title": "Tim Ferriss #621 — Bas Rutten", "creator": "Tim Ferriss / Bas Rutten", "url": "https://www.youtube.com/results?search_query=Tim+Ferriss+Bas+Rutten+621", "focus": "Mindset, faith, training philosophy, O2 breathing", "tier": "C interview" },
+      { "title": "Bas Rutten MMA/teaching channel", "creator": "Bas Rutten", "url": "https://www.youtube.com/c/BasRutten", "focus": "Striking breakdowns and pad drills", "tier": "C pedagogy" },
+      { "title": "Pancrase / UFC archival", "creator": "Fight archives", "url": "https://www.youtube.com/results?search_query=Bas+Rutten+Pancrase+highlights", "focus": "C6 full-contact validation of delivery", "tier": "B sport record" }
+    ],
+    "synthesisStack": {
+      "order": [
+        { "priority": 1, "layer": "Rutten Tier 1 — avoidance + verbal fence", "why": "His own rule #1; EAAA A+", "hours": "3 min/day" },
+        { "priority": 2, "layer": "Tyson/Cus boxing burst (jab/cross/slip)", "why": "Rutten boxing base; Tier A hands", "hours": "3-6 months" },
+        { "priority": 3, "layer": "Rutten Muay staples (teep + calf kick)", "why": "His #1 kicks; kicking NHI confirmed", "hours": "4-8 weeks" },
+        { "priority": 4, "layer": "Clinch knee/elbow barrage (3-5 cap)", "why": "Lethal Street close destruction", "hours": "4-6 weeks" },
+        { "priority": 5, "layer": "Karate groin snap + palm when fist risky", "why": "Dirty tools + hand safety on concrete", "hours": "2 weeks" },
+        { "priority": 6, "layer": "Tier 3 sprint exit + weapon compliance", "why": "Finish & escape; gun/knife protocols", "hours": "Ongoing scenarios" }
+      ]
+    },
+    "nhiFinalVerdict": "Bas Rutten's Lethal Street Fighting is the closest commercial SD system on this site to a full Resilience stack — because he actually puts avoidance in Tier 1 instead of burying it in a disclaimer. His teep, low kicks, boxing hands, fence, and clinch knees are Tier A/B confirmed across kicking, boxing, and fight-science sections. Resilience sharpens four edges: cap the barrage and sprint (D2 beats Rutten's occasional sport-length chain); treat knife disarms like Krav — unproven; distill 75+ techniques to twelve staples (A7); frame eye/throat tools inside proportional force law. Faith and sheepdog ethos are powerful Tier C motivators — not replacements for EAAA measurement. Train Rutten's lethality with Funakoshi's leave-first, Tyson's hands, Buakaw's teep, and our run clock.",
+    "honestLimits": "Lethal Street Fighting is Tier C pedagogy without civilian victimization RCT. Rutten's bar stories and Ferriss interview are anecdotal. Knife disarm segments share Krav's evidence gap. Spiritual claims are personal philosophy — not NCVS outcomes. Full-contact fight record validates delivery (C6) not street SD rates. This reconciles Rutten's explicit system with Resilience tiers; it does not certify any DVD program reduces assault victimization."
   }
 }

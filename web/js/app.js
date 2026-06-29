@@ -447,6 +447,9 @@ function renderAll() {
   if (typeof renderAllKickingNhiVisualizations === 'function') {
     renderAllKickingNhiVisualizations();
   }
+  if (typeof renderAllRuttenNhiVisualizations === 'function') {
+    renderAllRuttenNhiVisualizations();
+  }
   if (typeof renderAllPostureVisualizations === 'function') {
     renderAllPostureVisualizations();
   }

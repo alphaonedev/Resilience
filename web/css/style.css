@@ -2534,6 +2534,134 @@ footer a:hover { text-decoration: underline; }
   line-height: 1.45;
 }
 
+/* Rutten NHI reconciliation */
+.rutten-core-rule {
+  margin: 0 0 1.25rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-deep);
+  border-left: 4px solid #f97316;
+  border-radius: 10px;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.rutten-tier-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.rutten-tier-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--tier-color, #f97316);
+  border-radius: 12px;
+  padding: 1.1rem;
+  font-size: 0.82rem;
+}
+
+.rutten-tier-label {
+  font-family: var(--font-mono);
+  font-weight: 800;
+  color: #f97316;
+  font-size: 0.85rem;
+}
+
+.rutten-tier-card p { margin: 0.4rem 0; color: var(--text-muted); line-height: 1.45; }
+.rutten-tier-ev { font-size: 0.75rem !important; margin-top: 0.5rem !important; }
+
+.rutten-match { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; }
+.rutten-match-strong { color: #10b981; }
+.rutten-match-partial { color: #f59e0b; }
+.rutten-match-reject { color: #ef4444; }
+
+.rutten-arsenal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.rutten-arsenal-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+.rutten-arsenal-card h5 { margin: 0 0 0.5rem; color: #f97316; }
+.rutten-arsenal-card p { margin: 0.3rem 0; color: var(--text-muted); line-height: 1.45; }
+.rutten-verdict-line { color: var(--text) !important; font-weight: 500; }
+.rutten-curriculum-note { margin-top: 1rem; font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
+
+.rutten-compare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.rutten-compare-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+.rutten-compare-card h5 { margin: 0 0 0.5rem; }
+.rutten-compare-card p { margin: 0.3rem 0; color: var(--text-muted); line-height: 1.45; }
+.rutten-fit { color: #10b981 !important; font-weight: 500; margin-top: 0.5rem !important; }
+
+.rutten-stack-item {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.82rem;
+}
+
+.rutten-stack-item:last-child { border-bottom: none; }
+.rutten-stack-pri { font-family: var(--font-mono); font-weight: 800; color: #f97316; }
+.rutten-stack-item p { margin: 0.25rem 0; color: var(--text-muted); }
+.rutten-stack-hours { font-size: 0.72rem; color: var(--accent); }
+
+.rutten-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.rutten-drill-phase {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.rutten-drill-phase h5 { margin: 0 0 0.25rem; font-size: 0.88rem; color: #f97316; }
+.rutten-drill-meta { font-size: 0.72rem; font-family: var(--font-mono); color: var(--accent); }
+.rutten-drill-test { font-size: 0.78rem; color: var(--text-muted); margin: 0.5rem 0 0; }
+.rutten-drill-maint { font-size: 0.8rem; margin-top: 0.75rem; color: var(--text-muted); }
+
+.rutten-stat {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent);
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.rutten-video-list { list-style: none; margin: 0; padding: 0; }
+.rutten-video-list li { padding: 0.65rem 0; border-bottom: 1px solid var(--border); font-size: 0.8rem; }
+.rutten-video-list a { color: #f97316; text-decoration: none; font-weight: 600; }
+.rutten-video-list a:hover { text-decoration: underline; }
+.rutten-video-creator { display: block; font-size: 0.72rem; color: var(--text-muted); margin: 0.15rem 0; }
+.rutten-video-list p { margin: 0.25rem 0; color: var(--text-muted); line-height: 1.45; }
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav-links { display: none; }
