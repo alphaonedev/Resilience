@@ -13,9 +13,8 @@ let adversarialData = null;
 
 async function loadData() {
   const paths = [
-    ['../data/evidence.json', '../data/adversarial-3x7-round2.json'],
-    ['../../data/evidence.json', '../../data/adversarial-3x7-round2.json'],
-    ['/data/evidence.json', '/data/adversarial-3x7-round2.json']
+    ['data/evidence.json', 'data/adversarial-3x7-round2.json'],
+    ['../data/evidence.json', '../data/adversarial-3x7-round2.json']
   ];
   for (const [evPath, advPath] of paths) {
     try {

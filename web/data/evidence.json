@@ -1,0 +1,261 @@
+{
+  "meta": {
+    "project": "Resilience",
+    "version": "1.0.0",
+    "lastUpdated": "2026-06-29",
+    "methodology": "3x7 Adversarial Voting + Evidence Tier Classification (A+ to D)",
+    "disclaimer": "Research synthesis for educational purposes only. Not professional security, legal, or medical advice."
+  },
+  "evidenceTiers": {
+    "A+": "Randomized controlled trial or replicated operational cohort with measured outcomes",
+    "A": "Peer-reviewed study or large institutional dataset with quantified results",
+    "B": "Quasi-experimental, transparent observational study (n>100), replicable methodology",
+    "C": "Limited peer review, single-site, or industry white paper",
+    "D": "Anecdotal, marketing claims, or untested cooperative drills"
+  },
+  "violenceDomains": [
+    {
+      "id": "traditional-ma",
+      "name": "Traditional Martial Arts",
+      "abstraction": 0.85,
+      "consent": "implicit",
+      "weapons": false,
+      "selection": "rank, form, confidence"
+    },
+    {
+      "id": "ufc-mma",
+      "name": "Regulated MMA / UFC",
+      "abstraction": 0.55,
+      "consent": "explicit",
+      "weapons": false,
+      "selection": "skill, conditioning, rules"
+    },
+    {
+      "id": "bare-knuckle",
+      "name": "Bare Knuckle / Consensual Street",
+      "abstraction": 0.45,
+      "consent": "yes",
+      "weapons": false,
+      "selection": "dominance, reputation"
+    },
+    {
+      "id": "street-violence",
+      "name": "Street / Predatory Violence",
+      "abstraction": 0.15,
+      "consent": "no",
+      "weapons": "sometimes",
+      "selection": "surprise, opportunity, numbers"
+    },
+    {
+      "id": "organized-crime",
+      "name": "Organized Crime Violence",
+      "abstraction": 0.08,
+      "consent": "no",
+      "weapons": "usually",
+      "selection": "instrumental harm, ambush"
+    },
+    {
+      "id": "professional",
+      "name": "Assassin / Mercenary / Tier-1 SMU",
+      "abstraction": 0.02,
+      "consent": "no",
+      "weapons": "primary",
+      "selection": "mission completion, combined arms"
+    }
+  ],
+  "crimeStatistics": [
+    {
+      "metric": "Victims who knew attacker (violent crime, NCVS 1982-84)",
+      "value": 54,
+      "unit": "percent",
+      "source": "BJS NCVS — Violent Crime by Strangers and Nonstrangers",
+      "tier": "A",
+      "note": "46% strangers for rape/robbery/assault aggregate; varies by crime type"
+    },
+    {
+      "metric": "Murders involving firearms (UCR)",
+      "value": 73.7,
+      "unit": "percent",
+      "source": "FBI UCR expanded homicide data",
+      "tier": "A"
+    },
+    {
+      "metric": "Aggravated assaults involving firearms, knives, or other weapons",
+      "value": 27.6,
+      "unit": "percent",
+      "source": "FBI / BJS aggregated reports",
+      "tier": "A"
+    },
+    {
+      "metric": "Juvenile crimes involving multiple offenders",
+      "value": 48.7,
+      "unit": "percent",
+      "source": "OJJDP / NCVS juvenile victimization reports",
+      "tier": "B",
+      "note": "Figure widely cited; exact year and offense mix should be verified per report"
+    },
+    {
+      "metric": "Sexual assaults committed by multiple attackers",
+      "value": 43,
+      "unit": "percent",
+      "source": "NCVS sexual assault incident characteristics",
+      "tier": "B"
+    },
+    {
+      "metric": "Violent victimizations involving a firearm (NCVS 2023)",
+      "value": 9,
+      "unit": "percent",
+      "source": "BJS Criminal Victimization 2023",
+      "tier": "A"
+    }
+  ],
+  "avoidanceAndAwareness": {
+    "dataGap": {
+      "missingMetric": "Percentage of people who detected probable multi-attacker scenario unfolding and completely avoided via premeditated strategy",
+      "status": "NO DIRECT PEER-REVIEWED METRIC EXISTS",
+      "explanation": "Victimization surveys measure incidents that occurred, not near-misses avoided. Proactive avoidance is structurally under-counted in crime statistics.",
+      "proxyMetrics": [
+        "EAAA risk assessment skill improvement (24-month follow-up)",
+        "EAAA reduced time to detect acquaintance danger (Assess unit)",
+        "NCVS verbal/passive resistance → 57% lower injury odds",
+        "Street fight multi-attacker: 22% reactive escape vs 11% defeat"
+      ]
+    },
+    "eaaa": {
+      "program": "Enhanced Assess, Acknowledge, Act (EAAA)",
+      "tier": "A+",
+      "rctCompletedRapeReduction12mo": 50,
+      "realWorldCompletedRapeReduction6mo": 57.3,
+      "physicalTechniquesShare": 17,
+      "curriculumBreakdown": {
+        "assess": 25,
+        "acknowledge": 25,
+        "act": 25,
+        "sexualityRelationships": 25
+      },
+      "actUnitPhysicalHours": 2,
+      "totalProgramHours": 12,
+      "mediatorsValidated": [
+        "Risk assessment skills",
+        "Perception of personal acquaintance-rape risk",
+        "Self-defense self-efficacy",
+        "Reduced rape myth acceptance",
+        "Forceful verbal resistance capability"
+      ],
+      "source": "NEJM 2015 RCT; Eur J Psychotraumatol 2023 real-world implementation"
+    },
+    "situationalAwareness": {
+      "cooperColorCode": {
+        "name": "Cooper Color Code (White/Yellow/Orange/Red)",
+        "tier": "C",
+        "origin": "Lt. Col. Jeff Cooper, combat pistol instruction",
+        "evidenceStatus": "Widely adopted (military, LE, aviation); limited outcome RCTs linking color-code training to victimization reduction",
+        "components": ["White: unaware", "Yellow: relaxed alert", "Orange: specific threat identified", "Red: action required"]
+      },
+      "stayAlertStayAlive": {
+        "name": "Stay Alert, Stay Alive (military personal security)",
+        "tier": "C",
+        "origin": "U.S. military force protection doctrine",
+        "evidenceStatus": "Institutional adoption; operational reports; no civilian RCT",
+        "pillars": ["Vigilance", "Route planning", "Low profile", "Reaction drills", "Escape prioritization"]
+      },
+      "oop": {
+        "name": "OODA Loop (Observe-Orient-Decide-Act)",
+        "tier": "C",
+        "origin": "Col. John Boyd",
+        "relevance": "Decision-speed framework; faster threat recognition → earlier avoidance window"
+      }
+    },
+    "multiAttacker": {
+      "source": "Louie Martin — 154 YouTube street fights (2018)",
+      "tier": "B",
+      "fightsWithThirdPartyInvolvement": 26,
+      "friendJumpsInWhenThirdParty": 68,
+      "outcomesWhenOutnumbered": {
+        "noClearOutcome": 37,
+        "incapacitated": 26,
+        "escaped": 22,
+        "defeatedAtLeastOne": 11
+      },
+      "proactiveAvoidanceMetric": null,
+      "reactiveEscapeRate": 22,
+      "recommendation": "Escape is 2x more successful than fighting when outnumbered (22% vs 11%)"
+    },
+    "ncvsSelfProtection": {
+      "source": "Bachman et al. 2022 — NCVS assault victims 65+",
+      "tier": "A",
+      "verbalPassiveOnlyInjuryReduction": 57,
+      "note": "Verbal/passive resistance before/during injury vs no resistance or physical only"
+    }
+  },
+  "lawEnforcementBJJ": {
+    "mariettaPD": {
+      "bjjOfficersLessUOF": 59,
+      "suspectHospitalizationReduction": 53,
+      "taserReduction": 23,
+      "tier": "A"
+    },
+    "stPaulPD": {
+      "uofReduction": 37,
+      "strikeReduction": 68,
+      "arresteeInjuryReduction": 44,
+      "officerInjuryReduction": 25,
+      "incidents": 2845,
+      "period": "2014-2020",
+      "tier": "A"
+    },
+    "lapdGround": {
+      "altercationsEndingOnGround": 62,
+      "note": "NOT 90% — debunked marketing statistic",
+      "source": "LAPD Dossey 1988 via LeBlanc EJMAS 2007",
+      "tier": "A"
+    }
+  },
+  "strikingTechniques": [
+    {"rank": 1, "name": "Boxing Cross", "score": 5, "peakForceN": 2500, "tier": "A"},
+    {"rank": 2, "name": "Boxing Hook", "score": 5, "tier": "A"},
+    {"rank": 3, "name": "Boxing Jab", "score": 4, "control": true, "tier": "A"},
+    {"rank": 4, "name": "Muay Thai Elbow (clinch)", "score": 4, "tier": "A"},
+    {"rank": 5, "name": "Karate Gyaku-zuki (full contact)", "score": 3, "peakForceN": 2645, "tier": "B"},
+    {"rank": 6, "name": "Palm Heel / Hammer Fist", "score": 3, "tier": "B"},
+    {"rank": 7, "name": "Wing Chun Chain Punch", "score": 1, "tier": "D"},
+    {"rank": 8, "name": "Point Karate Snap Punch", "score": 0, "tier": "D"}
+  ],
+  "kickingTechniques": [
+    {"rank": 1, "name": "Low Calf Kick", "score": 5, "tier": "A"},
+    {"rank": 2, "name": "Push Kick / Teep", "score": 4, "tier": "A"},
+    {"rank": 3, "name": "Roundhouse to Body", "score": 4, "tier": "A"},
+    {"rank": 4, "name": "Front Kick to Knee", "score": 3, "tier": "B"},
+    {"rank": 5, "name": "Roundhouse to Head", "score": 3, "tier": "B"},
+    {"rank": 6, "name": "Spinning Kicks", "score": 1, "tier": "D"}
+  ],
+  "grapplingTechniques": [
+    {"rank": 1, "name": "Double-Leg Takedown", "score": 5, "tier": "A"},
+    {"rank": 2, "name": "Back Control + RNC", "score": 5, "tier": "A"},
+    {"rank": 3, "name": "Mount + Ground Strikes", "score": 5, "tier": "A"},
+    {"rank": 4, "name": "Side Control → Arm Submissions", "score": 4, "tier": "A"},
+    {"rank": 5, "name": "Guillotine", "score": 4, "tier": "A"},
+    {"rank": 6, "name": "Closed Guard (sport)", "score": 3, "tier": "B"},
+    {"rank": 7, "name": "Pull Guard (street)", "score": 1, "tier": "D"},
+    {"rank": 8, "name": "Aerial Judo Throw (street)", "score": 1, "tier": "D"}
+  ],
+  "streetFightBehavior": {
+    "source": "Louie Martin n=154",
+    "tier": "B",
+    "indecisiveOutcome": 48.4,
+    "knockoutRate": 23,
+    "koInFirst10Seconds": 64,
+    "groundFightingRate": 73,
+    "groundFightingExcludingQuickKOs": 83,
+    "returnToStandingFromGround": 41,
+    "dirtyFightingRate": 16
+  },
+  "ufcTrends": {
+    "source": "ESPN Fightnomics 2017",
+    "submissions": 80,
+    "koTko": 146,
+    "totalFights": 457,
+    "submissionPct": 17.5,
+    "tier": "A"
+  }
+}

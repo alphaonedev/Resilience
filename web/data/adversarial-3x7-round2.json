@@ -1,0 +1,191 @@
+{
+  "round": 2,
+  "date": "2026-06-29",
+  "focus": "Proactive avoidance, situational awareness, and multi-attacker threat recognition integrated with combat technique evidence",
+  "voters": [
+    {
+      "id": "V1",
+      "name": "Combat Sport Empiricist",
+      "trusts": "Full-contact outcomes, sparring transfer, fight-finishing technique data",
+      "distrusts": "Awareness seminars without physical validation, compliance drills"
+    },
+    {
+      "id": "V2",
+      "name": "Operational Pragmatist",
+      "trusts": "LE/military adoption, NCVS outcomes, EAAA RCT, field injury reduction",
+      "distrusts": "Gym marketing, untested Krav schools, theoretical SA without drills"
+    },
+    {
+      "id": "V3",
+      "name": "Evidence Skeptic",
+      "trusts": "RCTs, replicated cohort studies, transparent methodology",
+      "distrusts": "Missing metrics presented as facts, Cooper Color Code without outcome data, 90% ground myth"
+    }
+  ],
+  "criteria": [
+    {
+      "id": "C1",
+      "name": "Proactive Threat Detection & Avoidance",
+      "weight": 1.2,
+      "description": "Ability to sense unfolding danger and exit before engagement — the missing metric proxy"
+    },
+    {
+      "id": "C2",
+      "name": "Multi-Attacker Escape Architecture",
+      "weight": 1.15,
+      "description": "Premeditated tactics to avoid being drawn into numerical disadvantage"
+    },
+    {
+      "id": "C3",
+      "name": "Situational Awareness / Vigilance Training Evidence",
+      "weight": 1.0,
+      "description": "Documented improvement in perception, risk assessment, decision speed"
+    },
+    {
+      "id": "C4",
+      "name": "Unarmed 1v1 Fight-Ending Technique",
+      "weight": 0.9,
+      "description": "Striking/grappling when engagement is unavoidable"
+    },
+    {
+      "id": "C5",
+      "name": "Control Without Excessive Harm",
+      "weight": 0.85,
+      "description": "Grappling for restraint — LE-validated domain"
+    },
+    {
+      "id": "C6",
+      "name": "Stress Transfer Under Live Resistance",
+      "weight": 0.85,
+      "description": "Techniques survive adrenaline and resisting opponents"
+    },
+    {
+      "id": "C7",
+      "name": "Measured Victimization Outcome Reduction",
+      "weight": 1.25,
+      "description": "Hardest standard — did victimization or injury actually decrease?"
+    }
+  ],
+  "interventions": [
+    "EAAA / Empowerment Self-Defense",
+    "Stay Alert Stay Alive + Cooper SA Doctrine",
+    "Integrated MMA (Boxing + Wrestling + Muay Thai)",
+    "Brazilian Jiu-Jitsu",
+    "Krav Maga",
+    "Traditional Martial Arts (low-contact)",
+    "Boxing + Wrestling (no ground submission focus)"
+  ],
+  "scores": {
+    "EAAA / Empowerment Self-Defense": {
+      "V1": [7, 6, 8, 5, 4, 4, 10],
+      "V2": [9, 7, 9, 5, 4, 5, 10],
+      "V3": [8, 6, 8, 4, 3, 4, 10],
+      "consensus": [8.0, 6.3, 8.3, 4.7, 3.7, 4.3, 10.0],
+      "weightedTotal": 7.89,
+      "rank": 1,
+      "tier": "A+",
+      "verdict": "Only intervention with RCT-proven victimization reduction. Assess unit directly trains danger detection. No direct multi-attacker avoidance RCT — V3 penalty applied."
+    },
+    "Stay Alert Stay Alive + Cooper SA Doctrine": {
+      "V1": [6, 7, 7, 3, 2, 3, 4],
+      "V2": [8, 8, 8, 2, 2, 4, 5],
+      "V3": [5, 6, 5, 2, 2, 3, 3],
+      "consensus": [6.3, 7.0, 6.7, 2.3, 2.0, 3.3, 4.0],
+      "weightedTotal": 5.42,
+      "rank": 2,
+      "tier": "B",
+      "verdict": "Correct philosophy (avoidance-first) but lacks civilian RCT outcome data. Military/LE institutional adoption is real; victimization metrics are not."
+    },
+    "Integrated MMA (Boxing + Wrestling + Muay Thai)": {
+      "V1": [4, 3, 4, 10, 8, 10, 5],
+      "V2": [3, 2, 3, 9, 7, 9, 4],
+      "V3": [3, 2, 3, 9, 7, 9, 4],
+      "consensus": [3.3, 2.3, 3.3, 9.3, 7.3, 9.3, 4.3],
+      "weightedTotal": 5.38,
+      "rank": 3,
+      "tier": "A",
+      "verdict": "Supreme when fight is unavoidable. Actively harmful as primary SD strategy — trains engagement, not avoidance. V2/V3 slash proactive scores."
+    },
+    "Brazilian Jiu-Jitsu": {
+      "V1": [3, 1, 3, 7, 10, 9, 7],
+      "V2": [4, 2, 4, 7, 10, 8, 8],
+      "V3": [2, 1, 3, 6, 9, 8, 7],
+      "consensus": [3.0, 1.3, 3.3, 6.7, 9.7, 8.3, 7.3],
+      "weightedTotal": 5.12,
+      "rank": 4,
+      "tier": "A",
+      "verdict": "Tier A for control/restraint. Tier F for multi-attacker proactive avoidance. Ground-first = drawn into worst scenario."
+    },
+    "Boxing + Wrestling (no ground submission focus)": {
+      "V1": [4, 3, 4, 9, 6, 9, 4],
+      "V2": [4, 3, 4, 8, 6, 8, 4],
+      "V3": [3, 3, 3, 8, 5, 8, 4],
+      "consensus": [3.7, 3.0, 3.7, 8.3, 5.7, 8.3, 4.0],
+      "weightedTotal": 4.89,
+      "rank": 5,
+      "tier": "B+",
+      "verdict": "Best combat-sport stack without ground-entanglement risk. Early KO data supports standup. No victimization RCT."
+    },
+    "Krav Maga": {
+      "V1": [5, 4, 4, 5, 4, 3, 2],
+      "V2": [5, 5, 5, 5, 5, 4, 2],
+      "V3": [3, 3, 2, 3, 3, 2, 1],
+      "consensus": [4.3, 4.0, 3.7, 4.3, 4.0, 3.0, 1.7],
+      "weightedTotal": 3.72,
+      "rank": 6,
+      "tier": "C",
+      "verdict": "Scenario scripting addresses multi-attacker cognitively — but V3 vetoes without outcome data or live resistance standard."
+    },
+    "Traditional Martial Arts (low-contact)": {
+      "V1": [2, 2, 2, 3, 3, 1, 2],
+      "V2": [2, 2, 3, 3, 3, 2, 2],
+      "V3": [1, 1, 1, 2, 2, 1, 1],
+      "consensus": [1.7, 1.7, 2.0, 2.7, 2.7, 1.3, 1.7],
+      "weightedTotal": 1.95,
+      "rank": 7,
+      "tier": "D",
+      "verdict": "Unanimous last place. No proactive avoidance evidence. No combat transfer."
+    }
+  },
+  "adversarialFindings": [
+    {
+      "id": "AF-1",
+      "finding": "The missing metric — proactive multi-attacker avoidance — cannot be filled by any martial art RCT. It requires near-miss reporting infrastructure that does not exist in NCVS/UCR.",
+      "confidence": "HIGH",
+      "allVotersAgree": true
+    },
+    {
+      "id": "AF-2",
+      "finding": "EAAA 'Assess' unit is the closest validated proxy for 'sensed danger → took action before assault completed' with 50-57% victimization reduction.",
+      "confidence": "HIGH",
+      "allVotersAgree": true
+    },
+    {
+      "id": "AF-3",
+      "finding": "Stay Alert Stay Alive / Cooper Color Code are doctrinally correct but evidence-tier C for civilian outcomes. Use as framework, not proof.",
+      "confidence": "HIGH",
+      "allVotersAgree": true
+    },
+    {
+      "id": "AF-4",
+      "finding": "When outnumbered and already engaged, escape (22%) beats fighting (11%). Premeditated avoidance is logically superior but unmeasured.",
+      "confidence": "MEDIUM",
+      "allVotersAgree": true
+    },
+    {
+      "id": "AF-5",
+      "finding": "Optimal stack: SA doctrine (C) + EAAA Assess/Acknowledge (A+) + Boxing/Wrestling standup (A) + BJJ escapes not guard play (A) + LE control if professional role.",
+      "confidence": "HIGH",
+      "allVotersAgree": true
+    }
+  ],
+  "recommendedStack": [
+    {"priority": 1, "component": "EAAA-style risk detection & boundary setting", "hours": 12, "tier": "A+"},
+    {"priority": 2, "component": "Cooper Yellow-Orange + OODA vigilance drills", "hours": "ongoing", "tier": "C"},
+    {"priority": 3, "component": "Route/exit preplanning (Stay Alert Stay Alive)", "hours": "habit", "tier": "C"},
+    {"priority": 4, "component": "Boxing jab/cross/hook + head movement", "hours": "3-6 months", "tier": "A"},
+    {"priority": 5, "component": "Wrestling sprawl + takedown defense", "hours": "3-6 months", "tier": "A"},
+    {"priority": 6, "component": "BJJ stand-up escapes (not sport guard)", "hours": "3-6 months", "tier": "A"},
+    {"priority": 7, "component": "Low kick + push kick for distance", "hours": "2-4 months", "tier": "A"}
+  ]
+}
