@@ -6,7 +6,23 @@ function renderKickingExecutive() {
   const k = evidenceData?.kickingNhiAnalysis;
   const el = document.getElementById('kicking-executive');
   if (!el || !k) return;
-  el.innerHTML = `<p>${k.executiveSummary}</p>`;
+
+  const d = k.executiveSummaryDistill;
+  if (!d) {
+    el.innerHTML = `<p>${k.executiveSummary}</p>`;
+    return;
+  }
+
+  el.innerHTML = `
+    <div class="kicking-nhi-distill">
+      <p class="kicking-nhi-lead">${d.lead}</p>
+      <h4 class="kicking-nhi-heading">${d.consensusTitle}</h4>
+      <ul class="kicking-nhi-list">${d.consensus.map(t => `<li>${t}</li>`).join('')}</ul>
+      <h4 class="kicking-nhi-heading">${d.rankingsTitle}</h4>
+      <ul class="kicking-nhi-list kicking-nhi-list-rank">${d.rankings.map(t => `<li>${t}</li>`).join('')}</ul>
+      <h4 class="kicking-nhi-heading">${d.resilienceAddsTitle}</h4>
+      <ul class="kicking-nhi-list">${d.resilienceAdds.map(t => `<li>${t}</li>`).join('')}</ul>
+    </div>`;
 }
 
 function renderKickingExperts() {

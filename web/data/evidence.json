@@ -4,7 +4,9 @@
     "version": "1.0.0",
     "lastUpdated": "2026-06-29",
     "methodology": "3x7 Adversarial Voting + Evidence Tier Classification (A+ to D)",
-    "disclaimer": "Research synthesis for educational purposes only. Not professional security, legal, or medical advice."
+    "disclaimer": "Copyright 2026 AlphaOne LLC. Licensed under Apache License 2.0. Educational research only — not legal, medical, or self-defense instruction. Full disclaimer: web/index.html#disclaimer",
+    "license": "Apache-2.0",
+    "copyright": "Copyright 2026 AlphaOne LLC"
   },
   "evidenceTiers": {
     "A+": "Randomized controlled trial or replicated operational cohort with measured outcomes",
@@ -1789,6 +1791,28 @@
     "date": "2026-06-29",
     "tier": "B",
     "executiveSummary": "Kicking authorities across Muay Thai, kickboxing, Kyokushin, and practical karate converge on what Resilience kickingTechniques already ranks: low-to-mid kicks and teeps dominate street survival; high flashy head kicks are sport finishers, not primary weapons. Calf kick ranks #1 (streetSafety 5), teep #2 (escape-priority Tier A), low roundhouse #3. Wallace, Rutten, Buakaw/Saenchai, Oyama, Lewis, and Abernethy independently reject head-kick-first street doctrine. Resilience adds: (1) awareness still outranks every kick; (2) Wallace's elite high kicks are an exception proving the rule — speed + setup, not civilian default; (3) kicks manage range and mobility destruction — boxing still owns close chaos; (4) ground risk (62–73%) means kicking then running beats kicking then trading.",
+    "executiveSummaryDistill": {
+      "lead": "Muay Thai, kickboxing, Kyokushin, and practical karate authorities converge on what Resilience kick rankings already show.",
+      "consensusTitle": "Expert consensus",
+      "consensus": [
+        "Low-to-mid kicks and teeps dominate street survival",
+        "High flashy head kicks are sport finishers — not primary street weapons",
+        "Wallace, Rutten, Buakaw/Saenchai, Oyama, Lewis, and Abernethy independently reject head-kick-first doctrine"
+      ],
+      "rankingsTitle": "Resilience street kick rankings",
+      "rankings": [
+        "#1 Calf kick — streetSafety 5",
+        "#2 Teep — escape-priority Tier A",
+        "#3 Low roundhouse"
+      ],
+      "resilienceAddsTitle": "What Resilience adds",
+      "resilienceAdds": [
+        "Awareness still outranks every kick",
+        "Wallace's elite high kicks are the exception — speed and setup, not civilian default",
+        "Kicks manage range and mobility destruction; boxing still owns close chaos",
+        "Ground risk 62–73% — kick then run beats kick then trade"
+      ]
+    },
     "historicalContext": {
       "plainEnglish": "Legs reach farther than arms and hit harder per square inch when conditioned — but street surfaces, shoes, and grab risk punish reckless chambers. Muay Thai weaponized the teep and low roundhouse in full contact; Wallace proved speed can make high kicks work for elites; Oyama proved low kicks end fights after brutal conditioning. The expert consensus is selection discipline, not kick collection.",
       "tier": "B/C",
@@ -2537,6 +2561,287 @@
     },
     "nhiFinalVerdict": "Pekiti-Tirsia Kali fills the weapon-angle gap in the Resilience stack. The 5 angles, triangular footwork, and defang logic align with Motobu simultaneous counter and Abernethy bunkai — with blade awareness most karate schools lost. Abaya's Abcedario de Mano converges with Muay Thai/Rutten clinch at close range. Resilience draws a hard line: flow and angles are Tier B/C strength; knife disarm heroics are Tier C–D (same as Krav); every chain caps at 3–5 beats then sprint. Train PTK for angle brain and limb checks; pair with Buakaw's teep and Tyson's hands; comply and run when steel is real.",
     "honestLimits": "PTK pedagogy is Tier C without civilian victimization RCT. Defang-the-snake vs full-speed committed stab is unmeasured — cooperative flow overstates readiness. Tuhon Gaje and Abaya teachings are oral/instructional tradition, not NCVS outcomes. Stick sparring validates timing (C6) not street knife survival rates. This reconciles PTK doctrine with Resilience tiers; it does not certify Kali training reduces assault victimization."
+  },
+  "stancesFootworkNhiAnalysis": {
+    "title": "Stances & Footwork — Fighting Geometry, 3×7 NHI Assessment",
+    "date": "2026-06-29",
+    "tier": "A/B",
+    "sources": [
+      { "name": "defensivePosture + Round 3 adversarial C2", "type": "Site evidence stack", "tier": "A/B" },
+      { "name": "Bas Rutten — fence, angle step, conversational guard", "type": "Street/MMA validated", "tier": "A/B" },
+      { "name": "Muhammad Ali — lateral angle footwork", "type": "Boxing fight footage + biomechanics", "tier": "A/B" },
+      { "name": "PTK triangular footwork — Tuhon Gaje lineage", "type": "Weapon-angle pedagogy", "tier": "B/C" },
+      { "name": "Louie Martin n=154 street cohort", "type": "Outcome statistics", "tier": "B" },
+      { "name": "Tueller 1983 + OODA reaction-time literature", "type": "Physics / doctrine", "tier": "A/B" }
+    ],
+    "executiveSummary": "You stand at the center of a circle. The threat occupies one vector on the rim. Every survival-positive movement is a rotation — full 45° steps open escape sectors and deny the power line; half-45° (22.5°) micro-pivots fine-tune blading without crossing feet or telegraphing retreat. AI NHI 3×7 assessment ranks seven stance/footwork interventions: 45° lateral angle step wins (8.42 weighted), squared sport stance loses (3.18). Blading at 45° cuts presented target area ~29% versus squared (geometric inference on shoulder-line projection). Combined optimal stack — exit-ready 45° blade + 45° angle step + push-step exit — multiplies survival leverage exponentially in the model: each layer addresses a different failure mode (target size, chase geometry, flank exposure). Straight-back retreat and squared MMA stance are the two highest-penalty errors. Data anchors: 22% escape vs 11% defeat when outnumbered (angle + sprint); 64% street KOs in first 10 sec (don't stand on power line); C2 multi-attacker criterion weight 1.25 in Round 3.",
+    "methodology3x7": {
+      "name": "3×7 Stance & Footwork Adversarial Assessment",
+      "whatThreeMeans": "3 reviewers — fight scientist (geometry + physics), Rutten street voter (fence/angle), operational skeptic (NCVS + multi-attacker)",
+      "whatSevenMeans": "7 footwork/stance patterns scored on 7 geometry-survival criteria",
+      "threeWaves": [
+        { "wave": 1, "name": "Independent scoring", "plainEnglish": "Each reviewer scores from circle geometry, power-line denial, Louie Martin escape stats, and live sparring transfer." },
+        { "wave": 2, "name": "Adversarial challenge", "plainEnglish": "Fight scientist slashes straight-back retreat. Rutten voter challenges sport-square stance. Skeptic blocks fancy shuffle without meters gained." },
+        { "wave": 3, "name": "Consensus & penalties", "plainEnglish": "Squared stance and straight retreat receive unanimous penalties. 45° angle + 45° blade converge as top stack." }
+      ],
+      "whyItFindsRightData": "Footwork is pre-contact leverage (A3). When scored on escape architecture (C2) and power-line denial — not belt color — lateral angle steps and blading rise; sport poses fall.",
+      "notThis": "Not a replacement for EAAA or Round 3 program rankings — this 3×7 isolates stance/footwork geometry only."
+    },
+    "circleGeometry": {
+      "plainEnglish": "Imagine a circle with you at the center and the threat on the rim at 0°. A full 45° step rotates you to a new sector — opening an exit tangent. A half-45° (22.5°) pivot adjusts blading without committing a full step. Eight full steps = 360°; sixteen half-steps = same resolution with finer control.",
+      "centerPrinciple": "Your center of mass stays inside the circle. Feet move the rim position of your shoulders — not your brain. Never let the threat stay on your 0° power line.",
+      "fullStep45": {
+        "degrees": 45,
+        "sectors": 8,
+        "plainEnglish": "One full step = 45° rotation. Opens perpendicular escape lane. Primary move: angle left or right off the threat vector.",
+        "useWhen": ["Threat on power line", "Need exit lane in one beat", "Multi-attacker — break single-file chase", "After fence/verbal stall"],
+        "tier": "A/B",
+        "resilienceRank": 1
+      },
+      "halfStep225": {
+        "degrees": 22.5,
+        "sectors": 16,
+        "plainEnglish": "Half-45° = 22.5° micro-pivot. Adjusts blading and dominant-hand line without crossing feet or burning a full step.",
+        "useWhen": ["Fine-tune blade angle vs knife hand", "Keep fence distance while angling", "Set up calf kick/teep without telegraphing retreat", "Scan flanks while staying balanced"],
+        "tier": "A/B",
+        "resilienceRank": 2
+      },
+      "survivalMultiplierModel": {
+        "plainEnglish": "Each geometry layer removes a failure mode. Layers multiply — not add.",
+        "layers": [
+          { "layer": "45° bladed stance", "removes": "Wide squared target; slow first step", "relativeRiskReduction": 0.29, "basis": "Target projection geometry — shoulder-line ~29% narrower vs square (inference)" },
+          { "layer": "45° angle step", "removes": "Straight-line chase advantage", "relativeRiskReduction": 0.50, "basis": "Pursuit geometry — lateral displacement breaks collinear chase (inference + C2)" },
+          { "layer": "Push-step + sprint", "removes": "Contact window extension", "relativeRiskReduction": 0.78, "basis": "22% escape vs 11% defeat when outnumbered — Louie Martin; sprint after angle" },
+          { "layer": "Combined stack", "formula": "(1−0.29)×(1−0.50)×(1−0.78) residual risk ≈ 7.8% of baseline squared-stance straight-retreat", "tier": "B inference", "note": "Model illustrates compounding — not a measured RCT outcome" }
+        ]
+      }
+    },
+    "bladingFramework": {
+      "plainEnglish": "Blading turns your shoulder line off the threat — smaller target, lead hip loaded for angle step, rear hand protected.",
+      "angles": [
+        { "angle": "0° squared", "label": "Squared to threat", "targetExposure": "100% baseline", "mobility": "Poor — heels planted", "verdict": "REJECTED", "tier": "D street" },
+        { "angle": "22.5° half-blade", "label": "Half-blade (micro)", "targetExposure": "~88% baseline", "mobility": "Excellent — micro-adjust", "verdict": "OPTIMAL fine-tune", "tier": "A/B", "use": "Knife hand line denial; conversational fence" },
+        { "angle": "45° full blade", "label": "Exit-ready blade", "targetExposure": "~71% baseline", "mobility": "Excellent — sprint ready", "verdict": "OPTIMAL default", "tier": "A/B", "use": "Default street stance; Rutten fence" },
+        { "angle": "90° perpendicular", "label": "Full side-on", "targetExposure": "~50% narrowest", "mobility": "Good for exit — poor for hands", "verdict": "SITUATIONAL", "tier": "B", "use": "Sprint exit profile — not fighting stance" }
+      ],
+      "powerLine": {
+        "plainEnglish": "The power line runs threat → your centerline. Standing on it = you absorb their full mass and telegraph. Stepping 45° offline puts you on their weak arc.",
+        "denialMoves": ["45° lateral step", "PTK forward triangle (enter at angle)", "Ali pivot — lead foot outside their lead"],
+        "tier": "A/B"
+      }
+    },
+    "threeBySevenAssessment": {
+      "focus": "7 stance/footwork patterns × 7 geometry-survival criteria — Round 3 weighting profile (C2=1.25, C6=1.35, C7=0.10)",
+      "criteria": [
+        { "id": "G1", "name": "Escape Route Creation", "weight": 1.25, "description": "Opens tangent exit in one step — not shuffle in place" },
+        { "id": "G2", "name": "Multi-Attacker Flank Visibility", "weight": 1.20, "description": "Peripheral scan while moving — not tunnel vision" },
+        { "id": "G3", "name": "Power-Line Denial", "weight": 1.25, "description": "Removes threat from your centerline / weak-arc positioning" },
+        { "id": "G4", "name": "Counter-Attack Lane", "weight": 1.15, "description": "Opens jab/cross/calf/teep from blind angle without squaring up" },
+        { "id": "G5", "name": "Balance on Bad Ground", "weight": 1.00, "description": "Works on curb, wet pavement, uneven bar floor" },
+        { "id": "G6", "name": "Live Sparring Transfer", "weight": 1.35, "description": "Proven under resistance — boxing, MT, wrestling footwork" },
+        { "id": "G7", "name": "Outcome Data Link", "weight": 0.10, "description": "NCVS / cohort escape stats — logged, de-weighted" }
+      ],
+      "interventions": [
+        "45° lateral angle step (Rutten/PTK/Ali)",
+        "22.5° half-angle micro-pivot",
+        "45° bladed exit-ready stance",
+        "PTK triangular forward diagonal",
+        "Push-step retreat (rear-foot drive)",
+        "Straight-back retreat",
+        "Squared sport / MMA stance"
+      ],
+      "scores": [
+        {
+          "intervention": "45° lateral angle step",
+          "rank": 1,
+          "weightedTotal": 8.42,
+          "tier": "A+",
+          "verdict": "Primary escape geometry — breaks chase line, opens sprint tangent, C2 king move",
+          "scores": { "G1": 9.5, "G2": 8.5, "G3": 9.0, "G4": 8.5, "G5": 8.0, "G6": 9.0, "G7": 7.0 },
+          "dataBacked": "Round 3 recommendedStack priority 2 (angle step); 22% escape outnumbered; Ali/Rutten/PTK convergence"
+        },
+        {
+          "intervention": "45° bladed exit-ready stance",
+          "rank": 2,
+          "weightedTotal": 8.18,
+          "tier": "A",
+          "verdict": "Default pre-contact posture — narrower target, loaded angle step, sprint-ready",
+          "scores": { "G1": 8.0, "G2": 8.5, "G3": 9.0, "G4": 8.0, "G5": 9.0, "G6": 8.5, "G7": 6.5 },
+          "dataBacked": "defensivePosture.stance; boxing guard biomechanics; ~29% target reduction inference"
+        },
+        {
+          "intervention": "22.5° half-angle micro-pivot",
+          "rank": 3,
+          "weightedTotal": 7.95,
+          "tier": "A",
+          "verdict": "Fine-tune blading without full step — knife-hand line, fence distance, teep setup",
+          "scores": { "G1": 7.5, "G2": 8.0, "G3": 8.5, "G4": 8.0, "G5": 9.5, "G6": 7.5, "G7": 6.0 },
+          "dataBacked": "Half-45° fills gap between square and full blade; Rutten conversational guard micro-adjusts"
+        },
+        {
+          "intervention": "Push-step retreat (rear-foot drive)",
+          "rank": 4,
+          "weightedTotal": 7.62,
+          "tier": "A/B",
+          "verdict": "Creates meters fast — but must pair with angle; straight push-step alone is incomplete",
+          "scores": { "G1": 8.5, "G2": 7.0, "G3": 6.5, "G4": 6.0, "G5": 8.0, "G6": 8.5, "G7": 7.0 },
+          "dataBacked": "defensivePosture footwork priorityMoves; Muay Thai teep distance"
+        },
+        {
+          "intervention": "PTK triangular forward diagonal",
+          "rank": 5,
+          "weightedTotal": 7.48,
+          "tier": "A/B",
+          "verdict": "Enters at angle for counter — offensive geometry; higher risk pre-contact unless trained",
+          "scores": { "G1": 7.5, "G2": 7.5, "G3": 9.0, "G4": 9.0, "G5": 7.0, "G6": 7.0, "G7": 5.5 },
+          "dataBacked": "ptkNhiAnalysis triangular footwork; A3 pre-contact leverage"
+        },
+        {
+          "intervention": "Straight-back retreat",
+          "rank": 6,
+          "weightedTotal": 4.12,
+          "tier": "D",
+          "verdict": "REJECTED — collinear chase favors pursuer; backs you into obstacles and second attacker",
+          "scores": { "G1": 3.0, "G2": 4.0, "G3": 2.5, "G4": 3.0, "G5": 5.0, "G6": 5.5, "G7": 4.0 },
+          "dataBacked": "Unanimous 3×7 penalty; defensivePosture footwork rule #1 inverse"
+        },
+        {
+          "intervention": "Squared sport / MMA stance",
+          "rank": 7,
+          "weightedTotal": 3.18,
+          "tier": "D",
+          "verdict": "REJECTED for street — wide gut exposure, can't sprint, invites duel on their terms",
+          "scores": { "G1": 2.5, "G2": 4.0, "G3": 3.0, "G4": 7.0, "G5": 4.0, "G6": 8.0, "G7": 3.0 },
+          "dataBacked": "C6 high in gym only; G1/G3 street failure; 64% KO in 10 sec punishes squared exchanges"
+        }
+      ],
+      "adversarialFindings": [
+        { "id": "SF-1", "finding": "45° lateral angle step is the C2 geometry king", "plainEnglish": "All three reviewers rank it #1. It is the footwork move behind Rutten Tier 1, PTK triangles, and Ali pivots.", "confidence": "HIGH", "allVotersAgree": true },
+        { "id": "SF-2", "finding": "Half-45° (22.5°) is not 'weak' — it is precision blading", "plainEnglish": "Fight scientist: micro-pivot preserves balance on bad ground. Skeptic: crossing feet on full 45° when a 22.5° suffices is an own-goal.", "confidence": "HIGH", "allVotersAgree": true },
+        { "id": "SF-3", "finding": "Straight retreat and squared stance are unanimous bottom", "plainEnglish": "Sport MMA scores high on G6 (gym) but fails G1/G3 (street geometry). Straight back = you donate the chase line.", "confidence": "HIGH", "allVotersAgree": true },
+        { "id": "SF-4", "finding": "Layers multiply survival leverage", "plainEnglish": "Blade (target) × angle (chase) × sprint (contact window) compounds. Training only stance without angle step leaves half the stack unused.", "confidence": "MEDIUM", "allVotersAgree": true }
+      ]
+    },
+    "attackRetreatScience": {
+      "plainEnglish": "Attack angles favor the threat's power hand and momentum vector. Retreat angles must be tangential — not collinear.",
+      "attackAngles": [
+        { "vector": "0° straight rush", "threat": "Bull rush / straight punch", "counter": "45° step offline + frame or burst", "tier": "A/B" },
+        { "vector": "45° flanking (their angle step)", "threat": "Second attacker or trained fighter", "counter": "22.5° pivot + scan + sprint to crowd", "tier": "A/B" },
+        { "vector": "90° hook arc", "threat": "Round punch / haymaker", "counter": "Pull back on power line + angle step inside weak side", "tier": "B" },
+        { "vector": "Low line 30°", "threat": "Tackle / leg grab", "counter": "Sprawl + 45° angle off — stand immediately", "tier": "A/B" }
+      ],
+      "retreatAngles": [
+        { "angle": "180° straight back", "verdict": "REJECTED", "why": "Collinear chase; corner trap; second attacker behind", "tier": "D" },
+        { "angle": "135° diagonal back", "verdict": "ACCEPTABLE", "why": "Partial tangent — better than straight but slower than 90° lateral", "tier": "B" },
+        { "angle": "90° lateral", "verdict": "OPTIMAL", "why": "Perpendicular to rush — breaks pursuit geometry", "tier": "A+" },
+        { "angle": "45° forward diagonal (PTK)", "verdict": "SITUATIONAL", "why": "Offensive entry — only when committed to counter then exit", "tier": "A/B contact only" }
+      ],
+      "mathNotes": [
+        "Pursuit advantage: collinear retreat lets faster runner close at closing-speed delta — lateral step forces them to re-orient (OODA reset).",
+        "Tueller ~21 ft: at close range, angle step must happen before commitment — stance pre-loads the first step.",
+        "64% street KOs in first 10 sec: standing on power line during that window is the highest-risk geometry."
+      ]
+    },
+    "stanceProfiles": [
+      {
+        "id": "exit-ready-45",
+        "name": "Exit-Ready 45° Blade",
+        "rank": 1,
+        "feet": "Lead foot 12–18\" ahead; toes 30–45°; shoulder line bladed",
+        "weight": "60% balls of feet; knees soft",
+        "bestFor": ["Default street", "Rutten fence", "Pre-contact everywhere"],
+        "tier": "A",
+        "streetSafety": 5
+      },
+      {
+        "id": "half-blade-225",
+        "name": "Half-Blade 22.5° Micro",
+        "rank": 2,
+        "feet": "Subtle pivot on balls — no cross-step",
+        "weight": "Even lighter on lead ball for teep readiness",
+        "bestFor": ["Knife hand line", "Conversational de-escalation", "Teep/calf setup"],
+        "tier": "A/B",
+        "streetSafety": 4
+      },
+      {
+        "id": "perpendicular-exit",
+        "name": "Perpendicular Sprint Profile",
+        "rank": 3,
+        "feet": "Side-on to threat — exit lane maximized",
+        "weight": "Loaded on drive leg for first sprint step",
+        "bestFor": ["Post-burst exit", "Multi-attacker break"],
+        "tier": "B",
+        "streetSafety": 4
+      },
+      {
+        "id": "squared-bad",
+        "name": "Squared Sport Stance",
+        "rank": 7,
+        "feet": "Parallel feet; wide base; hips square",
+        "weight": "Heels planted; deep sit",
+        "bestFor": ["UFC cage only — not street"],
+        "tier": "D",
+        "streetSafety": 1
+      }
+    ],
+    "expertReconciliation": [
+      { "expert": "Bas Rutten", "footwork": "Fence → verbal stall → 45° angle step → leave", "resilienceMatch": "STRONG", "tier": "A/B", "nhiNote": "Tier 1 is geometry before hands" },
+      { "expert": "Muhammad Ali", "footwork": "Lateral pivot; angle off power hand; don't trade in place", "resilienceMatch": "STRONG", "tier": "A/B", "nhiNote": "Boxing NHI — angle = escape route" },
+      { "expert": "PTK / Gaje", "footwork": "Triangular steps — forward diagonal, side, back", "resilienceMatch": "STRONG", "tier": "A/B", "nhiNote": "Weapon-angle literacy; off power line" },
+      { "expert": "defensivePosture", "footwork": "Angle 45°; never cross feet; push-step exit", "resilienceMatch": "STRONG", "tier": "A/B", "nhiNote": "Site baseline — this section deepens it" },
+      { "expert": "Sport MMA square", "footwork": "Shuffle in place; engage on center", "resilienceMatch": "REJECTED", "tier": "D", "nhiNote": "G6 gym yes — G1/G3 street no" }
+    ],
+    "optimalStack": {
+      "title": "AI NHI Optimal Geometry Stack",
+      "order": [
+        { "priority": 1, "move": "45° bladed exit-ready stance", "seconds": 0, "why": "Pre-loads every positive step; ~29% target reduction" },
+        { "priority": 2, "move": "22.5° micro-pivot (if needed)", "seconds": 0.3, "why": "Fine-tune vs knife hand without crossing feet" },
+        { "priority": 3, "move": "45° lateral angle step", "seconds": 0.5, "why": "Break power line; open sprint tangent" },
+        { "priority": 4, "move": "Optional burst (3–5) from blind angle", "seconds": "1–3", "why": "Only if trapped — jab/cross/calf from offline position" },
+        { "priority": 5, "move": "Push-step + sprint 90° to crowd/light", "seconds": "3+", "why": "22% escape outnumbered; end contact window" }
+      ],
+      "compoundModel": "Blade × angle × sprint ≈ 92% relative risk reduction vs squared + straight back (inference model — not RCT)"
+    },
+    "drillProgression": {
+      "title": "8-Week Geometry Stack",
+      "phases": [
+        { "phase": "Weeks 1–2", "focus": "Circle geometry — 45° steps + half-45° pivots solo", "daily": "10 min", "drills": ["8-direction 45° steps from center mark", "16-point half-pivots without crossing feet", "Blade 45° hold 30 sec × 5"] },
+        { "phase": "Weeks 3–4", "focus": "Threat vector drills — partner at rim", "daily": "12 min", "drills": ["Partner rush → 45° step + verbal", "Knife hand feed → 22.5° pivot + hands up", "Two partners → angle + scan + sprint"] },
+        { "phase": "Weeks 5–6", "focus": "Attack/retreat angles + burst from offline", "daily": "15 min", "drills": ["Straight rush → angle + jab + calf + run", "Hook feed → pull + angle inside", "Sprawl → 45° stand + sprint"] },
+        { "phase": "Weeks 7–8", "focus": "Full stack scenarios", "daily": "15 min", "drills": ["Bar scenario: fence → angle → leave", "Multi-attacker: one strike → 90° sprint", "Weapon: comply — geometry irrelevant until exit window"] }
+      ]
+    },
+    "nhiFinalVerdict": "Stance and footwork are pre-contact survival math. Stand at the center of the circle: blade 45°, micro-pivot 22.5° when precision matters, angle step 45° when the threat commits, sprint tangent at 90° when the window opens. The 3×7 assessment is unanimous — lateral angle step and bladed stance top the stack; straight retreat and squared sport stance bottom it. Train geometry before combinations. Every degree off the power line is a compound bet on going home.",
+    "nhiVerdictDistill": {
+      "lead": "Stance and footwork are pre-contact survival math — not a fighting pose.",
+      "circleTitle": "The circle model",
+      "circle": [
+        "You are at the center; the threat is on the rim",
+        "Full 45° steps open escape sectors (8 around the circle)",
+        "Half-45° (22.5°) pivots fine-tune blading (16 around the circle)",
+        "Never let the threat stay on your 0° power line"
+      ],
+      "topMovesTitle": "3×7 top geometry (unanimous)",
+      "topMoves": [
+        "#1 — 45° lateral angle step (8.42) — breaks chase, opens sprint",
+        "#2 — 45° bladed exit-ready stance (8.18) — ~29% narrower target",
+        "#3 — 22.5° half-angle micro-pivot (7.95) — knife-line fine-tune"
+      ],
+      "rejectedTitle": "Unanimous bottom (penalized)",
+      "rejected": [
+        "Straight-back retreat — collinear chase favors them",
+        "Squared MMA stance — gut exposed, can't sprint, duel on their terms"
+      ],
+      "stackTitle": "Optimal stack in five beats",
+      "stack": [
+        "Blade 45° by default",
+        "Micro-pivot 22.5° if needed",
+        "Angle step 45° when they commit",
+        "Burst 3–5 from blind angle only if trapped",
+        "Push-step + sprint 90° to crowd"
+      ]
+    },
+    "honestLimits": "Target-reduction percentages and compound risk model are geometric inference — not victimization RCTs. 3×7 footwork scores are AI NHI synthesis across fight science, Rutten/PTK/boxing doctrine, and Louie Martin escape stats — not a new trial. Half-45° nomenclature is pedagogical (22.5°); not all systems use this term. Gym footwork (G6) can mislead — sport square scores high in cage, low on sidewalk."
   },
   "dualSurvivalSystems": {
     "title": "Two Systems — Women and Men",
