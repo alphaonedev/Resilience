@@ -868,6 +868,50 @@ footer a:hover { text-decoration: underline; }
 
 .nhi-voice strong { color: #fff; font-weight: 600; }
 
+/* In-content links — high contrast on dark backgrounds (not browser purple) */
+.content-link,
+.nhi-voice a,
+.plain-box a,
+.section-intro a,
+.dialogue-a a,
+.chart-explainer a,
+.fp-rebuild-box a:not(.tier) {
+  color: #6ee7b7;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(110, 231, 183, 0.45);
+  text-underline-offset: 3px;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+
+.content-link:hover,
+.nhi-voice a:hover,
+.plain-box a:hover,
+.section-intro a:hover,
+.dialogue-a a:hover,
+.chart-explainer a:hover,
+.fp-rebuild-box a:not(.tier):hover {
+  color: #a7f3d0;
+  text-decoration-color: #6ee7b7;
+}
+
+.content-link:visited,
+.nhi-voice a:visited,
+.plain-box a:visited,
+.section-intro a:visited,
+.dialogue-a a:visited,
+.chart-explainer a:visited {
+  color: #5eead4;
+}
+
+.nhi-voice strong a {
+  color: #6ee7b7;
+}
+
+.content-link {
+  white-space: nowrap;
+}
+
 .plain-box {
   background: var(--bg-elevated);
   border: 1px solid var(--border);
