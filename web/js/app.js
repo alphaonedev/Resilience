@@ -293,9 +293,9 @@ function renderAll() {
   renderAdversarialRankings();
   renderHeatmap();
   renderRadarChart();
-  renderTechniqueList('striking-list', evidenceData.strikingTechniques);
-  renderTechniqueList('kicking-list', evidenceData.kickingTechniques);
-  renderTechniqueList('grappling-list', evidenceData.grapplingTechniques);
+  if (typeof renderAllTechniqueVisualizations === 'function') {
+    renderAllTechniqueVisualizations();
+  }
   renderCrimeStats();
   renderFindings();
   renderStack();

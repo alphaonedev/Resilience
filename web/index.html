@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+  <script src="js/technique-viz.js" defer></script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
@@ -343,19 +344,61 @@
       <p><strong>Best grappling:</strong> wrestling double-leg takedown and getting behind someone (rear choke) dominate sport fighting. On the street: <strong>sprawl to stop takedowns, stand up fast if you fall</strong>. Pulling someone into your guard on concrete is a bad bet.</p>
     </div>
 
-    <div class="card-grid">
-      <div class="card">
-        <h3>Striking — ranked</h3>
-        <ul class="tech-list" id="striking-list"></ul>
+    <!-- STRIKING VISUALIZATIONS -->
+    <div class="tech-viz-section cat-strike">
+      <h3>Strikes — Types, Motion & Evidence Scores</h3>
+      <p class="chart-explainer">Each card shows the attack path (diagram), martial art origin, target, and three scores: effectiveness (does it work in real fights?), street safety (does it leave you exposed?), and knockout potential.</p>
+    </div>
+    <div class="tech-viz-grid" id="striking-viz-grid"></div>
+    <div class="chart-container compact">
+      <div class="chart-title">All Striking Techniques — Effectiveness Ranking</div>
+      <canvas id="strikingBarChart"></canvas>
+    </div>
+
+    <!-- KICKING VISUALIZATIONS -->
+    <div class="tech-viz-section cat-kick">
+      <h3>Kicks — Types, Motion & Evidence Scores</h3>
+      <p class="chart-explainer">Low kicks and push kicks score highest for street safety. High and spinning kicks can knock someone out but leave you balanced on one leg — dangerous on wet ground or vs groups.</p>
+    </div>
+    <div class="tech-viz-grid" id="kicking-viz-grid"></div>
+    <div class="chart-container compact">
+      <div class="chart-title">All Kicking Techniques — Effectiveness Ranking</div>
+      <canvas id="kickingBarChart"></canvas>
+    </div>
+
+    <!-- GRAPPLING VISUALIZATIONS -->
+    <div class="tech-viz-section cat-grapple">
+      <h3>Grappling — Types, Motion & Evidence Scores</h3>
+      <p class="chart-explainer">Control potential measures how well a technique restrains or finishes someone. Street safety drops when you are on the ground — especially pull guard or sport closed guard.</p>
+    </div>
+    <div class="tech-viz-grid" id="grappling-viz-grid"></div>
+    <div class="chart-container compact">
+      <div class="chart-title">All Grappling Techniques — Effectiveness Ranking</div>
+      <canvas id="grapplingBarChart"></canvas>
+    </div>
+
+    <!-- COMPARATIVE CHARTS -->
+    <div class="chart-row-2" style="margin-top:2rem">
+      <div class="chart-container compact">
+        <div class="chart-title">Top Techniques — Strikes vs Kicks vs Grappling</div>
+        <canvas id="techniqueCompareChart"></canvas>
       </div>
-      <div class="card">
-        <h3>Kicking — ranked</h3>
-        <ul class="tech-list" id="kicking-list"></ul>
+      <div class="chart-container compact">
+        <div class="chart-title">Punch Styles — Lab Force vs Real-Fight Proof</div>
+        <canvas id="punchStyleChart"></canvas>
       </div>
-      <div class="card">
-        <h3>Grappling — ranked</h3>
-        <ul class="tech-list" id="grappling-list"></ul>
-      </div>
+    </div>
+
+    <div class="chart-container" style="margin-top:1.5rem">
+      <div class="chart-title">Safety vs Power — Every Technique (bubble size = overall score)</div>
+      <p class="chart-explainer" style="margin-bottom:0.5rem"><strong>How to read this:</strong> Top-right = powerful AND safe (ideal). Bottom-left = weak and dangerous for you. Red bubbles = strikes. Orange = kicks. Blue = grappling.</p>
+      <canvas id="techniqueBubbleChart"></canvas>
+    </div>
+
+    <div class="nhi-voice" style="margin-top:2rem">
+      <div class="nhi-voice-label">Reading the technique charts</div>
+      <p><strong>Effectiveness</strong> = fight-ending or control value under full-contact evidence. <strong>Street safety</strong> = how much the technique exposes you (balance, ground, counters). A head kick is powerful but low safety. A jab is moderate power but high safety.</p>
+      <p><strong>Boxing cross and hook</strong> sit top-right for strikes. <strong>Low calf kick and teep</strong> lead kicks. <strong>Double-leg and RNC</strong> lead grappling in sport — but on the street, only the double-leg's takedown defense (sprawl) scores high for safety.</p>
     </div>
 
     <p class="chart-explainer" style="margin-top:1.5rem">

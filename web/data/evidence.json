@@ -212,32 +212,32 @@
     }
   },
   "strikingTechniques": [
-    {"rank": 1, "name": "Boxing Cross", "score": 5, "peakForceN": 2500, "tier": "A"},
-    {"rank": 2, "name": "Boxing Hook", "score": 5, "tier": "A"},
-    {"rank": 3, "name": "Boxing Jab", "score": 4, "control": true, "tier": "A"},
-    {"rank": 4, "name": "Muay Thai Elbow (clinch)", "score": 4, "tier": "A"},
-    {"rank": 5, "name": "Karate Gyaku-zuki (full contact)", "score": 3, "peakForceN": 2645, "tier": "B"},
-    {"rank": 6, "name": "Palm Heel / Hammer Fist", "score": 3, "tier": "B"},
-    {"rank": 7, "name": "Wing Chun Chain Punch", "score": 1, "tier": "D"},
-    {"rank": 8, "name": "Point Karate Snap Punch", "score": 0, "tier": "D"}
+    {"id": "cross", "rank": 1, "name": "Boxing Cross", "score": 5, "peakForceN": 2500, "tier": "A", "style": "Boxing", "range": "Medium", "target": "Jaw / chin", "streetSafety": 4, "koPotential": 5},
+    {"id": "hook", "rank": 2, "name": "Boxing Hook", "score": 5, "tier": "A", "style": "Boxing", "range": "Close", "target": "Temple / jaw", "streetSafety": 3, "koPotential": 5},
+    {"id": "jab", "rank": 3, "name": "Boxing Jab", "score": 4, "control": true, "tier": "A", "style": "Boxing", "range": "Long", "target": "Eyes / nose", "streetSafety": 5, "koPotential": 2},
+    {"id": "elbow", "rank": 4, "name": "Muay Thai Elbow (clinch)", "score": 4, "tier": "A", "style": "Muay Thai", "range": "Clinch", "target": "Brow / temple", "streetSafety": 3, "koPotential": 4},
+    {"id": "gyaku-zuki", "rank": 5, "name": "Karate Gyaku-zuki", "score": 3, "peakForceN": 2645, "tier": "B", "style": "Karate", "range": "Medium", "target": "Solar plexus", "streetSafety": 3, "koPotential": 3},
+    {"id": "palm", "rank": 6, "name": "Palm Heel / Hammer Fist", "score": 3, "tier": "B", "style": "Universal", "range": "Close", "target": "Nose / chin", "streetSafety": 4, "koPotential": 3},
+    {"id": "chain-punch", "rank": 7, "name": "Wing Chun Chain Punch", "score": 1, "tier": "D", "style": "Kung Fu", "range": "Close", "target": "Body", "streetSafety": 2, "koPotential": 1},
+    {"id": "snap-punch", "rank": 8, "name": "Point Karate Snap Punch", "score": 0, "tier": "D", "style": "Karate", "range": "Medium", "target": "Torso (points)", "streetSafety": 4, "koPotential": 0}
   ],
   "kickingTechniques": [
-    {"rank": 1, "name": "Low Calf Kick", "score": 5, "tier": "A"},
-    {"rank": 2, "name": "Push Kick / Teep", "score": 4, "tier": "A"},
-    {"rank": 3, "name": "Roundhouse to Body", "score": 4, "tier": "A"},
-    {"rank": 4, "name": "Front Kick to Knee", "score": 3, "tier": "B"},
-    {"rank": 5, "name": "Roundhouse to Head", "score": 3, "tier": "B"},
-    {"rank": 6, "name": "Spinning Kicks", "score": 1, "tier": "D"}
+    {"id": "calf-kick", "rank": 1, "name": "Low Calf Kick", "score": 5, "tier": "A", "style": "Muay Thai / MMA", "range": "Medium", "target": "Lead leg", "streetSafety": 5, "koPotential": 2},
+    {"id": "teep", "rank": 2, "name": "Push Kick / Teep", "score": 4, "tier": "A", "style": "Muay Thai", "range": "Long", "target": "Hip / chest", "streetSafety": 5, "koPotential": 1},
+    {"id": "roundhouse-body", "rank": 3, "name": "Roundhouse to Body", "score": 4, "tier": "A", "style": "Muay Thai / Karate", "range": "Medium", "target": "Ribs / liver", "streetSafety": 4, "koPotential": 3},
+    {"id": "front-knee", "rank": 4, "name": "Front Kick to Knee", "score": 3, "tier": "B", "style": "Karate / SD", "range": "Medium", "target": "Knee joint", "streetSafety": 3, "koPotential": 4},
+    {"id": "roundhouse-head", "rank": 5, "name": "Roundhouse to Head", "score": 3, "tier": "B", "style": "Muay Thai", "range": "Medium", "target": "Head", "streetSafety": 2, "koPotential": 5},
+    {"id": "spinning-kick", "rank": 6, "name": "Spinning Kicks", "score": 1, "tier": "D", "style": "TKD / Movie MA", "range": "Medium", "target": "Head", "streetSafety": 1, "koPotential": 4}
   ],
   "grapplingTechniques": [
-    {"rank": 1, "name": "Double-Leg Takedown", "score": 5, "tier": "A"},
-    {"rank": 2, "name": "Back Control + RNC", "score": 5, "tier": "A"},
-    {"rank": 3, "name": "Mount + Ground Strikes", "score": 5, "tier": "A"},
-    {"rank": 4, "name": "Side Control → Arm Submissions", "score": 4, "tier": "A"},
-    {"rank": 5, "name": "Guillotine", "score": 4, "tier": "A"},
-    {"rank": 6, "name": "Closed Guard (sport)", "score": 3, "tier": "B"},
-    {"rank": 7, "name": "Pull Guard (street)", "score": 1, "tier": "D"},
-    {"rank": 8, "name": "Aerial Judo Throw (street)", "score": 1, "tier": "D"}
+    {"id": "double-leg", "rank": 1, "name": "Double-Leg Takedown", "score": 5, "tier": "A", "style": "Wrestling", "range": "Close", "target": "Hips / legs", "streetSafety": 3, "controlPotential": 5},
+    {"id": "rnc", "rank": 2, "name": "Back Control + RNC", "score": 5, "tier": "A", "style": "BJJ", "range": "Ground", "target": "Neck (choke)", "streetSafety": 2, "controlPotential": 5},
+    {"id": "mount-gnp", "rank": 3, "name": "Mount + Ground Strikes", "score": 5, "tier": "A", "style": "BJJ / MMA", "range": "Ground", "target": "Head (strikes)", "streetSafety": 2, "controlPotential": 5},
+    {"id": "side-control", "rank": 4, "name": "Side Control → Submissions", "score": 4, "tier": "A", "style": "BJJ", "range": "Ground", "target": "Arm / shoulder", "streetSafety": 2, "controlPotential": 4},
+    {"id": "guillotine", "rank": 5, "name": "Guillotine", "score": 4, "tier": "A", "style": "BJJ / Wrestling", "range": "Clinch", "target": "Neck", "streetSafety": 3, "controlPotential": 4},
+    {"id": "closed-guard", "rank": 6, "name": "Closed Guard (sport)", "score": 3, "tier": "B", "style": "BJJ", "range": "Ground", "target": "Legs wrapped", "streetSafety": 1, "controlPotential": 3},
+    {"id": "pull-guard", "rank": 7, "name": "Pull Guard (street)", "score": 1, "tier": "D", "style": "BJJ", "range": "Ground", "target": "Self on back", "streetSafety": 0, "controlPotential": 2},
+    {"id": "judo-throw", "rank": 8, "name": "Aerial Judo Throw", "score": 1, "tier": "D", "style": "Judo", "range": "Close", "target": "Full body", "streetSafety": 1, "controlPotential": 3}
   ],
   "streetFightBehavior": {
     "source": "Louie Martin n=154",
