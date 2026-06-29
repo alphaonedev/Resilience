@@ -14,6 +14,7 @@
   <script src="js/system-viz.js" defer></script>
   <script src="js/posture-viz.js" defer></script>
   <script src="js/fight-science-viz.js" defer></script>
+  <script src="js/fitness-viz.js" defer></script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
@@ -29,6 +30,7 @@
         <li><a href="#techniques">Techniques</a></li>
         <li><a href="#posture">Stance & Weapons</a></li>
         <li><a href="#fight-science">Fight Science</a></li>
+        <li><a href="#fitness-survival">Fitness & Survival</a></li>
         <li><a href="#domains">Violence Types</a></li>
         <li><a href="#stack">What To Do</a></li>
         <li><a href="#conclusion">Simple System</a></li>
@@ -706,6 +708,86 @@
       <p class="dialogue-a">
         Combat sports TBI research cites roughly <strong>70–100G linear head acceleration</strong> and high <strong>rotational acceleration</strong> for knockouts — but the practical answer from street footage is simpler:
         clean shots to the jaw in the <strong>first 10 seconds</strong> end most fights. After that, exhaustion, grappling, and third parties change everything.
+      </p>
+    </div>
+  </section>
+
+  <!-- FITNESS & SURVIVAL -->
+  <section id="fitness-survival" class="container">
+    <div class="section-header">
+      <h2>Fitness & Surviving Violence — What the Data Actually Says</h2>
+      <p class="section-intro">
+        Does being fit help you survive? Honest answer first: <strong>no major study has measured victim gym fitness against survival outcomes.</strong> Here is what proxy data exists — and what we can infer without overselling.
+      </p>
+    </div>
+
+    <div id="fitness-data-gap" class="plain-box" style="border-left:4px solid #f59e0b;margin-bottom:2rem"></div>
+
+    <div class="nhi-voice">
+      <div class="nhi-voice-label">AI NHI — Plain English</div>
+      <h3>The study you want does not exist yet</h3>
+      <p>
+        NCVS asks what victims <em>did</em> (ran, fought, complied) and whether they were <em>injured</em> — not how many days a week they lift or their mile time.
+        So we use <strong>proxies</strong>: disability and mobility impairment (inverse capacity), age-related frailty, escape success when outnumbered, and resistance type outcomes.
+      </p>
+      <p>
+        The pattern is consistent: <strong>capacity to leave early matters most</strong> (EAAA, awareness). When contact happens, <strong>running and getting up</strong> beat prolonged brawling.
+        For adults 65+, <strong>verbal/passive resistance cut injury odds 57%</strong> — beating physical fight-back. Marathon cardio is not what the numbers reward; escape-burst fitness is.
+      </p>
+    </div>
+
+    <div id="fitness-nhi-summary" class="plain-box" style="margin:1.5rem 0"></div>
+
+    <div class="fs-section">
+      <h3>Disability & Mobility — Inverse Fitness Proxy (BJS Tier A)</h3>
+      <div id="fitness-disability-plain" style="margin-bottom:1rem"></div>
+      <div class="chart-container compact">
+        <div class="chart-title">Violent Victimization per 1,000 — By Disability Status (2017–2019)</div>
+        <p class="chart-explainer">Ambulatory disability = closest proxy for flee/stand-up capacity. Cognitive = highest rate — processing speed and awareness, not biceps.</p>
+        <canvas id="disabilityVictimChart"></canvas>
+      </div>
+    </div>
+
+    <div class="chart-row-2">
+      <div class="chart-container compact">
+        <div class="chart-title">Outnumbered Outcomes — Escape vs Fight (n=154)</div>
+        <canvas id="escapeMobilityChart"></canvas>
+      </div>
+      <div class="chart-container compact">
+        <div class="chart-title">Which Fitness Capacities Link to Survival? (Evidence Tier)</div>
+        <canvas id="fitnessInferenceChart"></canvas>
+      </div>
+    </div>
+
+    <div class="fs-section">
+      <h3>Age 65+ — When Physical Fight-Back Is Not the Win</h3>
+      <div class="fitness-card-grid" id="fitness-age-cards"></div>
+    </div>
+
+    <div class="fs-section">
+      <h3>Resistance Type vs Outcome — NCVS Research</h3>
+      <p class="chart-explainer"><strong>Key sequence finding:</strong> injury often precedes resistance — victims fight back because they are already hurt, not the other way around (Ullman, Tark & Kleck, Hollander).</p>
+      <div class="fitness-card-grid" id="fitness-resistance-cards"></div>
+    </div>
+
+    <div id="fitness-eaaa-note" class="plain-box" style="margin:2rem 0"></div>
+
+    <div class="fs-section">
+      <h3>Fitness Inference Matrix — Train What Evidence Supports</h3>
+      <div class="fitness-card-grid" id="fitness-inference-cards"></div>
+    </div>
+
+    <div class="nhi-voice" style="border-left-color:var(--success)">
+      <div class="nhi-voice-label">Minimum effective fitness (inferred)</div>
+      <p><strong>Weekly (~30 min):</strong> 2× 20-second sprint or fast-walk bursts (escape). 2× get-up-from-floor drill (41% never stand back up in footage). Optional: 10-second strike burst on bag — matches KO window, not round 3 cardio.</p>
+      <p style="margin-bottom:0" id="fitness-honest-limits"></p>
+    </div>
+
+    <div class="dialogue">
+      <p class="dialogue-q">"So should I hit the gym before I work on awareness?"</p>
+      <p class="dialogue-a">
+        No. EAAA cut assaults ~50% with twelve hours that are mostly brain work and two hours physical. Disability data shows mobility-impaired people victimized at 3–4× the rate — but the fix is not bench press; it is <strong>exit habits plus enough mobility to run and stand up</strong>.
+        Gym work compounds after AAA habits; it does not replace them.
       </p>
     </div>
   </section>

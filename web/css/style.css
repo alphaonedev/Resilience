@@ -1673,6 +1673,51 @@ footer a:hover { text-decoration: underline; }
   line-height: 1.5;
 }
 
+/* Fitness & survival */
+.fitness-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.fitness-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.1rem;
+  font-size: 0.85rem;
+}
+
+.fitness-card h5 {
+  font-size: 0.95rem;
+  margin: 0 0 0.5rem;
+}
+
+.fitness-card p {
+  color: var(--text-muted);
+  margin: 0.35rem 0;
+  line-height: 1.5;
+}
+
+.fitness-implication {
+  font-size: 0.8rem !important;
+  font-style: italic;
+  color: var(--accent) !important;
+}
+
+.fitness-card-matrix {
+  border-top: 3px solid var(--fitness-tier, var(--accent));
+}
+
+.fitness-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav-links { display: none; }

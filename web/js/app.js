@@ -441,6 +441,9 @@ function renderAll() {
   if (typeof renderAllFightScienceVisualizations === 'function') {
     renderAllFightScienceVisualizations();
   }
+  if (typeof renderAllFitnessVisualizations === 'function') {
+    renderAllFitnessVisualizations();
+  }
   renderCrimeStats();
   renderFindings();
   renderStack();

@@ -772,5 +772,104 @@
       { "id": "ground-trap", "title": "Ground Is a Trap", "text": "73% hit ground; only 41% stand back up — sport ground game ≠ concrete survival.", "tier": "A" },
       { "id": "mass-behind", "title": "Mass Behind the Shot", "text": "Effective mass (whole body) > arm strength — sit-down cross vs arm-only snap punch.", "tier": "A" }
     ]
+  },
+  "victimFitnessResearch": {
+    "description": "What research actually says about victim physical capacity and surviving violent encounters",
+    "tier": "B",
+    "dataGap": {
+      "missingMetric": "Victim fitness level (cardiovascular fitness, strength, BMI, training history) measured at time of assault and correlated with survival, escape, or injury-free outcome",
+      "status": "NO DIRECT PEER-REVIEWED METRIC EXISTS",
+      "explanation": "NCVS and most crime surveys do not ask victims about gym fitness, VO2 max, sport background, or physical training hours. Studies measure resistance behaviors and injury after the fact — not pre-incident fitness.",
+      "whatWouldBeNeeded": "Prospective cohort linking fitness assessments to incident outcomes, or NCVS supplement with validated physical capacity measures",
+      "proxyMetrics": [
+        "Disability status (ambulatory, cognitive, self-care) as inverse capacity proxy — BJS NCVS 2017-2019",
+        "Age 65+ injury and resistance outcomes — Bachman et al. 2022 NCVS",
+        "Escape vs defeat when outnumbered — Louie Martin n=154 street fights",
+        "Self-protective behavior type (run vs physical fight) — Tark & Kleck 2004, Guerette & Santana 2010 NCVS",
+        "EAAA 2-hour physical unit + assault reduction — not a fitness trial but closest RCT with physical component"
+      ]
+    },
+    "disabilityProxy": {
+      "source": "BJS Crime Against Persons with Disabilities 2009-2019 (Harrell 2021)",
+      "tier": "A",
+      "period": "2017-2019",
+      "violentVictimizationPer1000": {
+        "withDisability": 46.2,
+        "withoutDisability": 12.3,
+        "ratio": 3.75
+      },
+      "shareOfViolentCrime": "Persons with disabilities = 12% of population but 26% of nonfatal violent crime victims",
+      "byDisabilityType": [
+        { "type": "Cognitive", "ratePer1000": 83.3, "note": "Highest rate — decision/processing speed, not gym fitness" },
+        { "type": "Ambulatory", "ratePer1000": 39.8, "note": "Closest proxy for mobility/flee capacity — still 3.2× general population" },
+        { "type": "Self-care", "ratePer1000": 35.9, "note": "ADL limitation — correlates with frailty" },
+        { "type": "Vision", "ratePer1000": 32.7, "note": "Situational awareness impairment" },
+        { "type": "Hearing", "ratePer1000": 25.0, "note": "Warning cue deficit" }
+      ],
+      "plainEnglish": "People with mobility limitations are victimized far more often. This is not proof that marathon runners survive fights better — but it strongly suggests physical capacity to detect, avoid, and flee matters.",
+      "caveat": "Disability increases targeting and vulnerability through many pathways (routine activities, dependence on caregivers, cognitive load) — not only 'can't run fast.'"
+    },
+    "ageAndCapacity": {
+      "source": "Bachman, Stenger & Sharo 2022; NCVS elderly injury literature",
+      "tier": "A",
+      "findings": [
+        { "finding": "Assault victims 65+ sustain physical injury in 16.2% of incidents (NCVS)", "implication": "Baseline injury rate for older adults in assaults" },
+        { "finding": "Verbal/passive resistance only → 57% lower injury odds vs no resistance or physical resistance", "implication": "For older victims, fighting back physically may not be the optimal survival strategy" },
+        { "finding": "Assaults by family members → 150%+ higher injury likelihood vs strangers for 65+", "implication": "Fitness matters less than relationship context for this demographic" },
+        { "finding": "Older victims more likely to need medical care and suffer serious injury vs younger (NCVS/NIBRS literature)", "implication": "Age proxies declining capacity — frailty beats gym strength in many encounters" }
+      ]
+    },
+    "escapeAndMobility": {
+      "source": "Louie Martin Martial Journal n=154; NCVS self-protective behaviors",
+      "tier": "B",
+      "outnumbered": {
+        "escapeRate": 22,
+        "defeatRate": 11,
+        "indecisiveRate": 48.4,
+        "note": "Running/escaping when already outnumbered succeeds 2× more than standing fight — requires mobility, not bodybuilding"
+      },
+      "runningAway": {
+        "classification": "Nonforceful physical resistance (Ullman taxonomy)",
+        "rapeAvoidance": "Generally associated with rape avoidance across NCVS studies",
+        "tier": "A",
+        "fitnessLink": "Inferred B-tier: sprint and agility help but never directly measured against VO2 max in victims"
+      },
+      "returnToStanding": {
+        "rate": 41,
+        "source": "Louie Martin street fights",
+        "fitnessLink": "Inferred B-tier: lower-body power and get-up drills help 59% who stay down — strength-specific"
+      }
+    },
+    "resistanceOutcomes": {
+      "source": "Tark & Kleck 2004; Guerette & Santana 2010; Wong & Balemba 2016 meta-analysis",
+      "tier": "A",
+      "completion": [
+        { "behavior": "Any resistance (rape meta-analysis)", "effect": "Significantly more likely to avoid rape completion", "injuryNote": "Injury often precedes resistance when sequence controlled" },
+        { "behavior": "Forceful physical resistance", "effect": "Strongest rape-avoidance; 93% ↓ robbery completion odds under opportunity model (Guerette 2010)", "injuryNote": "Struggling/attacking without weapon linked to injury in some robbery types" },
+        { "behavior": "Running / fleeing", "effect": "Effective nonforceful physical — among best predictors in acquaintance rape samples", "injuryNote": "Lower injury risk than prolonged physical duel" },
+        { "behavior": "Verbal/passive (elderly)", "effect": "57% less injury — best for 65+ per Bachman 2022", "injuryNote": "Not fitness — communication and de-escalation" }
+      ],
+      "injurySequence": "Ullman, Tark & Kleck, Hollander: when temporal order is controlled, resistance does not increase injury — victims resist because they are already being hurt",
+      "plainEnglish": "Fitness helps most when the winning move is running, standing up once, or a 10-second burst — not a 3-minute ground war."
+    },
+    "eaaaPhysicalNote": {
+      "tier": "A+",
+      "physicalHours": 2,
+      "totalHours": 12,
+      "assaultReduction": "50-57%",
+      "mediators": ["Risk assessment", "Self-efficacy", "Forceful verbal resistance", "Rape myth reduction"],
+      "notMeasured": "VO2 max, grip strength, or body composition changes",
+      "plainEnglish": "The only gold-standard trial with a physical component reduced assaults dramatically — but the program is mostly cognitive/behavioral. Two hours of physical technique is not a fitness regimen."
+    },
+    "fitnessInferenceMatrix": [
+      { "capacity": "Sprint / escape speed", "survivalLink": "High for multi-attacker and knife scenarios", "evidenceTier": "B", "data": "22% escape when outnumbered; running = top nonforceful resistance" },
+      { "capacity": "Get-up strength", "survivalLink": "High — 59% fail to return to feet once down", "evidenceTier": "B", "data": "41% stand-up recovery in street footage" },
+      { "capacity": "10-second explosive burst", "survivalLink": "Moderate-high — 64% KOs in first 10 sec", "evidenceTier": "B", "data": "Anaerobic alactic window matches fight duration science" },
+      { "capacity": "Cardio / round 3 endurance", "survivalLink": "Low for civilian street survival", "evidenceTier": "C", "data": "Most street fights end or go indecisive in under 60 sec; no NCVS fitness link" },
+      { "capacity": "Muscle mass / powerlifting", "survivalLink": "Low-moderate alone", "evidenceTier": "C", "data": "Effective mass helps strikes; no victim BMI→survival RCT" },
+      { "capacity": "Awareness / processing speed", "survivalLink": "Highest — avoidance before contact", "evidenceTier": "A+", "data": "EAAA; cognitive disability 83.3/1000 victimization" }
+    ],
+    "nhiSummary": "Nobody has run the study you want: fit gym people vs sedentary people in real violent encounters. NCVS does not record victim fitness. What we have are proxies: disabled and mobility-impaired people are victimized 3–4× more; running beats fighting when outnumbered 2:1; older adults reduce injury 57% with verbal/passive resistance, not brawling; EAAA's 2 hours of physical work inside a brain-first program cut assaults in half. Inference: train minimum effective fitness for escape (sprint, get-up, burst) after AAA habits — not bodybuilder cardio for a fight that should never happen.",
+    "honestLimits": "Correlation is not causation. Disability victimization reflects targeting, social isolation, and care dependence — not only inability to fight. Being fit does not substitute for avoidance. Firearms and surprise negate fitness advantages."
   }
 }
