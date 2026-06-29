@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
   <script src="js/technique-viz.js" defer></script>
+  <script src="js/system-viz.js" defer></script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
@@ -22,6 +23,7 @@
         <li><a href="#top-findings">Top Findings</a></li>
         <li><a href="#awareness">Awareness</a></li>
         <li><a href="#adversarial">How We Scored</a></li>
+        <li><a href="#systems">Strategies & Systems</a></li>
         <li><a href="#techniques">Techniques</a></li>
         <li><a href="#domains">Violence Types</a></li>
         <li><a href="#stack">What To Do</a></li>
@@ -314,6 +316,101 @@
     <div class="heatmap" id="heatmap-table"></div>
 
     <div class="card-grid" id="adversarial-findings" style="margin-top:2rem"></div>
+  </section>
+
+  <!-- STRATEGY / TACTIC / TECHNIQUE SYSTEMS -->
+  <section id="systems" class="container">
+    <div class="section-header">
+      <h2>Strategies, Tactics & Technique Systems</h2>
+      <p class="section-intro">
+        Self-defense is not one skill — it is a stack. At the top: <em>why</em> you act (strategy). In the middle: <em>when and how</em> you act (tactics). At the bottom: the <em>trained bundles</em> gyms teach (technique systems). Individual punches and kicks sit below that.
+      </p>
+    </div>
+
+    <div class="nhi-voice">
+      <div class="nhi-voice-label">AI NHI — Plain English hierarchy</div>
+      <h3>Think of it like a pyramid, not a martial art belt</h3>
+      <p>
+        <strong>Strategy</strong> = your win condition. "Never enter the fight" beats "submit them on the ground" for ordinary civilian life — and the EAAA medical trial is the only thing with gold-standard proof at that level.
+      </p>
+      <p>
+        <strong>Tactics</strong> = mid-level moves tied to a moment in the encounter. Pre-contact tactics (spot danger, plan exits) have the strongest evidence. Contact tactics (strike bursts, sprawls) matter when you are already engaged. Post-contact tactics (stand up, run to a crowd) decide whether you leave intact.
+      </p>
+      <p>
+        <strong>Technique systems</strong> = what you actually train — EAAA, Cooper's color codes, boxing, BJJ, MMA, Krav Maga. Each system bundles techniques under a strategy. A boxing gym teaches standup-finish strategy whether the coach says so or not. A sport BJJ gym teaches combat-dominance — useful in a ring, risky defaults on concrete.
+      </p>
+      <p>
+        <strong>Individual techniques</strong> (covered in the next section) are the smallest pieces — a jab, a calf kick, a rear naked choke. Evidence is strongest at the top of this pyramid and weakest at the bottom for civilian survival.
+      </p>
+    </div>
+
+    <div class="sts-overview-row">
+      <div class="sts-diagram-box">
+        <h4>The Pyramid — Evidence Strongest at Top</h4>
+        <div id="sts-pyramid"></div>
+      </div>
+      <div class="sts-diagram-box">
+        <h4>Decision Flow — What To Do When</h4>
+        <div id="sts-flow"></div>
+      </div>
+    </div>
+
+    <div class="chart-row-2">
+      <div class="chart-container compact">
+        <div class="chart-title">7 Strategies — Evidence Scores</div>
+        <canvas id="strategyBarChart"></canvas>
+      </div>
+      <div class="chart-container compact">
+        <div class="chart-title">Top 5 Strategies — Strength Profile</div>
+        <canvas id="strategyRadarChart"></canvas>
+      </div>
+    </div>
+
+    <p class="chart-explainer">
+      <strong>Strategy bar chart:</strong> Weighted scores from our 3×7 adversarial voting. Avoidance-first leads because it has medical-trial proof — not because it teaches the best punches.
+    </p>
+
+    <div class="chart-row-2">
+      <div class="chart-container compact">
+        <div class="chart-title">Tactics by Phase — Count & Evidence Tier</div>
+        <canvas id="tacticPhaseChart"></canvas>
+      </div>
+      <div class="chart-container compact">
+        <div class="chart-title">Top 6 Technique Systems Compared</div>
+        <canvas id="systemCompareRadar"></canvas>
+      </div>
+    </div>
+
+    <p class="chart-explainer">
+      <strong>Phase chart:</strong> Pre-Contact tactics (green) are about leaving before contact. Contact tactics (amber) are for when you are already in it. Post-Contact / Exit (red) is about surviving and getting away.
+    </p>
+
+    <div class="sts-viz-section">
+      <h3>Full Hierarchy Map — Strategy → Tactic → System</h3>
+      <p class="chart-explainer">Each branch shows one strategy, the tactics that serve it, and the technique systems that train those tactics. Wider branches = higher evidence score.</p>
+      <div id="sts-hierarchy-map" class="sts-hierarchy-map"></div>
+    </div>
+
+    <div class="sts-viz-section">
+      <h3>Strategy Cards — The 7 Win Conditions</h3>
+      <div id="strategy-cards" class="sts-card-grid"></div>
+    </div>
+
+    <div class="sts-viz-section">
+      <h3>Tactic Cards — 15 Moves Across 3 Phases</h3>
+      <div id="tactic-cards"></div>
+    </div>
+
+    <div class="sts-viz-section">
+      <h3>Technique System Cards — What Gyms Actually Teach</h3>
+      <div id="system-cards" class="sts-card-grid"></div>
+    </div>
+
+    <div class="sts-viz-section">
+      <h3>System ↔ Strategy Matrix</h3>
+      <p class="chart-explainer">Each dot shows which technique system primarily serves which strategy. EAAA and Cooper map to avoidance; boxing and MMA map to standup finish and combat dominance.</p>
+      <div id="sts-matrix" class="sts-matrix-wrap"></div>
+    </div>
   </section>
 
   <!-- TECHNIQUES -->

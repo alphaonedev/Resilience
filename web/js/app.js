@@ -293,6 +293,9 @@ function renderAll() {
   renderAdversarialRankings();
   renderHeatmap();
   renderRadarChart();
+  if (typeof renderAllSystemVisualizations === 'function') {
+    renderAllSystemVisualizations();
+  }
   if (typeof renderAllTechniqueVisualizations === 'function') {
     renderAllTechniqueVisualizations();
   }
