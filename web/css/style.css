@@ -2898,6 +2898,149 @@ footer a:hover { text-decoration: underline; }
 .ptk-video-creator { display: block; font-size: 0.72rem; color: var(--text-muted); margin: 0.15rem 0; }
 .ptk-video-list p { margin: 0.25rem 0; color: var(--text-muted); line-height: 1.45; }
 
+/* Resilience One System — holistic distill */
+.holistic-section { scroll-margin-top: 5rem; }
+
+.holistic-hero {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  margin: 1.5rem 0 2rem;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(59, 130, 246, 0.08) 50%, rgba(245, 158, 11, 0.06) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  border-radius: 20px;
+}
+
+.holistic-hero-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #10b981;
+  margin-bottom: 0.75rem;
+}
+
+.holistic-hero h3 { margin: 0 0 0.35rem; font-size: 1.75rem; }
+.holistic-acronym { font-family: var(--font-mono); font-size: 0.95rem; color: var(--accent); margin: 0 0 0.5rem; }
+.holistic-tagline { color: var(--text-muted); font-size: 0.9rem; max-width: 640px; margin: 0 auto 1.25rem; line-height: 1.5; }
+
+.holistic-hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.holistic-stat { text-align: center; }
+.holistic-stat .val { font-size: 1.5rem; font-weight: 800; color: #10b981; font-family: var(--font-mono); }
+.holistic-stat .lbl { font-size: 0.72rem; color: var(--text-muted); max-width: 120px; margin-top: 0.2rem; }
+.holistic-learn-note { font-size: 0.85rem; color: var(--text-muted); margin: 0; }
+
+.holistic-one-sentence {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.holistic-layers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.holistic-layer-card {
+  padding: 1.1rem 1.2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--layer-color, #10b981);
+  border-radius: 14px;
+}
+
+.holistic-layer-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.holistic-layer-num { font-family: var(--font-mono); font-size: 0.72rem; font-weight: 800; color: var(--layer-color); }
+.holistic-layer-name { font-weight: 800; font-size: 1rem; }
+.holistic-layer-pct { font-size: 0.72rem; color: var(--text-muted); }
+.holistic-layer-what { margin: 0.4rem 0; font-size: 0.88rem; line-height: 1.45; }
+.holistic-layer-time { font-size: 0.75rem; color: var(--accent); font-family: var(--font-mono); margin: 0 0 0.5rem; }
+
+.holistic-skill-list {
+  margin: 0.5rem 0;
+  padding-left: 1.1rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.holistic-layer-ev { font-size: 0.78rem; color: var(--text); margin: 0.5rem 0 0.25rem; }
+.holistic-layer-src { font-size: 0.7rem; color: var(--text-muted); font-style: italic; margin: 0; }
+
+.holistic-scenario-grid {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.holistic-scenario-card {
+  padding: 0.75rem 0.9rem;
+  background: var(--bg-elevated);
+  border-radius: 10px;
+  border-left: 3px solid #10b981;
+}
+
+.holistic-scenario-sit { font-weight: 700; font-size: 0.82rem; display: block; margin-bottom: 0.25rem; }
+.holistic-scenario-res { margin: 0; font-size: 0.78rem; color: var(--text-muted); line-height: 1.45; }
+.holistic-scenario-sec { font-size: 0.68rem; font-family: var(--font-mono); color: var(--accent); display: block; margin-top: 0.35rem; }
+
+.holistic-never { color: #ef4444 !important; font-weight: 600; }
+
+.holistic-week-row {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.82rem;
+}
+
+.holistic-week-row:last-child { border-bottom: none; }
+.holistic-week-label { font-family: var(--font-mono); font-weight: 800; color: #f59e0b; min-width: 72px; }
+.holistic-week-meta { display: block; font-size: 0.72rem; color: var(--text-muted); margin-top: 0.2rem; }
+
+.holistic-prob-step {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.holistic-prob-step:last-child { border-bottom: none; }
+.holistic-prob-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+  font-weight: 800;
+  font-size: 0.82rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.holistic-prob-step p { margin: 0.25rem 0; font-size: 0.8rem; color: var(--text-muted); line-height: 1.45; }
+.holistic-prob-cum { font-size: 0.72rem; color: #10b981; font-weight: 600; }
+
+.holistic-flow-diagram { width: 100%; max-width: 520px; height: auto; display: block; margin: 0 auto; }
+
 /* Cooper Color Code — visual mental model */
 .cooper-compact-strip {
   margin-top: 2rem;

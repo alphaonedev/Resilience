@@ -463,6 +463,9 @@ function renderAll() {
   if (typeof renderAllPtkNhiVisualizations === 'function') {
     renderAllPtkNhiVisualizations();
   }
+  if (typeof renderAllHolisticSurvivalVisualizations === 'function') {
+    renderAllHolisticSurvivalVisualizations();
+  }
   if (typeof renderAllCooperColorVisualizations === 'function') {
     renderAllCooperColorVisualizations();
   }
