@@ -457,6 +457,12 @@ function renderAll() {
   if (typeof renderAllRuttenNhiVisualizations === 'function') {
     renderAllRuttenNhiVisualizations();
   }
+  if (typeof renderAllMuayThaiNhiVisualizations === 'function') {
+    renderAllMuayThaiNhiVisualizations();
+  }
+  if (typeof renderAllPtkNhiVisualizations === 'function') {
+    renderAllPtkNhiVisualizations();
+  }
   if (typeof renderAllCooperColorVisualizations === 'function') {
     renderAllCooperColorVisualizations();
   }

@@ -20,6 +20,8 @@
   <script src="js/boxing-nhi-viz.js" defer></script>
   <script src="js/kicking-nhi-viz.js" defer></script>
   <script src="js/rutten-nhi-viz.js" defer></script>
+  <script src="js/muay-thai-nhi-viz.js" defer></script>
+  <script src="js/ptk-nhi-viz.js" defer></script>
   <script src="js/cooper-color-viz.js" defer></script>
   <script src="js/eaaa-viz.js" defer></script>
   <script src="js/ooda-viz.js" defer></script>
@@ -43,6 +45,8 @@
         <li><a href="#boxing-nhi">Boxing NHI</a></li>
         <li><a href="#kicking-nhi">Kicking NHI</a></li>
         <li><a href="#rutten-nhi">Rutten NHI</a></li>
+        <li><a href="#muay-thai-nhi">Muay Thai NHI</a></li>
+        <li><a href="#ptk-nhi">PTK NHI</a></li>
         <li><a href="#posture">Stance & Weapons</a></li>
         <li><a href="#fight-science">Fight Science</a></li>
         <li><a href="#fitness-survival">Fitness & Survival</a></li>
@@ -1019,6 +1023,188 @@
       <p class="dialogue-q">"Is Lethal Street Fighting better evidence than Krav Maga?"</p>
       <p class="dialogue-a">
         <strong>Delivery: yes</strong> — Rutten's hands and kicks are C6 full-contact proven. <strong>Outcomes: same gap</strong> — neither has a civilian victimization RCT. Rutten wins on avoidance-first honesty, teep/low-kick Tier A alignment, and not marketing 90% myths. Knife disarms share Krav's Tier D problem.
+      </p>
+    </div>
+  </section>
+
+  <!-- MUAY THAI SELF-DEFENSE NHI -->
+  <section id="muay-thai-nhi" class="container">
+    <div class="section-header">
+      <h2>Muay Thai for Self-Defense vs the Evidence — AI NHI Reconciliation</h2>
+      <p class="section-intro">
+        Buakaw, Saenchai, and Rutten agree: teep and low kicks win before contact; knees and elbows finish in the grab window — then you run. We tested Muay Thai street doctrine against kicking NHI rankings, Rutten's staples, and escape-priority science.
+      </p>
+    </div>
+
+    <div class="nhi-voice" style="border-left-color:#d97706">
+      <div class="nhi-voice-label">AI NHI — Executive summary</div>
+      <div id="muaythai-executive"></div>
+    </div>
+
+    <div id="muaythai-historical" class="plain-box"></div>
+
+    <div class="fs-section">
+      <h3>Expert Analysis — Buakaw · Saenchai · Rutten Bridge</h3>
+      <div id="muaythai-experts"></div>
+    </div>
+
+    <div class="fs-section">
+      <h3>Three-Tier Strategy — Muay Thai → Resilience Map</h3>
+      <div id="muaythai-three-tier"></div>
+    </div>
+
+    <div class="chart-row-2">
+      <div class="chart-container compact">
+        <div class="chart-title">Tactics — Evidence Alignment</div>
+        <canvas id="muayThaiTacticsChart"></canvas>
+      </div>
+      <div class="fp-rebuild-box">
+        <h4>Tactic-by-Tactic Table</h4>
+        <div id="muaythai-tactics-table" class="fp-reject-wrap"></div>
+      </div>
+    </div>
+
+    <div class="fs-section">
+      <h3>Explicit Techniques — Step-by-Step</h3>
+      <p class="chart-explainer">Teep, low roundhouse/oblique, and capped clinch knees/elbows. Not the full sport game.</p>
+      <div class="muaythai-tech-grid" id="muaythai-techniques"></div>
+    </div>
+
+    <div class="fs-section">
+      <h3>Scenario Responses</h3>
+      <div id="muaythai-scenarios" class="fp-reject-wrap"></div>
+    </div>
+
+    <div class="fs-section">
+      <h3>Integration — Boxing · Kicking · Rutten</h3>
+      <div class="muaythai-compare-grid" id="muaythai-integration"></div>
+    </div>
+
+    <div class="fs-section" style="border:1px solid rgba(217,119,6,0.35);border-radius:16px;padding:1.5rem;margin:2rem 0">
+      <h3>Muay Thai Street Stack — Distilled Training</h3>
+      <p class="chart-explainer">Three tools, capped clinch, mandatory sprint. Cross-read <a href="#kicking-nhi">Kicking NHI</a> and <a href="#rutten-nhi">Rutten NHI</a> for overlap.</p>
+      <div class="chart-row-2">
+        <div class="fp-rebuild-box">
+          <h4>Claims Audit</h4>
+          <div id="muaythai-claims-audit" class="fp-reject-wrap"></div>
+        </div>
+        <div class="fp-rebuild-box">
+          <h4>Full Synthesis Stack</h4>
+          <div id="muaythai-synthesis-stack"></div>
+        </div>
+      </div>
+      <div id="muaythai-drills" class="fp-rebuild-box" style="margin-top:1.25rem"></div>
+      <div class="fp-rebuild-box" style="margin-top:1.25rem">
+        <h4>Video Resources</h4>
+        <div id="muaythai-videos"></div>
+      </div>
+    </div>
+
+    <div id="muaythai-final-verdict" class="nhi-voice" style="border-left-color:#10b981;margin-top:2rem"></div>
+    <p id="muaythai-honest-limits" class="chart-explainer" style="margin-top:1rem"></p>
+
+    <div class="dialogue">
+      <p class="dialogue-q">"Isn't Muay Thai just sport fighting — why for street SD?"</p>
+      <p class="dialogue-a">
+        The <strong>sport</strong> is five rounds and plum wars. The <strong>street distill</strong> is teep, calf kick, and 3–5 clinch knees — tools Resilience already ranks Tier A. Buakaw and Rutten teach range destruction, not ring points. Resilience rejects prolonged clinch on pavement and head-kick hunting as primary.
+      </p>
+      <p class="dialogue-q">"How does this differ from the Kicking NHI section?"</p>
+      <p class="dialogue-a">
+        Kicking NHI reconciles <em>all</em> kicking authorities (Wallace, Oyama, Lewis). Muay Thai NHI goes deeper on the <strong>source system</strong>: plum clinch mechanics, Thai conditioning culture, and sport-native teep/low-kick doctrine from stadium legends — with explicit scenario scripts (puncher vs grabber).
+      </p>
+    </div>
+  </section>
+
+  <!-- PEKITI-TIRSIA KALI (PTK) SELF-DEFENSE NHI -->
+  <section id="ptk-nhi" class="container">
+    <div class="section-header">
+      <h2>Pekiti-Tirsia Kali (PTK) for Self-Defense vs the Evidence — AI NHI Reconciliation</h2>
+      <p class="section-intro">
+        Tuhon Leo Gaje and Rommel "Bong" Abaya built offensive defense around angles, triangular footwork, and defang-the-snake limb destruction. We tested PTK empty-hand translations against Motobu bunkai, weapon tier data, and the Muay Thai/Rutten close-range stack.
+      </p>
+    </div>
+
+    <div class="nhi-voice" style="border-left-color:#8b5cf6">
+      <div class="nhi-voice-label">AI NHI — Executive summary</div>
+      <div id="ptk-executive"></div>
+    </div>
+
+    <div id="ptk-historical" class="plain-box"></div>
+
+    <div class="fs-section">
+      <h3>Expert Analysis — Tuhon Gaje · Rommel Abaya</h3>
+      <div id="ptk-experts"></div>
+    </div>
+
+    <div class="fs-section">
+      <h3>Three-Tier Strategy — PTK → Resilience Map</h3>
+      <div id="ptk-three-tier"></div>
+    </div>
+
+    <div class="chart-row-2">
+      <div class="chart-container compact">
+        <div class="chart-title">Tactics — Evidence Alignment</div>
+        <canvas id="ptkTacticsChart"></canvas>
+      </div>
+      <div class="fp-rebuild-box">
+        <h4>Tactic-by-Tactic Table</h4>
+        <div id="ptk-tactics-table" class="fp-reject-wrap"></div>
+      </div>
+    </div>
+
+    <div class="fs-section">
+      <h3>5 Angles Framework — Weapon to Empty Hand</h3>
+      <p class="chart-explainer">Core PTK geometry. Each angle maps to elbows, hammers, and forearm hacks.</p>
+      <div id="ptk-angles" class="fp-reject-wrap"></div>
+    </div>
+
+    <div class="fs-section">
+      <h3>Explicit Techniques — Step-by-Step</h3>
+      <p class="chart-explainer">Defang the snake, Abcedario clinch flow, triangular footwork. Knife disarm heroics tiered honestly.</p>
+      <div class="ptk-tech-grid" id="ptk-techniques"></div>
+    </div>
+
+    <div class="fs-section">
+      <h3>Scenario Responses</h3>
+      <div id="ptk-scenarios" class="fp-reject-wrap"></div>
+    </div>
+
+    <div class="fs-section">
+      <h3>Integration — Karate · Muay Thai · Boxing</h3>
+      <div class="ptk-compare-grid" id="ptk-integration"></div>
+    </div>
+
+    <div class="fs-section" style="border:1px solid rgba(139,92,246,0.35);border-radius:16px;padding:1.5rem;margin:2rem 0">
+      <h3>PTK Awareness Stack — Distilled Training</h3>
+      <p class="chart-explainer">Angles and checks first; weapon scenarios end in run. Cross-read <a href="#karate-nhi">Karate NHI</a> for Motobu/bunkai parallels.</p>
+      <div class="chart-row-2">
+        <div class="fp-rebuild-box">
+          <h4>Claims Audit</h4>
+          <div id="ptk-claims-audit" class="fp-reject-wrap"></div>
+        </div>
+        <div class="fp-rebuild-box">
+          <h4>Full Synthesis Stack</h4>
+          <div id="ptk-synthesis-stack"></div>
+        </div>
+      </div>
+      <div id="ptk-drills" class="fp-rebuild-box" style="margin-top:1.25rem"></div>
+      <div class="fp-rebuild-box" style="margin-top:1.25rem">
+        <h4>Video Resources</h4>
+        <div id="ptk-videos"></div>
+      </div>
+    </div>
+
+    <div id="ptk-final-verdict" class="nhi-voice" style="border-left-color:#10b981;margin-top:2rem"></div>
+    <p id="ptk-honest-limits" class="chart-explainer" style="margin-top:1rem"></p>
+
+    <div class="dialogue">
+      <p class="dialogue-q">"PTK teaches knife disarms — isn't that exactly what I need?"</p>
+      <p class="dialogue-a">
+        <strong>Distance and run: Tier A.</strong> Defang/disarm drills: Tier C–D — same evidence gap as Krav Maga. PTK's real gift is <em>angle literacy</em> and limb checks that get you to a stun window, not Hollywood disarms. Rubber-knife scenarios on this site end in sprint, not weapon retention.
+      </p>
+      <p class="dialogue-q">"How does PTK connect to karate bunkai?"</p>
+      <p class="dialogue-a">
+        Motobu's simultaneous block-counter and Abernethy's pressure-tested bunkai are the karate parallel to PTK checks and 5 angles. PTK adds <strong>blade-default thinking</strong> and triangular footwork most sport karate lost. Valid only under C6 resistance — same rule as karate NHI.
       </p>
     </div>
   </section>

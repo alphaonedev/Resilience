@@ -2670,6 +2670,234 @@ footer a:hover { text-decoration: underline; }
 .rutten-video-creator { display: block; font-size: 0.72rem; color: var(--text-muted); margin: 0.15rem 0; }
 .rutten-video-list p { margin: 0.25rem 0; color: var(--text-muted); line-height: 1.45; }
 
+/* Muay Thai NHI */
+.muaythai-core-rule {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--text);
+  border-left: 4px solid #d97706;
+  padding: 0.75rem 1rem;
+  margin: 0 0 1.25rem;
+  background: rgba(217, 119, 6, 0.08);
+  border-radius: 0 12px 12px 0;
+}
+
+.muaythai-expert-card {
+  padding: 1rem 1.15rem;
+  margin-bottom: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 4px solid #d97706;
+  border-radius: 12px;
+}
+
+.muaythai-expert-header { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; }
+.muaythai-expert-header h4 { margin: 0; }
+.muaythai-align-badge { font-size: 0.72rem; font-weight: 700; color: #d97706; text-transform: uppercase; }
+.muaythai-teaching, .muaythai-aligns, .muaythai-tensions, .muaythai-verdict { margin: 0.35rem 0; font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; }
+.muaythai-verdict { color: var(--text) !important; font-weight: 500; }
+
+.muaythai-tier-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.muaythai-tier-card {
+  padding: 1rem 1.15rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--tier-color, #d97706);
+  border-radius: 12px;
+}
+
+.muaythai-tier-label { font-family: var(--font-mono); font-size: 0.72rem; font-weight: 800; color: #d97706; }
+.muaythai-tier-card p { margin: 0.4rem 0; color: var(--text-muted); line-height: 1.45; }
+.muaythai-tier-ev { font-size: 0.75rem !important; margin-top: 0.5rem !important; }
+
+.muaythai-match { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; }
+.muaythai-match-strong { color: #10b981; }
+.muaythai-match-partial { color: #f59e0b; }
+.muaythai-match-reject { color: #ef4444; }
+
+.muaythai-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.muaythai-tech-card {
+  padding: 1rem 1.15rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.muaythai-tech-card h5 { margin: 0 0 0.35rem; color: #d97706; }
+.muaythai-tech-role { font-size: 0.82rem; font-style: italic; color: var(--text-muted); margin: 0 0 0.5rem; }
+.muaythai-tech-card p { margin: 0.3rem 0; font-size: 0.8rem; color: var(--text-muted); line-height: 1.45; }
+.muaythai-exec-list { margin: 0.5rem 0; padding-left: 1.2rem; font-size: 0.78rem; color: var(--text-muted); line-height: 1.55; }
+.muaythai-verdict-line { color: var(--text) !important; font-weight: 500; }
+
+.muaythai-compare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.muaythai-compare-card {
+  padding: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.muaythai-compare-card h5 { margin: 0 0 0.5rem; }
+.muaythai-compare-card p { margin: 0.3rem 0; font-size: 0.8rem; color: var(--text-muted); line-height: 1.45; }
+.muaythai-fit { color: #10b981 !important; font-weight: 500; margin-top: 0.5rem !important; }
+
+.muaythai-stack-item {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.82rem;
+}
+
+.muaythai-stack-item:last-child { border-bottom: none; }
+.muaythai-stack-pri { font-family: var(--font-mono); font-weight: 800; color: #d97706; }
+.muaythai-stack-item p { margin: 0.25rem 0; color: var(--text-muted); }
+.muaythai-stack-hours { font-size: 0.72rem; color: var(--accent); }
+
+.muaythai-list { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.8rem; color: var(--text-muted); line-height: 1.55; }
+.muaythai-drill-phase { padding: 0.85rem 0; border-bottom: 1px solid var(--border); }
+.muaythai-drill-phase h5 { margin: 0 0 0.25rem; font-size: 0.88rem; color: #d97706; }
+.muaythai-drill-meta { font-size: 0.72rem; font-family: var(--font-mono); color: var(--accent); }
+.muaythai-drill-test { font-size: 0.78rem; color: var(--text-muted); margin: 0.5rem 0 0; }
+.muaythai-drill-maint { font-size: 0.8rem; margin-top: 0.75rem; color: var(--text-muted); }
+
+.muaythai-stat { font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent); display: block; margin-top: 0.5rem; }
+.muaythai-video-list { list-style: none; margin: 0; padding: 0; }
+.muaythai-video-list li { padding: 0.65rem 0; border-bottom: 1px solid var(--border); font-size: 0.8rem; }
+.muaythai-video-list a { color: #d97706; text-decoration: none; font-weight: 600; }
+.muaythai-video-list a:hover { text-decoration: underline; }
+.muaythai-video-creator { display: block; font-size: 0.72rem; color: var(--text-muted); margin: 0.15rem 0; }
+.muaythai-video-list p { margin: 0.25rem 0; color: var(--text-muted); line-height: 1.45; }
+
+/* PTK NHI */
+.ptk-core-rule {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--text);
+  border-left: 4px solid #8b5cf6;
+  padding: 0.75rem 1rem;
+  margin: 0 0 1.25rem;
+  background: rgba(139, 92, 246, 0.08);
+  border-radius: 0 12px 12px 0;
+}
+
+.ptk-expert-card {
+  padding: 1rem 1.15rem;
+  margin-bottom: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 4px solid #8b5cf6;
+  border-radius: 12px;
+}
+
+.ptk-expert-header { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; }
+.ptk-expert-header h4 { margin: 0; }
+.ptk-align-badge { font-size: 0.72rem; font-weight: 700; color: #8b5cf6; text-transform: uppercase; }
+.ptk-teaching, .ptk-aligns, .ptk-tensions, .ptk-verdict { margin: 0.35rem 0; font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; }
+.ptk-verdict { color: var(--text) !important; font-weight: 500; }
+
+.ptk-tier-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.ptk-tier-card {
+  padding: 1rem 1.15rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--tier-color, #8b5cf6);
+  border-radius: 12px;
+}
+
+.ptk-tier-label { font-family: var(--font-mono); font-size: 0.72rem; font-weight: 800; color: #8b5cf6; }
+.ptk-tier-card p { margin: 0.4rem 0; color: var(--text-muted); line-height: 1.45; }
+.ptk-tier-ev { font-size: 0.75rem !important; margin-top: 0.5rem !important; }
+
+.ptk-match { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; }
+.ptk-match-strong { color: #10b981; }
+.ptk-match-partial { color: #f59e0b; }
+.ptk-match-reject { color: #ef4444; }
+
+.ptk-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.ptk-tech-card {
+  padding: 1rem 1.15rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.ptk-tech-card h5 { margin: 0 0 0.35rem; color: #8b5cf6; }
+.ptk-tech-role { font-size: 0.82rem; font-style: italic; color: var(--text-muted); margin: 0 0 0.5rem; }
+.ptk-tech-card p { margin: 0.3rem 0; font-size: 0.8rem; color: var(--text-muted); line-height: 1.45; }
+.ptk-exec-list { margin: 0.5rem 0; padding-left: 1.2rem; font-size: 0.78rem; color: var(--text-muted); line-height: 1.55; }
+.ptk-verdict-line { color: var(--text) !important; font-weight: 500; }
+
+.ptk-compare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.ptk-compare-card {
+  padding: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.ptk-compare-card h5 { margin: 0 0 0.5rem; }
+.ptk-compare-card p { margin: 0.3rem 0; font-size: 0.8rem; color: var(--text-muted); line-height: 1.45; }
+.ptk-fit { color: #10b981 !important; font-weight: 500; margin-top: 0.5rem !important; }
+
+.ptk-stack-item {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.82rem;
+}
+
+.ptk-stack-item:last-child { border-bottom: none; }
+.ptk-stack-pri { font-family: var(--font-mono); font-weight: 800; color: #8b5cf6; }
+.ptk-stack-item p { margin: 0.25rem 0; color: var(--text-muted); }
+.ptk-stack-hours { font-size: 0.72rem; color: var(--accent); }
+
+.ptk-list { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.8rem; color: var(--text-muted); line-height: 1.55; }
+.ptk-drill-phase { padding: 0.85rem 0; border-bottom: 1px solid var(--border); }
+.ptk-drill-phase h5 { margin: 0 0 0.25rem; font-size: 0.88rem; color: #8b5cf6; }
+.ptk-drill-meta { font-size: 0.72rem; font-family: var(--font-mono); color: var(--accent); }
+.ptk-drill-test { font-size: 0.78rem; color: var(--text-muted); margin: 0.5rem 0 0; }
+.ptk-drill-maint { font-size: 0.8rem; margin-top: 0.75rem; color: var(--text-muted); }
+
+.ptk-stat { font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent); display: block; margin-top: 0.5rem; }
+.ptk-video-list { list-style: none; margin: 0; padding: 0; }
+.ptk-video-list li { padding: 0.65rem 0; border-bottom: 1px solid var(--border); font-size: 0.8rem; }
+.ptk-video-list a { color: #8b5cf6; text-decoration: none; font-weight: 600; }
+.ptk-video-list a:hover { text-decoration: underline; }
+.ptk-video-creator { display: block; font-size: 0.72rem; color: var(--text-muted); margin: 0.15rem 0; }
+.ptk-video-list p { margin: 0.25rem 0; color: var(--text-muted); line-height: 1.45; }
+
 /* Cooper Color Code — visual mental model */
 .cooper-compact-strip {
   margin-top: 2rem;
