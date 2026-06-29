@@ -20,6 +20,7 @@
   <script src="js/boxing-nhi-viz.js" defer></script>
   <script src="js/kicking-nhi-viz.js" defer></script>
   <script src="js/rutten-nhi-viz.js" defer></script>
+  <script src="js/cooper-color-viz.js" defer></script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
@@ -57,6 +58,7 @@
       into clear answers anyone can understand. No martial arts jargon required.
     </p>
     <div class="hero-stats" id="hero-stats"></div>
+    <div id="cooper-compact-strip" class="cooper-compact-strip"></div>
   </header>
 
   <!-- START HERE -->
@@ -178,9 +180,9 @@
           <h4>Detect danger and leave</h4>
           <p>The EAAA program taught women to spot risky situations earlier and set firm boundaries. Result: <strong>50–57% fewer completed assaults</strong> in medical trials. Only ~2 hours of the 12-hour course is physical fighting. The rest is awareness and confidence.</p>
         </div>
-        <div class="takeaway-card">
-          <div class="num">2</div>
-          <h4>Stay alert by default</h4>
+        <div class="takeaway-card takeaway-cooper-yellow">
+          <div class="num cooper-num-yellow">2</div>
+          <h4>Stay alert by default <span class="cooper-inline-pill cooper-yellow">Yellow</span></h4>
           <p>Walk through life in "relaxed alert" (Cooper's Yellow): phone down, exits noted, gut feelings respected. No percentage proves this alone — but every downstream stat shows people who engage late lose more often.</p>
         </div>
         <div class="takeaway-card">
@@ -211,20 +213,20 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Before any contact — you sense something is wrong</td>
+        <tr data-cooper="orange">
+          <td><span class="cooper-row-dot cooper-orange"></span>Before any contact — you sense something is wrong</td>
           <td>Trust the feeling. Change location. Tell someone. Set a verbal boundary and leave.</td>
           <td>50–57% assault reduction (EAAA medical trial)</td>
           <td><span class="tier tier-aplus">A+</span></td>
         </tr>
-        <tr>
-          <td>Multiple people, not yet attacking</td>
+        <tr data-cooper="orange">
+          <td><span class="cooper-row-dot cooper-orange"></span>Multiple people, not yet attacking</td>
           <td>Leave immediately. Do not "see how it plays out."</td>
           <td>No direct % (data gap) — but 22% escape vs 11% win once engaged</td>
           <td><span class="tier tier-b">B</span></td>
         </tr>
-        <tr>
-          <td>One attacker, standing, must fight</td>
+        <tr data-cooper="red">
+          <td><span class="cooper-row-dot cooper-red"></span>One attacker, standing, must fight</td>
           <td>Jab → cross → hook. Low kick to knee/shin if trained. Then distance.</td>
           <td>64% KOs in first 10 sec; ~2,500N punch force in lab</td>
           <td><span class="tier tier-a">A</span></td>
@@ -271,21 +273,17 @@
       </p>
     </div>
 
-    <div class="nhi-voice">
+    <div class="nhi-voice cooper-nhi-voice">
       <div class="nhi-voice-label">Plain English explanation</div>
       <h3>The Cooper Color Code — a simple mental model</h3>
-      <p>Think of your awareness level like a traffic light for your brain:</p>
-      <ul>
-        <li><strong>White</strong> — Head in the clouds. Phone out. No idea who is around you. This is when predators prefer you.</li>
-        <li><strong>Yellow</strong> — Relaxed but watching. You notice exits, odd behavior, who is behind you. <em>This should be your normal setting.</em></li>
-        <li><strong>Orange</strong> — Something specific feels wrong. A group splitting to flank you. Someone following you. You start planning what to do.</li>
-        <li><strong>Red</strong> — Action now. Leave. Run. Yell. Fight only if you cannot escape.</li>
-      </ul>
-      <p>
+      <div id="cooper-color-ladder"></div>
+      <p class="cooper-tier-note">
         Soldiers and pilots use this. It is smart. But <strong>no medical study has measured whether teaching civilians the color code reduces assaults</strong>.
         We rate it Tier C: good logic, unproven outcome. Use it as a habit — not as proof you are safe.
       </p>
     </div>
+
+    <div id="cooper-system-map" class="cooper-system-map-box"></div>
 
     <div class="alert-gap" id="data-gap">
       <h3>⚠ The Number Nobody Can Give You (Yet)</h3>
@@ -323,10 +321,7 @@
     </p>
 
     <div class="card-grid" style="margin-top:1.5rem">
-      <div class="card">
-        <h3>Cooper Color Code <span class="tier tier-c">Tier C</span></h3>
-        <p style="color:var(--text-muted);margin-top:0.75rem"><strong>In plain English:</strong> A mental checklist for staying switched on. Excellent habit. Not proven in a civilian trial.</p>
-      </div>
+      <div id="cooper-awareness-cards"></div>
       <div class="card">
         <h3>Stay Alert, Stay Alive <span class="tier tier-c">Tier C</span></h3>
         <p style="color:var(--text-muted);margin-top:0.75rem"><strong>In plain English:</strong> Military rules for not getting ambushed overseas — vary your route, sit facing the door, do not flash valuables. Sound advice; no civilian assault-reduction study.</p>
@@ -1290,9 +1285,17 @@
       <div id="nhi-verdict-text"></div>
     </div>
 
+    <div class="cooper-aaa-bridge" id="cooper-aaa-bridge">
+      <span class="cooper-bridge-pill cooper-yellow">Yellow = Assess</span>
+      <span class="cooper-bridge-arrow">→</span>
+      <span class="cooper-bridge-pill cooper-orange">Orange = Acknowledge</span>
+      <span class="cooper-bridge-arrow">→</span>
+      <span class="cooper-bridge-pill cooper-red">Red = Act (leave or burst)</span>
+    </div>
+
     <div class="sts-overview-row">
       <div class="sts-diagram-box">
-        <h4>The AAA Exit Protocol — 3 Steps</h4>
+        <h4>The AAA Exit Protocol — 3 Steps <span class="cooper-inline-pill cooper-yellow">Cooper colors</span></h4>
         <div id="aaa-flow-diagram"></div>
       </div>
       <div class="sts-diagram-box">

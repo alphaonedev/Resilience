@@ -150,7 +150,73 @@
         "tier": "C",
         "origin": "Lt. Col. Jeff Cooper, combat pistol instruction",
         "evidenceStatus": "Widely adopted (military, LE, aviation); limited outcome RCTs linking color-code training to victimization reduction",
-        "components": ["White: unaware", "Yellow: relaxed alert", "Orange: specific threat identified", "Red: action required"]
+        "trafficMetaphor": "Think of your awareness level like a traffic light for your brain — but Yellow is your normal cruise setting, not a warning.",
+        "defaultLevel": "yellow",
+        "levels": [
+          {
+            "id": "white",
+            "name": "White",
+            "hex": "#9ca3af",
+            "hexBright": "#e5e7eb",
+            "bg": "rgba(156, 163, 175, 0.1)",
+            "border": "#6b7280",
+            "mindset": "Unaware — head in the clouds",
+            "plainEnglish": "Phone out. Headphones in. No idea who is around you or where exits are. Predators prefer you here.",
+            "action": "Wake up. Put the phone away. Scan once.",
+            "isTarget": false,
+            "aaaMap": null,
+            "resilienceSection": "What we train you to leave behind"
+          },
+          {
+            "id": "yellow",
+            "name": "Yellow",
+            "hex": "#facc15",
+            "hexBright": "#fde047",
+            "bg": "rgba(250, 204, 21, 0.14)",
+            "border": "#eab308",
+            "mindset": "Relaxed alert — your normal setting",
+            "plainEnglish": "You notice exits, odd behavior, who is behind you. Calm, not paranoid. Soldiers and pilots live here.",
+            "action": "Maintain daily. This is AAA Assess.",
+            "isTarget": true,
+            "aaaMap": "Assess (2 min/day)",
+            "resilienceSection": "#awareness · #conclusion daily habit · Rutten Tier 1"
+          },
+          {
+            "id": "orange",
+            "name": "Orange",
+            "hex": "#f97316",
+            "hexBright": "#fb923c",
+            "bg": "rgba(249, 115, 22, 0.14)",
+            "border": "#ea580c",
+            "mindset": "Specific alert — something is wrong",
+            "plainEnglish": "A group splitting to flank you. Someone following you. A familiar person testing boundaries. You are planning exit routes.",
+            "action": "Acknowledge the gut feeling. Verbal boundary. Move toward exits.",
+            "isTarget": false,
+            "aaaMap": "Acknowledge (1 min/day) + weekly drills",
+            "resilienceSection": "EAAA Assess unit · verbal resistance · Rutten fence"
+          },
+          {
+            "id": "red",
+            "name": "Red",
+            "hex": "#ef4444",
+            "hexBright": "#f87171",
+            "bg": "rgba(239, 68, 68, 0.14)",
+            "border": "#dc2626",
+            "mindset": "Decisive action — now",
+            "plainEnglish": "Leave. Run. Yell. Fight only if you cannot escape. Seconds matter — not rounds.",
+            "action": "Act: exit first. Contact burst only if trapped.",
+            "isTarget": false,
+            "aaaMap": "Act (Leave) · ifContact protocol",
+            "resilienceSection": "#conclusion contact · boxing/kick burst · Rutten Tier 2–3"
+          }
+        ],
+        "systemMap": [
+          { "color": "yellow", "layer": "Daily life", "systems": ["AAA Assess", "Cooper default", "Stay Alert habits", "Rutten Tier 1 avoidance"] },
+          { "color": "orange", "layer": "Something feels wrong", "systems": ["AAA Acknowledge", "EAAA risk spotting", "Verbal boundary", "Cooper Yellow→Orange escalation"] },
+          { "color": "red", "layer": "Action required", "systems": ["AAA Act — leave/run", "Rutten finish + escape", "10-sec burst if trapped"] },
+          { "color": "white", "layer": "Avoid this state", "systems": ["Phone zombie mode", "Ignored gut feelings", "Squared-up duel mindset"] }
+        ],
+        "honestNote": "Tier C framework — excellent habit logic, no civilian victimization RCT. Yellow should be your default; Red means decisive action including escape, not only fighting."
       },
       "stayAlertStayAlive": {
         "name": "Stay Alert, Stay Alive (military personal security)",
@@ -522,9 +588,10 @@
       { "layer": "Simple strikes (optional)", "effect": "Marginal gain only after first three layers fail", "evidence": "64% KOs in first 10 sec — but only if you are still there to throw them" }
     ],
     "dailyRoutine": [
-      { "step": "Assess", "minutes": 2, "action": "Yellow mindset: Who is near me? Am I being isolated or flanked? Is someone I know testing boundaries?", "plainEnglish": "Look up from your phone. Notice patterns, not just faces." },
-      { "step": "Acknowledge", "minutes": 1, "action": "When your gut tightens, say internally: 'This is real. I don't need permission to leave.'", "plainEnglish": "Stop negotiating with the feeling that something is off." }
+      { "step": "Assess", "cooperColor": "yellow", "minutes": 2, "action": "Yellow mindset: Who is near me? Am I being isolated or flanked? Is someone I know testing boundaries?", "plainEnglish": "Look up from your phone. Notice patterns, not just faces." },
+      { "step": "Acknowledge", "cooperColor": "orange", "minutes": 1, "action": "When your gut tightens, say internally: 'This is real. I don't need permission to leave.'", "plainEnglish": "Stop negotiating with the feeling that something is off." }
     ],
+    "actCooperColor": "red",
     "weeklyRoutine": [
       { "step": "Scenario rehearsal", "minutes": 5, "action": "Pick one real place you go (bar, parking lot, date). Walk through leaving before contact.", "plainEnglish": "Mental practice counts. Athletes do it; you can too." },
       { "step": "Exit audit", "minutes": 5, "action": "At one familiar location, identify two exits and where you'd go for people or light.", "plainEnglish": "You already do this on airplanes. Do it where you actually live." },
@@ -532,10 +599,10 @@
       { "step": "Run burst (optional)", "minutes": 5, "action": "30-second jog or fast walk. Escape is a physical skill for some bodies.", "plainEnglish": "Only if you can. Leaving still works walking." }
     ],
     "ifContact": [
-      { "priority": 1, "action": "Create distance — push, angle off, don't clinch", "seconds": 3 },
-      { "priority": 2, "action": "Forceful verbal — 'Back off!' while moving", "seconds": 2 },
-      { "priority": 3, "action": "Run toward people, light, or open space — not deeper into the alley", "seconds": "until clear" },
-      { "priority": 4, "action": "Only if trapped: palm heel or push kick, then run", "seconds": "1 burst" }
+      { "priority": 1, "cooperColor": "red", "action": "Create distance — push, angle off, don't clinch", "seconds": 3 },
+      { "priority": 2, "cooperColor": "red", "action": "Forceful verbal — 'Back off!' while moving", "seconds": 2 },
+      { "priority": 3, "cooperColor": "red", "action": "Run toward people, light, or open space — not deeper into the alley", "seconds": "until clear" },
+      { "priority": 4, "cooperColor": "red", "action": "Only if trapped: palm heel or push kick, then run", "seconds": "1 burst" }
     ],
     "optionalPhysical": {
       "hours": 2,

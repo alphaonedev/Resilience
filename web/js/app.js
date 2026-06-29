@@ -305,26 +305,31 @@ function renderMinimalSystemConclusion() {
   document.getElementById('aaa-honest-limits').textContent = m.honestLimits;
 
   document.getElementById('aaa-flow-diagram').innerHTML = `
-    <svg viewBox="0 0 420 200" class="aaa-flow-svg" role="img" aria-label="AAA Exit Protocol flow">
+    <svg viewBox="0 0 420 200" class="aaa-flow-svg" role="img" aria-label="AAA Exit Protocol flow with Cooper colors">
       <defs>
-        <marker id="aaaArr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#10b981"/></marker>
+        <marker id="aaaArrY" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#facc15"/></marker>
+        <marker id="aaaArrO" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#f97316"/></marker>
+        <marker id="aaaArrR" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#ef4444"/></marker>
       </defs>
-      <circle cx="70" cy="100" r="52" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="2"/>
-      <text x="70" y="88" text-anchor="middle" fill="#10b981" font-size="11" font-weight="800">ASSESS</text>
-      <text x="70" y="104" text-anchor="middle" fill="#8b9cb8" font-size="8">2 min/day</text>
-      <text x="70" y="118" text-anchor="middle" fill="#8b9cb8" font-size="7">Spot danger early</text>
-      <line x1="122" y1="100" x2="158" y2="100" stroke="#10b981" stroke-width="2" marker-end="url(#aaaArr)"/>
-      <circle cx="210" cy="100" r="52" fill="rgba(59,130,246,0.15)" stroke="#3b82f6" stroke-width="2"/>
-      <text x="210" y="88" text-anchor="middle" fill="#3b82f6" font-size="11" font-weight="800">ACKNOWLEDGE</text>
-      <text x="210" y="104" text-anchor="middle" fill="#8b9cb8" font-size="8">1 min/day</text>
-      <text x="210" y="118" text-anchor="middle" fill="#8b9cb8" font-size="7">Trust your gut</text>
-      <line x1="262" y1="100" x2="298" y2="100" stroke="#10b981" stroke-width="2" marker-end="url(#aaaArr)"/>
-      <circle cx="350" cy="100" r="52" fill="rgba(16,185,129,0.25)" stroke="#10b981" stroke-width="3"/>
-      <text x="350" y="88" text-anchor="middle" fill="#fff" font-size="11" font-weight="800">ACT</text>
-      <text x="350" y="104" text-anchor="middle" fill="#d1fae5" font-size="8">LEAVE</text>
-      <text x="350" y="118" text-anchor="middle" fill="#8b9cb8" font-size="7">Before contact</text>
-      <rect x="60" y="168" width="300" height="24" rx="6" fill="#1a2332" stroke="#2d3a52"/>
-      <text x="210" y="184" text-anchor="middle" fill="#8b9cb8" font-size="9">If contact happens → distance → run → people/light</text>
+      <circle cx="70" cy="100" r="52" fill="rgba(250,204,21,0.18)" stroke="#facc15" stroke-width="2"/>
+      <text x="70" y="82" text-anchor="middle" fill="#fde047" font-size="8" font-weight="700">YELLOW</text>
+      <text x="70" y="96" text-anchor="middle" fill="#facc15" font-size="11" font-weight="800">ASSESS</text>
+      <text x="70" y="110" text-anchor="middle" fill="#8b9cb8" font-size="8">2 min/day</text>
+      <text x="70" y="124" text-anchor="middle" fill="#8b9cb8" font-size="7">Relaxed alert</text>
+      <line x1="122" y1="100" x2="158" y2="100" stroke="#f97316" stroke-width="2" marker-end="url(#aaaArrO)"/>
+      <circle cx="210" cy="100" r="52" fill="rgba(249,115,22,0.18)" stroke="#f97316" stroke-width="2"/>
+      <text x="210" y="82" text-anchor="middle" fill="#fb923c" font-size="8" font-weight="700">ORANGE</text>
+      <text x="210" y="96" text-anchor="middle" fill="#f97316" font-size="11" font-weight="800">ACKNOWLEDGE</text>
+      <text x="210" y="110" text-anchor="middle" fill="#8b9cb8" font-size="8">1 min/day</text>
+      <text x="210" y="124" text-anchor="middle" fill="#8b9cb8" font-size="7">Specific threat</text>
+      <line x1="262" y1="100" x2="298" y2="100" stroke="#ef4444" stroke-width="2" marker-end="url(#aaaArrR)"/>
+      <circle cx="350" cy="100" r="52" fill="rgba(239,68,68,0.22)" stroke="#ef4444" stroke-width="3"/>
+      <text x="350" y="82" text-anchor="middle" fill="#f87171" font-size="8" font-weight="700">RED</text>
+      <text x="350" y="96" text-anchor="middle" fill="#ef4444" font-size="11" font-weight="800">ACT</text>
+      <text x="350" y="110" text-anchor="middle" fill="#fecaca" font-size="8">LEAVE</text>
+      <text x="350" y="124" text-anchor="middle" fill="#8b9cb8" font-size="7">Decisive action</text>
+      <rect x="60" y="168" width="300" height="24" rx="6" fill="rgba(239,68,68,0.12)" stroke="#ef4444" stroke-opacity="0.4"/>
+      <text x="210" y="184" text-anchor="middle" fill="#fca5a5" font-size="9">If contact → Red burst → distance → run</text>
     </svg>`;
 
   document.getElementById('aaa-compound-layers').innerHTML = `
@@ -356,8 +361,9 @@ function renderMinimalSystemConclusion() {
   }).join('');
 
   document.getElementById('aaa-daily-routine').innerHTML = m.dailyRoutine.map(r => `
-    <div class="aaa-routine-card">
-      <div class="aaa-step-label">${r.step} · ${r.minutes} min</div>
+    <div class="aaa-routine-card cooper-routine-card cooper-${r.cooperColor || 'yellow'}">
+      <div class="cooper-routine-bar"></div>
+      <div class="aaa-step-label">${r.step} · ${r.minutes} min <span class="cooper-inline-pill cooper-${r.cooperColor}">${(r.cooperColor || 'yellow').charAt(0).toUpperCase() + (r.cooperColor || 'yellow').slice(1)}</span></div>
       <h4>${r.action}</h4>
       <p>${r.plainEnglish}</p>
     </div>`).join('');
@@ -370,7 +376,7 @@ function renderMinimalSystemConclusion() {
     </div>`).join('');
 
   document.getElementById('aaa-contact-protocol').innerHTML = m.ifContact.map(c => `
-    <div class="aaa-contact-step">
+    <div class="aaa-contact-step cooper-contact-step cooper-${c.cooperColor || 'red'}">
       <span class="aaa-contact-pri">${c.priority}</span>
       <div>
         <h4 style="margin:0 0 0.25rem;font-size:0.9rem">${c.action}</h4>
@@ -449,6 +455,9 @@ function renderAll() {
   }
   if (typeof renderAllRuttenNhiVisualizations === 'function') {
     renderAllRuttenNhiVisualizations();
+  }
+  if (typeof renderAllCooperColorVisualizations === 'function') {
+    renderAllCooperColorVisualizations();
   }
   if (typeof renderAllPostureVisualizations === 'function') {
     renderAllPostureVisualizations();
