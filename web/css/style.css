@@ -2064,6 +2064,76 @@ footer a:hover { text-decoration: underline; }
 .karate-combo-row span { color: #10b981; }
 .karate-combo-row em { display: block; font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem; }
 
+.karate-opk-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.karate-drill-phase {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.karate-drill-phase h5 {
+  margin: 0 0 0.25rem;
+  font-size: 0.88rem;
+  color: #f59e0b;
+}
+
+.karate-drill-meta {
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  color: var(--accent);
+}
+
+.karate-drill-test {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin: 0.5rem 0 0;
+}
+
+.karate-drill-maint {
+  font-size: 0.8rem;
+  margin-top: 0.75rem;
+  color: var(--text-muted);
+}
+
+.karate-video-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.karate-video-list li {
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.8rem;
+}
+
+.karate-video-list a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.karate-video-list a:hover { text-decoration: underline; }
+
+.karate-video-creator {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin: 0.15rem 0;
+}
+
+.karate-video-list p {
+  margin: 0.25rem 0;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav-links { display: none; }

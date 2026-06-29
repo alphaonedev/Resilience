@@ -167,6 +167,70 @@ function renderOnePunchOneKick() {
       <ol class="fp-rebuild-list">${op.minimalWeaponsStack.order.map(s => `<li><strong>${s.skill}</strong> (${s.hours}) — Tier ${s.tier}</li>`).join('')}</ol>`;
   }
 
+  const why = document.getElementById('karate-opk-why');
+  if (why && op.whyTheseTwo) {
+    const w = op.whyTheseTwo;
+    why.innerHTML = `
+      <h4>Why Straight Punch + Front Kick Cover the Contact Phase</h4>
+      <p class="chart-explainer">${w.plainEnglish}</p>
+      <div class="karate-opk-duo">
+        <div class="karate-opk-card">
+          <h4>Straight Punch</h4>
+          <ul class="karate-opk-list">${w.straightPunch.map(x => `<li>${x}</li>`).join('')}</ul>
+        </div>
+        <div class="karate-opk-card">
+          <h4>Front Kick</h4>
+          <ul class="karate-opk-list">${w.frontKick.map(x => `<li>${x}</li>`).join('')}</ul>
+        </div>
+      </div>`;
+  }
+
+  const drills = document.getElementById('karate-opk-drills');
+  if (drills && op.drillProgression) {
+    const d = op.drillProgression;
+    drills.innerHTML = `
+      <h4>${d.title}</h4>
+      <p class="chart-explainer"><strong>Prerequisite:</strong> ${d.prerequisite}</p>
+      ${d.phases.map(p => `
+        <div class="karate-drill-phase">
+          <h5>${p.phase}</h5>
+          <span class="karate-drill-meta">${p.daily || ''}${p.daily && p.weekly ? ' · ' : ''}${p.weekly || ''}</span>
+          <ul class="karate-opk-list">${p.drills.map(x => `<li>${x}</li>`).join('')}</ul>
+          <p class="karate-drill-test"><strong>Exit test:</strong> ${p.exitTest}</p>
+        </div>`).join('')}
+      <p class="karate-drill-maint"><strong>Maintenance:</strong> ${d.maintenance}</p>`;
+  }
+
+  const bunkai = document.getElementById('karate-opk-bubishi');
+  if (bunkai && op.bubishiMotobuCounters) {
+    const b = op.bubishiMotobuCounters;
+    bunkai.innerHTML = `
+      <p class="chart-explainer">${b.principle}</p>
+      <table class="fp-reject-table karate-table">
+        <thead><tr><th>Attack</th><th>Motobu/Bubishi</th><th>Minimal weapon</th><th>Fit</th></tr></thead>
+        <tbody>${b.counters.map(c => `
+          <tr>
+            <td>${c.attack}</td>
+            <td>${c.motobuBubishi}</td>
+            <td><strong>${c.minimalWeapon}</strong></td>
+            <td><span class="karate-match karate-match-${c.resilienceFit.toLowerCase().includes('strong') ? 'strong' : 'partial'}">${c.resilienceFit.split(' ')[0]}</span></td>
+          </tr>`).join('')}
+        </tbody>
+      </table>
+      <p class="karate-drill-test" style="margin-top:0.75rem">${b.trainingNote}</p>`;
+  }
+
+  const videos = document.getElementById('karate-opk-videos');
+  if (videos && op.videoResources) {
+    videos.innerHTML = `<ul class="karate-video-list">${op.videoResources.map(v => `
+      <li>
+        <a href="${v.url}" target="_blank" rel="noopener noreferrer">${v.title}</a>
+        <span class="karate-video-creator">${v.creator}</span>
+        <p>${v.focus}</p>
+        <span class="karate-opk-stat">Tier ${v.tier}</span>
+      </li>`).join('')}</ul>`;
+  }
+
   const v = document.getElementById('karate-opk-verdict');
   if (v) v.innerHTML = `<p>${op.nhiVerdict}</p><p style="font-size:0.85rem;margin-top:0.75rem;color:var(--text-muted)">${op.honestLimits}</p>`;
 }

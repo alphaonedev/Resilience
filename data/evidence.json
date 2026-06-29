@@ -1089,6 +1089,154 @@
         ],
         "oneSentence": "Tomoyose's two weapons are the contact-layer capsule — not the whole system. Funakoshi's avoidance is still layer zero."
       },
+      "whyTheseTwo": {
+        "plainEnglish": "With proper kime, hip drive, alignment, and targeting, straight punch + front kick cover most contact-phase scenarios. Fancy kata techniques are refinements of these two kinetic chains.",
+        "straightPunch": [
+          "Fastest high-power hand strike — full body weight through centerline",
+          "Targets face, throat, solar plexus, ribs at close or medium range",
+          "Chains easily; base for palm-heel, forearm, elbow at closer range"
+        ],
+        "frontKick": [
+          "Quickest kick — minimal chamber, low grab risk vs high kicks",
+          "Distance control: groin/knee/shin stun or teep push-away escape",
+          "Keage snap or kekomi thrust — both map to burst-and-exit logic"
+        ]
+      },
+      "drillProgression": {
+        "title": "8-Week Minimal Weapons Progression",
+        "prerequisite": "AAA awareness habits running before heavy contact work",
+        "phases": [
+          {
+            "phase": "Weeks 1–2 — Front kick foundation",
+            "daily": "10 min",
+            "drills": [
+              "Slow mae-geri kekomi to pad: groin line + solar plexus height — 3×20 each leg",
+              "Teep push on heavy bag: full hip extension, recover to guard, no pause — 3×15",
+              "Shadow: kick → immediate lateral step toward exit lane — 5×1 min rounds"
+            ],
+            "exitTest": "10 full-power teeps in 30 sec with guard recovery; verbal 'RUN' cue after each"
+          },
+          {
+            "phase": "Weeks 3–4 — Straight punch foundation",
+            "daily": "12 min",
+            "drills": [
+              "Makiwara or bag: gyaku-zuki with hip rotation — 5×50 (Egami volume principle)",
+              "Cross on bag from boxing guard: chin down, exhale on impact — 3×30",
+              "Partner pad: single punch only — attacker feeds range, you one-shot and reset"
+            ],
+            "exitTest": "20 clean crosses on bag in 60 sec; partner feels snap without telegraph"
+          },
+          {
+            "phase": "Weeks 5–6 — Ikken hissatsu combos",
+            "daily": "15 min",
+            "weekly": "1 scenario session",
+            "drills": [
+              "Combo A: mae-geri groin → gyaku-zuki face → sprint 10 m (Tomoyose chain)",
+              "Combo B: feint punch → teep push → create 3 m gap → run",
+              "Ippon kumite: attacker commits one committed strike; you answer with one combo then exit"
+            ],
+            "exitTest": "Land combo on resisting pad holder in under 2 sec; exit before third beat"
+          },
+          {
+            "phase": "Weeks 7–8 — Pressure + Bubishi counters",
+            "daily": "15 min",
+            "weekly": "2 live-pressure sessions",
+            "drills": [
+              "Motobu feed: partner throws committed punch — simultaneous block-counter with gyaku-zuki",
+              "Grab → front kick shin/knee while stripping grip (Bubishi entry)",
+              "Multi-angle: attacker from 45° — offline step + one weapon + run"
+            ],
+            "exitTest": "Survive 3 surprise attacks in 60 sec with ≤2 techniques each + successful exit"
+          }
+        ],
+        "maintenance": "20 min/week scenario + daily 3 min awareness. Re-test combos monthly under fatigue."
+      },
+      "videoResources": [
+        {
+          "title": "Bunkai & old-school application",
+          "creator": "Iain Abernathy",
+          "url": "https://www.youtube.com/c/IainAbernathy",
+          "focus": "Pressure-tested kata bunkai — upgrade compliant ippon kumite",
+          "tier": "C pedagogy"
+        },
+        {
+          "title": "Karate technique breakdowns & makiwara",
+          "creator": "Jesse Enkamp (Karate Nerd)",
+          "url": "https://www.youtube.com/c/JesseEnkamp",
+          "focus": "Gyaku-zuki mechanics, Okinawan training culture, makiwara form",
+          "tier": "C pedagogy"
+        },
+        {
+          "title": "Uechi-Ryu & Tomoyose lineage",
+          "creator": "Pat Nakata / Uechi-Ryu channels",
+          "url": "https://www.youtube.com/results?search_query=Pat+Nakata+Uechi-Ryu",
+          "focus": "Oral-tradition one punch one kick pedagogy in living lineage",
+          "tier": "C oral tradition"
+        },
+        {
+          "title": "Boxing cross delivery (upgrade path)",
+          "creator": "FightTips / precision striking channels",
+          "url": "https://www.youtube.com/c/FightTips",
+          "focus": "Resilience ranks boxing cross #1 — borrow delivery, keep karate hip logic",
+          "tier": "B sport transfer"
+        },
+        {
+          "title": "Teep / push-kick distance control",
+          "creator": "Muay Thai instructional channels",
+          "url": "https://www.youtube.com/results?search_query=muay+thai+teep+tutorial",
+          "focus": "Front kick's highest street value = push-away escape (teep mechanics)",
+          "tier": "B sport transfer"
+        }
+      ],
+      "bubishiMotobuCounters": {
+        "title": "Bubishi / Motobu Counters — Mapped to One Punch + One Kick",
+        "principle": "Motobu taught simultaneous defense-and-attack (same beat). Bubishi flows are technique libraries — valid only under live feed (C6). Each counter collapses to punch, kick, or close-range variant, then exit.",
+        "counters": [
+          {
+            "attack": "Committed straight punch",
+            "motobuBubishi": "Kake-uke or nagashi-uke offline + gyaku-zuki same beat",
+            "minimalWeapon": "Gyaku-zuki (or palm-heel if too close)",
+            "resilienceFit": "STRONG — 64% KOs in first 10 sec; one-beat counter",
+            "tier": "B/C philosophy, B if pressure-tested"
+          },
+          {
+            "attack": "Two-hand push / shove",
+            "motobuBubishi": "Rotate offline; strike with back-fist or straight punch to jaw",
+            "minimalWeapon": "Oi-zuki or gyaku-zuki after angle step",
+            "resilienceFit": "STRONG — creates angle + burst",
+            "tier": "B"
+          },
+          {
+            "attack": "Wrist or lapel grab",
+            "motobuBubishi": "Bubishi nami-gaeshi / leg sweep or kick to knee while stripping",
+            "minimalWeapon": "Mae-geri kekomi to knee/shin + pull away",
+            "resilienceFit": "STRONG — kick faster than elaborate lock",
+            "tier": "B"
+          },
+          {
+            "attack": "Front choke / bear hug (arms trapped)",
+            "motobuBubishi": "Bubishi wedge + knee; Motobu favored low kick from clinch",
+            "minimalWeapon": "Mae-geri groin (kekomi) — then sprint",
+            "resilienceFit": "STRONG for escape; not ground fight",
+            "tier": "B"
+          },
+          {
+            "attack": "Round punch / haymaker",
+            "motobuBubishi": "Step inside arc; straight punch down centerline before hook lands",
+            "minimalWeapon": "Choku-zuki / gyaku-zuki to solar plexus or jaw",
+            "resilienceFit": "STRONG — straight beats wide arc on timing",
+            "tier": "B"
+          },
+          {
+            "attack": "Low tackle attempt",
+            "motobuBubishi": "Sprawl or knee; Bubishi grappling entries",
+            "minimalWeapon": "Front kick to face/chest (stop) or knee if already low",
+            "resilienceFit": "PARTIAL — prefer run if seen early; kick is late counter",
+            "tier": "B/C"
+          }
+        ],
+        "trainingNote": "Drill each counter as ippon kumite: one feed, one minimal response, mandatory 10 m sprint. Add resistance in weeks 7–8. Do not chain into kata sequences — ikken hissatsu then exit."
+      },
       "nhiVerdict": "The 'one punch, one kick' philosophy is one of the strongest historical alignments with Resilience fight science. Tomoyose and Egami independently converged on depth over breadth (first principle A7), ikken hissatsu matches the 64% first-10-second KO window, and mae-geri → gyaku-zuki is a legitimate burst-and-exit combo. Resilience adds three corrections: (1) the straight punch must be trained with boxing-level delivery, not point-karate snap; (2) the front kick's highest-value street role is push-away escape (teep logic), not a Hollywood groin-only finisher; (3) awareness still outranks both — Egami's soldiers needed fast skills, but civilians need EAAA-style detection more. Reject the '90% of situations' marketing fraction unless someone measures it. Accept the Okinawan minimalism as the correct contact-phase curriculum after AAA habits exist.",
       "honestLimits": "Tomoyose quote is oral tradition (Tier C). Egami soldier training has no victimization RCT. Makiwara excellence does not automatically transfer to adrenalized unknown attackers without C6 testing."
     }
