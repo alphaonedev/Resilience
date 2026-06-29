@@ -60,23 +60,24 @@ function renderFPDiagram() {
   const el = document.getElementById('fp-pyramid-diagram');
   if (!el) return;
   el.innerHTML = `
-    <svg viewBox="0 0 420 280" class="fp-svg" role="img" aria-label="First principles rebuild pyramid">
-      <text x="210" y="18" text-anchor="middle" fill="#8b9cb8" font-size="10" font-weight="700">REBUILD FROM TRUTH — NOT TRADITION</text>
-      <polygon points="210,35 370,95 50,95" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="2"/>
-      <text x="210" y="72" text-anchor="middle" fill="#10b981" font-size="9" font-weight="700">8 AXIOMS</text>
-      <text x="210" y="86" text-anchor="middle" fill="#8b9cb8" font-size="7">physics · biology · crime data</text>
-      <polygon points="210,100 340,155 80,155" fill="rgba(59,130,246,0.15)" stroke="#3b82f6" stroke-width="2"/>
-      <text x="210" y="132" text-anchor="middle" fill="#3b82f6" font-size="9" font-weight="700">8 DERIVED PRINCIPLES</text>
-      <text x="210" y="146" text-anchor="middle" fill="#8b9cb8" font-size="7">logic + evidence only</text>
-      <polygon points="210,160 310,215 110,215" fill="rgba(139,92,246,0.15)" stroke="#8b5cf6" stroke-width="2"/>
-      <text x="210" y="192" text-anchor="middle" fill="#8b5cf6" font-size="9" font-weight="700">3×7 ADVERSARIAL FILTER</text>
-      <text x="210" y="206" text-anchor="middle" fill="#8b9cb8" font-size="7">survives hostile review</text>
-      <rect x="90" y="222" width="240" height="48" rx="8" fill="rgba(245,158,11,0.12)" stroke="#f59e0b" stroke-width="2"/>
-      <text x="210" y="242" text-anchor="middle" fill="#f59e0b" font-size="9" font-weight="700">SITE RECOMMENDATIONS</text>
-      <text x="210" y="258" text-anchor="middle" fill="#8b9cb8" font-size="7">AAA · EAAA · escape · burst · weapon compliance</text>
-      <line x1="210" y1="95" x2="210" y2="100" stroke="#2d3a52" stroke-width="1" stroke-dasharray="3"/>
-      <line x1="210" y1="155" x2="210" y2="160" stroke="#2d3a52" stroke-width="1" stroke-dasharray="3"/>
-      <line x1="210" y1="215" x2="210" y2="222" stroke="#2d3a52" stroke-width="1" stroke-dasharray="3"/>
+    <svg viewBox="0 0 800 440" class="fp-svg" role="img" aria-label="First principles rebuild pyramid">
+      <text x="400" y="36" text-anchor="middle" fill="#e8edf5" font-size="20" font-weight="800" letter-spacing="0.04em">REBUILD FROM TRUTH — NOT TRADITION</text>
+      <text x="400" y="58" text-anchor="middle" fill="#8b9cb8" font-size="13">Strip gym tradition → derive only from what cannot be argued away</text>
+      <polygon points="400,78 700,168 100,168" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="2.5"/>
+      <text x="400" y="128" text-anchor="middle" fill="#10b981" font-size="18" font-weight="800">8 AXIOMS</text>
+      <text x="400" y="152" text-anchor="middle" fill="#8b9cb8" font-size="14">physics · biology · crime data</text>
+      <line x1="400" y1="168" x2="400" y2="178" stroke="#2d3a52" stroke-width="2" stroke-dasharray="5 4"/>
+      <polygon points="400,178 640,258 160,258" fill="rgba(59,130,246,0.15)" stroke="#3b82f6" stroke-width="2.5"/>
+      <text x="400" y="222" text-anchor="middle" fill="#3b82f6" font-size="18" font-weight="800">8 DERIVED PRINCIPLES</text>
+      <text x="400" y="246" text-anchor="middle" fill="#8b9cb8" font-size="14">logic + evidence only</text>
+      <line x1="400" y1="258" x2="400" y2="268" stroke="#2d3a52" stroke-width="2" stroke-dasharray="5 4"/>
+      <polygon points="400,268 580,348 220,348" fill="rgba(139,92,246,0.15)" stroke="#8b5cf6" stroke-width="2.5"/>
+      <text x="400" y="312" text-anchor="middle" fill="#8b5cf6" font-size="18" font-weight="800">3×7 ADVERSARIAL FILTER</text>
+      <text x="400" y="336" text-anchor="middle" fill="#8b9cb8" font-size="14">survives hostile review</text>
+      <line x1="400" y1="348" x2="400" y2="358" stroke="#2d3a52" stroke-width="2" stroke-dasharray="5 4"/>
+      <rect x="120" y="358" width="560" height="72" rx="12" fill="rgba(245,158,11,0.12)" stroke="#f59e0b" stroke-width="2.5"/>
+      <text x="400" y="392" text-anchor="middle" fill="#f59e0b" font-size="18" font-weight="800">SITE RECOMMENDATIONS</text>
+      <text x="400" y="418" text-anchor="middle" fill="#e8edf5" font-size="14">AAA · EAAA · escape · burst · weapon compliance</text>
     </svg>`;
 }
 

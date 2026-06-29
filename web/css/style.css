@@ -2157,15 +2157,23 @@ footer a:hover { text-decoration: underline; }
 }
 
 .fp-diagram-wrap {
-  max-width: 440px;
-  margin: 2rem auto;
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem 0;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 1.25rem;
+  border-radius: 18px;
+  padding: 1.5rem 1.75rem 1.75rem;
 }
 
-.fp-svg { width: 100%; height: auto; display: block; }
+.fp-svg {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  min-height: 360px;
+  display: block;
+  margin: 0 auto;
+}
 
 .fp-axiom-grid {
   display: grid;
