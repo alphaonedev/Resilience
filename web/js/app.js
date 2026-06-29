@@ -444,6 +444,9 @@ function renderAll() {
   if (typeof renderAllBoxingNhiVisualizations === 'function') {
     renderAllBoxingNhiVisualizations();
   }
+  if (typeof renderAllKickingNhiVisualizations === 'function') {
+    renderAllKickingNhiVisualizations();
+  }
   if (typeof renderAllPostureVisualizations === 'function') {
     renderAllPostureVisualizations();
   }

@@ -1409,5 +1409,181 @@
     },
     "nhiFinalVerdict": "The boxing angle to self-defense is the strongest contact-phase case on this site. Tyson, Cus, and Dempsey independently discovered what our data measures: delivery under resistance beats technique collection, the first ten seconds decide standing fights, and wild untrained swings lose to slips and counters. Ali adds what Tyson often forgot — angles are escape routes, not just dominance. Resilience adds four corrections: (1) awareness still outranks every punch; (2) forward swarming without exit is a liability against multiples and weapons; (3) boxing must borrow karate's teep and wrestling's sprawl to cover kicks and ground; (4) reject 'dominate most encounters' unless someone runs the victimization study. Train boxing hands with Cus's mindset, Ali's feet, Dempsey's mass — then Funakoshi's run.",
     "honestLimits": "Legend quotes and street-fight anecdotes are Tier C/D. No RCT isolates 'boxers' vs 'non-boxers' for civilian assault victimization. Tyson's peek-a-boo and Mayweather's shell are sport optimizations — street extrapolation is inference. This analysis reconciles philosophy with existing Resilience tiers; it does not claim boxing reduces crime rates without measured outcomes."
+  },
+  "kickingNhiAnalysis": {
+    "title": "Kicking Experts vs Resilience Evidence — AI NHI Reconciliation",
+    "date": "2026-06-29",
+    "tier": "B",
+    "executiveSummary": "Kicking authorities across Muay Thai, kickboxing, Kyokushin, and practical karate converge on what Resilience kickingTechniques already ranks: low-to-mid kicks and teeps dominate street survival; high flashy head kicks are sport finishers, not primary weapons. Calf kick ranks #1 (streetSafety 5), teep #2 (escape-priority Tier A), low roundhouse #3. Wallace, Rutten, Buakaw/Saenchai, Oyama, Lewis, and Abernethy independently reject head-kick-first street doctrine. Resilience adds: (1) awareness still outranks every kick; (2) Wallace's elite high kicks are an exception proving the rule — speed + setup, not civilian default; (3) kicks manage range and mobility destruction — boxing still owns close chaos; (4) ground risk (62–73%) means kicking then running beats kicking then trading.",
+    "historicalContext": {
+      "plainEnglish": "Legs reach farther than arms and hit harder per square inch when conditioned — but street surfaces, shoes, and grab risk punish reckless chambers. Muay Thai weaponized the teep and low roundhouse in full contact; Wallace proved speed can make high kicks work for elites; Oyama proved low kicks end fights after brutal conditioning. The expert consensus is selection discipline, not kick collection.",
+      "tier": "B/C",
+      "note": "Expert interviews and pedagogy — no civilian kick-only victimization RCT"
+    },
+    "expertAnalysis": [
+      {
+        "expert": "Bill 'Superfoot' Wallace",
+        "coreTeaching": "Fast, accurate, set-up kicks; sideways protected stance; instant retraction; low/mid safer for most; high kicks only with elite speed",
+        "resilienceAlignment": "HIGH philosophy / PARTIAL high-kick street",
+        "aligns": ["Setup + retraction = stun-and-escape burst logic", "Low/mid kicks safer for civilians — matches streetSafety rankings", "Fake/deception supports jab-feint → kick combos", "Sideways blade minimizes target profile — defensivePosture 45°"],
+        "tensions": ["Wallace's high kicks are elite-athlete exception — roundhouse-head streetSafety 2", "Kickboxing ruleset experience ≠ weapon/multi-attacker street", "One-legged specialist after injury — not generalizable body type"],
+        "nhiVerdict": "Wallace validates setup discipline and retraction speed. Civilians should train his low-line system, not his highlight-reel head kicks unless they have his speed under C6 testing."
+      },
+      {
+        "expert": "Bas Rutten",
+        "coreTeaching": "Low kicks destroy mobility; teep #1 for distance; oblique kick to thigh/calf; knees in clinch; avoid high kicks unless elite + stunned opponent",
+        "resilienceAlignment": "HIGH",
+        "aligns": ["Calf/low roundhouse rank #1-3 kicks — Tier A", "Teep = escape-priority create-distance tactic", "Leg destruction prevents pursuit — D2 escape science", "Clinch knee pairs with boxing dirty boxing section"],
+        "tensions": ["Rutten SD programs are Tier C pedagogy without victimization RCT", "MMA-era leg kicks assume sport base — concrete + shoes change balance"],
+        "nhiVerdict": "Rutten is the clearest voice aligning Muay Thai leg logic with Resilience data. His teep + low kick stack is the kicking half of the boxing+karate hybrid."
+      },
+      {
+        "expert": "Buakaw Banchamek & Saenchai",
+        "coreTeaching": "Teep controls range; low roundhouse to thigh/calf cripples movement; shin conditioning; high kicks only as finishers after setup",
+        "resilienceAlignment": "HIGH",
+        "aligns": ["Teep most important SD kick — matches rank #2 + escape stack", "Shin kicks to leg — 3000N roundhouse lab data, fightValidated", "High kick as finisher only — confirms roundhouse-head Tier B not primary", "Conditioning culture supports C6 stress transfer"],
+        "tensions": ["Stadium fighters — decades of daily shin conditioning not replicable in 8 weeks", "Thai clinch culture risks ground entanglement on street"],
+        "nhiVerdict": "Muay Thai kings confirm the Resilience kick leaderboard. Borrow teep and low roundhouse; borrow conditioning mindset; skip prolonged clinch without exit."
+      },
+      {
+        "expert": "Mas Oyama (Kyokushin)",
+        "coreTeaching": "Low/mid kicks after extreme conditioning; ikken hissatsu one-kick finish; low roundhouse and front kick to legs/body",
+        "resilienceAlignment": "HIGH",
+        "aligns": ["Oyama low kick = calf kick evidence in adversarial + technique rank", "Ikken hissatsu kick = first 10 sec burst", "Full-contact knockdown = C6 validation culture", "Body/leg targeting over head — streetSafety alignment"],
+        "tensions": ["Knockdown tournaments ≠ weapons/multiples", "Body hardening years — A7 finite training time tension for casual civilians"],
+        "nhiVerdict": "Oyama is the karate bridge to Rutten/Buakaw low-kick consensus. Same kick, different conditioning timeline."
+      },
+      {
+        "expert": "Joe Lewis",
+        "coreTeaching": "Integrated kicks with boxing hands; low/mid kicks for practical power; full-contact pioneer",
+        "resilienceAlignment": "HIGH",
+        "aligns": ["Hands + kicks combo — jab + low kick in adversarial optimal stack", "Full-contact delivery culture — C6", "Low/mid power generation over flash"],
+        "tensions": ["Historical full-contact karate — limited modern street outcome data"],
+        "nhiVerdict": "Lewis predicted the Resilience synthesis stack decades early: boxing range chaos + low kick mobility kill."
+      },
+      {
+        "expert": "Iain Abernethy & practical bunkai",
+        "coreTeaching": "Kicks in context after hand distraction; low-line kata applications; pressure-tested bunkai",
+        "resilienceAlignment": "MEDIUM-HIGH",
+        "aligns": ["Hand distract → kick = confirmed combo pattern", "Low-line bunkai matches teep/calf/groin kick tiers", "C6 pressure testing requirement — same as karate NHI"],
+        "tensions": ["Kata-derived kicks without resistance = traditional MA rank 7 problem", "Context-dependent — not standalone kick-first"],
+        "nhiVerdict": "Abernethy adds the when-not just the what: kicks follow hands or create distance — never open naked on a fresh opponent if avoidable."
+      }
+    ],
+    "expertConsensus": {
+      "title": "What kicking authorities agree on",
+      "topKicks": [
+        { "rank": 1, "kick": "Teep / Front Push Kick", "experts": ["Rutten", "Buakaw", "Saenchai", "Tomoyose mae-geri"], "resilienceRank": "#2 kicks, streetSafety 5", "role": "Distance control + push-away escape", "tier": "A" },
+        { "rank": 2, "kick": "Low Roundhouse / Oblique (calf/thigh)", "experts": ["Rutten", "Buakaw", "Oyama", "Lewis"], "resilienceRank": "#1 calf kick, score 5", "role": "Destroy mobility — they cannot chase", "tier": "A" },
+        { "rank": 3, "kick": "Front Snap / Groin Kick", "experts": ["Oyama", "Practical karate", "Rutten"], "resilienceRank": "Mae-geri kekomi; front-knee #4", "role": "Fast stun at close-mid range", "tier": "A/B" },
+        { "rank": 4, "kick": "Side Kick (knee/midsection)", "experts": ["Wallace", "Karate lineages"], "resilienceRank": "Power stop-kick; similar to teep at knee line", "role": "Structural stop against rush", "tier": "B" }
+      ],
+      "avoidPrimary": [
+        { "kick": "Head-level roundhouse / axe / spinning", "why": "Grab risk, balance loss, pavement slip, exposed groin", "resilienceRank": "Roundhouse-head #5 streetSafety 2; spinning #6 Tier D", "exception": "Wallace-speed elite after setup on stunned opponent only" }
+      ],
+      "rules": [
+        "Distract with hands → kick → retract or follow immediately",
+        "Train in street clothes and shoes on varied surfaces",
+        "Condition shins/legs — supports power, not awareness substitute",
+        "Stun and escape — kicks create space or disable pursuit",
+        "Combo with boxing hands; watch weapons/multiples/ground"
+      ]
+    },
+    "principleReconciliation": [
+      { "kickingPrinciple": "Low-to-mid kicks dominate street SD", "resilienceMatch": "STRONG", "evidence": "Calf #1, teep #2, roundhouse-body #3; high/spinning bottom", "tier": "A" },
+      { "kickingPrinciple": "Teep = best all-around survival kick", "resilienceMatch": "STRONG", "evidence": "Escape-priority create-distance; streetSafety 5; Rutten/Buakaw consensus", "tier": "A" },
+      { "kickingPrinciple": "Leg kicks destroy mobility", "resilienceMatch": "STRONG", "evidence": "MMA leg-kick fight outcomes; Rutten 'can't stand' logic; pursuit prevention", "tier": "A/B" },
+      { "kickingPrinciple": "High kicks are finishers not openers", "resilienceMatch": "STRONG", "evidence": "Roundhouse-head streetSafety 2; spinning Tier D; expert unanimous warning", "tier": "A/B" },
+      { "kickingPrinciple": "Setup + instant retraction", "resilienceMatch": "STRONG", "evidence": "Wallace system; hand-feint combos; grab-risk mitigation", "tier": "B" },
+      { "kickingPrinciple": "Shin conditioning for power", "resilienceMatch": "PARTIAL", "evidence": "3000N roundhouse lab; Oyama culture — months/years not days", "tier": "B/C" },
+      { "kickingPrinciple": "Hands first, then kick", "resilienceMatch": "STRONG", "evidence": "Jab + low kick tactic; Abernethy context; boxing-kick hybrid stack", "tier": "A/B" },
+      { "kickingPrinciple": "Kicks complement boxing and karate", "resilienceMatch": "STRONG", "evidence": "Adversarial optimal stack; boxing close chaos + teep range + karate precision", "tier": "B" }
+    ],
+    "techniqueReconciliation": [
+      { "technique": "Teep / Push Kick", "expertClaim": "Rutten #1; Buakaw range control", "resilienceRank": "#2 kicks, streetSafety 5", "verdict": "CONFIRMED — highest-value escape kick", "tier": "A" },
+      { "technique": "Low Calf / Oblique Kick", "expertClaim": "Rutten thigh destroyer; Buakaw leg-kick wins", "resilienceRank": "#1 kicks, score 5", "verdict": "CONFIRMED — best mobility killer", "tier": "A" },
+      { "technique": "Low Roundhouse to Body", "expertClaim": "Oyama mid-level; Muay liver line", "resilienceRank": "#3 kicks", "verdict": "CONFIRMED — stun burst then exit", "tier": "A" },
+      { "technique": "Groin / Front Snap Kick", "expertClaim": "Karate mae-geri; fast direct", "resilienceRank": "Front-knee #4; one-punch-one-kick stack", "verdict": "CONFIRMED at close range — then run", "tier": "B" },
+      { "technique": "Side Kick to Knee", "expertClaim": "Wallace power stop", "resilienceRank": "Structural stop — similar role to teep at knee", "verdict": "CONFIRMED situational — higher chamber risk", "tier": "B" },
+      { "technique": "Clinch Knee", "expertClaim": "Rutten mandatory follow-up", "resilienceRank": "Elbow-tier close tool; escape after one", "verdict": "CONFIRMED in tie-up — not plum exchange", "tier": "A/B" },
+      { "technique": "Head Roundhouse", "expertClaim": "Finisher when hurt only", "resilienceRank": "#5 streetSafety 2", "verdict": "PARTIAL — elite exception; civilian avoid primary", "tier": "B/C" },
+      { "technique": "Spinning / Flash Kicks", "expertClaim": "Demo/sport surprise", "resilienceRank": "#6 Tier D streetSafety 1", "verdict": "REJECTED as street primary", "tier": "D" }
+    ],
+    "claimsAudit": [
+      { "claim": "Kicks are powerful SD weapons with smart selection", "verdict": "CONFIRMED", "evidence": "Kick force 2.5-3.5kN lab; leg reach > arm; expert consensus", "tier": "A/B" },
+      { "claim": "Low/mid kicks safer and more reliable than high kicks for most people", "verdict": "CONFIRMED", "evidence": "streetSafety rankings; grab/balance/pavement risks", "tier": "A/B" },
+      { "claim": "Teep is the most important self-defense kick", "verdict": "CONFIRMED", "evidence": "Rutten/Buakaw/Saenchai + escape-priority strategy alignment", "tier": "A/B" },
+      { "claim": "Leg kicks make attackers unable to chase", "verdict": "CONFIRMED for window", "evidence": "MMA mobility destruction; pursuit prevention inference", "tier": "B" },
+      { "claim": "High kicks work for everyone if trained enough", "verdict": "REJECTED", "evidence": "Wallace exception; streetSafety 1-2; expert unanimous caution", "tier": "A/B" },
+      { "claim": "Kicks + boxing + karate = complete stand-up toolkit", "verdict": "PARTIAL CONFIRM", "evidence": "Adversarial stack; still missing sprawl/awareness/weapons logic", "tier": "B" }
+    ],
+    "drillProgression": {
+      "title": "8-Week Kicking Survival Progression (Low-Line First)",
+      "prerequisite": "AAA awareness; basic boxing guard from boxing NHI stack",
+      "phases": [
+        {
+          "phase": "Weeks 1–2 — Teep foundation (Rutten/Buakaw)",
+          "daily": "10 min",
+          "drills": [
+            "Teep to pad: hip thrust, ball of foot, full retraction — 3×20 each leg",
+            "Push-step teep: kick → land in sprint stance → shadow 5 m exit",
+            "Wall teep for balance: light contact, recover guard under 1 sec"
+          ],
+          "exitTest": "15 teeps in 30 sec with guard recovery; verbal RUN after each"
+        },
+        {
+          "phase": "Weeks 3–4 — Calf/low roundhouse (Rutten leg destroy)",
+          "daily": "12 min",
+          "drills": [
+            "Shin-to-bag low roundhouse: chop calf line — 5×15 each leg",
+            "Oblique kick to thigh on pad — 3×10 (Bas-style)",
+            "Partner hold pad: one leg kick only — retract instantly"
+          ],
+          "exitTest": "10 low kicks in 20 sec without crossing feet or falling"
+        },
+        {
+          "phase": "Weeks 5–6 — Hand setup combos (Wallace/Lewis)",
+          "daily": "15 min",
+          "weekly": "1 pad session with shoes on",
+          "drills": [
+            "Jab feint → calf kick → exit angle step",
+            "Cross distraction → teep push → 10 m sprint",
+            "Groin snap kick (mae-geri) only after hand frame — 5×10"
+          ],
+          "exitTest": "Land hand-kick combo in one beat; mandatory exit after kick"
+        },
+        {
+          "phase": "Weeks 7–8 — Scenario + Abernethy context",
+          "daily": "15 min",
+          "weekly": "2 scenario sessions (shoes, varied surface)",
+          "drills": [
+            "Attacker rush: side teep or knee-line stop → run",
+            "Clinch entry: one knee → break frame → teep → exit",
+            "Multi-attacker awareness: one kick max then sprint — no second kick"
+          ],
+          "exitTest": "Surprise feed → one low-line kick → exit under 3 sec"
+        }
+      ],
+      "maintenance": "Weekly Thai pads + daily teep shadow + shin conditioning 2×/week. No head kicks in street scenarios unless advanced C6."
+    },
+    "videoResources": [
+      { "title": "Bas Rutten self-defense / striking", "creator": "Bas Rutten", "url": "https://www.youtube.com/results?search_query=Bas+Rutten+self+defense+kick", "focus": "Low kick + teep street logic from MMA pioneer", "tier": "C pedagogy" },
+      { "title": "Muay Thai teep tutorials", "creator": "Buakaw / Muay Thai channels", "url": "https://www.youtube.com/results?search_query=muay+thai+teep+tutorial+buakaw", "focus": "Range control and push kick mechanics", "tier": "C pedagogy" },
+      { "title": "Superfoot Wallace kicking system", "creator": "Bill Wallace", "url": "https://www.youtube.com/results?search_query=Bill+Superfoot+Wallace+kicking", "focus": "Speed, setup, retraction — study low-line applications", "tier": "C pedagogy" },
+      { "title": "Practical bunkai kicks", "creator": "Iain Abernethy", "url": "https://www.youtube.com/c/IainAbernathy", "focus": "Low-line kata kicks in resisted context", "tier": "C pedagogy" },
+      { "title": "Kyokushin low kick conditioning", "creator": "Kyokushin / Oyama lineage", "url": "https://www.youtube.com/results?search_query=kyokushin+low+kick+training", "focus": "Oyama-style leg hardening and committed low kicks", "tier": "C pedagogy" },
+      { "title": "Leg kick fight science", "creator": "MMA analytics / Lawrence Kenshin style breakdowns", "url": "https://www.youtube.com/results?search_query=calf+kick+mma+analysis", "focus": "Why leg kicks destroy mobility — backs rank #1", "tier": "B sport science" }
+    ],
+    "synthesisStack": {
+      "order": [
+        { "priority": 1, "layer": "AAA / EAAA — leave before kicking needed", "why": "All experts say avoid if possible", "hours": "3 min/day" },
+        { "priority": 2, "layer": "Teep + calf kick (Rutten/Buakaw stack)", "why": "Tier A kicks #1-2; escape + mobility kill", "hours": "4-8 weeks" },
+        { "priority": 3, "layer": "Boxing jab/cross for setup (Lewis/Wallace)", "why": "Hand distract → kick; close chaos", "hours": "3-6 months" },
+        { "priority": 4, "layer": "Karate groin snap + Oyama commitment", "why": "Close-range one-kick finish", "hours": "2-4 weeks" },
+        { "priority": 5, "layer": "Scenario exit sprint — shoes on", "why": "Stun and escape; not kick exchanges", "hours": "Ongoing monthly" }
+      ]
+    },
+    "nhiFinalVerdict": "The kicking expert consensus is one of the cleanest alignments on Resilience: teep for escape, calf/low roundhouse for mobility destruction, hands to set up, instant retraction, and high kicks demoted to elite finisher status. Wallace proves speed can bend the rule — Rutten, Buakaw, Oyama, and Abernethy prove the rule itself. Resilience adds: awareness still layer zero; one kick then run beats kick exchanges; boxing owns punch range, kicks own leg reach; wrestling sprawl still required for ground risk. Train Rutten's teep, Buakaw's calf line, Lewis's jab-kick, Oyama's commitment — with Funakoshi's exit and Tyson's burst hands.",
+    "honestLimits": "Expert interviews and training videos are Tier C pedagogy. No RCT measures 'kick-trained civilians' vs others for assault victimization. Wallace high-kick exception is n=1 elite athlete. Shin conditioning timelines are years in Muay Thai/Kyokushin — not 8-week shortcuts. This reconciles expert consensus with existing technique tiers; it does not elevate kicking above EAAA avoidance."
   }
 }
