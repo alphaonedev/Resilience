@@ -310,11 +310,126 @@
         "evidenceStatus": "Institutional adoption; operational reports; no civilian RCT",
         "pillars": ["Vigilance", "Route planning", "Low profile", "Reaction drills", "Escape prioritization"]
       },
-      "oop": {
+      "oodaLoop": {
         "name": "OODA Loop (Observe-Orient-Decide-Act)",
+        "acronym": "OODA",
         "tier": "C",
-        "origin": "Col. John Boyd",
-        "relevance": "Decision-speed framework; faster threat recognition → earlier avoidance window"
+        "origin": {
+          "creator": "Col. John Boyd",
+          "role": "U.S. Air Force fighter pilot and military strategist",
+          "era": "1960s–1990s doctrine development",
+          "context": "Designed to explain how pilots win dogfights — not originally a civilian self-defense product"
+        },
+        "definition": {
+          "oneSentence": "The OODA Loop is Boyd's model of how humans make decisions under pressure: you Observe what is happening, Orient (make sense of it), Decide what to do, and Act — then repeat continuously. Whoever completes cycles faster gains tempo and often wins.",
+          "plainEnglish": "Think of it as your brain's decision conveyor belt. In a surprise attack you are always one lap behind unless you were already observing and had a pre-made plan (leave, yell, guard up). The loop never stops — each action creates new observations.",
+          "notLinear": "Boyd stressed the loop is continuous and overlapping — not a one-time checklist. You may re-Orient mid-Act. Skilled people compress Orient+Decide through rehearsal so Act arrives sooner."
+        },
+        "phases": [
+          {
+            "id": "observe",
+            "name": "Observe",
+            "letter": "O",
+            "color": "#3b82f6",
+            "summary": "Raw data intake — what is actually happening?",
+            "detail": "See, hear, feel: who is near you, their hands, exits, lighting, third parties, changes in tone or distance. Observation quality depends on prior alertness (Cooper Yellow). Phone-down, head-up.",
+            "civilianExamples": ["Notice two strangers splitting to flank you", "Hear footsteps accelerating behind you", "See a friend's date pressuring isolation"],
+            "failureMode": "Observation fails in Cooper White — you never get data until contact",
+            "resilienceMap": "EAAA Assess · AAA Assess · Cooper Yellow",
+            "tier": "C framework / A+ if EAAA-trained detection"
+          },
+          {
+            "id": "orient",
+            "name": "Orient",
+            "letter": "O",
+            "color": "#8b5cf6",
+            "summary": "Make sense of observations — the slowest, most personal phase",
+            "detail": "Boyd called Orient the schwerpunkt (focal point). Culture, experience, fear, denial, and training filter what you Observed into meaning: 'Is this danger? Am I overreacting? What do I owe them socially?' This is where acquaintance assault victims lose time to denial.",
+            "civilianExamples": ["'He's not really going to…' (denial)", "'I'm probably overreacting' (social pressure)", "'That's just how guys are at bars' (normalization)"],
+            "failureMode": "Analysis paralysis or denial — Orient expands from milliseconds to minutes",
+            "resilienceMap": "EAAA Acknowledge · AAA Acknowledge · Cooper Orange",
+            "tier": "C / A+ with EAAA Acknowledge unit"
+          },
+          {
+            "id": "decide",
+            "name": "Decide",
+            "letter": "D",
+            "color": "#f97316",
+            "summary": "Choose a course of action — ideally from pre-rehearsed options",
+            "detail": "Pick: leave, verbal boundary, call for help, run, or fight. Boyd argued good tactics are decided before the crisis so Decide is near-instant. Novel problems slow Decide to 400–600ms+ (choice reaction) or worse under adrenaline.",
+            "civilianExamples": ["Pre-decided: 'If isolated at party, I leave'", "Verbal script: 'Stop. No. I'm leaving.'", "Worst case: burst + sprint route already scouted"],
+            "failureMode": "Too many untrained options — Krav 'technique menu' slows Decide",
+            "resilienceMap": "AAA weekly scenario drills · EAAA Act planning · Cooper Orange→Red",
+            "tier": "C / B with rehearsal"
+          },
+          {
+            "id": "act",
+            "name": "Act",
+            "letter": "A",
+            "color": "#ef4444",
+            "summary": "Execute — movement changes the world and restarts the loop",
+            "detail": "Leave, yell, push, strike, run. Action feeds new Observations to everyone present. Boyd: acting faster forces the opponent to re-Orient to your tempo. In civilian SD, preferred Act is exit — not prolonged duel.",
+            "civilianExamples": ["Stand up and walk toward the door", "Yell 'Back off!' while moving", "Push kick + sprint to lit area"],
+            "failureMode": "Freezing — never leaving Decide; or wrong Act (pull guard, technique hunt)",
+            "resilienceMap": "AAA Act · EAAA forceful verbal · Cooper Red · minimalSystem ifContact",
+            "tier": "A/B for exit Act · varies for fight Act"
+          }
+        ],
+        "boydInsights": [
+          { "insight": "Tempo beats strength", "plainEnglish": "Cycling the loop faster than the threat disrupts their plan — you don't need to be stronger if you act while they're still Orienting.", "resilienceEvidence": "64% KOs in first 10 sec — aggressor tempo wins; proactive exit avoids loop entirely", "tier": "B/C" },
+          { "insight": "Orient is the lever", "plainEnglish": "Training that fixes denial and social pressure (EAAA Acknowledge) saves more time than adding techniques.", "resilienceEvidence": "EAAA mediators: risk perception, rape myth reduction", "tier": "A+" },
+          { "insight": "Implicit orientation", "plainEnglish": "Rehearsal and habits let you skip conscious Decide — you just leave when the cue appears.", "resilienceEvidence": "AAA 3 min/day scenario habit", "tier": "B" },
+          { "insight": "Action unfreezes", "plainEnglish": "Any decisive Act beats freeze — even a wrong step forward beats standing still against Tueller knife charge.", "resilienceEvidence": "Action beats reaction axiom A4", "tier": "B" }
+        ],
+        "tempoComparison": {
+          "title": "Defender vs aggressor — who is ahead on the loop?",
+          "scenarios": [
+            {
+              "scenario": "Surprise haymaker (defender in Cooper White)",
+              "aggressor": "Observe (planned) → Orient (minimal) → Decide (pre-made) → Act (punch) — one compressed loop",
+              "defender": "Observe (hit registering) → Orient ('what?') → Decide (?) → Act (?) — 500–1500ms+ behind",
+              "resilienceVerdict": "Defender loses — supports avoidance-first, not block-then-punch",
+              "tier": "C/B"
+            },
+            {
+              "scenario": "Relaxed alert (Cooper Yellow + AAA habit)",
+              "aggressor": "Still must approach and reveal intent",
+              "defender": "Observe early anomaly → Orient ('this is real') → Decide ('leave') → Act (exit) — loop completed before contact",
+              "resilienceVerdict": "Defender wins by never entering fight loop — EAAA proxy",
+              "tier": "A+ inference"
+            },
+            {
+              "scenario": "Trained boxer with fence up",
+              "aggressor": "Telegraphed swing",
+              "defender": "Observe (see shoulder) → Orient (pattern match from sparring) → Decide (slip+counter) → Act — compressed via C6 training",
+              "resilienceVerdict": "Contact-phase tempo recovery — still worse than leaving",
+              "tier": "A sport transfer"
+            }
+          ]
+        },
+        "reactionTimeLink": {
+          "oodaTotalMs": "500–1500+",
+          "source": "fightScience.reactionTime — Boyd framework + lab choice reaction",
+          "plainEnglish": "Under surprise, a defender's full OODA cycle often exceeds half a second to 1.5+ seconds. A committed punch at arm's reach lands in ~200–400ms. Math favors pre-contact exit or pre-committed action.",
+          "tier": "C framework, A for component reaction times"
+        },
+        "cooperEaaaMapping": [
+          { "cooper": "Yellow", "ooda": "Observe continuously", "eaaa": "Assess" },
+          { "cooper": "Orange", "ooda": "Orient + Decide forming", "eaaa": "Acknowledge" },
+          { "cooper": "Red", "ooda": "Act now", "eaaa": "Act (leave or resist)" },
+          { "cooper": "White", "ooda": "Loop never starts in time", "eaaa": "No Assess — highest risk" }
+        ],
+        "trainingDrills": [
+          { "drill": "Exit rehearsal", "oodaPhase": "Decide+Act compressed", "minutes": 5, "plainEnglish": "Weekly: pick real venue, walk through leaving before contact — Boyd's pre-decision" },
+          { "drill": "Anomaly spotting", "oodaPhase": "Observe", "minutes": 2, "plainEnglish": "Daily AAA Assess — who, exits, flanking, gut" },
+          { "drill": "Denial override phrase", "oodaPhase": "Orient", "minutes": 1, "plainEnglish": "Say aloud: 'This is real. I don't need permission to leave.' — EAAA Acknowledge" },
+          { "drill": "Verbal Act script", "oodaPhase": "Act", "minutes": 5, "plainEnglish": "Practice 'Stop. No. I'm leaving.' until automatic — forces aggressor to re-Orient" }
+        ],
+        "honestLimits": "OODA is a decision framework (Tier C) — no civilian RCT links OODA training alone to reduced victimization. Boyd developed it for air combat. Applying it to street survival is logical and widely taught, but EAAA (A+) remains the only measured outcome program on this site. OODA explains why you are behind when surprised; it does not replace proof.",
+        "sources": [
+          { "name": "John Boyd — Patterns of Conflict (briefing)", "note": "Primary doctrinal source", "tier": "C" },
+          { "name": "Resilience fightScience.reactionTime", "note": "500–1500ms+ OODA under surprise", "tier": "C/B" }
+        ]
       }
     },
     "multiAttacker": {

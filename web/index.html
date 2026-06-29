@@ -22,6 +22,7 @@
   <script src="js/rutten-nhi-viz.js" defer></script>
   <script src="js/cooper-color-viz.js" defer></script>
   <script src="js/eaaa-viz.js" defer></script>
+  <script src="js/ooda-viz.js" defer></script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
@@ -34,6 +35,7 @@
         <li><a href="#top-findings">Top Findings</a></li>
         <li><a href="#eaaa">What is EAAA?</a></li>
         <li><a href="#awareness">Awareness</a></li>
+        <li><a href="#ooda">OODA Loop</a></li>
         <li><a href="#adversarial">How We Scored</a></li>
         <li><a href="#systems">Strategies & Systems</a></li>
         <li><a href="#techniques">Techniques</a></li>
@@ -329,6 +331,55 @@
     </div>
 
     <div id="cooper-system-map" class="cooper-system-map-box"></div>
+
+    <!-- OODA LOOP -->
+    <div id="ooda" class="ooda-section-wrap">
+      <div class="section-header" style="margin-top:2.5rem">
+        <h2>The OODA Loop — How Decisions Happen Under Pressure</h2>
+        <p class="section-intro">
+          Col. John Boyd's <strong>Observe → Orient → Decide → Act</strong> cycle explains why surprised defenders lose time — and why awareness, rehearsal, and early exit beat technique menus.
+          Tier <strong>C</strong> as a framework; pairs with <a href="#eaaa">EAAA</a> (A+) and <a href="#conclusion">AAA habits</a>.
+        </p>
+      </div>
+
+      <div id="ooda-intro"></div>
+
+      <div class="ooda-diagram-row">
+        <div class="ooda-diagram-box">
+          <h4>OODA cycle visualization</h4>
+          <div id="ooda-loop-diagram"></div>
+        </div>
+        <div class="fp-rebuild-box">
+          <div id="ooda-mapping"></div>
+          <div id="ooda-reaction" style="margin-top:1.25rem"></div>
+        </div>
+      </div>
+
+      <div id="ooda-phases" class="ooda-phases-wrap"></div>
+
+      <div class="chart-row-2" style="margin-top:1.5rem">
+        <div class="fp-rebuild-box">
+          <div id="ooda-boyd-insights"></div>
+        </div>
+        <div class="fp-rebuild-box">
+          <div id="ooda-tempo"></div>
+        </div>
+      </div>
+
+      <div id="ooda-training" class="fp-rebuild-box" style="margin-top:1.25rem"></div>
+      <p id="ooda-honest-limits" class="chart-explainer" style="margin-top:1rem;padding:1rem;background:var(--bg-card);border-radius:10px;border-left:4px solid var(--tier-c)"></p>
+
+      <div class="dialogue">
+        <p class="dialogue-q">"If OODA says act fast, shouldn't I train more punches?"</p>
+        <p class="dialogue-a">
+          Boyd's point is <strong>tempo</strong> — not a bigger technique list. Under surprise, your full loop takes 500–1500ms+. A committed punch lands sooner. The highest-tempo winning Act for civilians is usually <strong>leave before Red</strong>, or a pre-rehearsed verbal boundary that forces the aggressor to re-Orient. Punches are backup after avoidance fails.
+        </p>
+        <p class="dialogue-q">"How is OODA different from Cooper colors?"</p>
+        <p class="dialogue-a">
+          <strong>Cooper</strong> is your alertness setting (White→Red). <strong>OODA</strong> is the decision machinery running inside that setting. Yellow Cooper means better Observe; Orange means Orient+Decide activating; Red means Act. They stack, not compete.
+        </p>
+      </div>
+    </div>
 
     <div class="alert-gap" id="data-gap">
       <h3>⚠ The Number Nobody Can Give You (Yet)</h3>

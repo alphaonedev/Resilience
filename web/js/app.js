@@ -463,6 +463,9 @@ function renderAll() {
   if (typeof renderAllEaaaVisualizations === 'function') {
     renderAllEaaaVisualizations();
   }
+  if (typeof renderAllOodaVisualizations === 'function') {
+    renderAllOodaVisualizations();
+  }
   if (typeof renderAllPostureVisualizations === 'function') {
     renderAllPostureVisualizations();
   }
