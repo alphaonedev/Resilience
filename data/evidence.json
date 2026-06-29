@@ -1272,7 +1272,31 @@
       "Add physical layer only where derived (A4, A5) → burst, escape, posture",
       "Special-case weapons (A8) → compliance protocols"
     ],
-    "nhiSummary": "First principles destroys the martial arts industry's default stack. You do not start with 'which art is best?' You start with: What is winning? (leaving unharmed.) What is the threat? (unfair, often armed, often known.) When is leverage highest? (before contact.) What proof exists? (RCTs and NCVS, not demos.) Everything on this site — EAAA first, AAA daily habits, escape over ground fighting, weapon compliance — is rebuilt from those truths. Tradition is consulted only where evidence confirms it (boxing delivery, wrestling sprawls). Everything else is ranked or rejected."
+    "nhiSummary": "First principles destroys the martial arts industry's default stack. You do not start with 'which art is best?' You start with: What is winning? (leaving unharmed.) What is the threat? (unfair, often armed, often known.) When is leverage highest? (before contact.) What proof exists? (RCTs and NCVS, not demos.) Everything on this site — EAAA first, AAA daily habits, escape over ground fighting, weapon compliance — is rebuilt from those truths. Tradition is consulted only where evidence confirms it (boxing delivery, wrestling sprawls). Everything else is ranked or rejected.",
+    "nhiSummaryDistill": {
+      "lead": "First principles destroys the martial arts industry's default stack.",
+      "wrongQuestion": "You do not start with \"which art is best?\"",
+      "rightApproach": "You start with four questions:",
+      "coreQuestions": [
+        { "question": "What is winning?", "answer": "Leaving unharmed — not defeating an opponent" },
+        { "question": "What is the threat?", "answer": "Unfair, often armed, often known" },
+        { "question": "When is leverage highest?", "answer": "Before contact — every second earlier removes the injury distribution" },
+        { "question": "What proof exists?", "answer": "RCTs and NCVS — not demos or marketing" }
+      ],
+      "siteRebuildTitle": "Everything on this site is rebuilt from those truths",
+      "siteRebuild": [
+        "EAAA first — Tier A+ victimization proof",
+        "AAA daily habits — minutes, not years",
+        "Escape over ground fighting — stand up, sprint",
+        "Weapon compliance — comply and run, not disarm heroics"
+      ],
+      "traditionTitle": "How tradition fits",
+      "traditionConfirmed": {
+        "label": "Consulted only where evidence confirms",
+        "items": ["Boxing delivery under resistance", "Wrestling sprawls — stand immediately"]
+      },
+      "traditionRejected": "Everything else is ranked or rejected."
+    }
   },
   "karateNhiAnalysis": {
     "title": "Historical Okinawan Karate vs Resilience Evidence — AI NHI Reconciliation",

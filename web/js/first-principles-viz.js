@@ -85,7 +85,44 @@ function renderFPNhiSummary() {
   const el = document.getElementById('fp-nhi-summary');
   const fp = evidenceData?.firstPrinciples;
   if (!el || !fp) return;
-  el.innerHTML = `<p>${fp.nhiSummary}</p>`;
+
+  const d = fp.nhiSummaryDistill;
+  if (!d) {
+    el.innerHTML = `<p>${fp.nhiSummary}</p>`;
+    return;
+  }
+
+  el.innerHTML = `
+    <div class="fp-nhi-distill">
+      <p class="fp-nhi-lead">${d.lead}</p>
+
+      <div class="fp-nhi-question-split">
+        <p class="fp-nhi-wrong">${d.wrongQuestion}</p>
+        <p class="fp-nhi-right">${d.rightApproach}</p>
+      </div>
+
+      <ul class="fp-nhi-questions">
+        ${d.coreQuestions.map(q => `
+          <li>
+            <strong class="fp-nhi-q">${q.question}</strong>
+            <span class="fp-nhi-a">${q.answer}</span>
+          </li>`).join('')}
+      </ul>
+
+      <h4 class="fp-nhi-heading">${d.siteRebuildTitle}</h4>
+      <ul class="fp-nhi-rebuild">
+        ${d.siteRebuild.map(s => `<li>${s}</li>`).join('')}
+      </ul>
+
+      <h4 class="fp-nhi-heading">${d.traditionTitle}</h4>
+      <div class="fp-nhi-tradition">
+        <p class="fp-nhi-tradition-label">${d.traditionConfirmed.label}</p>
+        <ul class="fp-nhi-tradition-list">
+          ${d.traditionConfirmed.items.map(i => `<li>${i}</li>`).join('')}
+        </ul>
+        <p class="fp-nhi-tradition-reject">${d.traditionRejected}</p>
+      </div>
+    </div>`;
 }
 
 function renderAllFirstPrinciplesVisualizations() {
