@@ -3624,7 +3624,66 @@ footer a:hover { text-decoration: underline; }
 .holistic-prob-step p { margin: 0.25rem 0; font-size: 0.8rem; color: var(--text-muted); line-height: 1.45; }
 .holistic-prob-cum { font-size: 0.72rem; color: #10b981; font-weight: 600; }
 
-.holistic-flow-diagram { width: 100%; max-width: 520px; height: auto; display: block; margin: 0 auto; }
+/* One System — stacked full-width viz panels */
+.holistic-viz-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin: 2rem 0;
+}
+
+.holistic-viz-panel {
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.5rem 1.75rem 1.75rem;
+}
+
+.holistic-viz-title {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  text-transform: none;
+}
+
+.holistic-viz-explainer {
+  margin: 0 0 1.25rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  max-width: 720px;
+}
+
+.holistic-viz-explainer strong { color: var(--text); }
+
+.holistic-flow-wrap {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.holistic-flow-diagram {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 280px;
+  display: block;
+}
+
+.holistic-chart-wrap {
+  position: relative;
+  width: 100%;
+  height: min(420px, 55vw);
+  min-height: 320px;
+  max-height: 480px;
+}
+
+.holistic-viz-chart canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
 
 /* Cooper Color Code — visual mental model */
 .cooper-compact-strip {

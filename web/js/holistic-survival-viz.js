@@ -123,7 +123,15 @@ function renderHolisticLayersChart() {
       responsive: true,
       maintainAspectRatio: false,
       plugins: {
-        legend: { position: 'bottom', labels: { font: { size: 10 }, padding: 12 } },
+        legend: {
+          position: 'bottom',
+          labels: {
+            font: { size: 13, family: "'Instrument Sans', system-ui, sans-serif" },
+            padding: 18,
+            boxWidth: 14,
+            boxHeight: 14
+          }
+        },
         tooltip: { callbacks: { label: c => `~${c.raw}% of survival gain` } }
       }
     }
@@ -222,37 +230,43 @@ function renderHolisticFlowSvg() {
   const h = evidenceData?.holisticSurvivalSystem;
   if (!el || !h) return;
   el.innerHTML = `
-    <svg viewBox="0 0 520 280" class="holistic-flow-diagram" role="img" aria-label="Resilience One System flow">
+    <svg viewBox="0 0 900 360" class="holistic-flow-diagram" role="img" aria-label="Resilience One System flow">
       <defs>
-        <marker id="holArr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#10b981"/></marker>
+        <marker id="holArr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10" fill="#10b981"/></marker>
+        <marker id="holArrB" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10" fill="#3b82f6"/></marker>
+        <marker id="holArrO" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10" fill="#f59e0b"/></marker>
+        <marker id="holArrR" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10" fill="#ef4444"/></marker>
       </defs>
-      <rect x="10" y="20" width="120" height="56" rx="10" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="2"/>
-      <text x="70" y="44" text-anchor="middle" fill="#10b981" font-size="11" font-weight="800">L0 MIND</text>
-      <text x="70" y="60" text-anchor="middle" fill="#8b9cb8" font-size="8">3 min/day · A+</text>
-      <line x1="130" y1="48" x2="168" y2="48" stroke="#10b981" stroke-width="2" marker-end="url(#holArr)"/>
-      <rect x="168" y="20" width="120" height="56" rx="10" fill="rgba(59,130,246,0.15)" stroke="#3b82f6" stroke-width="2"/>
-      <text x="228" y="44" text-anchor="middle" fill="#3b82f6" font-size="11" font-weight="800">L1 AVOID</text>
-      <text x="228" y="60" text-anchor="middle" fill="#8b9cb8" font-size="8">Leave first</text>
-      <line x1="288" y1="48" x2="326" y2="48" stroke="#3b82f6" stroke-width="2" marker-end="url(#holArr)"/>
-      <rect x="326" y="20" width="120" height="56" rx="10" fill="rgba(245,158,11,0.15)" stroke="#f59e0b" stroke-width="2"/>
-      <text x="386" y="44" text-anchor="middle" fill="#f59e0b" font-size="11" font-weight="800">L2 BURST</text>
-      <text x="386" y="60" text-anchor="middle" fill="#8b9cb8" font-size="8">3–5 strikes · optional</text>
-      <line x1="446" y1="48" x2="484" y2="48" stroke="#f59e0b" stroke-width="2" marker-end="url(#holArr)"/>
-      <rect x="484" y="20" width="26" height="56" rx="0" fill="none" stroke="none"/>
-      <rect x="350" y="100" width="160" height="48" rx="10" fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="2"/>
-      <text x="430" y="122" text-anchor="middle" fill="#ef4444" font-size="11" font-weight="800">L3 ESCAPE</text>
-      <text x="430" y="138" text-anchor="middle" fill="#8b9cb8" font-size="8">Sprint always</text>
-      <line x1="386" y1="76" x2="386" y2="92" stroke="#f59e0b" stroke-width="2"/>
-      <line x1="386" y1="92" x2="430" y2="92" stroke="#ef4444" stroke-width="2"/>
-      <line x1="430" y1="92" x2="430" y2="100" stroke="#ef4444" stroke-width="2" marker-end="url(#holArr)"/>
-      <path d="M228 76 L228 200 L70 200 L70 76" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.5"/>
-      <text x="70" y="218" fill="#6ee7b7" font-size="8">L1 skip L2 — leave early (best path)</text>
-      <rect x="10" y="170" width="200" height="44" rx="8" fill="rgba(239,68,68,0.1)" stroke="#ef4444" stroke-opacity="0.5"/>
-      <text x="110" y="190" text-anchor="middle" fill="#fca5a5" font-size="9" font-weight="700">Gun / knife parallel rule</text>
-      <text x="110" y="206" text-anchor="middle" fill="#8b9cb8" font-size="8">Comply → distance → run</text>
-      <rect x="240" y="170" width="270" height="44" rx="8" fill="rgba(16,185,129,0.08)" stroke="#10b981" stroke-opacity="0.4"/>
-      <text x="375" y="198" text-anchor="middle" fill="#a7f3d0" font-size="9">7 skills: palm · cross · teep · calf · 3 knees · wrist · sprawl</text>
-      <text x="260" y="248" fill="#fde047" font-size="10" font-weight="700">See early → Leave → Burst if trapped → Sprint</text>
+      <text x="450" y="28" text-anchor="middle" fill="#8b9cb8" font-size="13" font-weight="600">Primary escalation path →</text>
+      <rect x="30" y="48" width="175" height="72" rx="12" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="2.5"/>
+      <text x="117" y="78" text-anchor="middle" fill="#10b981" font-size="16" font-weight="800">L0 MIND</text>
+      <text x="117" y="98" text-anchor="middle" fill="#e8edf5" font-size="12">Assess · Acknowledge</text>
+      <text x="117" y="114" text-anchor="middle" fill="#8b9cb8" font-size="11">3 min/day · Tier A+</text>
+      <line x1="205" y1="84" x2="248" y2="84" stroke="#10b981" stroke-width="2.5" marker-end="url(#holArr)"/>
+      <rect x="248" y="48" width="175" height="72" rx="12" fill="rgba(59,130,246,0.15)" stroke="#3b82f6" stroke-width="2.5"/>
+      <text x="335" y="78" text-anchor="middle" fill="#3b82f6" font-size="16" font-weight="800">L1 AVOID</text>
+      <text x="335" y="98" text-anchor="middle" fill="#e8edf5" font-size="12">Boundaries · exits</text>
+      <text x="335" y="114" text-anchor="middle" fill="#8b9cb8" font-size="11">Leave first</text>
+      <line x1="423" y1="84" x2="466" y2="84" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#holArrB)"/>
+      <rect x="466" y="48" width="175" height="72" rx="12" fill="rgba(245,158,11,0.15)" stroke="#f59e0b" stroke-width="2.5"/>
+      <text x="553" y="78" text-anchor="middle" fill="#f59e0b" font-size="16" font-weight="800">L2 BURST</text>
+      <text x="553" y="98" text-anchor="middle" fill="#e8edf5" font-size="12">3–5 strikes max</text>
+      <text x="553" y="114" text-anchor="middle" fill="#8b9cb8" font-size="11">Only if trapped</text>
+      <line x1="641" y1="84" x2="684" y2="84" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#holArrO)"/>
+      <rect x="684" y="48" width="186" height="72" rx="12" fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="2.5"/>
+      <text x="777" y="78" text-anchor="middle" fill="#ef4444" font-size="16" font-weight="800">L3 ESCAPE</text>
+      <text x="777" y="98" text-anchor="middle" fill="#e8edf5" font-size="12">Sprint always</text>
+      <text x="777" y="114" text-anchor="middle" fill="#8b9cb8" font-size="11">People · light · space</text>
+      <path d="M335 120 L335 168 L117 168 L117 120" fill="none" stroke="#6ee7b7" stroke-width="2" stroke-dasharray="6 4" opacity="0.75"/>
+      <text x="226" y="188" text-anchor="middle" fill="#6ee7b7" font-size="12" font-weight="600">Best path: L1 → L3 — skip burst, leave early</text>
+      <rect x="30" y="210" width="280" height="56" rx="10" fill="rgba(239,68,68,0.1)" stroke="#ef4444" stroke-opacity="0.55"/>
+      <text x="170" y="234" text-anchor="middle" fill="#fca5a5" font-size="13" font-weight="700">Gun / knife parallel rule</text>
+      <text x="170" y="254" text-anchor="middle" fill="#8b9cb8" font-size="11">Comply → distance → run (never disarm heroics)</text>
+      <rect x="330" y="210" width="540" height="56" rx="10" fill="rgba(16,185,129,0.08)" stroke="#10b981" stroke-opacity="0.45"/>
+      <text x="600" y="234" text-anchor="middle" fill="#a7f3d0" font-size="13" font-weight="600">7 skills only: palm · cross · teep · calf kick · 3 knees · wrist release · sprawl</text>
+      <text x="600" y="254" text-anchor="middle" fill="#8b9cb8" font-size="11">Optional Layer 2 — after brain habits are automatic</text>
+      <text x="450" y="310" text-anchor="middle" fill="#fde047" font-size="14" font-weight="700">See early → Leave → Burst if trapped → Sprint</text>
+      <text x="450" y="338" text-anchor="middle" fill="#8b9cb8" font-size="12">Everything else on this site explains why these four layers work</text>
     </svg>`;
 }
 
