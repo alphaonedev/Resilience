@@ -4527,6 +4527,119 @@ footer a:hover { text-decoration: underline; }
 .eaaa-esd-card p { margin: 0; color: var(--text-muted); line-height: 1.5; }
 .eaaa-esd-arrow { font-size: 1.5rem; color: var(--tier-a-plus); font-weight: 300; }
 
+.eaaa-gender-wrap {
+  margin: 1.5rem 0;
+  padding: 1.15rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  border-left: 4px solid #f59e0b;
+}
+
+.eaaa-gender-wrap h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.eaaa-gender-lead {
+  margin: 0 0 1rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+.eaaa-gender-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 720px) {
+  .eaaa-gender-grid { grid-template-columns: 1fr; }
+}
+
+.eaaa-gender-card {
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.eaaa-gender-card p { margin: 0 0 0.45rem; color: var(--text-muted); }
+.eaaa-gender-card p:last-child { margin-bottom: 0; }
+
+.eaaa-gender-women {
+  background: rgba(16, 185, 129, 0.08);
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.eaaa-gender-men {
+  background: rgba(59, 130, 246, 0.08);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.eaaa-gender-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.6rem;
+  margin-bottom: 0.45rem;
+}
+
+.eaaa-gender-card-head strong {
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+.eaaa-gender-pop {
+  font-size: 0.78rem !important;
+  font-style: italic;
+}
+
+.eaaa-gender-ev {
+  font-size: 0.82rem !important;
+  color: var(--text) !important;
+}
+
+.eaaa-gender-rec {
+  font-weight: 600;
+  color: var(--text) !important;
+}
+
+.eaaa-gender-universal {
+  padding: 0.85rem 1rem;
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+
+.eaaa-gender-universal-label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-right: 0.5rem;
+}
+
+.eaaa-gender-universal ul {
+  margin: 0.5rem 0;
+  padding-left: 1.2rem;
+  font-size: 0.84rem;
+  color: var(--text);
+  line-height: 1.55;
+}
+
+.eaaa-gender-universal-note {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
 .eaaa-meta-box {
   margin: 1.5rem 0;
   padding: 1.25rem;

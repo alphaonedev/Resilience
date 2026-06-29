@@ -60,6 +60,46 @@ function renderEaaaEsdRelationship() {
     </div>`;
 }
 
+function renderEaaaGenderApplicability() {
+  const e = getEaaa();
+  const el = document.getElementById('eaaa-gender-applicability');
+  if (!el || !e?.genderApplicability) return;
+  const g = e.genderApplicability;
+  const tierCls = t => `tier tier-${t.replace('+', 'plus').toLowerCase()}`;
+
+  el.innerHTML = `
+    <h4>Who is EAAA actually proven for?</h4>
+    <p class="eaaa-gender-lead">${g.headline}</p>
+    <div class="eaaa-gender-grid">
+      <article class="eaaa-gender-card eaaa-gender-women">
+        <header class="eaaa-gender-card-head">
+          <strong>Women — studied population</strong>
+          ${tierCls(g.women.tier)}
+        </header>
+        <p class="eaaa-gender-pop">${g.women.population}</p>
+        <p><strong>Primary threat:</strong> ${g.women.primaryThreat}</p>
+        <p class="eaaa-gender-ev">${g.women.evidence}</p>
+        <p class="eaaa-gender-rec">${g.women.recommendation}</p>
+      </article>
+      <article class="eaaa-gender-card eaaa-gender-men">
+        <header class="eaaa-gender-card-head">
+          <strong>Men — not studied</strong>
+          ${tierCls(g.men.tier)}
+        </header>
+        <p class="eaaa-gender-pop">${g.men.population}</p>
+        <p><strong>Primary threat:</strong> ${g.men.primaryThreat}</p>
+        <p class="eaaa-gender-ev">${g.men.evidence}</p>
+        <p class="eaaa-gender-rec">${g.men.recommendation}</p>
+      </article>
+    </div>
+    <div class="eaaa-gender-universal">
+      <span class="eaaa-gender-universal-label">${g.universalHabits.label}</span>
+      ${tierCls(g.universalHabits.tier)}
+      <ul>${g.universalHabits.items.map(i => `<li>${i}</li>`).join('')}</ul>
+      <p class="eaaa-gender-universal-note">${g.universalHabits.plainEnglish}</p>
+    </div>`;
+}
+
 function renderEaaaMeta() {
   const e = getEaaa();
   const el = document.getElementById('eaaa-meta');
@@ -152,6 +192,7 @@ function renderAllEaaaVisualizations() {
   renderEaaaDefinition();
   renderEaaaEsdRelationship();
   renderEaaaMeta();
+  renderEaaaGenderApplicability();
   renderEaaaFourUnits();
   renderEaaaResilienceConnection();
   renderEaaaLimitsAndSources();

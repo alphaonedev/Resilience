@@ -198,7 +198,35 @@
         "centre": "SARE Centre (Sexual Assault Resistance Education)",
         "note": "Developed for research and replication — not a commercial franchise"
       },
-      "whoStudied": "First-year university women, ages 17–24, three Canadian universities",
+      "whoStudied": "First-year university women, ages 17–24, three Canadian universities — men were not enrolled in the RCT",
+      "genderApplicability": {
+        "headline": "EAAA is Tier A+ for the population studied — young women facing acquaintance sexual assault. It is not proven for men.",
+        "women": {
+          "population": "Young university women (17–24) — the RCT population",
+          "primaryThreat": "Acquaintance sexual assault, coercion, boundary testing from someone known",
+          "tier": "A+",
+          "evidence": "NEJM 2015 RCT + 2023 real-world rollout: ~50–57% fewer completed assaults",
+          "recommendation": "If you fit this population, EAAA is the strongest measured program on this site. Take the full 12-hour course if available."
+        },
+        "men": {
+          "population": "Men and boys — not studied in the EAAA trial",
+          "primaryThreat": "Bar fights, robbery, groups, weapons, stranger aggression — different distribution than acquaintance sexual assault",
+          "tier": "C",
+          "evidence": "No male victimization RCT. Assess/Acknowledge/Act logic may transfer; the 50–57% assault-reduction claim does not.",
+          "recommendation": "Do not assume EAAA outcomes apply. Use AAA daily habits (assess, leave early) as Tier B inference. Build contact backup from Round 3 stack: military SA + Rutten + boxing/Muay Thai burst — not a women's acquaintance-assault curriculum."
+        },
+        "universalHabits": {
+          "label": "What transfers to everyone (logic, not EAAA proof)",
+          "items": [
+            "Spot danger early and leave before contact",
+            "Override denial when your gut says something is wrong",
+            "Forceful verbal boundaries while moving toward exits",
+            "Sprint exit when already engaged — especially if outnumbered"
+          ],
+          "tier": "B",
+          "plainEnglish": "This site's AAA Exit Protocol borrows EAAA's brain-work pattern for anyone — but only women in the trial earned the A+ assault-reduction numbers."
+        }
+      },
       "studyDesign": {
         "type": "Randomized controlled trial (RCT)",
         "sampleSize": 899,
@@ -280,7 +308,7 @@
         { "name": "SARE Centre", "note": "Research home of EAAA — program materials for institutions", "url": "https://www.sarecentre.org/" },
         { "name": "Blueprints for Healthy Youth", "note": "Certified model program listing", "url": "https://www.blueprintsprograms.org/programs/1032999999/eaaa-enhanced-assess-acknowledge-act-sexual-assault-resistance-education/" }
       ],
-      "honestLimits": "RCT studied university women in Canada — generalization to all ages, men, or every country is inference not proof. Focus is acquaintance sexual assault resistance, not armed street robbery or military combat. 'Empowerment self-defense' classes without EAAA curriculum should not claim the same 50–57% outcomes.",
+      "honestLimits": "EAAA is good for women in the studied population — not necessarily good for men. The RCT enrolled first-year university women only; no male cohort, no assault-reduction proof for men. Generalization to other ages or countries is also inference. Focus is acquaintance sexual assault resistance, not bar fights, robbery, armed street violence, or military combat. Men should use AAA habit logic (Tier B inference) plus fight-science contact training (Rutten/boxing/Muay Thai) — not claim EAAA's 50–57% outcomes. 'Empowerment self-defense' classes without EAAA curriculum should not claim those numbers either.",
       "source": "NEJM 2015 RCT; Eur J Psychotraumatol 2023 real-world implementation"
     },
     "situationalAwareness": {
@@ -823,8 +851,9 @@
     "name": "AAA Exit Protocol",
     "acronym": "Assess · Acknowledge · Act (Leave)",
     "tier": "A+",
-    "tagline": "The simplest system any human can learn — minutes per day, not years in a gym",
-    "evidenceBasis": "EAAA medical trial (NEJM 2015), NCVS resistance outcomes, Louie Martin street-fight cohort (n=154)",
+    "tierNote": "A+ assault-reduction claim applies to women in the EAAA trial only. Daily AAA habits are recommended for everyone as Tier B inference; men add fight-science contact stack separately.",
+    "tagline": "The simplest exit habits anyone can learn — minutes per day, not years in a gym",
+    "evidenceBasis": "EAAA medical trial (NEJM 2015, women only), NCVS resistance outcomes, Louie Martin street-fight cohort (n=154)",
     "weeklyMinutes": 20,
     "dailyMinutes": 3,
     "optionalPhysicalHours": 2,
@@ -864,7 +893,7 @@
       "skills": ["Wrist release", "Frame and create space", "Low shin kick", "Get to your feet if knocked down"],
       "note": "Add only after AAA habits are automatic — not instead of them"
     },
-    "nhiVerdict": "After scoring seven strategies, fifteen tactics, eleven technique systems, and twenty-two individual techniques across three disagreeing reviewers, one conclusion survived every argument: the highest-return skill is not a punch or a choke — it is leaving before the fight exists. The AAA Exit Protocol distills the only approach with medical-trial proof (EAAA) into three daily habits and twenty minutes per week. Any human, any age, any fitness level can start today. Martial arts compound on top; they do not replace this.",
+    "nhiVerdict": "After scoring seven strategies, fifteen tactics, eleven technique systems, and twenty-two individual techniques across three disagreeing reviewers, one conclusion survived every argument: the highest-return skill is not a punch or a choke — it is leaving before the fight exists. The AAA Exit Protocol distills EAAA's brain-work pattern into three daily habits and twenty minutes per week. For women in the EAAA trial population, that logic is backed by Tier A+ assault-reduction proof. For men — not studied in EAAA — the same habits are sound Tier B inference; add Rutten/fight-science contact training because male threat profiles skew toward bar fights, groups, and weapons. Any age, any fitness level can start the habits today. Martial arts compound on top; they do not replace leaving early.",
     "honestLimits": "No system guarantees survival. Guns, surprise, and size disparity can overwhelm any training. This protocol shifts odds using the strongest evidence we have — it does not make you invincible. Proactive 'I left before it started' is still not scientifically measured; we flag that gap openly."
   },
   "defensivePosture": {
