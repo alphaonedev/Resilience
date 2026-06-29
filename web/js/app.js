@@ -284,6 +284,142 @@ function renderLEChart() {
   });
 }
 
+function renderMinimalSystemConclusion() {
+  const m = evidenceData?.minimalSystem;
+  if (!m) return;
+  const o = m.outcomes;
+
+  document.getElementById('aaa-hero').innerHTML = `
+    <div class="aaa-hero-badge">AI NHI Recommended · Tier ${m.tier}</div>
+    <h3>${m.name}</h3>
+    <p class="aaa-acronym">${m.acronym}</p>
+    <p style="color:var(--text-muted);max-width:560px;margin:0 auto;font-size:0.95rem">${m.tagline}</p>
+    <div class="aaa-hero-stats">
+      <div class="aaa-hero-stat"><div class="val">${m.dailyMinutes} min</div><div class="lbl">Per day — Assess & Acknowledge</div></div>
+      <div class="aaa-hero-stat"><div class="val">${m.weeklyMinutes} min</div><div class="lbl">Per week — drills & rehearsal</div></div>
+      <div class="aaa-hero-stat"><div class="val">${o.assaultReduction12mo}%</div><div class="lbl">Fewer assaults after full EAAA program</div></div>
+      <div class="aaa-hero-stat"><div class="val">${o.escapeWhenOutnumbered}%</div><div class="lbl">Escaped when already outnumbered</div></div>
+    </div>`;
+
+  document.getElementById('nhi-verdict-text').innerHTML = `<p>${m.nhiVerdict}</p>`;
+  document.getElementById('aaa-honest-limits').textContent = m.honestLimits;
+
+  document.getElementById('aaa-flow-diagram').innerHTML = `
+    <svg viewBox="0 0 420 200" class="aaa-flow-svg" role="img" aria-label="AAA Exit Protocol flow">
+      <defs>
+        <marker id="aaaArr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#10b981"/></marker>
+      </defs>
+      <circle cx="70" cy="100" r="52" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="2"/>
+      <text x="70" y="88" text-anchor="middle" fill="#10b981" font-size="11" font-weight="800">ASSESS</text>
+      <text x="70" y="104" text-anchor="middle" fill="#8b9cb8" font-size="8">2 min/day</text>
+      <text x="70" y="118" text-anchor="middle" fill="#8b9cb8" font-size="7">Spot danger early</text>
+      <line x1="122" y1="100" x2="158" y2="100" stroke="#10b981" stroke-width="2" marker-end="url(#aaaArr)"/>
+      <circle cx="210" cy="100" r="52" fill="rgba(59,130,246,0.15)" stroke="#3b82f6" stroke-width="2"/>
+      <text x="210" y="88" text-anchor="middle" fill="#3b82f6" font-size="11" font-weight="800">ACKNOWLEDGE</text>
+      <text x="210" y="104" text-anchor="middle" fill="#8b9cb8" font-size="8">1 min/day</text>
+      <text x="210" y="118" text-anchor="middle" fill="#8b9cb8" font-size="7">Trust your gut</text>
+      <line x1="262" y1="100" x2="298" y2="100" stroke="#10b981" stroke-width="2" marker-end="url(#aaaArr)"/>
+      <circle cx="350" cy="100" r="52" fill="rgba(16,185,129,0.25)" stroke="#10b981" stroke-width="3"/>
+      <text x="350" y="88" text-anchor="middle" fill="#fff" font-size="11" font-weight="800">ACT</text>
+      <text x="350" y="104" text-anchor="middle" fill="#d1fae5" font-size="8">LEAVE</text>
+      <text x="350" y="118" text-anchor="middle" fill="#8b9cb8" font-size="7">Before contact</text>
+      <rect x="60" y="168" width="300" height="24" rx="6" fill="#1a2332" stroke="#2d3a52"/>
+      <text x="210" y="184" text-anchor="middle" fill="#8b9cb8" font-size="9">If contact happens → distance → run → people/light</text>
+    </svg>`;
+
+  document.getElementById('aaa-compound-layers').innerHTML = `
+    <div class="aaa-compound-list">
+      ${m.compoundLogic.map((l, i) => `
+        <div class="aaa-compound-item">
+          <span class="aaa-compound-num">${i + 1}</span>
+          <div>
+            <strong>${l.layer}</strong>
+            <span>${l.effect}</span>
+            <div class="aaa-compound-evidence">${l.evidence}</div>
+          </div>
+        </div>`).join('')}
+    </div>`;
+
+  const calDays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+  const calTasks = [
+    ['Daily AAA', 'Assess + Acknowledge', m.dailyMinutes],
+    ['Scenario', m.weeklyRoutine[0].action.substring(0, 42) + '…', m.weeklyRoutine[0].minutes],
+    ['Exit audit', 'Two exits at one familiar place', m.weeklyRoutine[1].minutes],
+    ['Verbal drill', '"Stop. No. I\'m leaving."', m.weeklyRoutine[2].minutes],
+    ['—', 'Rest or repeat a drill', 0],
+    ['—', 'Rest or optional run burst', m.weeklyRoutine[3]?.minutes || 0],
+    ['Review', 'Did I leave early once this week?', 2]
+  ];
+  document.getElementById('aaa-weekly-calendar').innerHTML = calDays.map((d, i) => {
+    const [task, desc, mins] = calTasks[i];
+    return `<div class="aaa-cal-row"><span class="aaa-cal-day">${d}</span><span class="aaa-cal-task"><strong>${task}</strong> — ${desc}</span><span class="aaa-cal-mins">${mins ? mins + 'm' : '—'}</span></div>`;
+  }).join('');
+
+  document.getElementById('aaa-daily-routine').innerHTML = m.dailyRoutine.map(r => `
+    <div class="aaa-routine-card">
+      <div class="aaa-step-label">${r.step} · ${r.minutes} min</div>
+      <h4>${r.action}</h4>
+      <p>${r.plainEnglish}</p>
+    </div>`).join('');
+
+  document.getElementById('aaa-weekly-routine').innerHTML = m.weeklyRoutine.map(r => `
+    <div class="aaa-routine-card">
+      <div class="aaa-step-label">${r.step} · ${r.minutes} min</div>
+      <h4>${r.action}</h4>
+      <p>${r.plainEnglish}</p>
+    </div>`).join('');
+
+  document.getElementById('aaa-contact-protocol').innerHTML = m.ifContact.map(c => `
+    <div class="aaa-contact-step">
+      <span class="aaa-contact-pri">${c.priority}</span>
+      <div>
+        <h4 style="margin:0 0 0.25rem;font-size:0.9rem">${c.action}</h4>
+        <span class="aaa-mins" style="font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted)">${typeof c.seconds === 'number' ? c.seconds + ' sec' : c.seconds}</span>
+      </div>
+    </div>`).join('');
+
+  const op = m.optionalPhysical;
+  document.getElementById('aaa-optional-physical').innerHTML = `
+    <h4>Optional physical layer — ${op.hours} hours total (${op.source})</h4>
+    <p>Add only after AAA habits feel automatic: ${op.skills.join(', ')}.</p>
+    <p style="margin-top:0.5rem;font-size:0.9rem;color:var(--text-muted)">${op.note}</p>`;
+
+  const ctx = document.getElementById('aaaOutcomesChart');
+  if (ctx) {
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: [
+          'Assault reduction (EAAA trial)',
+          'Injury reduction — verbal resistance (NCVS)',
+          'Escape when outnumbered',
+          'Defeat when outnumbered (don\'t do this)'
+        ],
+        datasets: [{
+          label: '% outcome',
+          data: [o.assaultReduction12mo, o.verbalResistanceInjuryReduction, o.escapeWhenOutnumbered, o.defeatWhenOutnumbered],
+          backgroundColor: ['#10b981', '#3b82f6', '#10b981', '#ef4444'],
+          borderRadius: 6
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        indexAxis: 'y',
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: c => c.raw + '%' + (c.dataIndex === 1 ? ' lower injury odds' : c.dataIndex === 0 ? ' fewer assaults' : '')
+            }
+          }
+        },
+        scales: { x: { max: 60, grid: { color: '#2d3a52' } }, y: { grid: { display: false } } }
+      }
+    });
+  }
+}
+
 function renderAll() {
   renderHeroStats();
   renderSpectrum();
@@ -303,6 +439,7 @@ function renderAll() {
   renderFindings();
   renderStack();
   renderLEChart();
+  renderMinimalSystemConclusion();
 }
 
 document.addEventListener('DOMContentLoaded', loadData);

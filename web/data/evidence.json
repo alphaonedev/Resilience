@@ -498,5 +498,52 @@
         "hours": "Years"
       }
     ]
+  },
+  "minimalSystem": {
+    "name": "AAA Exit Protocol",
+    "acronym": "Assess · Acknowledge · Act (Leave)",
+    "tier": "A+",
+    "tagline": "The simplest system any human can learn — minutes per day, not years in a gym",
+    "evidenceBasis": "EAAA medical trial (NEJM 2015), NCVS resistance outcomes, Louie Martin street-fight cohort (n=154)",
+    "weeklyMinutes": 20,
+    "dailyMinutes": 3,
+    "optionalPhysicalHours": 2,
+    "outcomes": {
+      "assaultReduction12mo": 50,
+      "assaultReduction6moRealWorld": 57.3,
+      "verbalResistanceInjuryReduction": 57,
+      "escapeWhenOutnumbered": 22,
+      "defeatWhenOutnumbered": 11
+    },
+    "compoundLogic": [
+      { "layer": "Never enter the fight", "effect": "Highest leverage — zero injury risk from that encounter", "evidence": "EAAA RCT: 50–57% fewer assaults" },
+      { "layer": "Leave at first wrong feeling", "effect": "Multiplies odds before contact — structurally under-measured but logically dominant", "evidence": "Premeditated exit tactic (A+); proactive metric is a known data gap" },
+      { "layer": "Run if already engaged", "effect": "Doubles success vs fighting when outnumbered", "evidence": "22% escape vs 11% defeat (n=154)" },
+      { "layer": "Simple strikes (optional)", "effect": "Marginal gain only after first three layers fail", "evidence": "64% KOs in first 10 sec — but only if you are still there to throw them" }
+    ],
+    "dailyRoutine": [
+      { "step": "Assess", "minutes": 2, "action": "Yellow mindset: Who is near me? Am I being isolated or flanked? Is someone I know testing boundaries?", "plainEnglish": "Look up from your phone. Notice patterns, not just faces." },
+      { "step": "Acknowledge", "minutes": 1, "action": "When your gut tightens, say internally: 'This is real. I don't need permission to leave.'", "plainEnglish": "Stop negotiating with the feeling that something is off." }
+    ],
+    "weeklyRoutine": [
+      { "step": "Scenario rehearsal", "minutes": 5, "action": "Pick one real place you go (bar, parking lot, date). Walk through leaving before contact.", "plainEnglish": "Mental practice counts. Athletes do it; you can too." },
+      { "step": "Exit audit", "minutes": 5, "action": "At one familiar location, identify two exits and where you'd go for people or light.", "plainEnglish": "You already do this on airplanes. Do it where you actually live." },
+      { "step": "Verbal boundary drill", "minutes": 5, "action": "Say out loud: 'Stop. No. I'm leaving.' Until your voice is firm, not apologetic.", "plainEnglish": "Forceful words reduced injury odds 57% in victim surveys — no gym required." },
+      { "step": "Run burst (optional)", "minutes": 5, "action": "30-second jog or fast walk. Escape is a physical skill for some bodies.", "plainEnglish": "Only if you can. Leaving still works walking." }
+    ],
+    "ifContact": [
+      { "priority": 1, "action": "Create distance — push, angle off, don't clinch", "seconds": 3 },
+      { "priority": 2, "action": "Forceful verbal — 'Back off!' while moving", "seconds": 2 },
+      { "priority": 3, "action": "Run toward people, light, or open space — not deeper into the alley", "seconds": "until clear" },
+      { "priority": 4, "action": "Only if trapped: palm heel or push kick, then run", "seconds": "1 burst" }
+    ],
+    "optionalPhysical": {
+      "hours": 2,
+      "source": "EAAA Act unit (17% of full 12-hour program)",
+      "skills": ["Wrist release", "Frame and create space", "Low shin kick", "Get to your feet if knocked down"],
+      "note": "Add only after AAA habits are automatic — not instead of them"
+    },
+    "nhiVerdict": "After scoring seven strategies, fifteen tactics, eleven technique systems, and twenty-two individual techniques across three disagreeing reviewers, one conclusion survived every argument: the highest-return skill is not a punch or a choke — it is leaving before the fight exists. The AAA Exit Protocol distills the only approach with medical-trial proof (EAAA) into three daily habits and twenty minutes per week. Any human, any age, any fitness level can start today. Martial arts compound on top; they do not replace this.",
+    "honestLimits": "No system guarantees survival. Guns, surprise, and size disparity can overwhelm any training. This protocol shifts odds using the strongest evidence we have — it does not make you invincible. Proactive 'I left before it started' is still not scientifically measured; we flag that gap openly."
   }
 }
