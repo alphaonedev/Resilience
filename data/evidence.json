@@ -673,5 +673,104 @@
       }
     ],
     "nhiSummary": "Stance, footwork, guard, and vitals presentation are the physical layer beneath AAA Exit. You do not need a perfect boxing stance — you need feet that can run, hands that protect your jaw, a chin that is tucked, and the discipline to never square up for a duel when a weapon is involved. When a gun or knife appears, the evidence unanimously favors compliance and distance over disarm fantasies. Krav Maga weapon drills score Tier C–D because nobody has measured civilian disarm success in peer-reviewed outcomes. Your job is to go home — not to win Instagram."
+  },
+  "fightScience": {
+    "description": "Hard numbers on force, knockouts, reaction time, range, ground probability, and fight duration — the physics behind what works",
+    "tier": "A",
+    "evidenceBasis": "Walilko et al. Olympic boxer head acceleration; Archives of Budo punch force; Boxing Science amateur biomechanics; Louie Martin n=154; LAPD ground study; Tueller 1983; OODA/Boyd; ESPN Fightnomics",
+    "nhiSummary": "Fight science says three things civilians need to know: (1) most fights are decided in the first 10 seconds — 64% of street knockouts happen there; (2) force in a lab and force that ends fights are different problems — karate and boxing hit similar newtons, but only boxers prove delivery under resistance; (3) action beats reaction at close range, which is why avoidance beats fighting and why squared-up duels favor the person who moved first. The brain shuts off from rapid head acceleration — hooks and falls rotate the head worse than straight shots. Ground is common (62–73%) but getting back up is not (41%). Train for burst output and immediate exit, not round 3 cardio.",
+    "kineticChain": {
+      "plainEnglish": "A knockout punch is not an arm punch — it is a whole-body whip from floor to fist.",
+      "sequence": [
+        { "link": "Floor / rear foot", "contribution": "Ground reaction force — push off back foot to start chain", "tier": "A" },
+        { "link": "Hip rotation", "contribution": "~40–50% of punch impulse in trained boxers (pelvis drives fist speed)", "tier": "A" },
+        { "link": "Torso / shoulder", "contribution": "Transfers hip torque; 'sit down' on cross adds mass behind punch", "tier": "A" },
+        { "link": "Elbow extension", "contribution": "Final acceleration — short path = less telegraph", "tier": "B" },
+        { "link": "Fist impact", "contribution": "Peak force 1,800–2,700N lab measured; jaw target = shortest path to brainstem", "tier": "A" }
+      ],
+      "formula": "Impulse = mass × Δvelocity — effective mass (whole body behind fist) matters more than arm strength"
+    },
+    "forceData": [
+      { "technique": "Boxing cross", "peakForceN": 2500, "effectiveMassKg": 4.2, "velocityMs": 8.5, "labValidated": true, "fightValidated": true, "tier": "A", "source": "Boxing Science / Olympic boxer biomechanics" },
+      { "technique": "Karate gyaku-zuki", "peakForceN": 2645, "effectiveMassKg": 3.8, "velocityMs": 7.9, "labValidated": true, "fightValidated": false, "tier": "B", "source": "Archives of Budo 2018" },
+      { "technique": "Boxing jab", "peakForceN": 1800, "effectiveMassKg": 2.5, "velocityMs": 7.0, "labValidated": true, "fightValidated": true, "tier": "A", "source": "Amateur boxer biomechanics" },
+      { "technique": "Muay Thai roundhouse", "peakForceN": 3000, "effectiveMassKg": 8.0, "velocityMs": 12.0, "labValidated": true, "fightValidated": true, "tier": "A", "source": "Combat sports kick force literature (~2.5–3.5kN range)" },
+      { "technique": "Wing Chun chain punch", "peakForceN": 800, "effectiveMassKg": 1.2, "velocityMs": 4.0, "labValidated": false, "fightValidated": false, "tier": "D", "source": "Estimated — no peer-reviewed full-contact validation" },
+      { "technique": "Point karate snap", "peakForceN": 600, "effectiveMassKg": 1.0, "velocityMs": 3.5, "labValidated": false, "fightValidated": false, "tier": "D", "source": "Point-scoring mechanics — retracted before impact mass develops" }
+    ],
+    "knockoutMechanics": {
+      "plainEnglish": "Knockouts are a brainstem/off-switch event from rapid head acceleration — not 'hurt enough'.",
+      "linearAcceleration": { "thresholdG": "70–100", "description": "Linear head acceleration (straight shots to jaw) — Wayne State tolerance curve range cited in combat sports TBI literature", "tier": "A" },
+      "rotationalAcceleration": { "thresholdRadS2": "4500–6000", "description": "Rotational acceleration (hooks, uppercuts, falls) — stronger KO correlation in boxing TBI reviews", "tier": "A" },
+      "targets": [
+        { "target": "Mandible / jaw", "mechanism": "Rotational + linear — chin shot rotates head, shears brainstem", "koPotential": 5 },
+        { "target": "Temple / lateral jaw", "mechanism": "Rotational — brain rotates inside skull", "koPotential": 5 },
+        { "target": "Body (liver/solar plexus)", "mechanism": "Vagal / pain shutdown — not true KO but fight-stop", "koPotential": 3 },
+        { "target": "Nose / eyes", "mechanism": "Pain + watering — rarely true KO, buys time", "koPotential": 2 }
+      ],
+      "streetData": {
+        "overallKORate": 23,
+        "koInFirst10Sec": 64,
+        "source": "Louie Martin n=154",
+        "tier": "B"
+      }
+    },
+    "reactionTime": {
+      "plainEnglish": "Whoever acts first at close range often wins — your brain cannot defend what it has not processed yet.",
+      "metrics": [
+        { "type": "Simple reaction (expected stimulus)", "timeMs": "200–250", "context": "Lab — lights/buttons; trained athletes lower", "tier": "A" },
+        { "type": "Choice reaction (pick correct response)", "timeMs": "400–600", "context": "Which hand? Block or move? — street attacks are choice problems", "tier": "A" },
+        { "type": "OODA loop (Boyd)", "timeMs": "500–1500+", "context": "Observe-Orient-Decide-Act under surprise — defender always behind", "tier": "C" },
+        { "type": "Knife charge ~21 ft (Tueller)", "timeMs": "~1500", "context": "Average person covers 21 ft before average draw+fire — not a magic distance", "tier": "B" }
+      ],
+      "implication": "Inside arm's reach, the attacker who moves first lands before you can process, chamber, and deliver a trained response — unless you were already acting (leaving, hands up, pre-committed exit)."
+    },
+    "rangeZones": {
+      "zones": [
+        { "name": "Escape range", "distance": "10m+", "dominant": "Running, barriers, crowds", "science": "Energy cost to chase scales with distance² perception" },
+        { "name": "Kick range", "distance": "1.5–2m", "dominant": "Teep, calf kick — maintain distance", "science": "Leg reach exceeds arm; teep creates 1–2m impulse gap" },
+        { "name": "Punch range", "distance": "0.5–1.2m", "dominant": "Jab/cross/hook — highest KO density", "science": "64% KOs in first 10 sec at this range in street footage" },
+        { "name": "Clinch range", "distance": "0–0.5m", "dominant": "Elbows, head position, frames — knife danger zone", "science": "Tueller: edged weapon lethal inside ~21 ft if you freeze" },
+        { "name": "Ground", "distance": "0m vertical", "dominant": "Wrestling/BJJ — 62–73% end here but 41% stand back up", "science": "Concrete removes grappling safety; gravity adds impact G-force" }
+      ]
+    },
+    "groundScience": {
+      "lapdGroundPct": 62,
+      "streetGroundPct": 73,
+      "streetGroundExclQuickKO": 83,
+      "returnToStandingPct": 41,
+      "mythDebunked": "90% of fights go to the ground",
+      "concreteMultiplier": "Falls add 50–150G linear impacts — rotational falls from throws exceed many standing shots",
+      "tier": "A"
+    },
+    "fightDuration": {
+      "buckets": [
+        { "window": "0–10 seconds", "outcome": "64% of knockouts", "pct": 64 },
+        { "window": "10–30 seconds", "outcome": "Remaining KOs + early grappling entries", "pct": 20 },
+        { "window": "30–60 seconds", "outcome": "Indecisive / mutual exhaustion", "pct": 10 },
+        { "window": "60+ seconds", "outcome": "Rare — crowd breakup, weapon, or both gassed", "pct": 6 }
+      ],
+      "indecisiveOutcomePct": 48.4,
+      "source": "Louie Martin n=154",
+      "tier": "B",
+      "energyNote": "Anaerobic alactic burst ~7–10 sec; glycolytic ~30–90 sec — street fights rarely need 'cardio', they need explosive exit"
+    },
+    "ufcVsStreet": {
+      "ufcSubmissionPct": 17.5,
+      "ufcKoTkoCount": 146,
+      "ufcSubCount": 80,
+      "ufcTotalFights": 457,
+      "streetDirtyFightingPct": 16,
+      "note": "Sport finishes are rule-bound; street has no ref, no tap, weapons, third parties",
+      "tier": "A"
+    },
+    "keyPrinciples": [
+      { "id": "delivery", "title": "Delivery > Force", "text": "Similar lab newtons between karate and boxing — only boxing proves the chain under live resistance.", "tier": "A" },
+      { "id": "first10", "title": "First 10 Seconds Decide", "text": "64% of street KOs land before most people finish their first technique — burst and exit.", "tier": "B" },
+      { "id": "action-reaction", "title": "Action Beats Reaction", "text": "Choice reaction 400–600ms+ — defender inside punching range is always behind.", "tier": "A" },
+      { "id": "rotation", "title": "Rotation Knocks Out", "text": "Hooks and falls cause rotational brain acceleration — worse KO correlation than linear jabs in TBI reviews.", "tier": "A" },
+      { "id": "ground-trap", "title": "Ground Is a Trap", "text": "73% hit ground; only 41% stand back up — sport ground game ≠ concrete survival.", "tier": "A" },
+      { "id": "mass-behind", "title": "Mass Behind the Shot", "text": "Effective mass (whole body) > arm strength — sit-down cross vs arm-only snap punch.", "tier": "A" }
+    ]
   }
 }

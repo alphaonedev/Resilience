@@ -13,6 +13,7 @@
   <script src="js/technique-viz.js" defer></script>
   <script src="js/system-viz.js" defer></script>
   <script src="js/posture-viz.js" defer></script>
+  <script src="js/fight-science-viz.js" defer></script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
@@ -27,6 +28,7 @@
         <li><a href="#systems">Strategies & Systems</a></li>
         <li><a href="#techniques">Techniques</a></li>
         <li><a href="#posture">Stance & Weapons</a></li>
+        <li><a href="#fight-science">Fight Science</a></li>
         <li><a href="#domains">Violence Types</a></li>
         <li><a href="#stack">What To Do</a></li>
         <li><a href="#conclusion">Simple System</a></li>
@@ -601,6 +603,109 @@
       <p class="dialogue-q">"What about chin down — can't I see less?"</p>
       <p class="dialogue-a">
         Your eyes track from their chest and shoulders — you see hand movement earlier than staring at their face. Chin tuck protects the knockout button. Boxers do this for a reason; street fights end the same way.
+      </p>
+    </div>
+  </section>
+
+  <!-- FIGHT SCIENCE -->
+  <section id="fight-science" class="container">
+    <div class="section-header">
+      <h2>Fight Science — Hard Numbers & Physics</h2>
+      <p class="section-intro">
+        Force in newtons, knockouts in G-forces, reaction time in milliseconds, ground probability in percentages. This is the biomechanics and outcome data behind every ranking on this site.
+      </p>
+    </div>
+
+    <div class="nhi-voice">
+      <div class="nhi-voice-label">AI NHI — Fight science in plain English</div>
+      <h3>Physics does not care about your belt color</h3>
+      <p>
+        A karate reverse punch and a boxing cross both measure around <strong>2,500 newtons</strong> in the lab.
+        The difference is <em>effective mass</em> delivered under stress against someone hitting back — that is the kinetic chain, not fist shape.
+        Knockouts are rapid head acceleration (brainstem shear), not simply "hard enough." Hooks and falls rotate the brain worse than straight shots.
+      </p>
+      <p>
+        <strong>64% of street knockouts</strong> land in the first 10 seconds. Choice reaction time runs <strong>400–600ms+</strong> — inside punching range, the person who moves first wins unless you already acted (leaving, hands up, pre-committed exit).
+        Ground happens in <strong>62–73%</strong> of fights, but only <strong>41%</strong> get back up. The 90% ground myth is debunked LAPD data.
+      </p>
+    </div>
+
+    <div id="fs-nhi-summary" class="plain-box" style="margin-bottom:2rem"></div>
+
+    <!-- KINETIC CHAIN -->
+    <div class="fs-section">
+      <h3>Kinetic Chain — Floor to Fist</h3>
+      <div id="fs-kinetic-chain"></div>
+      <div id="fs-kinetic-cards"></div>
+    </div>
+
+    <div class="chart-container compact" style="margin-top:1.5rem">
+      <div class="chart-title">Peak Force (N) vs Effective Mass (kg) — Lab vs Fight Validated</div>
+      <p class="chart-explainer">Green = proven in full-contact fights. Blue = lab only. Gray = estimated/unvalidated. Karate matches boxing in newtons — not in delivery.</p>
+      <canvas id="forceScienceChart"></canvas>
+    </div>
+
+    <!-- KNOCKOUT -->
+    <div class="fs-section">
+      <h3>Knockout Mechanics — Linear vs Rotational Acceleration</h3>
+      <div class="fs-diagram-row">
+        <div class="fs-diagram-box"><div id="fs-knockout"></div></div>
+        <div class="fs-diagram-box" id="fs-ko-targets"></div>
+      </div>
+    </div>
+
+    <div class="chart-row-2">
+      <div class="chart-container compact">
+        <div class="chart-title">When Fights End — KO Timeline (n=154)</div>
+        <canvas id="koTimelineChart"></canvas>
+      </div>
+      <div class="chart-container compact">
+        <div class="chart-title">Reaction Time — Why Defender Loses at Close Range</div>
+        <canvas id="reactionTimeChart"></canvas>
+      </div>
+    </div>
+    <p class="chart-explainer" id="fs-reaction-implication"></p>
+
+    <div class="fs-section">
+      <h3>Action vs Reaction</h3>
+      <div class="fs-diagram-single"><div id="fs-reaction"></div></div>
+    </div>
+
+    <!-- RANGE -->
+    <div class="fs-section">
+      <h3>Range Science — What Dominates at Each Distance</h3>
+      <div class="fs-diagram-single"><div id="fs-range"></div></div>
+      <div class="fs-range-grid" id="fs-range-cards"></div>
+    </div>
+
+    <!-- GROUND -->
+    <div class="chart-row-2">
+      <div class="chart-container compact">
+        <div class="chart-title">Ground Probability — LAPD vs Street Footage</div>
+        <canvas id="groundScienceChart"></canvas>
+      </div>
+      <div class="chart-container compact">
+        <div class="chart-title">Sport vs Street Finish Rates (%)</div>
+        <canvas id="ufcStreetChart"></canvas>
+      </div>
+    </div>
+
+    <div class="fs-section">
+      <h3>Six Fight Science Principles</h3>
+      <div class="fs-principles-grid" id="fs-principles-grid"></div>
+    </div>
+
+    <div class="dialogue">
+      <p class="dialogue-q">"If karate hits as hard as boxing in the lab, why does boxing win on the street?"</p>
+      <p class="dialogue-a">
+        Because fight science measures two different things: <strong>peak force in newtons</strong> (lab) and <strong>delivery under live resistance</strong> (fights).
+        The kinetic chain — foot drive, hip rotation, effective mass — only fully wires under stress sparring.
+        A 2,645N karate punch that never lands on a resisting opponent is a physics demo, not a fight skill.
+      </p>
+      <p class="dialogue-q">"How hard do you have to hit to knock someone out?"</p>
+      <p class="dialogue-a">
+        Combat sports TBI research cites roughly <strong>70–100G linear head acceleration</strong> and high <strong>rotational acceleration</strong> for knockouts — but the practical answer from street footage is simpler:
+        clean shots to the jaw in the <strong>first 10 seconds</strong> end most fights. After that, exhaustion, grappling, and third parties change everything.
       </p>
     </div>
   </section>
