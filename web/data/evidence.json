@@ -871,5 +871,86 @@
     ],
     "nhiSummary": "Nobody has run the study you want: fit gym people vs sedentary people in real violent encounters. NCVS does not record victim fitness. What we have are proxies: disabled and mobility-impaired people are victimized 3–4× more; running beats fighting when outnumbered 2:1; older adults reduce injury 57% with verbal/passive resistance, not brawling; EAAA's 2 hours of physical work inside a brain-first program cut assaults in half. Inference: train minimum effective fitness for escape (sprint, get-up, burst) after AAA habits — not bodybuilder cardio for a fight that should never happen.",
     "honestLimits": "Correlation is not causation. Disability victimization reflects targeting, social isolation, and care dependence — not only inability to fight. Being fit does not substitute for avoidance. Firearms and surprise negate fitness advantages."
+  },
+  "firstPrinciples": {
+    "method": "First principles thinking: strip every inherited belief (belts, UFC 1993, gym slogans, movie choreography) down to irreducible truths — physics, biology, crime statistics, game theory — then rebuild only what logically follows. If a conclusion cannot be derived from an axiom plus evidence, it does not rank on this site.",
+    "tagline": "Don't ask 'what did my instructor teach?' Ask 'what must be true for a human to survive predatory violence?'",
+    "axioms": [
+      {
+        "id": "A1",
+        "axiom": "The civilian win condition is non-victimization — not defeating an opponent",
+        "firstPrinciples": "In sport, win = referee stoppage or submission. In predatory violence, win = you leave intact without being assaulted. Different games, different optima.",
+        "destroys": "Defaulting to MMA/BJJ gym culture as primary self-defense"
+      },
+      {
+        "id": "A2",
+        "axiom": "Violence is asymmetric — weapons, numbers, and surprise negate technique",
+        "firstPrinciples": "~74% of murders involve firearms; ~48% juvenile incidents involve multiple offenders; predation selects vulnerability. Fair fights are rare.",
+        "destroys": "Training for 1v1 unarmed duel as the default scenario"
+      },
+      {
+        "id": "A3",
+        "axiom": "Leverage is temporal — the highest-return moment is before contact",
+        "firstPrinciples": "Every second earlier you detect and exit removes the entire injury distribution. Post-contact options are strictly worse in expected value.",
+        "destroys": "Spending years on ground game before teaching exit habits"
+      },
+      {
+        "id": "A4",
+        "axiom": "Human reaction time guarantees the initiator advantage at close range",
+        "firstPrinciples": "Choice reaction 400–600ms+; punches land in <200ms. Defender who waits to process loses unless already acting (hands up, leaving).",
+        "destroys": "Cold-start chambered techniques as reliable defense"
+      },
+      {
+        "id": "A5",
+        "axiom": "Knockouts are physics — rapid head acceleration shuts off the brainstem",
+        "firstPrinciples": "Not pain tolerance. Jaw/chin shots, hooks, and falls rotate the brain. First 10 seconds decide most standing encounters.",
+        "destroys": "Point-karate touch scoring as street preparation"
+      },
+      {
+        "id": "A6",
+        "axiom": "Claims without measured outcomes are hypotheses — not recommendations",
+        "firstPrinciples": "Evidence tiers: RCT > government data > observation > doctrine > marketing. Unmeasured must be labeled, not assumed.",
+        "destroys": "Krav 'street lethal' without victimization RCTs; 90% ground myth"
+      },
+      {
+        "id": "A7",
+        "axiom": "Training time is finite — optimize expected survival value per hour",
+        "firstPrinciples": "12-hour EAAA moved assault rates 50–57%. Years of sport BJJ have no equivalent civilian victimization trial. Marginal hours matter.",
+        "destroys": "10-year belt journeys before addressing acquaintance predation"
+      },
+      {
+        "id": "A8",
+        "axiom": "Threat geometry dictates response — gun compliance ≠ knife clinch",
+        "firstPrinciples": "Firearm at close range: reaction favors shooter — comply and exit. Knife: distance and run. One-size 'fight back' violates physics and data.",
+        "destroys": "Universal aggressive counter-attack doctrine"
+      }
+    ],
+    "derivedPrinciples": [
+      { "id": "D1", "from": ["A1", "A3", "A6"], "principle": "Avoidance-first is the rational default strategy", "evidence": "EAAA RCT Tier A+; only medical-trial victimization reduction" },
+      { "id": "D2", "from": ["A2", "A3"], "principle": "Escape-priority beats combat-dominance for civilians", "evidence": "22% escape vs 11% defeat when outnumbered" },
+      { "id": "D3", "from": ["A4", "A5"], "principle": "If contact is unavoidable: 10-second standup burst, then exit", "evidence": "64% KOs in first 10 sec; boxing kinetic chain under resistance" },
+      { "id": "D4", "from": ["A2", "A5"], "principle": "Ground is high-risk environment on concrete — stand up fast", "evidence": "62–73% end on ground; only 41% return to feet" },
+      { "id": "D5", "from": ["A6", "A7"], "principle": "3×7 adversarial voting filters marketing from evidence", "evidence": "Three hostile reviewers; weighted toward avoidance + victimization proof" },
+      { "id": "D6", "from": ["A7", "A1"], "principle": "AAA Exit Protocol — minutes/day brain work before years of gym", "evidence": "EAAA mediators; 2hr physical inside 12hr program" },
+      { "id": "D7", "from": ["A8"], "principle": "Weapon presented = compliance and distance, not disarm drills", "evidence": "Tier C–D for civilian disarm RCTs; FBI firearm homicide data" },
+      { "id": "D8", "from": ["A4", "A3"], "principle": "Posture serves exit — feet mobile, chin tucked, hands visible", "evidence": "Exit-ready stance; weapon compliance protocols" }
+    ],
+    "rejectedAssumptions": [
+      { "assumption": "You need a black belt to be safe", "reality": "EAAA reduced assaults 50–57% with 2 hours physical in a 12-hour program", "tier": "A+" },
+      { "assumption": "90% of fights go to the ground", "reality": "LAPD: 62% in arrest altercations — myth debunked", "tier": "A" },
+      { "assumption": "Sport BJJ transfers directly to street survival", "reality": "Strong for control (Tier A LE); Tier F for multi-attacker proactive avoidance", "tier": "A" },
+      { "assumption": "Harder punch always wins", "reality": "Karate and boxing similar lab newtons — delivery under resistance differs", "tier": "A" },
+      { "assumption": "Fitness = survival", "reality": "No NCVS fitness field; mobility disability 3–4× victimization — escape fitness inferred only", "tier": "B" },
+      { "assumption": "Always fight back physically", "reality": "65+ verbal/passive resistance 57% less injury; guns require compliance", "tier": "A" }
+    ],
+    "rebuildOrder": [
+      "Define win condition (A1) → non-victimization",
+      "Map threat reality (A2) → weapons, groups, surprise",
+      "Allocate training time to highest leverage phase (A3, A7) → pre-contact",
+      "Validate only with measured outcomes (A6) → adversarial 3×7 filter",
+      "Add physical layer only where derived (A4, A5) → burst, escape, posture",
+      "Special-case weapons (A8) → compliance protocols"
+    ],
+    "nhiSummary": "First principles destroys the martial arts industry's default stack. You do not start with 'which art is best?' You start with: What is winning? (leaving unharmed.) What is the threat? (unfair, often armed, often known.) When is leverage highest? (before contact.) What proof exists? (RCTs and NCVS, not demos.) Everything on this site — EAAA first, AAA daily habits, escape over ground fighting, weapon compliance — is rebuilt from those truths. Tradition is consulted only where evidence confirms it (boxing delivery, wrestling sprawls). Everything else is ranked or rejected."
   }
 }

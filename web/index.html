@@ -15,6 +15,7 @@
   <script src="js/posture-viz.js" defer></script>
   <script src="js/fight-science-viz.js" defer></script>
   <script src="js/fitness-viz.js" defer></script>
+  <script src="js/first-principles-viz.js" defer></script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
@@ -23,6 +24,7 @@
       <div class="logo">Resilience</div>
       <ul class="nav-links">
         <li><a href="#start-here">Start Here</a></li>
+        <li><a href="#first-principles">First Principles</a></li>
         <li><a href="#top-findings">Top Findings</a></li>
         <li><a href="#awareness">Awareness</a></li>
         <li><a href="#adversarial">How We Scored</a></li>
@@ -63,9 +65,9 @@
         People spend years learning Brazilian Jiu-Jitsu or Krav Maga without anyone showing them <strong>what the numbers actually say</strong>.
       </p>
       <p>
-        Resilience is an open research project that asked one question: <strong>What strategies, tactics, and techniques have real evidence behind them?</strong>
-        We read medical trials, FBI and government crime reports, police department outcome data, and analyzed over 150 real street fights on video.
-        Then three deliberately disagreeing reviewers scored everything using a method called <strong>3×7 adversarial voting</strong> — so no single bias could win.
+        Resilience is an open research project built from <strong><a href="#first-principles">first principles</a></strong> — not gym tradition. We asked: <strong>What must be true for a human to survive predatory violence?</strong>
+        Then we rebuilt recommendations from physics, biology, and crime data only.
+        Three deliberately disagreeing reviewers scored everything using <strong>3×7 adversarial voting</strong> — so no single bias could win.
       </p>
       <p>
         <strong>Important:</strong> This is educational research, not a training program. It will not make you invincible.
@@ -94,6 +96,58 @@
       <p class="dialogue-a">
         Non-Human Intelligence — meaning this analysis was synthesized by AI from primary sources, then stress-tested by adversarial review rules
         so conclusions are not just one chatbot's opinion. Every claim on this page ties back to a source in our <a href="https://github.com/alphaonedev/Resilience">GitHub data files</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- FIRST PRINCIPLES -->
+  <section id="first-principles" class="container">
+    <div class="section-header">
+      <h2>First Principles — Rebuild From Truth, Not Tradition</h2>
+      <p class="section-intro">
+        Elon Musk popularized the term, but the idea is ancient: <strong>strip inherited assumptions</strong> (belts, UFC 1993, gym slogans) down to what cannot be argued away — then derive conclusions from there. Everything else on this site follows from this page.
+      </p>
+    </div>
+
+    <div id="fp-intro" class="nhi-voice" style="border-left-color:#10b981"></div>
+
+    <div class="fp-diagram-wrap">
+      <div id="fp-pyramid-diagram"></div>
+    </div>
+
+    <div class="fs-section">
+      <h3>Eight Axioms — What Cannot Be Argued Away</h3>
+      <p class="chart-explainer">Each axiom destroys a common industry assumption. If your training contradicts an axiom, the training is optimizing for the wrong game.</p>
+      <div class="fp-axiom-grid" id="fp-axioms"></div>
+    </div>
+
+    <div class="fs-section">
+      <h3>Eight Derived Principles — What Logically Follows</h3>
+      <p class="chart-explainer">Not opinions — conclusions from axioms plus measured evidence. Tags show which axioms each principle comes from.</p>
+      <div id="fp-derived" class="fp-derived-ladder"></div>
+    </div>
+
+    <div class="chart-row-2">
+      <div class="fp-rebuild-box">
+        <h4>How We Rebuilt the Stack (In Order)</h4>
+        <div id="fp-rebuild"></div>
+      </div>
+      <div class="fp-rebuild-box">
+        <h4>Industry Assumptions — Rejected</h4>
+        <div id="fp-rejected" class="fp-reject-wrap"></div>
+      </div>
+    </div>
+
+    <div id="fp-nhi-summary" class="plain-box" style="margin-top:2rem;border-left:4px solid #10b981"></div>
+
+    <div class="dialogue">
+      <p class="dialogue-q">"Isn't first principles just common sense?"</p>
+      <p class="dialogue-a">
+        Common sense said ground fighting wins street fights after one UFC night in 1993. First principles said: define the win condition (leave unharmed), check the threat (guns, groups, surprise), find the highest-leverage moment (before contact), demand proof (RCTs). That chain puts EAAA first and the triangle choke last — opposite of common gym sense.
+      </p>
+      <p class="dialogue-q">"How does this connect to 3×7 adversarial voting?"</p>
+      <p class="dialogue-a">
+        Axioms tell you <em>what game you're playing</em>. Adversarial voting tests whether each program actually wins that game — with three hostile reviewers so marketing cannot smuggle tradition in as data. First principles is the foundation; adversarial voting is the filter on top.
       </p>
     </div>
   </section>

@@ -421,6 +421,9 @@ function renderMinimalSystemConclusion() {
 }
 
 function renderAll() {
+  if (typeof renderAllFirstPrinciplesVisualizations === 'function') {
+    renderAllFirstPrinciplesVisualizations();
+  }
   renderHeroStats();
   renderSpectrum();
   renderDataGap();
