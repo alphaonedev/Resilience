@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Resilience — Evidence-based violence domain research, situational awareness metrics, martial arts effectiveness, and 3×7 adversarial voting analysis.">
+  <title>Resilience — Violence, Awareness & Evidence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <div class="logo">Resilience</div>
+      <ul class="nav-links">
+        <li><a href="#awareness">Awareness</a></li>
+        <li><a href="#adversarial">3×7 Vote</a></li>
+        <li><a href="#techniques">Techniques</a></li>
+        <li><a href="#domains">Domains</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#disclaimer">Disclaimer</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero container">
+    <div class="hero-badge">Evidence Tier A+ → D · Adversarial Voting · Open Research</div>
+    <h1>Violence Is Not One Thing.<br>Neither Is Preparation.</h1>
+    <p>
+      A synthesis of peer-reviewed research, operational law-enforcement data, street-fight analysis,
+      and 3×7 adversarial voting on what actually works — including the critical missing metric:
+      proactive multi-attacker avoidance through situational awareness.
+    </p>
+    <div class="hero-stats" id="hero-stats"></div>
+  </header>
+
+  <section id="awareness" class="container">
+    <div class="section-header">
+      <h2>Situational Awareness & The Missing Metric</h2>
+      <p>Stay Alert, Stay Alive. Be Bold, Be Brave. Cooper Color Code. OODA Loop. What does the evidence actually say?</p>
+    </div>
+
+    <div class="alert-gap" id="data-gap">
+      <h3>⚠ Critical Data Gap</h3>
+      <div id="data-gap-content"></div>
+    </div>
+
+    <div class="card-grid">
+      <div class="chart-container">
+        <div class="chart-title">Multi-Attacker Outcomes (Reactive — Already Engaged)</div>
+        <canvas id="multiAttackerChart"></canvas>
+      </div>
+      <div class="chart-container">
+        <div class="chart-title">EAAA Curriculum — Where Avoidance Lives</div>
+        <canvas id="eaaaChart"></canvas>
+      </div>
+    </div>
+
+    <div class="card-grid" style="margin-top:1.5rem">
+      <div class="card">
+        <h3>Cooper Color Code <span class="tier tier-c">Tier C</span></h3>
+        <p style="color:var(--text-muted);margin-top:0.75rem">White → Yellow (relaxed alert) → Orange (threat identified) → Red (action). Widely adopted in military, LE, and aviation. <strong>No civilian RCT</strong> linking color-code training to victimization reduction.</p>
+      </div>
+      <div class="card">
+        <h3>Stay Alert, Stay Alive <span class="tier tier-c">Tier C</span></h3>
+        <p style="color:var(--text-muted);margin-top:0.75rem">U.S. military force protection: vigilance, route planning, low profile, escape prioritization. Doctrinally correct. Outcome data is institutional, not peer-reviewed for civilians.</p>
+      </div>
+      <div class="card">
+        <h3>EAAA "Assess" Unit <span class="tier tier-aplus">Tier A+</span></h3>
+        <p style="color:var(--text-muted);margin-top:0.75rem">Trains faster danger detection from acquaintances, problem-solving to reduce perpetrator advantage. <strong>50–57% rape reduction</strong> in RCT and real-world replication. Closest validated proxy for "sensed danger → took action."</p>
+      </div>
+      <div class="card">
+        <h3>NCVS Verbal/Passive Resistance <span class="tier tier-a">Tier A</span></h3>
+        <p style="color:var(--text-muted);margin-top:0.75rem">Assault victims 65+ using verbal/passive strategies only: <strong>57% less likely to be injured</strong> vs. physical resistance or no action (Bachman et al. 2022).</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="adversarial" class="container">
+    <div class="section-header">
+      <h2>3×7 Adversarial Voting — Round 2</h2>
+      <p>Three epistemic adversaries × seven criteria × seven interventions. Proactive avoidance weighted highest.</p>
+    </div>
+
+    <div id="adversarial-rankings"></div>
+
+    <div class="chart-container tall" style="margin-top:2rem">
+      <div class="chart-title">Top 3 Interventions — Criteria Radar</div>
+      <canvas id="radarChart"></canvas>
+    </div>
+
+    <div class="heatmap" id="heatmap-table"></div>
+
+    <div class="card-grid" id="adversarial-findings" style="margin-top:2rem"></div>
+  </section>
+
+  <section id="techniques" class="container">
+    <div class="section-header">
+      <h2>Technique Effectiveness Rankings</h2>
+      <p>Boxing punches vs. karate punches vs. kung fu — ranked by kinetic output, fight-ending probability, and full-contact validation.</p>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Striking</h3>
+        <ul class="tech-list" id="striking-list"></ul>
+      </div>
+      <div class="card">
+        <h3>Kicking</h3>
+        <ul class="tech-list" id="kicking-list"></ul>
+      </div>
+      <div class="card">
+        <h3>Grappling</h3>
+        <ul class="tech-list" id="grappling-list"></ul>
+      </div>
+    </div>
+    <div class="chart-container tall" style="margin-top:1.5rem">
+      <div class="chart-title">BJJ-Inspired Law Enforcement Outcomes (% Reduction)</div>
+      <canvas id="leChart"></canvas>
+    </div>
+  </section>
+
+  <section id="domains" class="container">
+    <div class="section-header">
+      <h2>Violence Domain Spectrum</h2>
+      <p>From kata to Tier-1 SMU — each tier is a different game with different winners.</p>
+    </div>
+    <div class="spectrum" id="violence-spectrum"></div>
+    <div class="chart-container tall">
+      <div class="chart-title">Crime & Victimization Statistics</div>
+      <canvas id="crimeStatsChart"></canvas>
+    </div>
+  </section>
+
+  <section id="stack" class="container">
+    <div class="section-header">
+      <h2>Evidence-Ranked Preparation Stack</h2>
+      <p>Avoidance first. Techniques second. Ground fighting last — and only in the right domain.</p>
+    </div>
+    <div class="card-grid" id="recommended-stack"></div>
+  </section>
+
+  <footer class="disclaimer" id="disclaimer">
+    <div class="container">
+      <h3>Full Legal Disclaimer</h3>
+      <p><strong>READ CAREFULLY BEFORE USING THIS RESEARCH.</strong> The Resilience project and all associated materials — including this website, data files, visualizations, adversarial voting outputs, technique rankings, and research synthesis — are provided for <strong>general informational and educational purposes only</strong>.</p>
+
+      <ul>
+        <li><strong>Not Professional Advice.</strong> Nothing herein constitutes legal advice, medical advice, mental health counseling, law enforcement guidance, military tactical instruction, security consulting, or personalized self-defense training. Consult qualified professionals in your jurisdiction before making any safety, training, or legal-use-of-force decisions.</li>
+        <li><strong>No Warranty.</strong> All information is provided "AS IS" and "AS AVAILABLE" without warranty of any kind, express or implied, including but not limited to warranties of accuracy, completeness, reliability, fitness for a particular purpose, merchantability, or non-infringement. The authors and contributors make no representation that any technique, strategy, or program described will prevent victimization, injury, or death in any specific scenario.</li>
+        <li><strong>Evidence Limitations.</strong> Evidence tiers (A+ through D) reflect our assessment of source quality, not absolute truth. Peer-reviewed studies have limitations. Observational street-fight analyses (e.g., n=154) are not RCTs. The proactive multi-attacker avoidance metric is explicitly identified as a <strong>data gap</strong> — no direct peer-reviewed percentage exists. Proxy metrics are noted where applicable.</li>
+        <li><strong>Jurisdictional Variation.</strong> Laws governing self-defense, use of force, weapons possession, and resistance vary dramatically by country, state, and municipality. Techniques lawful in one context may constitute criminal assault in another. You are solely responsible for understanding and complying with applicable law.</li>
+        <li><strong>Inherent Risk.</strong> Physical training and confrontation carry inherent risks including but not limited to traumatic brain injury, orthopedic injury, psychological trauma, legal prosecution, civil liability, and death. Participation in any training regimen or application of any technique is at your sole risk.</li>
+        <li><strong>No Instructor-Student Relationship.</strong> Accessing this material does not create any duty of care, fiduciary relationship, instructor-student relationship, or professional services engagement between you and the Resilience project, its contributors, or any affiliated party.</li>
+        <li><strong>Third-Party Sources.</strong> Citations to NEJM, BJS, FBI, LAPD studies, EAAA/SARE Centre, Louie Martin/Martial Journal, National Sheriffs' Association, ESPN Fightnomics, and other sources are attributed in data files. We do not control third-party content and are not responsible for its accuracy or subsequent changes.</li>
+        <li><strong>Martial Arts & Program References.</strong> References to Brazilian Jiu-Jitsu, boxing, Krav Maga, EAAA, Cooper Color Code, Stay Alert Stay Alive, or any other system do not constitute endorsement or criticism of any specific school, instructor, franchise, or commercial program. Quality varies enormously between providers.</li>
+        <li><strong>Adversarial Voting Methodology.</strong> The 3×7 adversarial voting scheme employs three epistemic personas scoring seven interventions across seven criteria. Scores reflect structured adversarial debate and evidence weighting — not clinical trials, meta-analyses, or consensus of credentialed expert panels. Results should be interpreted as one rigorous analytical framework, not definitive ranking.</li>
+        <li><strong>Assumption of Risk.</strong> By accessing, downloading, referencing, or relying upon any Resilience material, you expressly assume all risks associated with such use and agree to hold harmless the Resilience project, its contributors, repository hosts, and affiliates from any and all claims, damages, losses, liabilities, and expenses arising from your use of or reliance upon this information.</li>
+        <li><strong>Medical & Psychological.</strong> If you have experienced violence or trauma, contact qualified mental health professionals and victim services. This resource is not a substitute for trauma-informed care.</li>
+        <li><strong>Changes.</strong> Research, statistics, and rankings may be updated without notice. Always verify critical statistics against primary sources linked in <code>/data/evidence.json</code>.</li>
+      </ul>
+
+      <p style="margin-top:1.5rem"><strong>Emergency:</strong> If you are in immediate danger, contact your local emergency services (e.g., 911 in the United States) or equivalent.</p>
+
+      <div class="copyright">
+        <p>© 2026 Resilience Research Project. Open source data and synthesis. Licensed for educational use. GitHub repository: <a href="https://github.com/" id="repo-link">Resilience</a></p>
+        <p style="margin-top:0.5rem">Methodology: 3×7 Adversarial Voting · Evidence Tier Classification · Violence Domain Taxonomy · NHI Synthesis Protocol</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
