@@ -566,9 +566,15 @@
     <div class="section-header">
       <h2>How We Scored Everything (3×7 Adversarial Voting)</h2>
       <p class="section-intro">
-        Instead of one opinion, we ran three reviewers who argue on purpose — a fight-sport expert, a police-data expert, and a skeptic who demands medical-trial proof. They scored 7 approaches on 7 questions. Proactive avoidance counted most.
+        Two weighting profiles, same 3×7 method. <strong>Round 3 (default):</strong> military fight science + Bas Rutten counterweight — medical RCT logged at 0.10 weight, not crowned. <strong>Round 2:</strong> medical victimization RCT weighted highest (EAAA wins).
       </p>
     </div>
+
+    <div class="adv-round-toggle" role="tablist" aria-label="Adversarial voting round">
+      <button type="button" class="adv-round-btn active" data-round="3" onclick="setAdversarialRound(3)">Round 3 — Fight Science + Rutten</button>
+      <button type="button" class="adv-round-btn" data-round="2" onclick="setAdversarialRound(2)">Round 2 — Medical-weighted</button>
+    </div>
+    <div id="adversarial-profile"></div>
 
     <div class="plain-box adversarial-explainer">
       <h4>What is 3×7 adversarial voting? (Read this first)</h4>
@@ -581,7 +587,7 @@
             <li><strong>The Hard Skeptic</strong> — trusts medical trials only; calls out missing data and myths (like “90% of fights go to the ground”)</li>
           </ul>
         </li>
-        <li><strong>7</strong> = seven major approaches compared (EAAA, MMA, BJJ, boxing/wrestling, Krav, traditional MA, military awareness doctrine)</li>
+        <li><strong>7</strong> = seven major approaches compared (Round 3: Rutten hybrid, fight-science stack, military SA, EAAA, MMA, BJJ, traditional MA)</li>
         <li><strong>7 questions</strong> = each approach scored 0–10 on seven evidence tests (avoidance, multi-attacker escape, proof, fighting skill, control, live training, did victimization actually drop?)</li>
       </ul>
       <p><strong>Three waves — how one round works:</strong></p>
@@ -594,7 +600,7 @@
       <ul>
         <li>A boxing coach cannot win by cheering boxing — the skeptic blocks uncited claims.</li>
         <li>A awareness-only advocate cannot win — the fighter blocks skills that were never pressure-tested.</li>
-        <li>What ranks high must please <em>avoidance + real proof</em> (weighted highest) — not Instagram toughness.</li>
+        <li>What ranks high depends on the <em>weighting profile</em> you select — Round 3 crowns fight science + Rutten; Round 2 crowns medical trial proof.</li>
         <li>Marketing that sounds good but has no study survives Wave 2 and gets cut (Krav, traditional point-karate).</li>
         <li>Honest unknowns stay labeled unknown (e.g. “I left before the fight” — still not scientifically measured).</li>
       </ul>
@@ -614,8 +620,7 @@
         <li>Has it been proven to reduce actual victimization in studies?</li>
       </ol>
       <p>
-        Scores are 0–10 per question. <strong>EAAA won overall</strong> because it is the only approach with a medical trial showing fewer assaults — not because it is the best punching system.
-        <strong>MMA and BJJ score high on fighting questions but low on "leave before it starts"</strong> — because gym culture trains engagement, not exit.
+        Scores are 0–10 per question. <strong>Round 3 (default): Rutten Lethal Street (distilled) wins</strong> — avoidance-first framing plus full-contact burst proof. EAAA drops to #4 because medical RCT weight is 0.10. <strong>Round 2: EAAA wins</strong> on medical trial proof. MMA/BJJ always score high on fighting, low on proactive exit.
       </p>
     </div>
 
@@ -686,7 +691,7 @@
     </div>
 
     <p class="chart-explainer">
-      <strong>Strategy bar chart:</strong> Weighted scores from our 3×7 adversarial voting. Avoidance-first leads because it has medical-trial proof — not because it teaches the best punches.
+      <strong>Strategy bar chart:</strong> Weighted scores from 3×7 adversarial voting (Round 2 medical profile). Round 3 fight-science profile crowns Rutten + boxing/Muay Thai — see <a href="#adversarial">How We Scored</a> toggle.
     </p>
 
     <div class="chart-row-2">

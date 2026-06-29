@@ -1,0 +1,222 @@
+{
+  "round": 3,
+  "date": "2026-06-29",
+  "focus": "Military fight-science proof + Bas Rutten counterweight — medical victimization RCT explicitly de-weighted",
+  "weightingProfile": {
+    "name": "Fight Science + Rutten",
+    "plainEnglish": "Scores what survives military doctrine, street fight data, full-contact proof, and Rutten's avoidance-first hybrid — not who has the best medical trial.",
+    "c7Policy": "Medical victimization RCT (C7) weighted at 0.10 — logged but does not crown the stack.",
+    "counterweight": "Bas Rutten Lethal Street (distilled) added as explicit hybrid benchmark against classroom-only and sport-only systems.",
+    "compareToRound": 2,
+    "round2Winner": "EAAA / Empowerment Self-Defense (7.89)",
+    "round3Winner": "Rutten Lethal Street (distilled hybrid) (7.90)"
+  },
+  "methodologyPlainEnglish": {
+    "name": "3×7 Adversarial Voting — Round 3",
+    "whatThreeMeans": "3 AI reviewer personas — fight scientist, Rutten street counterweight, operational skeptic who refuses medical RCT as king",
+    "whatSevenMeans": "7 approaches scored on 7 questions with fight-science and live-resistance criteria weighted highest",
+    "threeWaves": [
+      { "wave": 1, "name": "Independent scoring", "plainEnglish": "Each reviewer scores from military doctrine, Louie Martin street cohort, UFC/Pancrase validation, and Rutten NHI reconciliation — not NEJM alone." },
+      { "wave": 2, "name": "Adversarial challenge", "plainEnglish": "Fight scientist slashes EAAA on C4/C6. Rutten voter challenges MMA engagement culture. Skeptic blocks Krav-style scripts without pressure proof. Medical RCT scores recorded but weight locked at 0.10." },
+      { "wave": 3, "name": "Consensus & penalties", "plainEnglish": "Revised scores. Rutten hybrid must survive skeptic on weapon disarm overreach and 75-technique bloat. Weighted totals use fight-science profile." }
+    ],
+    "whyItFindsRightData": "When you refuse to let a campus medical trial crown the entire self-defense industry, what rises is: military SA doctrine, Rutten's three-tier stack, and boxing/Muay Thai/wrestling delivery under live resistance.",
+    "notThis": "Not anti-EAAA. EAAA still logs the highest raw medical score — it simply does not own the weighting profile you asked for."
+  },
+  "voters": [
+    {
+      "id": "V1",
+      "name": "Military Fight Scientist",
+      "trusts": "OODA/Boyd reaction-time data, 10-second KO window, street-fight cohort stats, full-contact sparring transfer",
+      "distrusts": "Classroom-only awareness without physical validation, sport rules that hide exit failure"
+    },
+    {
+      "id": "V2",
+      "name": "Rutten Street Counterweight",
+      "trusts": "Bas Rutten three-tier stack, Pancrase/UFC delivery, teep/calf/clinch burst, explicit avoidance-before-contact",
+      "distrusts": "Pure sport MMA engagement, 75-technique catalogs, disarm heroics, medical trial as sole SD metric"
+    },
+    {
+      "id": "V3",
+      "name": "Operational Skeptic",
+      "trusts": "LE/military adoption, NCVS field outcomes, Louie Martin n=154, pressure-tested technique tiers",
+      "distrusts": "Gym marketing, medical RCT generalized beyond studied population, Cooper Color without drills"
+    }
+  ],
+  "criteria": [
+    {
+      "id": "C1",
+      "name": "Proactive Threat Detection & Avoidance",
+      "weight": 1.15,
+      "description": "Military SA + Rutten Tier 1 — sense danger and exit before contact"
+    },
+    {
+      "id": "C2",
+      "name": "Multi-Attacker Escape Architecture",
+      "weight": 1.25,
+      "description": "Angle, shield, one-strike-then-sprint — not drawn into numerical disadvantage"
+    },
+    {
+      "id": "C3",
+      "name": "Fight Science & Military Doctrine Alignment",
+      "weight": 1.2,
+      "description": "Reaction-time physics, 64% KO in 10 sec, ground-risk stats, OODA/Stay Alert coherence"
+    },
+    {
+      "id": "C4",
+      "name": "Unarmed 1v1 Fight-Ending Technique",
+      "weight": 1.25,
+      "description": "Standing burst that ends or stuns in the contact window"
+    },
+    {
+      "id": "C5",
+      "name": "Control Without Excessive Harm",
+      "weight": 0.75,
+      "description": "Grappling restraint — LE domain, lower weight for civilian SD"
+    },
+    {
+      "id": "C6",
+      "name": "Stress Transfer Under Live Resistance",
+      "weight": 1.35,
+      "description": "Highest weight — sparring, full-contact, adrenal delivery proof"
+    },
+    {
+      "id": "C7",
+      "name": "Medical Victimization RCT",
+      "weight": 0.1,
+      "description": "Logged only — explicitly de-weighted per user profile; does not crown rankings"
+    }
+  ],
+  "interventions": [
+    "Rutten Lethal Street (distilled hybrid)",
+    "Boxing + Wrestling + Muay Thai (fight science stack)",
+    "Stay Alert Stay Alive + Cooper SA Doctrine",
+    "EAAA / Empowerment Self-Defense",
+    "Integrated MMA (Boxing + Wrestling + Muay Thai)",
+    "Brazilian Jiu-Jitsu",
+    "Traditional Martial Arts (low-contact)"
+  ],
+  "scores": {
+    "Rutten Lethal Street (distilled hybrid)": {
+      "V1": [8, 8, 9, 9, 5, 9, 4],
+      "V2": [8, 8, 9, 9, 5, 9, 4],
+      "V3": [7, 7, 8, 8, 5, 8, 3],
+      "consensus": [7.7, 7.7, 8.7, 8.7, 5.0, 8.7, 3.7],
+      "weightedTotal": 7.9,
+      "rank": 1,
+      "tier": "A",
+      "verdict": "Wins under fight-science weighting. Rutten Tier 1 = military-grade avoidance framing. Tier 2–3 = boxing + Muay Thai burst with explicit exit cap. Pancrase/UFC validates C6. Resilience distills 75+ techniques to ~12 staples. Weapon disarm still Tier C–D — comply/run parallel rule applies."
+    },
+    "Boxing + Wrestling + Muay Thai (fight science stack)": {
+      "V1": [4, 3, 9, 9, 6, 9, 4],
+      "V2": [4, 3, 9, 9, 7, 9, 4],
+      "V3": [3, 3, 8, 8, 6, 9, 4],
+      "consensus": [3.7, 3.0, 8.7, 8.7, 6.3, 9.0, 4.0],
+      "weightedTotal": 6.61,
+      "rank": 2,
+      "tier": "A",
+      "verdict": "Pure fight-science delivery — 64% KOs in first 10 sec, boxing kinetic chain, sprawl without ground entanglement. Weak on proactive avoidance because gyms train engagement. Best contact-phase engine when layered under Rutten/military SA mind."
+    },
+    "Stay Alert Stay Alive + Cooper SA Doctrine": {
+      "V1": [8, 7, 7, 2, 2, 4, 5],
+      "V2": [9, 8, 8, 2, 2, 5, 5],
+      "V3": [6, 6, 6, 2, 2, 3, 3],
+      "consensus": [7.7, 7.0, 7.0, 2.0, 2.0, 4.0, 4.3],
+      "weightedTotal": 5.08,
+      "rank": 6,
+      "tier": "B",
+      "verdict": "Military force-protection doctrine — correct avoidance-first philosophy, institutional adoption, zero civilian victimization RCT. Rises on mind game; collapses on C4/C6 because it is not a fighting system."
+    },
+    "EAAA / Empowerment Self-Defense": {
+      "V1": [8, 6, 5, 5, 4, 4, 10],
+      "V2": [9, 7, 5, 5, 4, 5, 10],
+      "V3": [8, 6, 4, 4, 3, 4, 10],
+      "consensus": [8.3, 6.3, 4.7, 4.7, 3.7, 4.3, 10.0],
+      "weightedTotal": 5.46,
+      "rank": 4,
+      "tier": "B+",
+      "verdict": "Still owns the highest raw medical score (C7 = 10) — but at 0.10 weight it no longer crowns the stack. Strong Assess/Acknowledge for pre-contact. Weak C4/C6: 2 hours physical in 12-hour classroom program. Adjunct brain layer, not the fight-science foundation under this profile."
+    },
+    "Integrated MMA (Boxing + Wrestling + Muay Thai)": {
+      "V1": [3, 2, 4, 10, 8, 10, 5],
+      "V2": [3, 2, 4, 9, 7, 9, 4],
+      "V3": [3, 2, 3, 9, 7, 9, 4],
+      "consensus": [3.0, 2.3, 3.7, 9.3, 7.3, 9.3, 4.3],
+      "weightedTotal": 5.79,
+      "rank": 3,
+      "tier": "A",
+      "verdict": "Supreme C4/C6 when fight is unavoidable. Rutten counterweight slashes C1/C2 — gym culture rewards engagement and ground play, not premeditated exit. Sport-optimal, street-primary strategy failure."
+    },
+    "Brazilian Jiu-Jitsu": {
+      "V1": [3, 1, 4, 7, 10, 9, 7],
+      "V2": [4, 2, 4, 7, 10, 8, 8],
+      "V3": [2, 1, 3, 6, 9, 8, 7],
+      "consensus": [3.0, 1.3, 3.7, 6.7, 9.7, 8.3, 7.3],
+      "weightedTotal": 5.26,
+      "rank": 5,
+      "tier": "B",
+      "verdict": "Tier A for LE control (C5). Tier F for multi-attacker proactive escape. Ground-first violates fight-science street stats (62–73% ground, 41% stand-up). Stand-up escapes only — not sport guard."
+    },
+    "Traditional Martial Arts (low-contact)": {
+      "V1": [2, 2, 2, 3, 3, 1, 2],
+      "V2": [2, 2, 2, 3, 3, 2, 2],
+      "V3": [1, 1, 1, 2, 2, 1, 1],
+      "consensus": [1.7, 1.7, 1.7, 2.7, 2.7, 1.3, 1.7],
+      "weightedTotal": 1.91,
+      "rank": 7,
+      "tier": "D",
+      "verdict": "Unanimous last place. Fails C6 stress transfer. No fight-science delivery. Historical philosophy may align; modern point-sparring implementation does not."
+    }
+  },
+  "adversarialFindings": [
+    {
+      "id": "AF3-1",
+      "finding": "When medical RCT weight is set to 0.10, Rutten Lethal Street (distilled) ranks #1 — not because of a campus trial, but because it scores high on avoidance framing AND full-contact burst delivery in one package.",
+      "plainEnglish": "Stop letting the medical trial pick the winner. Rutten wins when you score fighting proof and military-style exit discipline.",
+      "confidence": "HIGH",
+      "allVotersAgree": true
+    },
+    {
+      "id": "AF3-2",
+      "finding": "Bas Rutten Tier 1 (avoid if possible) scores within one point of Stay Alert/Cooper on C1 — without claiming medical proof. The counterweight works: street hybrid agrees with military SA mind game.",
+      "plainEnglish": "Rutten and the military both say leave first. Rutten also teaches what to do if you cannot.",
+      "confidence": "HIGH",
+      "allVotersAgree": true
+    },
+    {
+      "id": "AF3-3",
+      "finding": "EAAA retains C7 = 10.0 raw score but drops from rank #1 (Round 2) to rank #4 under fight-science weighting. Medical evidence is logged, not deleted.",
+      "plainEnglish": "EAAA still has the best medical trial — it just does not run the scoreboard in this round.",
+      "confidence": "HIGH",
+      "allVotersAgree": true
+    },
+    {
+      "id": "AF3-4",
+      "finding": "C6 (live resistance) at weight 1.35 elevates boxing/MMA/Rutten and crushes classroom-only systems. 64% street KOs in first 10 seconds is the fight-science anchor for burst caps.",
+      "plainEnglish": "If you will not spar or pressure-test, you do not score high here — no matter how good the PowerPoint is.",
+      "confidence": "HIGH",
+      "allVotersAgree": true
+    },
+    {
+      "id": "AF3-5",
+      "finding": "Optimal stack under fight-science profile: Military SA (Cooper/Stay Alert/OODA) + Rutten Tier 1 fence/verbal + boxing/Muay Thai burst (3–5 beats) + sprawl/stand + sprint exit. EAAA boundary language optional adjunct — not foundation.",
+      "plainEnglish": "Train like Rutten and the military: see it, leave, and if trapped — burst then run. EAAA vocabulary helps; it does not replace the physical proof.",
+      "confidence": "HIGH",
+      "allVotersAgree": true
+    }
+  ],
+  "recommendedStack": [
+    { "priority": 1, "component": "Military SA mind game — Cooper Yellow→Orange→Red + Stay Alert + OODA tempo", "hours": "ongoing", "tier": "B/C doctrine" },
+    { "priority": 2, "component": "Rutten Tier 1 — fence, verbal stall, angle step, leave early", "hours": "8-week phase 1", "tier": "A/B" },
+    { "priority": 3, "component": "Boxing jab/cross + head movement (Tyson/Cus delivery)", "hours": "3–6 months", "tier": "A" },
+    { "priority": 4, "component": "Muay Thai teep + calf kick (Rutten staples)", "hours": "2–4 months", "tier": "A" },
+    { "priority": 5, "component": "Rutten capped clinch — frame + 3 knees max → push-off", "hours": "weeks 5–6", "tier": "A/B" },
+    { "priority": 6, "component": "Wrestling sprawl → stand immediately (no ground war)", "hours": "3–6 months", "tier": "A" },
+    { "priority": 7, "component": "Sprint exit to people/light — weapon parallel: comply + run", "hours": "habit", "tier": "A/B" }
+  ],
+  "eaaaNote": {
+    "rankRound2": 1,
+    "rankRound3": 4,
+    "plainEnglish": "EAAA is not wrong — it is the wrong king when you refuse to weight medical evidence. Keep Assess/Acknowledge vocabulary. Build the body on Rutten + fight science."
+  }
+}

@@ -9,21 +9,22 @@ Chart.defaults.borderColor = CHART_DEFAULTS.borderColor;
 Chart.defaults.font.family = CHART_DEFAULTS.font.family;
 
 let evidenceData = null;
+let adversarialRounds = { 2: null, 3: null };
 let adversarialData = null;
+let activeAdversarialRound = 3;
 
 async function loadData() {
-  const paths = [
-    ['data/evidence.json', 'data/adversarial-3x7-round2.json'],
-    ['../data/evidence.json', '../data/adversarial-3x7-round2.json']
-  ];
-  for (const [evPath, advPath] of paths) {
+  const bases = ['data/', '../data/'];
+  for (const base of bases) {
     try {
-      const [ev, adv] = await Promise.all([
-        fetch(evPath).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
-        fetch(advPath).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      const [ev, r2, r3] = await Promise.all([
+        fetch(`${base}evidence.json`).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+        fetch(`${base}adversarial-3x7-round2.json`).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+        fetch(`${base}adversarial-3x7-round3.json`).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
       ]);
       evidenceData = ev;
-      adversarialData = adv;
+      adversarialRounds = { 2: r2, 3: r3 };
+      adversarialData = adversarialRounds[activeAdversarialRound];
       renderAll();
       return;
     } catch (_) { /* try next path */ }
@@ -189,6 +190,49 @@ function renderEAAAChart() {
   });
 }
 
+function setAdversarialRound(round) {
+  if (!adversarialRounds[round]) return;
+  activeAdversarialRound = round;
+  adversarialData = adversarialRounds[round];
+  document.querySelectorAll('.adv-round-btn').forEach(btn => {
+    btn.classList.toggle('active', Number(btn.dataset.round) === round);
+  });
+  renderAdversarialProfile();
+  renderAdversarialRankings();
+  renderHeatmap();
+  if (window._radarChart) {
+    window._radarChart.destroy();
+    window._radarChart = null;
+  }
+  renderRadarChart();
+  renderFindings();
+  renderStack();
+}
+
+function renderAdversarialProfile() {
+  const el = document.getElementById('adversarial-profile');
+  if (!el || !adversarialData) return;
+  const wp = adversarialData.weightingProfile;
+  const c7 = adversarialData.criteria.find(c => c.id === 'C7');
+  const c6 = adversarialData.criteria.find(c => c.id === 'C6');
+  if (wp) {
+    el.innerHTML = `
+      <div class="adv-profile-banner adv-profile-fight">
+        <span class="adv-profile-label">Round ${adversarialData.round} — ${wp.name}</span>
+        <p>${wp.plainEnglish}</p>
+        <p class="adv-profile-meta"><strong>C6 ${c6?.name}:</strong> weight ${c6?.weight} · <strong>C7 ${c7?.name}:</strong> weight ${c7?.weight} (${wp.c7Policy})</p>
+        ${wp.round2Winner && wp.round3Winner ? `<p class="adv-profile-compare">Round 2 winner: ${wp.round2Winner} → Round 3 winner: ${wp.round3Winner}</p>` : ''}
+      </div>`;
+  } else {
+    el.innerHTML = `
+      <div class="adv-profile-banner adv-profile-medical">
+        <span class="adv-profile-label">Round ${adversarialData.round} — Medical-weighted profile</span>
+        <p>Proactive avoidance and medical victimization RCT weighted highest. EAAA wins because it is the only program with assault-reduction trial proof.</p>
+        <p class="adv-profile-meta"><strong>C7 Medical Victimization RCT:</strong> weight ${c7?.weight ?? 1.25}</p>
+      </div>`;
+  }
+}
+
 function renderAdversarialRankings() {
   const el = document.getElementById('adversarial-rankings');
   const sorted = Object.entries(adversarialData.scores)
@@ -234,7 +278,8 @@ function renderRadarChart() {
     .sort((a, b) => a[1].rank - b[1].rank)
     .slice(0, 3);
   const labels = adversarialData.criteria.map(c => c.id);
-  new Chart(ctx, {
+  if (window._radarChart) window._radarChart.destroy();
+  window._radarChart = new Chart(ctx, {
     type: 'radar',
     data: {
       labels: adversarialData.criteria.map(c => c.name.substring(0, 20) + '…'),
@@ -308,7 +353,7 @@ function renderFindings() {
     <div class="card">
       <h3>${f.id} ${f.allVotersAgree ? '· All reviewers agreed' : ''}</h3>
       <p style="margin-top:0.5rem">${f.finding}</p>
-      <p style="color:var(--text-muted);margin-top:0.5rem;font-size:0.9rem"><strong>Plain English:</strong> ${FINDING_PLAIN[f.id] || ''}</p>
+      <p style="color:var(--text-muted);margin-top:0.5rem;font-size:0.9rem"><strong>Plain English:</strong> ${f.plainEnglish || FINDING_PLAIN[f.id] || ''}</p>
     </div>`).join('');
 }
 
@@ -498,6 +543,7 @@ function renderAll() {
   renderDataGap();
   renderMultiAttackerChart();
   renderEAAAChart();
+  renderAdversarialProfile();
   renderAdversarialRankings();
   renderHeatmap();
   renderRadarChart();
