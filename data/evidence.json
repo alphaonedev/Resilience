@@ -184,7 +184,7 @@
       "definition": {
         "oneSentence": "EAAA is a 12-hour university course that teaches women to spot acquaintance sexual assault setups early, overcome denial, set forceful boundaries, and use a small set of physical skills only if needed — proven in a medical trial to cut completed assaults roughly in half.",
         "whatItIs": "A research-designed Empowerment Self-Defense curriculum delivered in four classroom units over several weeks. It is psychology-first: risk detection, confidence, verbal resistance, and healthy relationship skills — with only two hours of physical techniques inside the 'Act' unit.",
-        "whatItIsNot": "Not a martial art. Not a weekend Krav Maga seminar. Not a guarantee of safety. Not yet proven in every population (studied mainly on young university women in Canada). Not a substitute for legal, medical, or law-enforcement response after an assault."
+        "whatItIsNot": "Not a martial art. Not a weekend Krav Maga seminar. Not a guarantee of safety. Not yet proven in every population (studied mainly on young university women in the original trial). Not a substitute for legal, medical, or law-enforcement response after an assault."
       },
       "empowermentSelfDefense": {
         "fieldName": "Empowerment Self-Defense (ESD)",
@@ -194,11 +194,11 @@
       },
       "creator": {
         "leadResearcher": "Dr. Charlene Y. Senn",
-        "institution": "University of Windsor, Ontario, Canada",
+        "institution": "University of Windsor",
         "centre": "SARE Centre (Sexual Assault Resistance Education)",
         "note": "Developed for research and replication — not a commercial franchise"
       },
-      "whoStudied": "First-year university women, ages 17–24, three Canadian universities — men were not enrolled in the RCT",
+      "whoStudied": "First-year university women, ages 17–24, three universities — men were not enrolled in the RCT",
       "genderApplicability": {
         "headline": "EAAA is Tier A+ for the population studied — young women facing acquaintance sexual assault. It is not proven for men.",
         "women": {
@@ -2664,7 +2664,7 @@
           "Sprint"
         ]
       },
-      "honestLimits": "Proof is for university women 17–24 in Canada — generalization is inference. Not designed for armed street robbery as primary scenario. Does not guarantee safety against surprise or overwhelming force."
+      "honestLimits": "Proof is for university women 17–24 in the RCT cohort — generalization is inference. Not designed for armed street robbery as primary scenario. Does not guarantee safety against surprise or overwhelming force."
     },
     "men": {
       "id": "forge",
