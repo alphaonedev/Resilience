@@ -42,10 +42,10 @@ function renderHeroStats() {
   const m = evidenceData.avoidanceAndAwareness.multiAttacker;
   const e = evidenceData.avoidanceAndAwareness.eaaa;
   el.innerHTML = `
-    <div class="stat-card"><div class="stat-value">${e.rctCompletedRapeReduction12mo}%</div><div class="stat-label">EAAA Rape Reduction (RCT)</div></div>
-    <div class="stat-card"><div class="stat-value">${m.reactiveEscapeRate}%</div><div class="stat-label">Multi-Attacker Escape Rate</div></div>
-    <div class="stat-card"><div class="stat-value">N/A</div><div class="stat-label">Proactive Avoidance Metric</div></div>
-    <div class="stat-card"><div class="stat-value">3×7</div><div class="stat-label">Adversarial Voting Rounds</div></div>
+    <div class="stat-card"><div class="stat-value">${e.rctCompletedRapeReduction12mo}%</div><div class="stat-label">Fewer assaults after awareness training</div></div>
+    <div class="stat-card"><div class="stat-value">${m.reactiveEscapeRate}%</div><div class="stat-label">Escaped when already outnumbered</div></div>
+    <div class="stat-card"><div class="stat-value">?</div><div class="stat-label">"Left before fight" — not measured</div></div>
+    <div class="stat-card"><div class="stat-value">7</div><div class="stat-label">Evidence-ranked strategies tested</div></div>
   `;
 }
 
@@ -66,10 +66,10 @@ function renderSpectrum() {
 function renderDataGap() {
   const g = evidenceData.avoidanceAndAwareness.dataGap;
   document.getElementById('data-gap-content').innerHTML = `
-    <p><strong>Missing metric:</strong> ${g.missingMetric}</p>
+    <p><strong>In plain English:</strong> Nobody has scientifically measured how often people <em>sense</em> a bad situation — like a group spreading out to surround them — and quietly leave before anything happens. Crime statistics only count people who got hurt, not people who walked away safe.</p>
     <p><strong>Status:</strong> ${g.status}</p>
     <p>${g.explanation}</p>
-    <p style="margin-top:1rem"><strong>Proxy metrics available:</strong></p>
+    <p style="margin-top:1rem"><strong>What we use instead (best available substitutes):</strong></p>
     <ul style="margin-left:1.25rem;color:var(--text-muted)">
       ${g.proxyMetrics.map(p => `<li>${p}</li>`).join('')}
     </ul>`;
@@ -231,12 +231,21 @@ function renderCrimeStats() {
   });
 }
 
+const FINDING_PLAIN = {
+  'AF-1': 'Nobody counts near-misses. We are honest about that hole in the data.',
+  'AF-2': 'The EAAA "spot danger early" training is the closest thing to proof that awareness saves people.',
+  'AF-3': 'Military stay-alert rules make sense — but civilians should know they are not medically proven.',
+  'AF-4': 'If you are already surrounded, running beats fighting — 22% vs 11% in real footage.',
+  'AF-5': 'Best combo: awareness training + alert habits + simple boxing/wrestling — not one martial art alone.'
+};
+
 function renderFindings() {
   const el = document.getElementById('adversarial-findings');
   el.innerHTML = adversarialData.adversarialFindings.map(f => `
     <div class="card">
-      <h3>${f.id}: ${f.confidence} confidence ${f.allVotersAgree ? '✓ Unanimous' : ''}</h3>
-      <p style="color:var(--text-muted);margin-top:0.5rem">${f.finding}</p>
+      <h3>${f.id} ${f.allVotersAgree ? '· All reviewers agreed' : ''}</h3>
+      <p style="margin-top:0.5rem">${f.finding}</p>
+      <p style="color:var(--text-muted);margin-top:0.5rem;font-size:0.9rem"><strong>Plain English:</strong> ${FINDING_PLAIN[f.id] || ''}</p>
     </div>`).join('');
 }
 
