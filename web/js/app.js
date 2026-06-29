@@ -491,4 +491,63 @@ function renderAll() {
   renderMinimalSystemConclusion();
 }
 
-document.addEventListener('DOMContentLoaded', loadData);
+function initNav() {
+  const toggle = document.getElementById('nav-toggle');
+  const overlay = document.getElementById('nav-overlay');
+  const nav = document.getElementById('site-nav');
+  if (!toggle || !nav) return;
+
+  const closeMenu = () => {
+    document.body.classList.remove('nav-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Open menu');
+    nav.querySelectorAll('.nav-dropdown.open').forEach(d => {
+      d.classList.remove('open');
+      d.querySelector('.nav-dropdown-trigger')?.setAttribute('aria-expanded', 'false');
+    });
+  };
+
+  toggle.addEventListener('click', () => {
+    const open = document.body.classList.toggle('nav-open');
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+
+  overlay?.addEventListener('click', closeMenu);
+
+  nav.querySelectorAll('.nav-dropdown-trigger').forEach(btn => {
+    btn.addEventListener('click', e => {
+      if (window.innerWidth > 1024) return;
+      e.preventDefault();
+      const parent = btn.closest('.nav-dropdown');
+      const wasOpen = parent?.classList.contains('open');
+      nav.querySelectorAll('.nav-dropdown.open').forEach(d => {
+        d.classList.remove('open');
+        d.querySelector('.nav-dropdown-trigger')?.setAttribute('aria-expanded', 'false');
+      });
+      if (parent && !wasOpen) {
+        parent.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  nav.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 1024) closeMenu();
+    });
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeMenu();
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 1024) closeMenu();
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initNav();
+  loadData();
+});

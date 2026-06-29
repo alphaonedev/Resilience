@@ -29,36 +29,82 @@
   <script src="js/app.js" defer></script>
 </head>
 <body>
-  <nav>
+  <header class="site-header" id="site-header">
     <div class="nav-inner">
-      <div class="logo">Resilience</div>
-      <ul class="nav-links">
-        <li><a href="#start-here">Start Here</a></li>
-        <li><a href="#one-system">One System</a></li>
-        <li><a href="#first-principles">First Principles</a></li>
-        <li><a href="#top-findings">Top Findings</a></li>
-        <li><a href="#eaaa">What is EAAA?</a></li>
-        <li><a href="#awareness">Awareness</a></li>
-        <li><a href="#ooda">OODA Loop</a></li>
-        <li><a href="#adversarial">How We Scored</a></li>
-        <li><a href="#systems">Strategies & Systems</a></li>
-        <li><a href="#techniques">Techniques</a></li>
-        <li><a href="#karate-nhi">Karate NHI</a></li>
-        <li><a href="#boxing-nhi">Boxing NHI</a></li>
-        <li><a href="#kicking-nhi">Kicking NHI</a></li>
-        <li><a href="#rutten-nhi">Rutten NHI</a></li>
-        <li><a href="#muay-thai-nhi">Muay Thai NHI</a></li>
-        <li><a href="#ptk-nhi">PTK NHI</a></li>
-        <li><a href="#posture">Stance & Weapons</a></li>
-        <li><a href="#fight-science">Fight Science</a></li>
-        <li><a href="#fitness-survival">Fitness & Survival</a></li>
-        <li><a href="#domains">Violence Types</a></li>
-        <li><a href="#stack">What To Do</a></li>
-        <li><a href="#conclusion">Simple System</a></li>
-        <li><a href="#disclaimer">Disclaimer</a></li>
-      </ul>
+      <a href="#" class="nav-brand" aria-label="Resilience — home">
+        <span class="nav-brand-name">Resilience</span>
+        <span class="nav-brand-tag">Evidence-Based Safety</span>
+      </a>
+
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul class="nav-primary">
+          <li><a href="#one-system" class="nav-cta">One System</a></li>
+
+          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown-trigger" aria-expanded="false">Guide</button>
+            <div class="nav-dropdown-panel">
+              <a href="#start-here">Start Here</a>
+              <a href="#conclusion">Simple System</a>
+              <a href="#stack">What To Train</a>
+            </div>
+          </li>
+
+          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown-trigger" aria-expanded="false">Evidence</button>
+            <div class="nav-dropdown-panel">
+              <a href="#first-principles">First Principles</a>
+              <a href="#top-findings">Top Findings</a>
+              <a href="#eaaa">What is EAAA?</a>
+              <a href="#adversarial">How We Scored</a>
+              <a href="#domains">Violence Types</a>
+            </div>
+          </li>
+
+          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown-trigger" aria-expanded="false">Awareness</button>
+            <div class="nav-dropdown-panel">
+              <a href="#awareness">Situational Awareness</a>
+              <a href="#ooda">OODA Loop</a>
+            </div>
+          </li>
+
+          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown-trigger" aria-expanded="false">Skills</button>
+            <div class="nav-dropdown-panel">
+              <a href="#systems">Strategies & Systems</a>
+              <a href="#techniques">Techniques</a>
+              <a href="#posture">Stance & Weapons</a>
+              <a href="#fight-science">Fight Science</a>
+              <a href="#fitness-survival">Fitness & Survival</a>
+            </div>
+          </li>
+
+          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown-trigger" aria-expanded="false">Expert NHI</button>
+            <div class="nav-dropdown-panel nav-dropdown-panel-wide">
+              <div class="nav-dropdown-grid">
+                <a href="#karate-nhi">Karate</a>
+                <a href="#boxing-nhi">Boxing</a>
+                <a href="#kicking-nhi">Kicking</a>
+                <a href="#rutten-nhi">Rutten</a>
+                <a href="#muay-thai-nhi">Muay Thai</a>
+                <a href="#ptk-nhi">PTK / Kali</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-disclaimer-item"><a href="#disclaimer" class="nav-muted">Disclaimer</a></li>
+        </ul>
+      </nav>
     </div>
-  </nav>
+    <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+  </header>
 
   <header class="hero container">
     <div class="hero-badge">Plain English · Evidence-Based · No Marketing Fluff</div>
