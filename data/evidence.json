@@ -2538,9 +2538,209 @@
     "nhiFinalVerdict": "Pekiti-Tirsia Kali fills the weapon-angle gap in the Resilience stack. The 5 angles, triangular footwork, and defang logic align with Motobu simultaneous counter and Abernethy bunkai — with blade awareness most karate schools lost. Abaya's Abcedario de Mano converges with Muay Thai/Rutten clinch at close range. Resilience draws a hard line: flow and angles are Tier B/C strength; knife disarm heroics are Tier C–D (same as Krav); every chain caps at 3–5 beats then sprint. Train PTK for angle brain and limb checks; pair with Buakaw's teep and Tyson's hands; comply and run when steel is real.",
     "honestLimits": "PTK pedagogy is Tier C without civilian victimization RCT. Defang-the-snake vs full-speed committed stab is unmeasured — cooperative flow overstates readiness. Tuhon Gaje and Abaya teachings are oral/instructional tradition, not NCVS outcomes. Stick sparring validates timing (C6) not street knife survival rates. This reconciles PTK doctrine with Resilience tiers; it does not certify Kali training reduces assault victimization."
   },
+  "dualSurvivalSystems": {
+    "title": "Two Systems — Women and Men",
+    "date": "2026-06-29",
+    "intro": {
+      "headline": "One universal stack was wrong. EAAA is Tier A+ for women in the trial — not proven for men. Men need fight-science contact proof.",
+      "plainEnglish": "Same win condition for everyone: leave unharmed. Different threat profiles, different evidence anchors, different training stacks.",
+      "whySplit": [
+        "EAAA RCT enrolled university women only — 50–57% assault reduction is women's proof, not men's",
+        "Men's violence skews toward bar fights, robbery, groups, and weapons — not acquaintance sexual assault",
+        "Round 3 adversarial vote crowns Rutten + fight science when medical weight is stripped",
+        "Shared habit logic (spot danger, leave early) — different contact backup and daily drills"
+      ],
+      "sharedWinCondition": "Non-victimization — leave intact without being assaulted",
+      "sharedWeaponRule": "Gun or knife shown → comply and run. Never disarm heroics (Tier C–D)."
+    },
+    "women": {
+      "id": "shield",
+      "name": "Resilience Shield System",
+      "forPopulation": "Women and girls — especially acquaintance-assault risk (EAAA trial population)",
+      "acronym": "Assess · Acknowledge · Act · Escape",
+      "tier": "A+",
+      "oneSentence": "Spot the setup early, kill denial, set forceful boundaries, use two hours of simple physical only if trapped — then sprint. EAAA proved this cuts completed assaults roughly in half for university women.",
+      "tagline": "EAAA-anchored · Cooper colors · AAA daily habits · escape always",
+      "evidenceAnchor": "EAAA NEJM 2015 RCT + 2023 real-world rollout (women 17–24)",
+      "primaryThreats": ["Acquaintance sexual assault", "Coercion from someone known", "Isolation and boundary testing", "Drug-facilitated setups"],
+      "timeToLearn": {
+        "dailyMinutes": 3,
+        "weeklyMinutes": 20,
+        "fullEaaaHours": 12,
+        "optionalPhysicalHours": 2,
+        "habitsAutomatic": "1–4 weeks",
+        "plainEnglish": "Start AAA today. Take full 12-hour EAAA if your campus offers it. Add EAAA Act-unit physical only after habits are automatic."
+      },
+      "gainSplit": { "habitsPercent": 92, "physicalPercent": 8, "habitsLabel": "EAAA brain work + AAA daily", "physicalLabel": "EAAA Act unit physical (optional backup)" },
+      "fourLayers": [
+        {
+          "layer": 0,
+          "name": "MIND",
+          "percentOfGain": 75,
+          "tier": "A+",
+          "what": "EAAA Assess + Acknowledge + Cooper Yellow→Orange",
+          "daily": "3 min AAA",
+          "weekly": "Included in 20 min",
+          "skills": ["Spot isolation tactics and boundary testing", "Override 'I don't want to be rude'", "Cooper Yellow default; Orange when specific threat", "Trust gut — leave without permission"],
+          "evidence": "EAAA RCT 50–57% fewer completed assaults (women in trial)"
+        },
+        {
+          "layer": 1,
+          "name": "AVOID",
+          "percentOfGain": 18,
+          "tier": "A+",
+          "what": "Forceful verbal boundaries · exit routes · leave before contact",
+          "daily": "Built into Assess",
+          "weekly": "15 of 20 min",
+          "skills": ["'Stop. No. I'm leaving.' — firm voice", "Exit audit at familiar places", "Scenario rehearsal: date, party, coworker", "De-escalate while moving — not frozen politeness"],
+          "evidence": "EAAA Assess/Acknowledge units; NCVS verbal resistance 57% lower injury"
+        },
+        {
+          "layer": 2,
+          "name": "ACT",
+          "percentOfGain": 5,
+          "tier": "A/B",
+          "what": "EAAA Act unit — forceful verbal + wrist release + frame + low strike if trapped",
+          "daily": "0 (weekly only)",
+          "weekly": "5 min drill if training",
+          "skills": ["Forceful verbal resistance", "Wrist release (EAAA proven)", "Palm heel / frame create space", "Low strike if trapped — one burst"],
+          "evidence": "EAAA Act 2hr physical inside 12hr program; mediators validated"
+        },
+        {
+          "layer": 3,
+          "name": "ESCAPE",
+          "percentOfGain": 2,
+          "tier": "A/B",
+          "what": "Sprint to people, light, witnesses — mandatory after Act or instead of Act",
+          "daily": "Mental cue: RUN",
+          "weekly": "Optional 5 min run burst",
+          "skills": ["Push-off and angle", "Sprint — don't shuffle", "Run toward witnesses", "Call for help once clear"],
+          "evidence": "22% escape vs 11% defeat when outnumbered; escape-priority D2"
+        }
+      ],
+      "executiveDistill": {
+        "lead": "Resilience Shield is what EAAA actually measured — rebuilt as a four-layer daily system any woman can start in three minutes.",
+        "verdict": "Brain work first. Full EAAA course if available. Physical backup is the Act unit — not years of BJJ.",
+        "doFirst": ["AAA daily (3 min)", "Full 12-hour EAAA if campus offers it", "Cooper Yellow→Orange habits", "Verbal boundary drills weekly"],
+        "doNot": ["Assume boxing alone replaces EAAA proof", "Train ground fighting before exit habits", "Claim 50–57% outcomes without EAAA curriculum", "Stay polite when gut says leave"]
+      },
+      "scenarioTree": [
+        { "situation": "Wrong feeling on a date / party / with someone known", "response": "L0–1: Acknowledge → verbal boundary → leave. No techniques.", "seconds": 0 },
+        { "situation": "Isolation attempt — moved to bedroom, car, alley", "response": "L1: 'I'm leaving now.' + walk to exit. Do not negotiate.", "seconds": 5 },
+        { "situation": "Grab or wrist hold", "response": "L2: EAAA wrist release → frame → L3 sprint.", "seconds": 8 },
+        { "situation": "Pinned — cannot leave verbally", "response": "L2: Forceful verbal + palm/low strike → L3 sprint immediately.", "seconds": 10 },
+        { "situation": "Multiple men closing in", "response": "L3: One push/strike max → sprint to crowd. No second strike.", "seconds": 5 },
+        { "situation": "Weapon shown", "response": "Shared rule: comply → distance → run.", "seconds": "varies" }
+      ],
+      "eightWeek": {
+        "title": "8-Week Shield Stack (after AAA automatic)",
+        "weeks": [
+          { "week": "1–2", "focus": "EAAA-style Assess/Acknowledge scenarios", "daily": "10 min", "test": "Leave verbally before any contact" },
+          { "week": "3–4", "focus": "Verbal boundaries + exit audits", "daily": "12 min", "test": "Firm 'Stop. No. I'm leaving.' without apology" },
+          { "week": "5–6", "focus": "EAAA Act: wrist release + frame", "daily": "15 min", "test": "Release + sprint cue every drill" },
+          { "week": "7–8", "focus": "Scenarios: acquaintance, party, multi, weapon=comply", "daily": "15 min", "test": "100% leave-before-contact on acquaintance setups" }
+        ]
+      },
+      "nhiVerdict": "Women get the only Tier A+ victimization proof on this site. Train Shield first: EAAA logic daily, full EAAA course if you can, Act-unit physical as optional backup. Rutten and boxing are commentary for women — not the foundation. See it early. Kill denial. Leave. If trapped, EAAA physical once. Sprint.",
+      "honestLimits": "Proof is for university women 17–24 in Canada — generalization is inference. Not designed for armed street robbery as primary scenario. Does not guarantee safety against surprise or overwhelming force."
+    },
+    "men": {
+      "id": "forge",
+      "name": "Resilience Forge System",
+      "forPopulation": "Men and boys — bar fights, robbery, groups, weapons, stranger aggression",
+      "acronym": "Alert · Angle · Burst · Run",
+      "tier": "A",
+      "oneSentence": "Stay alert like the military teaches, angle off trouble before it starts, burst 3–5 times with Rutten/boxing/Muay Thai only if trapped, then sprint — fight-science proof, not a campus medical trial.",
+      "tagline": "Military SA · Rutten Tier 1 · boxing hands · teep/calf · sprawl · sprint",
+      "evidenceAnchor": "Round 3 adversarial vote + Louie Martin n=154 + fight science + Rutten/Pancrase validation",
+      "primaryThreats": ["Bar and nightlife aggression", "Robbery and stranger assault", "Multiple attackers", "Firearms and knives (~74% murders involve guns)"],
+      "timeToLearn": {
+        "dailyMinutes": 3,
+        "weeklyMinutes": 25,
+        "burstBasicsWeeks": 8,
+        "optionalGymMonths": "3–6",
+        "habitsAutomatic": "1–2 weeks",
+        "plainEnglish": "Start Alert habits today. Add Rutten fence and verbal week 1. Physical burst layer in 8 weeks if you want contact backup — not before leaving early is automatic."
+      },
+      "gainSplit": { "habitsPercent": 70, "physicalPercent": 30, "habitsLabel": "Military SA + Rutten avoidance", "physicalLabel": "Fight-science burst (optional)" },
+      "fourLayers": [
+        {
+          "layer": 0,
+          "name": "ALERT",
+          "percentOfGain": 45,
+          "tier": "B/C",
+          "what": "Cooper Yellow→Orange→Red + Stay Alert + OODA tempo",
+          "daily": "3 min",
+          "weekly": "Included in 25 min",
+          "skills": ["Yellow default — exits noted, phone down", "Spot groups flanking, bait-and-ambush", "OODA: see pattern → orient to exits → decide to leave → act", "Leave bar/altercation before contact"],
+          "evidence": "Military/LE doctrine; structurally dominant pre-contact leverage"
+        },
+        {
+          "layer": 1,
+          "name": "ANGLE",
+          "percentOfGain": 25,
+          "tier": "A/B",
+          "what": "Rutten Tier 1 — fence, verbal stall, angle step, never back to corner",
+          "daily": "Built into Alert",
+          "weekly": "10 of 25 min",
+          "skills": ["Conversational fence — hands chest-high", "Verbal de-escalation while moving", "Angle off power line — lateral step to exit", "Low profile — don't posture in groups"],
+          "evidence": "Rutten Tier 1; 22% escape vs 11% fight when outnumbered"
+        },
+        {
+          "layer": 2,
+          "name": "BURST",
+          "percentOfGain": 22,
+          "tier": "A",
+          "what": "Rutten Tier 2 — jab/palm → cross → teep → calf kick → 3 knees max",
+          "daily": "0 (weekly)",
+          "weekly": "10 min shadow; 8-week progression",
+          "skills": ["Jab/palm disruptor", "Cross (Tyson/Cus delivery)", "Teep push kick", "Calf kick — kill pursuit", "Frame + 3 knees → push-off", "Sprawl → stand immediately"],
+          "evidence": "64% KOs first 10 sec; C6 sparring proof; Round 3 #1 Rutten hybrid"
+        },
+        {
+          "layer": 3,
+          "name": "RUN",
+          "percentOfGain": 8,
+          "tier": "A/B",
+          "what": "Sprint to people, light, open space — mandatory after burst",
+          "daily": "RUN cue every drill",
+          "weekly": "5 min sprint burst",
+          "skills": ["Push-off teep or shove", "Sprint — don't trade standing", "Run toward witnesses not alleys", "Weapon: comply then distance then run"],
+          "evidence": "22% escape vs 11% defeat; D2 escape-priority; weapon Tier A comply"
+        }
+      ],
+      "executiveDistill": {
+        "lead": "Resilience Forge is the Round 3 fight-science winner — Rutten avoidance mind plus boxing/Muay Thai burst under live-resistance proof.",
+        "verdict": "No EAAA crown for men. Military alert habits + Rutten fence + capped burst + sprint.",
+        "doFirst": ["Cooper/Stay Alert daily (3 min)", "Rutten fence + verbal stall", "Exit bar/groups before ego engages", "Scenario: multi-attacker = one strike then run"],
+        "doNot": ["Claim EAAA 50–57% outcomes", "Pull guard or ground grapple on pavement", "Prolonged clinch or second strike when outnumbered", "Knife/gun disarm heroics"]
+      },
+      "scenarioTree": [
+        { "situation": "Wrong vibe at bar / parking lot / group forming", "response": "L0–1: Alert → fence verbally → angle to exit. No techniques.", "seconds": 0 },
+        { "situation": "Verbal escalation / shove test", "response": "L1: Verbal stall + lateral step toward door. Leave.", "seconds": 5 },
+        { "situation": "Sucker punch / rush", "response": "L2: Teep or palm → calf kick → L3 sprint.", "seconds": 6 },
+        { "situation": "Grab / clinch", "response": "L2: Frame → 3 knees → push-off teep → L3 sprint.", "seconds": 8 },
+        { "situation": "Multiple attackers", "response": "L2: One shove or teep max → angle between → L3 sprint.", "seconds": 5 },
+        { "situation": "Taken down", "response": "Cover → 1 elbow → sprawl/stand → L3 sprint. No ground fight.", "seconds": 5 },
+        { "situation": "Gun or knife", "response": "Comply → distance → run. Never disarm default.", "seconds": "varies" }
+      ],
+      "eightWeek": {
+        "title": "8-Week Forge Stack (after Alert habits automatic)",
+        "weeks": [
+          { "week": "1–2", "focus": "Rutten fence + verbal + sprint cue", "daily": "10 min", "test": "Leave bar scenario verbally or teep+run" },
+          { "week": "3–4", "focus": "Jab/palm → cross + calf kick", "daily": "15 min", "test": "3-beat chain under 2 sec then RUN" },
+          { "week": "5–6", "focus": "Grab → 3 knees → push-off + sprawl", "daily": "15 min", "test": "Never exceed 5 strikes before exit" },
+          { "week": "7–8", "focus": "Scenarios: multi=sprint, ground=stand, gun=comply", "daily": "15 min", "test": "100% correct weapon/multi response" }
+        ]
+      },
+      "nhiVerdict": "Men do not get EAAA's medical proof — they get fight science. Train Forge: military alert, Rutten fence, boxing hands, Muay Thai teep and calf, capped clinch, sprawl, sprint. Ego is the enemy in Layer 0. Burst is 3–5 beats, not a duel. Run beats fight when outnumbered. Comply when steel is real.",
+      "honestLimits": "No male victimization RCT on this stack. Military SA is Tier C for civilian outcomes. Rutten instructional is Tier C pedagogy — validated by fight record, not assault-reduction trial. Shifts odds; does not make you invincible."
+    }
+  },
   "holisticSurvivalSystem": {
     "title": "Resilience One System — Full-Spectrum AI NHI Distill",
     "date": "2026-06-29",
+    "supersededNote": "Training use Resilience Shield (women) and Resilience Forge (men) in dualSurvivalSystems. This universal distill remains as reference audit across all site sections.",
     "tier": "A+",
     "name": "Resilience One System",
     "acronym": "Mind · Avoid · Burst · Escape",

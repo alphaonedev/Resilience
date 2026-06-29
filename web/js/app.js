@@ -571,6 +571,9 @@ function renderAll() {
   if (typeof renderAllPtkNhiVisualizations === 'function') {
     renderAllPtkNhiVisualizations();
   }
+  if (typeof renderAllDualSystemsVisualizations === 'function') {
+    renderAllDualSystemsVisualizations();
+  }
   if (typeof renderAllHolisticSurvivalVisualizations === 'function') {
     renderAllHolisticSurvivalVisualizations();
   }

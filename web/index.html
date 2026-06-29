@@ -23,6 +23,7 @@
   <script src="js/muay-thai-nhi-viz.js" defer></script>
   <script src="js/ptk-nhi-viz.js" defer></script>
   <script src="js/holistic-survival-viz.js" defer></script>
+  <script src="js/dual-systems-viz.js" defer></script>
   <script src="js/cooper-color-viz.js" defer></script>
   <script src="js/eaaa-viz.js" defer></script>
   <script src="js/ooda-viz.js" defer></script>
@@ -44,13 +45,21 @@
 
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <ul class="nav-primary">
-          <li><a href="#one-system" class="nav-cta">One System</a></li>
+          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown-trigger nav-cta-trigger" aria-expanded="false">Systems</button>
+            <div class="nav-dropdown-panel">
+              <a href="#dual-systems">Two Systems Overview</a>
+              <a href="#women-system">Women's System — Shield</a>
+              <a href="#men-system">Men's System — Forge</a>
+              <a href="#one-system-universal">Universal Distill (reference)</a>
+            </div>
+          </li>
 
           <li class="nav-dropdown">
             <button type="button" class="nav-dropdown-trigger" aria-expanded="false">Guide</button>
             <div class="nav-dropdown-panel">
               <a href="#start-here">Start Here</a>
-              <a href="#conclusion">Simple System</a>
+              <a href="#conclusion">AAA Daily Habits</a>
               <a href="#stack">What To Train</a>
             </div>
           </li>
@@ -165,12 +174,106 @@
     </div>
   </section>
 
-  <!-- RESILIENCE ONE SYSTEM — FULL SPECTRUM DISTILL -->
-  <section id="one-system" class="container holistic-section">
+  <!-- TWO SYSTEMS — WOMEN & MEN -->
+  <section id="dual-systems" class="container dual-systems-section">
     <div class="section-header">
-      <h2>The One System — Everything Reduced to Four Layers</h2>
+      <h2>Two Systems — Women and Men</h2>
       <p class="section-intro">
-        AI NHI distilled every section on this site — EAAA, Cooper, OODA, boxing, karate, kicking, Rutten, Muay Thai, PTK, weapons, adversarial voting — into the simplest fastest-learned path that holistically shifts survival odds.
+        EAAA is Tier A+ for <strong>women in the trial</strong> — not proven for men. Men need fight-science contact proof (Rutten, boxing, Muay Thai). Same win condition: <strong>leave unharmed</strong>. Different stacks.
+      </p>
+    </div>
+
+    <div id="dual-systems-intro"></div>
+
+    <div class="dual-system-picker">
+      <a href="#women-system" class="dual-picker-card dual-picker-women">
+        <span class="dual-picker-label">Women</span>
+        <strong>Resilience Shield</strong>
+        <span>EAAA-anchored · Tier A+</span>
+      </a>
+      <a href="#men-system" class="dual-picker-card dual-picker-men">
+        <span class="dual-picker-label">Men</span>
+        <strong>Resilience Forge</strong>
+        <span>Fight-science · Rutten · Tier A</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="women-system" class="container dual-system-block dual-block-women">
+    <div class="section-header">
+      <h2>Women's System — Resilience Shield</h2>
+      <p class="section-intro">
+        Built on <a href="#eaaa">EAAA</a> — the only medical-trial proof of fewer completed assaults (university women 17–24). Assess · Acknowledge · Act · Escape.
+      </p>
+    </div>
+    <div id="women-system-hero"></div>
+    <div class="nhi-voice dual-voice-women">
+      <div class="nhi-voice-label">Shield — executive distill</div>
+      <div id="women-system-executive"></div>
+    </div>
+    <div class="fs-section">
+      <h3>Four Layers — Shield Stack</h3>
+      <div id="women-system-layers" class="dual-layers-grid"></div>
+    </div>
+    <div class="chart-row-2" style="margin-top:1.25rem">
+      <div class="fp-rebuild-box">
+        <h4>Scenario Tree — Women's Threats</h4>
+        <div id="women-system-scenarios" class="dual-scenario-grid"></div>
+      </div>
+      <div class="fp-rebuild-box">
+        <h4>8-Week Progression</h4>
+        <div id="women-system-eight-week"></div>
+      </div>
+    </div>
+    <div id="women-system-verdict" class="nhi-voice dual-voice-women" style="margin-top:1.5rem"></div>
+    <p id="women-system-limits" class="chart-explainer" style="margin-top:1rem"></p>
+  </section>
+
+  <section id="men-system" class="container dual-system-block dual-block-men">
+    <div class="section-header">
+      <h2>Men's System — Resilience Forge</h2>
+      <p class="section-intro">
+        Built on <a href="#adversarial">Round 3 fight-science voting</a> + <a href="#rutten-nhi">Bas Rutten</a> — military alert, capped burst, sprint. No EAAA medical proof for men.
+      </p>
+    </div>
+    <div id="men-system-hero"></div>
+    <div class="nhi-voice dual-voice-men">
+      <div class="nhi-voice-label">Forge — executive distill</div>
+      <div id="men-system-executive"></div>
+    </div>
+    <div class="fs-section">
+      <h3>Four Layers — Forge Stack</h3>
+      <div id="men-system-layers" class="dual-layers-grid"></div>
+    </div>
+    <div class="chart-row-2" style="margin-top:1.25rem">
+      <div class="fp-rebuild-box">
+        <h4>Scenario Tree — Men's Threats</h4>
+        <div id="men-system-scenarios" class="dual-scenario-grid"></div>
+      </div>
+      <div class="fp-rebuild-box">
+        <h4>8-Week Progression</h4>
+        <div id="men-system-eight-week"></div>
+      </div>
+    </div>
+    <div id="men-system-verdict" class="nhi-voice dual-voice-men" style="margin-top:1.5rem"></div>
+    <p id="men-system-limits" class="chart-explainer" style="margin-top:1rem"></p>
+
+    <div class="dialogue">
+      <p class="dialogue-q">"Can men use Shield or women use Forge?"</p>
+      <p class="dialogue-a">
+        <strong>Women:</strong> Shield is evidence-honest for acquaintance assault — Forge's burst skills are optional add-ons, not the foundation.<br>
+        <strong>Men:</strong> Forge is the honest stack — Shield's EAAA 50–57% claim does not apply. Borrow AAA habit <em>logic</em> (leave early) from Shield; build contact on Forge.<br>
+        <strong>Everyone:</strong> Weapon rule is identical — comply and run.
+      </p>
+    </div>
+  </section>
+
+  <!-- UNIVERSAL DISTILL — REFERENCE -->
+  <section id="one-system-universal" class="container holistic-section">
+    <div class="section-header">
+      <h2>Universal Distill — Reference Audit</h2>
+      <p class="section-intro">
+        The original single-stack synthesis across all NHI sections. <strong>For training, use <a href="#women-system">Shield</a> or <a href="#men-system">Forge</a></strong> — not this blended version.
       </p>
     </div>
 
@@ -233,7 +336,7 @@
     <div class="dialogue">
       <p class="dialogue-q">"So I ignore Muay Thai, boxing, karate, and PTK sections?"</p>
       <p class="dialogue-a">
-        No — read them for <em>why</em> each tool earned its tier. The One System is what you <strong>train</strong>. Those sections are the evidence audit behind each of the seven physical skills. You do not need 200 techniques — you need four layers and seven moves.
+        No — read them for <em>why</em> each tool earned its tier. <strong>Train <a href="#women-system">Shield</a> or <a href="#men-system">Forge</a></strong> — not this universal blend. Those sections are the evidence audit behind each skill.
       </p>
       <p class="dialogue-q">"What's the single sentence?"</p>
       <p class="dialogue-a">
@@ -1691,7 +1794,7 @@
     <div class="section-header">
       <h2>The Simplest System — AI NHI Final Assessment</h2>
       <p class="section-intro">
-        This is the daily habit layer of the <a href="#one-system">Resilience One System</a>. If you remember nothing else: <strong>three minutes a day and twenty minutes a week</strong> shift odds more than years of ground fighting — because the best fight is the one that never happens.
+        Daily habits for <a href="#women-system">Shield</a> and <a href="#men-system">Forge</a>. If you remember nothing else: <strong>three minutes a day and twenty minutes a week</strong> shift odds more than years of ground fighting — because the best fight is the one that never happens.
       </p>
     </div>
 
