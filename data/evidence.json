@@ -123,7 +123,38 @@
     },
     "eaaa": {
       "program": "Enhanced Assess, Acknowledge, Act (EAAA)",
+      "fullName": "Enhanced Assess, Acknowledge, Act Sexual Assault Resistance Education",
+      "acronym": "EAAA",
+      "alsoKnownAs": ["SARE program", "Sexual Assault Resistance Education"],
       "tier": "A+",
+      "definition": {
+        "oneSentence": "EAAA is a 12-hour university course that teaches women to spot acquaintance sexual assault setups early, overcome denial, set forceful boundaries, and use a small set of physical skills only if needed — proven in a medical trial to cut completed assaults roughly in half.",
+        "whatItIs": "A research-designed Empowerment Self-Defense curriculum delivered in four classroom units over several weeks. It is psychology-first: risk detection, confidence, verbal resistance, and healthy relationship skills — with only two hours of physical techniques inside the 'Act' unit.",
+        "whatItIsNot": "Not a martial art. Not a weekend Krav Maga seminar. Not a guarantee of safety. Not yet proven in every population (studied mainly on young university women in Canada). Not a substitute for legal, medical, or law-enforcement response after an assault."
+      },
+      "empowermentSelfDefense": {
+        "fieldName": "Empowerment Self-Defense (ESD)",
+        "fieldDefinition": "A broad approach to self-defense that emphasizes confidence, boundary-setting, awareness, verbal resistance, and physical options — designed to empower the defender psychologically, not just teach punches.",
+        "eaaaRelationship": "EAAA is one specific ESD program — the only one on this site with a gold-standard randomized controlled trial showing fewer completed assaults. Many gyms use the words 'empowerment self-defense' without EAAA's evidence.",
+        "plainEnglish": "Empowerment Self-Defense is the family. EAAA is the member we trust most because someone actually measured outcomes."
+      },
+      "creator": {
+        "leadResearcher": "Dr. Charlene Y. Senn",
+        "institution": "University of Windsor, Ontario, Canada",
+        "centre": "SARE Centre (Sexual Assault Resistance Education)",
+        "note": "Developed for research and replication — not a commercial franchise"
+      },
+      "whoStudied": "First-year university women, ages 17–24, three Canadian universities",
+      "studyDesign": {
+        "type": "Randomized controlled trial (RCT)",
+        "sampleSize": 899,
+        "followUp": "12 months (primary); real-world replication at 6 months",
+        "tier": "A+",
+        "sources": [
+          { "citation": "Senn CY et al. (2015) NEJM", "url": "https://www.nejm.org/doi/full/10.1056/NEJMsa1411131", "finding": "50% reduction in completed rape over 12 months" },
+          { "citation": "Senn CY et al. (2023) Eur J Psychotraumatol", "url": "https://doi.org/10.1080/20008066.2023.2290859", "finding": "57.3% reduction in completed rape at 6 months in real-world rollout" }
+        ]
+      },
       "rctCompletedRapeReduction12mo": 50,
       "realWorldCompletedRapeReduction6mo": 57.3,
       "physicalTechniquesShare": 17,
@@ -133,8 +164,52 @@
         "act": 25,
         "sexualityRelationships": 25
       },
+      "fourUnits": [
+        {
+          "id": "assess",
+          "name": "Assess",
+          "percent": 25,
+          "approxHours": 3,
+          "cooperColor": "yellow",
+          "teaches": "Recognize acquaintance assault risk — isolation tactics, pressure, boundary testing, drug-facilitated assault cues",
+          "plainEnglish": "Spot the setup before it becomes an attack. Especially from someone you know.",
+          "resilienceMap": "AAA daily 'Assess' habit · Cooper Yellow"
+        },
+        {
+          "id": "acknowledge",
+          "name": "Acknowledge",
+          "percent": 25,
+          "approxHours": 3,
+          "cooperColor": "orange",
+          "teaches": "Override denial and social pressure — 'he's not really going to…', 'I don't want to be rude', fear of escalation",
+          "plainEnglish": "When your gut says danger, believe it. You do not need permission to leave.",
+          "resilienceMap": "AAA 'Acknowledge' · Cooper Orange"
+        },
+        {
+          "id": "act",
+          "name": "Act",
+          "percent": 25,
+          "approxHours": 3,
+          "physicalHours": 2,
+          "cooperColor": "red",
+          "teaches": "Forceful verbal resistance, wrist releases, framing, low strikes if trapped — then exit",
+          "plainEnglish": "Words first. Two hours of simple physical backup. Leave as soon as you can.",
+          "resilienceMap": "AAA 'Act' · Cooper Red · minimalSystem ifContact"
+        },
+        {
+          "id": "sexualityRelationships",
+          "name": "Sexuality & Relationships",
+          "percent": 25,
+          "approxHours": 3,
+          "cooperColor": "purple",
+          "teaches": "Healthy sexuality, consent, relationship norms — reduces vulnerability to coercion",
+          "plainEnglish": "Understand coercion and consent so manipulation is harder to hide.",
+          "resilienceMap": "Supports Assess/Acknowledge — not a fighting unit"
+        }
+      ],
       "actUnitPhysicalHours": 2,
       "totalProgramHours": 12,
+      "physicalSkillsInActUnit": ["Wrist releases", "Frame and create space", "Forceful verbal resistance", "Low strikes if trapped", "Get to feet if down"],
       "mediatorsValidated": [
         "Risk assessment skills",
         "Perception of personal acquaintance-rape risk",
@@ -142,6 +217,16 @@
         "Reduced rape myth acceptance",
         "Forceful verbal resistance capability"
       ],
+      "resilienceConnection": {
+        "aaaExitProtocol": "This site's AAA Exit Protocol (3 min/day) distills EAAA's brain work — Assess + Acknowledge + Act (Leave) — without requiring the full 12-hour course.",
+        "whyItWonAdversarial": "Only approach with medical-trial proof of fewer assaults — ranked #1 in 3×7 adversarial voting.",
+        "cooperMapping": "Assess = Yellow · Acknowledge = Orange · Act = Red"
+      },
+      "whereToLearn": [
+        { "name": "SARE Centre", "note": "Research home of EAAA — program materials for institutions", "url": "https://www.sarecentre.org/" },
+        { "name": "Blueprints for Healthy Youth", "note": "Certified model program listing", "url": "https://www.blueprintsprograms.org/programs/1032999999/eaaa-enhanced-assess-acknowledge-act-sexual-assault-resistance-education/" }
+      ],
+      "honestLimits": "RCT studied university women in Canada — generalization to all ages, men, or every country is inference not proof. Focus is acquaintance sexual assault resistance, not armed street robbery or military combat. 'Empowerment self-defense' classes without EAAA curriculum should not claim the same 50–57% outcomes.",
       "source": "NEJM 2015 RCT; Eur J Psychotraumatol 2023 real-world implementation"
     },
     "situationalAwareness": {

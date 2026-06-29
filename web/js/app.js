@@ -101,6 +101,7 @@ function renderMultiAttackerChart() {
 
 function renderEAAAChart() {
   const ctx = document.getElementById('eaaaChart');
+  if (!ctx) return;
   const c = evidenceData.avoidanceAndAwareness.eaaa.curriculumBreakdown;
   new Chart(ctx, {
     type: 'bar',
@@ -109,7 +110,7 @@ function renderEAAAChart() {
       datasets: [{
         label: '% of Curriculum',
         data: [c.assess, c.acknowledge, c.act, c.sexualityRelationships],
-        backgroundColor: ['#10b981', '#3b82f6', '#f59e0b', '#8b5cf6'],
+        backgroundColor: ['#facc15', '#f97316', '#ef4444', '#8b5cf6'],
         borderRadius: 6
       }]
     },
@@ -458,6 +459,9 @@ function renderAll() {
   }
   if (typeof renderAllCooperColorVisualizations === 'function') {
     renderAllCooperColorVisualizations();
+  }
+  if (typeof renderAllEaaaVisualizations === 'function') {
+    renderAllEaaaVisualizations();
   }
   if (typeof renderAllPostureVisualizations === 'function') {
     renderAllPostureVisualizations();

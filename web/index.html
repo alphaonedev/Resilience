@@ -21,6 +21,7 @@
   <script src="js/kicking-nhi-viz.js" defer></script>
   <script src="js/rutten-nhi-viz.js" defer></script>
   <script src="js/cooper-color-viz.js" defer></script>
+  <script src="js/eaaa-viz.js" defer></script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
@@ -31,6 +32,7 @@
         <li><a href="#start-here">Start Here</a></li>
         <li><a href="#first-principles">First Principles</a></li>
         <li><a href="#top-findings">Top Findings</a></li>
+        <li><a href="#eaaa">What is EAAA?</a></li>
         <li><a href="#awareness">Awareness</a></li>
         <li><a href="#adversarial">How We Scored</a></li>
         <li><a href="#systems">Strategies & Systems</a></li>
@@ -264,12 +266,55 @@
     </div>
   </section>
 
+  <!-- EAAA / EMPOWERMENT SELF-DEFENSE DEFINITION -->
+  <section id="eaaa" class="container">
+    <div class="section-header">
+      <h2>What Is EAAA? — Empowerment Self-Defense Explained</h2>
+      <p class="section-intro">
+        <strong>EAAA</strong> (Enhanced Assess, Acknowledge, Act) is the only self-defense approach on this site with a medical-trial proof of fewer assaults.
+        <strong>Empowerment Self-Defense (ESD)</strong> is the broader field — confidence, boundaries, awareness, and physical options. EAAA is the research-validated program inside that family.
+      </p>
+    </div>
+
+    <div id="eaaa-definition" class="eaaa-definition-wrap"></div>
+
+    <div id="eaaa-esd-relationship" class="eaaa-esd-box"></div>
+
+    <div id="eaaa-meta" class="eaaa-meta-box"></div>
+
+    <div id="eaaa-four-units" class="eaaa-units-wrap"></div>
+
+    <div class="chart-row-2" style="margin-top:1.5rem">
+      <div class="chart-container compact">
+        <div class="chart-title">EAAA Curriculum Split (12 hours)</div>
+        <canvas id="eaaaChart"></canvas>
+      </div>
+      <div class="fp-rebuild-box">
+        <div id="eaaa-resilience-connection"></div>
+        <div id="eaaa-sources" style="margin-top:1.25rem"></div>
+      </div>
+    </div>
+
+    <p id="eaaa-honest-limits" class="chart-explainer" style="margin-top:1.25rem;padding:1rem;background:var(--bg-card);border-radius:10px;border-left:4px solid var(--warning)"></p>
+
+    <div class="dialogue">
+      <p class="dialogue-q">"Is every empowerment self-defense class the same as EAAA?"</p>
+      <p class="dialogue-a">
+        <strong>No.</strong> Many studios use the words "empowerment" or "women's self-defense" without the SARE curriculum or outcome data. EAAA is a specific 12-hour program developed by Dr. Charlene Senn and tested in a randomized trial. This site's AAA Exit Protocol borrows EAAA's <em>logic</em> (Assess · Acknowledge · Act) in a 3-minute daily habit — not a certificate that you completed EAAA.
+      </p>
+      <p class="dialogue-q">"Why does Resilience rank it above boxing and BJJ?"</p>
+      <p class="dialogue-a">
+        Because the win condition for civilians is <strong>leaving unharmed</strong>, and EAAA is the only system with an RCT showing ~50–57% fewer <em>completed assaults</em>. Boxing proves delivery in fights; EAAA proves fewer assaults completed — a different and higher-leverage outcome for ordinary life.
+      </p>
+    </div>
+  </section>
+
   <!-- AWARENESS -->
   <section id="awareness" class="container">
     <div class="section-header">
       <h2>Situational Awareness — Stay Alert, Stay Alive</h2>
       <p class="section-intro">
-        "Stay Alert, Stay Alive" and "Be Bold, Be Brave" are military mindsets: pay attention, plan your route, do not look like an easy target, and leave at the first sign of trouble. Here is what science says about that.
+        "Stay Alert, Stay Alive" and "Be Bold, Be Brave" are military mindsets: pay attention, plan your route, do not look like an easy target, and leave at the first sign of trouble. Here is what science says about that — and how it compares to <a href="#eaaa">EAAA</a> (Tier A+ proof).
       </p>
     </div>
 
@@ -310,25 +355,20 @@
         <div class="chart-title">Multi-Attacker Outcomes (Already Fighting)</div>
         <canvas id="multiAttackerChart"></canvas>
       </div>
-      <div class="chart-container">
-        <div class="chart-title">EAAA Program — What It Actually Teaches</div>
-        <canvas id="eaaaChart"></canvas>
+      <div class="card eaaa-awareness-teaser">
+        <h3>EAAA / Empowerment Self-Defense <span class="tier tier-aplus">Tier A+</span></h3>
+        <p style="color:var(--text-muted);margin-top:0.75rem">
+          The only approach here with medical-trial proof of fewer completed assaults (~50–57%). Twelve hours, mostly brain work — two hours physical.
+        </p>
+        <a href="#eaaa" class="eaaa-teaser-link">Read the full definition →</a>
       </div>
     </div>
-
-    <p class="chart-explainer" style="margin-top:1rem">
-      <strong>Chart: EAAA curriculum</strong> — The program that produced the strongest proof splits time evenly: Assess (spot danger), Acknowledge (overcome denial — "he's not really going to…"), Act (includes only 2 hours of physical moves), and healthy relationship/sexuality education. <strong>Fighting is a small slice. Awareness is the main course.</strong>
-    </p>
 
     <div class="card-grid" style="margin-top:1.5rem">
       <div id="cooper-awareness-cards"></div>
       <div class="card">
         <h3>Stay Alert, Stay Alive <span class="tier tier-c">Tier C</span></h3>
         <p style="color:var(--text-muted);margin-top:0.75rem"><strong>In plain English:</strong> Military rules for not getting ambushed overseas — vary your route, sit facing the door, do not flash valuables. Sound advice; no civilian assault-reduction study.</p>
-      </div>
-      <div class="card">
-        <h3>EAAA "Assess" Unit <span class="tier tier-aplus">Tier A+</span></h3>
-        <p style="color:var(--text-muted);margin-top:0.75rem"><strong>In plain English:</strong> Teaches women to recognize when a familiar person is setting up an assault — isolation, pressure, boundary testing — and act <em>before</em> it escalates. This is the closest thing to proven "I sensed it and left."</p>
       </div>
       <div class="card">
         <h3>Verbal Resistance <span class="tier tier-a">Tier A</span></h3>

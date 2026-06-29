@@ -2792,6 +2792,206 @@ footer a:hover { text-decoration: underline; }
 .cooper-orange { --cooper-color: var(--cooper-orange); --cooper-bg: var(--cooper-orange-bg); --cooper-border: #ea580c; }
 .cooper-red { --cooper-color: var(--cooper-red); --cooper-bg: var(--cooper-red-bg); --cooper-border: #dc2626; }
 
+/* EAAA / Empowerment Self-Defense definition */
+.eaaa-definition-wrap { margin-bottom: 1.5rem; }
+
+.eaaa-def-hero {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(250, 204, 21, 0.08));
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  border-radius: 16px;
+  border-left: 4px solid var(--tier-a-plus);
+}
+
+.eaaa-def-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.eaaa-def-acronym {
+  font-family: var(--font-mono);
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--tier-a-plus);
+  letter-spacing: 0.06em;
+}
+
+.eaaa-def-hero h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
+.eaaa-def-oneline {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+.eaaa-def-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.eaaa-def-card {
+  padding: 1.15rem;
+  border-radius: 12px;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.eaaa-def-card h4 { margin: 0 0 0.5rem; font-size: 0.95rem; }
+.eaaa-def-card p { margin: 0; color: var(--text-muted); }
+.eaaa-def-card.eaaa-is { background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); }
+.eaaa-def-card.eaaa-isnot { background: rgba(239, 68, 68, 0.06); border: 1px solid rgba(239, 68, 68, 0.2); }
+.eaaa-def-card.eaaa-is h4 { color: var(--tier-a-plus); }
+.eaaa-def-card.eaaa-isnot h4 { color: var(--danger); }
+
+.eaaa-esd-box {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+.eaaa-esd-box h4 { margin: 0 0 0.35rem; }
+
+.eaaa-esd-duo {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+@media (max-width: 700px) {
+  .eaaa-esd-duo { grid-template-columns: 1fr; }
+  .eaaa-esd-arrow { transform: rotate(90deg); text-align: center; }
+}
+
+.eaaa-esd-card {
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+}
+
+.eaaa-esd-field { background: var(--bg-elevated); border: 1px solid var(--border); }
+.eaaa-esd-program { background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); }
+.eaaa-esd-label { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.04em; }
+.eaaa-esd-card strong { display: block; margin: 0.25rem 0 0.5rem; font-size: 1rem; }
+.eaaa-esd-card p { margin: 0; color: var(--text-muted); line-height: 1.5; }
+.eaaa-esd-arrow { font-size: 1.5rem; color: var(--tier-a-plus); font-weight: 300; }
+
+.eaaa-meta-box {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+.eaaa-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.eaaa-meta-item {
+  padding: 0.85rem;
+  background: var(--bg-elevated);
+  border-radius: 10px;
+  font-size: 0.82rem;
+}
+
+.eaaa-meta-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.35rem;
+}
+
+.eaaa-meta-item p { margin: 0.25rem 0; color: var(--text-muted); line-height: 1.45; }
+.eaaa-outcome-stat { color: var(--tier-a-plus) !important; font-size: 0.88rem !important; }
+
+.eaaa-units-wrap { margin: 1.5rem 0; }
+.eaaa-units-wrap h4 { margin-bottom: 1rem; }
+
+.eaaa-units-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.eaaa-unit-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--eaaa-unit-color);
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 0.82rem;
+}
+
+.eaaa-unit-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.eaaa-unit-header h5 { margin: 0; font-size: 1rem; color: var(--eaaa-unit-color); }
+.eaaa-unit-meta { font-size: 0.72rem; font-family: var(--font-mono); color: var(--text-muted); display: block; }
+.eaaa-unit-card p { margin: 0.35rem 0; color: var(--text-muted); line-height: 1.45; }
+.eaaa-unit-plain { color: var(--text) !important; font-weight: 500; }
+.eaaa-unit-map { display: block; margin-top: 0.5rem; font-size: 0.72rem; font-family: var(--font-mono); color: var(--accent); }
+
+.eaaa-connection-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.eaaa-physical-skills {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.eaaa-sources-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.eaaa-sources-list a { color: var(--tier-a-plus); }
+
+.eaaa-awareness-teaser { border-left: 4px solid var(--tier-a-plus); }
+.eaaa-teaser-link {
+  display: inline-block;
+  margin-top: 0.85rem;
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--tier-a-plus);
+  text-decoration: none;
+}
+
+.eaaa-teaser-link:hover { text-decoration: underline; }
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav-links { display: none; }
