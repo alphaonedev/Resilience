@@ -13,22 +13,59 @@ function renderCooperCompactStrip() {
   const el = document.getElementById('cooper-compact-strip');
   if (!el || !c) return;
   el.innerHTML = `
-    <div class="cooper-strip-header">
-      <span class="cooper-strip-title">Cooper Color Code</span>
-      <span class="tier tier-c">Tier C habit</span>
-      <span class="cooper-strip-hint">Your brain's awareness traffic light</span>
+    <div class="cooper-hero-head">
+      <div class="cooper-hero-head-text">
+        <h2 class="cooper-hero-title">Cooper Color Code</h2>
+        <p class="cooper-hero-subtitle">Your brain's awareness traffic light — four mental settings that decide whether you see danger early or walk into it blind.</p>
+        <p class="cooper-hero-metaphor">${c.trafficMetaphor}</p>
+      </div>
+      <div class="cooper-hero-badges">
+        <span class="tier tier-c">Tier C habit</span>
+        <span class="cooper-hero-origin">${c.origin}</span>
+      </div>
     </div>
-    <div class="cooper-strip-ladder" role="list" aria-label="Cooper awareness levels">
+
+    <div class="cooper-hero-grid" role="list" aria-label="Cooper awareness levels">
       ${c.levels.map(l => `
-        <div class="cooper-strip-node ${cooperLevelClass(l.id)}${l.isTarget ? ' cooper-strip-target' : ''}" role="listitem"
-          style="--cooper-color:${l.hex};--cooper-bg:${l.bg};--cooper-border:${l.border}"
-          title="${l.mindset}">
-          <span class="cooper-strip-dot"></span>
-          <span class="cooper-strip-name">${l.name}</span>
-          ${l.isTarget ? '<span class="cooper-strip-badge">DEFAULT</span>' : ''}
-        </div>`).join('<span class="cooper-strip-arrow" aria-hidden="true">→</span>')}
+        <article class="cooper-hero-card ${cooperLevelClass(l.id)}${l.isTarget ? ' cooper-hero-card-target' : ''}${l.id === 'white' ? ' cooper-hero-card-avoid' : ''}"
+          role="listitem"
+          style="--cooper-color:${l.hex};--cooper-bg:${l.bg};--cooper-border:${l.border};--cooper-bright:${l.hexBright}">
+          <div class="cooper-hero-card-bar" aria-hidden="true"></div>
+          <header class="cooper-hero-card-head">
+            <span class="cooper-hero-swatch" aria-hidden="true"></span>
+            <div>
+              <h3 class="cooper-hero-card-name">${l.name}</h3>
+              <p class="cooper-hero-card-mindset">${l.mindset}</p>
+            </div>
+            ${l.isTarget ? '<span class="cooper-hero-pill cooper-hero-pill-default">Your default</span>' : ''}
+            ${l.id === 'white' ? '<span class="cooper-hero-pill cooper-hero-pill-avoid">Avoid</span>' : ''}
+          </header>
+          <p class="cooper-hero-card-body">${l.plainEnglish}</p>
+          <p class="cooper-hero-card-action"><span class="cooper-hero-action-label">Do this</span> ${l.action}</p>
+          ${l.aaaMap ? `<p class="cooper-hero-card-aaa"><span class="cooper-hero-aaa-label">Resilience</span> ${l.aaaMap}</p>` : ''}
+        </article>`).join('')}
     </div>
-    <p class="cooper-strip-foot">${c.honestNote}</p>`;
+
+    <div class="cooper-hero-flow" aria-label="Escalation path">
+      <span class="cooper-hero-flow-label">Normal escalation</span>
+      <div class="cooper-hero-flow-track">
+        ${c.levels.filter(l => l.id !== 'white').map((l, i, arr) => `
+          <span class="cooper-hero-flow-step ${cooperLevelClass(l.id)}" style="--cooper-color:${l.hex}">${l.name}</span>
+          ${i < arr.length - 1 ? '<span class="cooper-hero-flow-arrow" aria-hidden="true">→</span>' : ''}`).join('')}
+      </div>
+      <span class="cooper-hero-flow-skip">Skip White entirely — wake up into <strong>Yellow</strong> every day.</span>
+    </div>
+
+    <footer class="cooper-hero-foot">
+      <p class="cooper-hero-note"><strong>Evidence honest:</strong> ${c.honestNote}</p>
+      <div class="cooper-hero-aaa-bridge">
+        <span class="cooper-bridge-pill cooper-yellow">Yellow = Assess</span>
+        <span class="cooper-bridge-arrow">→</span>
+        <span class="cooper-bridge-pill cooper-orange">Orange = Acknowledge</span>
+        <span class="cooper-bridge-arrow">→</span>
+        <span class="cooper-bridge-pill cooper-red">Red = Act (leave first)</span>
+      </div>
+    </footer>`;
 }
 
 function renderCooperColorLadder() {
@@ -66,22 +103,34 @@ function renderCooperSystemMap() {
   const el = document.getElementById('cooper-system-map');
   if (!el || !c?.systemMap) return;
   const levelById = Object.fromEntries(c.levels.map(l => [l.id, l]));
+  const layerHints = {
+    yellow: 'Your everyday setting — calm scanning, not paranoia.',
+    orange: 'Gut tightens — name the threat and plan your exit.',
+    red: 'Seconds count — leave, run, or burst only if trapped.',
+    white: 'The state predators prefer — do not live here.'
+  };
   el.innerHTML = `
-    <h4>How the whole site maps to Cooper colors</h4>
-    <p class="chart-explainer">Every section on Resilience fits a mental color. Train Yellow daily; escalate only when the situation demands it.</p>
+    <div class="cooper-map-head">
+      <h4>How the whole site maps to Cooper colors</h4>
+      <p class="chart-explainer">Every section on Resilience fits a mental color. Train <strong>Yellow</strong> daily; escalate only when the situation demands it — never skip straight to fighting.</p>
+    </div>
     <div class="cooper-system-grid">
       ${c.systemMap.map(row => {
         const lv = levelById[row.color];
         return `
-          <div class="cooper-system-row ${cooperLevelClass(row.color)}"
-            style="--cooper-color:${lv?.hex};--cooper-bg:${lv?.bg};--cooper-border:${lv?.border}">
-            <div class="cooper-system-swatch"></div>
-            <div>
-              <strong class="cooper-system-layer">${row.layer}</strong>
-              <span class="cooper-system-color-label">${lv?.name}</span>
-              <ul class="cooper-system-list">${row.systems.map(s => `<li>${s}</li>`).join('')}</ul>
+          <article class="cooper-system-card ${cooperLevelClass(row.color)}"
+            style="--cooper-color:${lv?.hex};--cooper-bg:${lv?.bg};--cooper-border:${lv?.border};--cooper-bright:${lv?.hexBright}">
+            <div class="cooper-system-card-top">
+              <span class="cooper-system-swatch-lg" aria-hidden="true"></span>
+              <div>
+                <span class="cooper-system-color-label">${lv?.name} condition</span>
+                <h5 class="cooper-system-layer">${row.layer}</h5>
+              </div>
             </div>
-          </div>`;
+            <p class="cooper-system-hint">${layerHints[row.color] || ''}</p>
+            <p class="cooper-system-mindset">${lv?.mindset}</p>
+            <ul class="cooper-system-list">${row.systems.map(s => `<li>${s}</li>`).join('')}</ul>
+          </article>`;
       }).join('')}
     </div>`;
 }
