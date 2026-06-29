@@ -131,7 +131,32 @@ function renderSystemVerdict(key) {
   const s = getSystem(key);
   const v = document.getElementById(`${key}-system-verdict`);
   const l = document.getElementById(`${key}-system-limits`);
-  if (v) v.innerHTML = `<p>${s?.nhiVerdict || ''}</p>`;
+  const accent = key === 'women' ? '#10b981' : '#3b82f6';
+  const d = s?.nhiVerdictDistill;
+
+  if (v) {
+    if (!d) {
+      v.innerHTML = `<p>${s?.nhiVerdict || ''}</p>`;
+    } else {
+      v.innerHTML = `
+        <div class="dual-verdict-distill dual-verdict-${key}" style="--dual-accent:${accent}">
+          <p class="dual-verdict-lead">${d.lead}</p>
+
+          <h4 class="dual-verdict-heading">${d.trainShieldTitle}</h4>
+          <ul class="dual-verdict-list">${d.trainShield.map(t => `<li>${t}</li>`).join('')}</ul>
+
+          <h4 class="dual-verdict-heading dual-verdict-heading-muted">${d.notFoundationTitle}</h4>
+          <ul class="dual-verdict-list dual-verdict-list-muted">${d.notFoundation.map(t => `<li>${t}</li>`).join('')}</ul>
+
+          <h4 class="dual-verdict-heading">${d.beatsTitle}</h4>
+          <ol class="dual-verdict-beats">
+            ${d.beats.map((b, i) => `
+              <li class="${i === d.beats.length - 1 ? 'dual-verdict-beat-final' : ''}">${b}</li>`).join('')}
+          </ol>
+        </div>`;
+    }
+  }
+
   if (l) l.textContent = s?.honestLimits || '';
 }
 
