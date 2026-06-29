@@ -1240,5 +1240,174 @@
       "nhiVerdict": "The 'one punch, one kick' philosophy is one of the strongest historical alignments with Resilience fight science. Tomoyose and Egami independently converged on depth over breadth (first principle A7), ikken hissatsu matches the 64% first-10-second KO window, and mae-geri → gyaku-zuki is a legitimate burst-and-exit combo. Resilience adds three corrections: (1) the straight punch must be trained with boxing-level delivery, not point-karate snap; (2) the front kick's highest-value street role is push-away escape (teep logic), not a Hollywood groin-only finisher; (3) awareness still outranks both — Egami's soldiers needed fast skills, but civilians need EAAA-style detection more. Reject the '90% of situations' marketing fraction unless someone measures it. Accept the Okinawan minimalism as the correct contact-phase curriculum after AAA habits exist.",
       "honestLimits": "Tomoyose quote is oral tradition (Tier C). Egami soldier training has no victimization RCT. Makiwara excellence does not automatically transfer to adrenalized unknown attackers without C6 testing."
     }
+  },
+  "boxingNhiAnalysis": {
+    "title": "Boxing Legends vs Resilience Evidence — AI NHI Reconciliation",
+    "date": "2026-06-29",
+    "tier": "B",
+    "executiveSummary": "Boxing legends — Tyson, Cus D'Amato, Dempsey, Ali — converge on what Resilience fight science already proves: mastered basics under live pressure, explosive first-beat disruption, head movement against telegraphed swings, and finish-fast mentality. Boxing + Muay Thai standup ranks Tier A in adversarial voting (#2–3 depending on stack) because sparring validates delivery (C6). Where legend lore overreaches: 'dominate most street encounters' is unmeasured; forward swarming (peek-a-boo) trades well in 1v1 but conflicts with multi-attacker and weapon exit logic; boxing assumes stand-up with no kicks, ground, or guns. Resilience verdict: boxing is the best-evidenced contact-phase delivery system for civilians who must fight standing — but only after AAA/EAAA avoidance fails, and best paired with karate low kicks and explicit sprint exits.",
+    "historicalContext": {
+      "plainEnglish": "Boxing grew from bare-knuckle street and military survival manuals (Dempsey's Championship Fighting) into the most pressure-tested stand-up system on earth. Tyson and Cus forged that lineage in gyms where getting hit was mandatory — not cooperative demos. That training culture is why boxing crosses rank #1 while karate gyaku-zuki shares lab newtons but fails delivery proof.",
+      "tier": "B/C",
+      "note": "Biographical street-fight counts (Tyson 100+ as kid) are anecdotal — not NCVS outcomes"
+    },
+    "legendAnalysis": [
+      {
+        "legend": "Mike Tyson",
+        "coreTeaching": "Everybody has a plan until punched in the mouth; peek-a-boo swarming; slip haymaker → counter bomb; overwhelming violence of action",
+        "resilienceAlignment": "HIGH contact / MEDIUM exit",
+        "aligns": ["64% KOs in first 10 sec — script disruption matches burst window", "Slip + counter = boxing jab/cross Tier A under resistance", "Psychological collapse of untrained attackers after clean first strike (Tier B inference)", "Close-range head movement vs telegraphed street hooks"],
+        "tensions": ["Peek-a-boo forward pressure risks entanglement with multiples or hidden weapons", "Tyson's street anecdotes are Tier C/D — no victimization RCT", "'Hit first' framing conflicts with legal de-escalation and EAAA avoidance-first"],
+        "nhiVerdict": "Tyson is fight-science burst personified. Borrow slips, counters, and first-strike commitment — not prolonged swarming. Stun, don't become a stationary target."
+      },
+      {
+        "legend": "Cus D'Amato",
+        "coreTeaching": "Hero and coward feel same fear — channel it; make them miss and pay; unseen punch breaks will; relentless pressure not running",
+        "resilienceAlignment": "HIGH mindset / MEDIUM tactics",
+        "aligns": ["Fear control supports AAA habit consistency under stress", "Hit-and-not-get-hit via head movement — Tier A delivery culture", "Deception + timing = action beats reaction at punch range (A4)", "Cus lost eye in street fight — understood real violence"],
+        "tensions": ["'Relentless pressure' ≠ Resilience escape-priority when outnumbered", "Psychology claims lack peer-reviewed civilian SD trials"],
+        "nhiVerdict": "Cus supplies the mental operating system boxing proves physically. Pair his aggression with Funakoshi's exit: pressure to create the opening, sprint to use it."
+      },
+      {
+        "legend": "Jack Dempsey",
+        "coreTeaching": "Championship Fighting / How to Fight Tough; falling step; aggressive defense; short hooks/straights; full body weight every punch",
+        "resilienceAlignment": "HIGH",
+        "aligns": ["Falling step = effective mass kinetic chain (2500N cross data)", "Aggressive defense = simultaneous block-counter Motobu logic", "Short power shots over wild swings — matches street footage", "Civilian/military SD manuals — practical not sport-only"],
+        "tensions": ["1970s mugger KO anecdotes are Tier C hero stories", "No modern RCT on Dempsey-method civilian outcomes"],
+        "nhiVerdict": "Dempsey is the bridge between boxing science and self-defense writing. His power mechanics are Tier A biomechanics; his 'finish fast' maps to D3 ten-second burst."
+      },
+      {
+        "legend": "Muhammad Ali",
+        "coreTeaching": "Footwork, angles, distance — make them miss while creating escape lanes",
+        "resilienceAlignment": "HIGH for avoidance-adjacent movement",
+        "aligns": ["A3 pre-contact leverage via angle not duel", "Footwork creates exit routes — matches defensivePosture footwork rules", "Jab range control ranks #3 technique with streetSafety 5"],
+        "tensions": ["Ali's style assumes ring space and referee — street has obstacles and third parties", "Dancing prolongs exposure vs sprint exit"],
+        "nhiVerdict": "Ali is the boxing argument for 'don't stand and trade — move off the X.' Best legend alignment with escape-priority strategy."
+      },
+      {
+        "legend": "Floyd Mayweather (Philly shell)",
+        "coreTeaching": "Shoulder roll, slip without over-commit; counter off defense",
+        "resilienceAlignment": "MEDIUM",
+        "aligns": ["Head movement and shoulder roll reduce clean chin shots", "Philly shell high guard overlaps compact exit-ready guard"],
+        "tensions": ["Shell defense invites clinch and ground in street — 62–73% fights hit ground", "Mayweather career = prolonged defense — opposite of ikken hissatsu + run", "Sport reflexes need years — violates A7 for casual civilians"],
+        "nhiVerdict": "Borrow the slip mechanics, reject the 'pillow-fight for 12 rounds' mindset. One slip → one counter → exit."
+      }
+    ],
+    "principleReconciliation": [
+      { "boxingPrinciple": "Mastery of basics under pressure (sparring)", "resilienceMatch": "STRONG", "evidence": "C6 adversarial criterion; boxing cross fightValidated true; karate snap 600N", "tier": "A" },
+      { "boxingPrinciple": "Disrupt attacker script with first clean shot", "resilienceMatch": "STRONG", "evidence": "64% KOs first 10 sec; Tyson 'plan until punched' Tier B psychology", "tier": "B" },
+      { "boxingPrinciple": "Head movement — make wild punches miss", "resilienceMatch": "STRONG", "evidence": "Untrained street hooks telegraphed; slip+counter Tier A", "tier": "A" },
+      { "boxingPrinciple": "Footwork and angles", "resilienceMatch": "STRONG", "evidence": "Ali angle logic; defensivePosture never square up; escape lanes", "tier": "A/B" },
+      { "boxingPrinciple": "Effective mass / hip behind punch", "resilienceMatch": "STRONG", "evidence": "Dempsey falling step; cross 2500N vs snap 600N", "tier": "A" },
+      { "boxingPrinciple": "Aggression and forward pressure", "resilienceMatch": "PARTIAL", "evidence": "Good 1v1 burst; bad vs weapons/multiples — conflicts D2 escape", "tier": "B/C context" },
+      { "boxingPrinciple": "Hit first if violence inevitable", "resilienceMatch": "PARTIAL", "evidence": "A4 action beats reaction at close range; EAAA still prefers leave; legal variance", "tier": "B" },
+      { "boxingPrinciple": "Conditioning — absorb hit and continue", "resilienceMatch": "PARTIAL", "evidence": "Chin toughness inference; Resilience prefers not getting hit (guard + exit)", "tier": "B" },
+      { "boxingPrinciple": "Clinch dirty boxing (knee/elbow)", "resilienceMatch": "STRONG", "evidence": "Boxing+Muay stack; elbow Tier A; escape-stack clinch break", "tier": "A/B" }
+    ],
+    "techniqueReconciliation": [
+      { "technique": "Jab (measure/disrupt)", "legendClaim": "Control distance; set up power", "resilienceRank": "#3 strikes, streetSafety 5", "verdict": "CONFIRMED — safest entry; pairs with exit footwork", "tier": "A" },
+      { "technique": "Cross (power straight)", "legendClaim": "Centerline bomb; Dempsey falling step", "resilienceRank": "#1 strikes, 2500N, fightValidated", "verdict": "CONFIRMED — best-evidenced civilian stand-up finisher", "tier": "A" },
+      { "technique": "Hook (chin/temple)", "legendClaim": "Dempsey short hook; Tyson lead hook", "resilienceRank": "#2 strikes, koPotential 5", "verdict": "CONFIRMED power — higher rotational KO risk to both parties", "tier": "A" },
+      { "technique": "Body shot (liver/solar plexus)", "legendClaim": "Gas them; safer than head", "resilienceRank": "High fight finish rate; lower hand injury risk", "verdict": "CONFIRMED for burst — then exit while they fold", "tier": "B" },
+      { "technique": "Slip + counter", "legendClaim": "Tyson peek-a-boo; Cus unseen punch", "resilienceRank": "Boxing delivery Tier A", "verdict": "CONFIRMED — core street pattern vs haymakers", "tier": "A" },
+      { "technique": "Peek-a-boo swarming", "legendClaim": "Close chaos dominance", "resilienceRank": "Strong 1v1; weak multi-attacker", "verdict": "PARTIAL — use 2-3 punch burst not prolonged swarm", "tier": "B" },
+      { "technique": "Philly shell / shoulder roll", "legendClaim": "Mayweather untouchable", "resilienceRank": "Head movement yes; prolonged defense no", "verdict": "PARTIAL — one slip counter then run", "tier": "B" },
+      { "technique": "Clinch control", "legendClaim": "Dirty boxing in tie-up", "resilienceRank": "Escape-stack break + knee/elbow", "verdict": "CONFIRMED if exit follows — not wrestling for dominance", "tier": "B" }
+    ],
+    "claimsAudit": [
+      { "claim": "Boxing is proven stand-up combat forged under live pressure", "verdict": "CONFIRMED", "evidence": "Sparring C6; cross/hook fightValidated; adversarial rank 2-3", "tier": "A" },
+      { "claim": "First committed strike shatters attacker script", "verdict": "CONFIRMED for window", "evidence": "64% first-10-sec KOs; psychological disruption Tier B", "tier": "B" },
+      { "claim": "Mastered basics dominate most street encounters", "verdict": "PARTIALLY REJECT 'most'", "evidence": "Strong 1v1 stand-up inference; no victimization RCT; 46% strangers; weapons negate", "tier": "B inference / D for 'most'" },
+      { "claim": "Best defense is avoidance — fight only if forced", "verdict": "CONFIRMED", "evidence": "EAAA A+; Funakoshi alignment; legends agree when quoted fully", "tier": "A+" },
+      { "claim": "Pure boxing covers all street scenarios", "verdict": "REJECTED", "evidence": "No kicks/weapons/ground/groups in boxing-only; 62-73% ground rate", "tier": "A" },
+      { "claim": "Boxing + karate kicks = complete civilian toolkit", "verdict": "PARTIAL CONFIRM", "evidence": "Adversarial optimal stack includes boxing hands + wrestling sprawl; karate teep fills kick gap", "tier": "B" }
+    ],
+    "limitations": {
+      "title": "What legends admit (and data confirms)",
+      "items": [
+        "1v1 stand-up assumption — groups and weapons change everything",
+        "No ground game — 62–73% of fights hit ground; boxing default is dangerous there",
+        "No kick defense — karate/Muay teep and calf kick fill the gap",
+        "Legal exposure — 'hit first' requires imminent threat standard; EAAA de-escalation first",
+        "Hand injury risk on bare concrete — palm heel option from karate stack",
+        "Sport rounds mindset vs 10-second burst — train exit not decision victory"
+      ],
+      "hybridNote": "Boxing refines the straight punch and head movement karate needs. Karate adds low kicks, palms, and Okinawan exit philosophy. Adversarial optimal stack: EAAA brain + boxing hands + wrestling sprawl + explicit run conditioning."
+    },
+    "survivalTips": [
+      { "tip": "Hands up always — high guard or conversational fence", "mapsTo": "defensivePosture compact guard", "tier": "A/B" },
+      { "tip": "Jab to measure/disrupt — power only if they commit", "mapsTo": "Jab rank #3, streetSafety 5", "tier": "A" },
+      { "tip": "Slip big swing → immediate counter (Tyson/Dempsey)", "mapsTo": "Slip+counter Tier A", "tier": "A" },
+      { "tip": "Target body to fold them; head for decisive stun", "mapsTo": "Body shot burst; rotational KO science on hooks", "tier": "B/A" },
+      { "tip": "Keep moving — angles and exit once stunned", "mapsTo": "Ali footwork + D2 escape-priority", "tier": "A/B" },
+      { "tip": "Train bag for power, light spar for timing, scenarios for chaos", "mapsTo": "C6 stress transfer ladder", "tier": "A" }
+    ],
+    "drillProgression": {
+      "title": "8-Week Boxing Survival Progression (Stun-and-Run)",
+      "prerequisite": "AAA awareness running; legal understanding of proportional response",
+      "phases": [
+        {
+          "phase": "Weeks 1–2 — Guard + jab fence",
+          "daily": "10 min",
+          "drills": [
+            "High guard shadow: chin tucked, elbows in — 3×2 min",
+            "Jab-only shadow: touch guard, recover, never overreach — 100 jabs",
+            "Fence drill: partner steps in verbally — jab to chest guard line, angle step off"
+          ],
+          "exitTest": "Maintain guard 2 min continuous shadow; 20 clean jabs in 30 sec"
+        },
+        {
+          "phase": "Weeks 3–4 — Dempsey power (cross + hook)",
+          "daily": "12 min",
+          "drills": [
+            "Falling step cross on heavy bag — sit into punch, exhale — 5×20",
+            "Short hook on bag: elbow level, rotate through target — 3×15/side",
+            "Body shot ladder: solar plexus → liver line on bag — 3×10 each"
+          ],
+          "exitTest": "10 power crosses in 20 sec with hip drive; partner feels effective mass"
+        },
+        {
+          "phase": "Weeks 5–6 — Tyson slips + counters",
+          "daily": "15 min",
+          "weekly": "1 light spar or focus-mitt session",
+          "drills": [
+            "Slip outside lead hook → cross counter on mitts — 5×10",
+            "Peek-a-boo burst: slip-slip-hook-cross on bag — 3×1 min (max 4 punches)",
+            "Haymaker feed: partner throws slow overhand — slip and counter once only"
+          ],
+          "exitTest": "Counter within one beat of feed; mandatory verbal RUN after combo"
+        },
+        {
+          "phase": "Weeks 7–8 — Hybrid burst + karate exit",
+          "daily": "15 min",
+          "weekly": "2 scenario sessions",
+          "drills": [
+            "Jab-cross-hook burst → teep push (borrowed from karate stack) → 10 m sprint",
+            "Clinch: frame → elbow or knee once → break and run",
+            "Multi-angle: attacker from side — Ali pivot + cross + exit"
+          ],
+          "exitTest": "Complete burst-exit in under 3 sec on surprise cue; never stand after third punch"
+        }
+      ],
+      "maintenance": "1 light spar/month + weekly bag power + daily 3 min awareness. Re-test exit sprint monthly."
+    },
+    "videoResources": [
+      { "title": "Peek-a-boo mechanics", "creator": "FightTips / boxing breakdown channels", "url": "https://www.youtube.com/c/FightTips", "focus": "Tyson-style slips, high guard, counter timing", "tier": "C pedagogy" },
+      { "title": "Precision striking fundamentals", "creator": "Precision Striking", "url": "https://www.youtube.com/c/PrecisionStriking", "focus": "Jab/cross/hook mechanics for beginners", "tier": "C pedagogy" },
+      { "title": "Boxing biomechanics", "creator": "Boxing Science", "url": "https://www.youtube.com/c/BoxingScience", "focus": "Force production data — backs 2500N cross claims", "tier": "B sport science" },
+      { "title": "Cus D'Amato philosophy", "creator": "Documentary/interview archives", "url": "https://www.youtube.com/results?search_query=Cus+D%27Amato+fear+boxing", "focus": "Fear channeling and mental edge — Tier C mindset", "tier": "C oral tradition" },
+      { "title": "Dempsey falling step (book)", "creator": "Jack Dempsey — Championship Fighting", "url": "https://archive.org/search?query=Championship+Fighting+Dempsey", "focus": "Public-domain SD manual — power punch mechanics", "tier": "C historical" }
+    ],
+    "synthesisStack": {
+      "order": [
+        { "priority": 1, "layer": "AAA / EAAA — leave before boxing needed", "why": "Legends agree when quoted fully; only A+ RCT", "hours": "3 min/day" },
+        { "priority": 2, "layer": "Boxing jab/cross/hook + head movement", "why": "Tier A delivery; ranks #1-3 techniques", "hours": "3-6 months sparring" },
+        { "priority": 3, "layer": "Karate teep + low kick (gap fill)", "why": "Boxing has no kick defense or push-away", "hours": "2-4 weeks" },
+        { "priority": 4, "layer": "Wrestling sprawl + stand-up", "why": "62-73% ground risk — boxing alone fails", "hours": "2-3 months" },
+        { "priority": 5, "layer": "Scenario burst → sprint exit", "why": "Ikken hissatsu + Ali angles — not round 3", "hours": "Ongoing monthly" }
+      ]
+    },
+    "nhiFinalVerdict": "The boxing angle to self-defense is the strongest contact-phase case on this site. Tyson, Cus, and Dempsey independently discovered what our data measures: delivery under resistance beats technique collection, the first ten seconds decide standing fights, and wild untrained swings lose to slips and counters. Ali adds what Tyson often forgot — angles are escape routes, not just dominance. Resilience adds four corrections: (1) awareness still outranks every punch; (2) forward swarming without exit is a liability against multiples and weapons; (3) boxing must borrow karate's teep and wrestling's sprawl to cover kicks and ground; (4) reject 'dominate most encounters' unless someone runs the victimization study. Train boxing hands with Cus's mindset, Ali's feet, Dempsey's mass — then Funakoshi's run.",
+    "honestLimits": "Legend quotes and street-fight anecdotes are Tier C/D. No RCT isolates 'boxers' vs 'non-boxers' for civilian assault victimization. Tyson's peek-a-boo and Mayweather's shell are sport optimizations — street extrapolation is inference. This analysis reconciles philosophy with existing Resilience tiers; it does not claim boxing reduces crime rates without measured outcomes."
   }
 }

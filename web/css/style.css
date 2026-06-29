@@ -2134,6 +2134,188 @@ footer a:hover { text-decoration: underline; }
   line-height: 1.45;
 }
 
+/* Boxing NHI reconciliation */
+.boxing-legends-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.boxing-legend-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--align-color, #ef4444);
+  border-radius: 12px;
+  padding: 1.2rem;
+  font-size: 0.82rem;
+}
+
+.boxing-legend-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.boxing-legend-header h4 { font-size: 1rem; margin: 0; }
+
+.boxing-align-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--align-color, #ef4444);
+  white-space: nowrap;
+}
+
+.boxing-teaching,
+.boxing-aligns,
+.boxing-tensions,
+.boxing-verdict {
+  margin: 0.4rem 0;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.boxing-aligns { color: #10b981; }
+.boxing-tensions { color: #f59e0b; }
+.boxing-verdict { color: var(--text); margin-top: 0.65rem; padding-top: 0.5rem; border-top: 1px solid var(--border); }
+
+.boxing-match-strong, .boxing-match-high { color: #10b981; }
+.boxing-match-partial, .boxing-match-conditional { color: #f59e0b; }
+.boxing-match-reject { color: #ef4444; }
+
+.boxing-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.boxing-tech-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+.boxing-tech-card h5 { margin: 0 0 0.5rem; font-size: 0.95rem; }
+.boxing-tech-card p { margin: 0.3rem 0; color: var(--text-muted); line-height: 1.45; }
+.boxing-tech-verdict { color: var(--text) !important; font-weight: 500; margin-top: 0.5rem !important; }
+
+.boxing-stack-item {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.82rem;
+}
+
+.boxing-stack-item:last-child { border-bottom: none; }
+
+.boxing-stack-pri {
+  font-family: var(--font-mono);
+  font-weight: 800;
+  color: #ef4444;
+}
+
+.boxing-stack-item p { margin: 0.25rem 0; color: var(--text-muted); }
+.boxing-stack-hours { font-size: 0.72rem; color: var(--accent); }
+
+.boxing-opk-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.boxing-drill-phase {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.boxing-drill-phase h5 {
+  margin: 0 0 0.25rem;
+  font-size: 0.88rem;
+  color: #ef4444;
+}
+
+.boxing-drill-meta {
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  color: var(--accent);
+}
+
+.boxing-drill-test {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin: 0.5rem 0 0;
+}
+
+.boxing-drill-maint {
+  font-size: 0.8rem;
+  margin-top: 0.75rem;
+  color: var(--text-muted);
+}
+
+.boxing-hybrid-note {
+  font-size: 0.82rem;
+  margin-top: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.boxing-tip-tier {
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  color: var(--accent);
+}
+
+.boxing-opk-stat {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent);
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.boxing-video-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.boxing-video-list li {
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.8rem;
+}
+
+.boxing-video-list a {
+  color: #ef4444;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.boxing-video-list a:hover { text-decoration: underline; }
+
+.boxing-video-creator {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin: 0.15rem 0;
+}
+
+.boxing-video-list p {
+  margin: 0.25rem 0;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav-links { display: none; }
