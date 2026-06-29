@@ -13,6 +13,60 @@
     "C": "Limited peer review, single-site, or industry white paper",
     "D": "Anecdotal, marketing claims, or untested cooperative drills"
   },
+  "evidenceTiersGuide": {
+    "title": "What do the letter grades (A+ to D) mean?",
+    "subtitle": "Every claim on this site gets an evidence grade — so you know what is proven, what is plausible, and what is gym marketing.",
+    "intro": "We borrowed the idea from medicine: the strongest proof is a randomized trial that measured real outcomes. Weaker grades still have value — but you should weigh them differently when deciding what to train.",
+    "spectrumLabel": "Strongest proof → weakest proof",
+    "footnote": "A technique can be Tier A for delivery (it works in a fight) but Tier C for civilian victimization (nobody measured if training reduces assault rates). We label both honestly.",
+    "tiers": [
+      {
+        "id": "aplus",
+        "grade": "A+",
+        "label": "Gold-standard proof",
+        "plainEnglish": "Proven in a randomized medical-style trial — the same standard used for new drugs. Real people, measured outcomes, control group.",
+        "technical": "Randomized controlled trial or replicated operational cohort with measured outcomes",
+        "example": "EAAA — ~50–57% fewer completed assaults in an RCT",
+        "whenToTrust": "Build your core habits here first"
+      },
+      {
+        "id": "a",
+        "grade": "A",
+        "label": "Strong research",
+        "plainEnglish": "Backed by peer-reviewed science or large government datasets with real numbers — not instructor anecdotes.",
+        "technical": "Peer-reviewed study or large institutional dataset with quantified results",
+        "example": "NCVS victim surveys · FBI crime statistics · boxing force lab data",
+        "whenToTrust": "Reliable for technique rankings and crime context"
+      },
+      {
+        "id": "b",
+        "grade": "B",
+        "label": "Honest observation",
+        "plainEnglish": "Transparent studies with clear methods and sample sizes — not perfect, but you can see how they reached the conclusion.",
+        "technical": "Quasi-experimental, transparent observational study (n>100), replicable methodology",
+        "example": "Street-fight footage cohorts (n=154) · MMA outcome analytics",
+        "whenToTrust": "Good for inference — flag limitations"
+      },
+      {
+        "id": "c",
+        "grade": "C",
+        "label": "Doctrine & pedagogy",
+        "plainEnglish": "Military, police, or expert teaching that sounds right — but no civilian victimization trial proved it reduces assaults.",
+        "technical": "Limited peer review, single-site, or industry white paper",
+        "example": "Cooper Color Code · OODA Loop · most martial arts instruction",
+        "whenToTrust": "Useful mental models — not outcome proof"
+      },
+      {
+        "id": "d",
+        "grade": "D",
+        "label": "Folklore & marketing",
+        "plainEnglish": "Gym slogans, action-movie logic, cooperative drills with compliant partners, or \"90% of fights\" myths.",
+        "technical": "Anecdotal, marketing claims, or untested cooperative drills",
+        "example": "Untested knife disarms · point karate as street SD · Krav 90% claims",
+        "whenToTrust": "Assume false until measured"
+      }
+    ]
+  },
   "violenceDomains": [
     {
       "id": "traditional-ma",

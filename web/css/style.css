@@ -437,6 +437,179 @@ section {
 .tier-c { background: rgba(245, 158, 11, 0.2); color: var(--tier-c); }
 .tier-d { background: rgba(239, 68, 68, 0.2); color: var(--tier-d); }
 
+/* Evidence tier grades guide (Start Here) */
+.evidence-tiers-guide {
+  margin: 2rem 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.etg-head {
+  padding: 1.5rem 1.75rem;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.06), rgba(59, 130, 246, 0.04));
+  border-bottom: 1px solid var(--border);
+}
+
+.etg-title {
+  margin: 0 0 0.4rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.etg-subtitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  max-width: 720px;
+}
+
+.etg-intro {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  max-width: 720px;
+}
+
+.etg-spectrum {
+  padding: 1rem 1.75rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.etg-spectrum-label {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.etg-spectrum-bar {
+  display: flex;
+  height: 6px;
+  border-radius: 999px;
+  overflow: hidden;
+  gap: 2px;
+}
+
+.etg-spectrum-seg {
+  flex: 1;
+  background: var(--etg-color);
+  opacity: 0.85;
+}
+
+.etg-spectrum-grades {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.4rem;
+  padding: 0 0.1rem;
+}
+
+.etg-spectrum-grade {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.etg-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+}
+
+.etg-card {
+  padding: 1.15rem 1.2rem 1.25rem;
+  border-right: 1px solid var(--border);
+  border-top: 4px solid var(--etg-color);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), transparent);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.etg-card:last-child { border-right: none; }
+
+.etg-card-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  margin-bottom: 0.65rem;
+}
+
+.etg-card-head .tier {
+  font-size: 0.85rem;
+  padding: 0.3rem 0.65rem;
+}
+
+.etg-card-label {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.etg-card-plain {
+  margin: 0 0 0.85rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  flex: 1;
+}
+
+.etg-card-meta {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.etg-meta-row {
+  margin-bottom: 0.55rem;
+}
+
+.etg-meta-row:last-child { margin-bottom: 0; }
+
+.etg-meta-row dt {
+  font-size: 0.62rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--etg-color);
+  margin-bottom: 0.15rem;
+}
+
+.etg-meta-row dd {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.etg-meta-trust dd {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.etg-foot {
+  padding: 1rem 1.75rem 1.25rem;
+  border-top: 1px solid var(--border);
+  background: var(--bg-elevated);
+}
+
+.etg-foot p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  font-style: italic;
+}
+
 /* Charts */
 .chart-container {
   background: var(--bg-card);
@@ -4094,9 +4267,37 @@ footer a:hover { text-decoration: underline; }
   }
 }
 
+@media (max-width: 1100px) {
+  .etg-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .etg-card:nth-child(3) { border-right: none; }
+  .etg-card:nth-child(1),
+  .etg-card:nth-child(2),
+  .etg-card:nth-child(3) {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .etg-card:nth-child(4) { border-right: 1px solid var(--border); }
+}
+
 @media (max-width: 900px) {
   .cooper-hero-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .etg-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .etg-card { border-right: 1px solid var(--border); }
+  .etg-card:nth-child(2n) { border-right: none; }
+  .etg-card:nth-child(1),
+  .etg-card:nth-child(2),
+  .etg-card:nth-child(3),
+  .etg-card:nth-child(4) {
+    border-bottom: 1px solid var(--border);
   }
 
   .cooper-hero-card:nth-child(2) { border-right: none; }
@@ -4111,6 +4312,24 @@ footer a:hover { text-decoration: underline; }
 }
 
 @media (max-width: 600px) {
+  .etg-head,
+  .etg-spectrum,
+  .etg-foot {
+    padding-left: 1.15rem;
+    padding-right: 1.15rem;
+  }
+
+  .etg-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .etg-card {
+    border-right: none !important;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .etg-card:last-child { border-bottom: none; }
+
   .cooper-hero-head {
     padding: 1.25rem 1.15rem;
   }

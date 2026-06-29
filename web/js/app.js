@@ -37,6 +37,68 @@ function tierBadge(tier) {
   return `<span class="tier tier-${cls}">${tier}</span>`;
 }
 
+function renderEvidenceTiersGuide() {
+  const g = evidenceData?.evidenceTiersGuide;
+  const el = document.getElementById('evidence-tiers-guide');
+  if (!el || !g) return;
+
+  const tierColors = {
+    aplus: '#10b981',
+    a: '#3b82f6',
+    b: '#8b5cf6',
+    c: '#f59e0b',
+    d: '#ef4444'
+  };
+
+  el.innerHTML = `
+    <div class="etg-head">
+      <div class="etg-head-text">
+        <h2 class="etg-title">${g.title}</h2>
+        <p class="etg-subtitle">${g.subtitle}</p>
+        <p class="etg-intro">${g.intro}</p>
+      </div>
+    </div>
+
+    <div class="etg-spectrum" aria-hidden="true">
+      <span class="etg-spectrum-label">${g.spectrumLabel}</span>
+      <div class="etg-spectrum-bar">
+        ${g.tiers.map(t => `<span class="etg-spectrum-seg etg-${t.id}" style="--etg-color:${tierColors[t.id]}"></span>`).join('')}
+      </div>
+      <div class="etg-spectrum-grades">
+        ${g.tiers.map(t => `<span class="etg-spectrum-grade etg-${t.id}" style="color:${tierColors[t.id]}">${t.grade}</span>`).join('')}
+      </div>
+    </div>
+
+    <div class="etg-grid" role="list">
+      ${g.tiers.map(t => `
+        <article class="etg-card etg-${t.id}" role="listitem" style="--etg-color:${tierColors[t.id]}">
+          <header class="etg-card-head">
+            ${tierBadge(t.grade.replace('plus', '+'))}
+            <h3 class="etg-card-label">${t.label}</h3>
+          </header>
+          <p class="etg-card-plain">${t.plainEnglish}</p>
+          <dl class="etg-card-meta">
+            <div class="etg-meta-row">
+              <dt>Technical</dt>
+              <dd>${t.technical}</dd>
+            </div>
+            <div class="etg-meta-row etg-meta-example">
+              <dt>Example on this site</dt>
+              <dd>${t.example}</dd>
+            </div>
+            <div class="etg-meta-row etg-meta-trust">
+              <dt>How to use it</dt>
+              <dd>${t.whenToTrust}</dd>
+            </div>
+          </dl>
+        </article>`).join('')}
+    </div>
+
+    <footer class="etg-foot">
+      <p>${g.footnote}</p>
+    </footer>`;
+}
+
 function renderHeroStats() {
   const el = document.getElementById('hero-stats');
   const m = evidenceData.avoidanceAndAwareness.multiAttacker;
@@ -486,6 +548,7 @@ function renderAll() {
   }
   renderCrimeStats();
   renderFindings();
+  renderEvidenceTiersGuide();
   renderStack();
   renderLEChart();
   renderMinimalSystemConclusion();
