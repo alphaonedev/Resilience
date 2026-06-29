@@ -2673,6 +2673,42 @@
       { "step": "Add Layer 2 BURST (optional)", "effect": "Marginal stun window in trapped cases — 64% KOs in first 10 sec if still standing", "cumulative": "Smallest measured gain; largest gym time — last priority" }
     ],
     "nhiUltimateVerdict": "The Resilience One System is what remains when you delete gym marketing, movie choreography, and untested weapon scripts from every martial art on this site. Four layers: MIND (3 min/day, Tier A+ proof), AVOID (20 min/week), BURST (seven skills, 8 weeks optional), ESCAPE (always). Boxing gives you the hands. Muay Thai gives you teep and calf kick. Rutten gives you the capped clinch and dirty-burst mindset. Karate and PTK give you palm, angle step, and one-beat check — stripped to a single step, not a catalog. Cooper and OODA give you the mental speed EAAA proved matters more than punches. The adversarial voters agreed on priorities 1–3 (awareness, vigilance, exit). Physical gym time is priority 4–7 — optional compound interest, not the foundation. See it early. Trust your gut. Leave. If you cannot leave, burst three to five times. Sprint. That is the entire site.",
+    "ultimateVerdictDistill": {
+      "lead": "The Resilience One System is what remains when you delete gym marketing, movie choreography, and untested weapon scripts from every martial art on this site.",
+      "fourLayersTitle": "Four layers — all you need",
+      "fourLayers": [
+        { "name": "MIND", "detail": "3 min/day · Tier A+ proof (EAAA RCT)", "tier": "A+" },
+        { "name": "AVOID", "detail": "20 min/week · boundaries, exits, leave early", "tier": "A+" },
+        { "name": "BURST", "detail": "Seven skills · 8 weeks optional · only if trapped", "tier": "A/B" },
+        { "name": "ESCAPE", "detail": "Always · sprint to people, light, space", "tier": "A/B" }
+      ],
+      "contributionsTitle": "What each tradition contributes (stripped to essentials)",
+      "contributions": [
+        { "system": "Boxing", "gives": "The hands — jab, cross, burst psychology" },
+        { "system": "Muay Thai", "gives": "Teep and calf kick — distance and pursuit kill" },
+        { "system": "Rutten", "gives": "Capped clinch and dirty-burst mindset" },
+        { "system": "Karate & PTK", "gives": "Palm, angle step, one-beat check — one step, not a catalog" },
+        { "system": "Cooper & OODA", "gives": "Mental speed — EAAA proved this matters more than punches" }
+      ],
+      "priorityTitle": "What adversarial voting confirmed",
+      "prioritiesFoundation": {
+        "label": "Priorities 1–3 — foundation",
+        "items": ["Awareness habits", "Vigilance & exit planning", "Leave before contact"]
+      },
+      "prioritiesOptional": {
+        "label": "Priorities 4–7 — optional compound interest",
+        "items": ["Boxing delivery", "Kicks & clinch", "Sprawl & stand-up", "Scenario pressure testing"]
+      },
+      "stepsTitle": "The entire site in six beats",
+      "steps": [
+        "See it early",
+        "Trust your gut",
+        "Leave",
+        "If you cannot leave — burst three to five times",
+        "Sprint",
+        "That is the entire site"
+      ]
+    },
     "honestLimits": "No system guarantees survival against firearms, surprise, or overwhelming force. Proactive 'I left before it started' is still not scientifically measured — we flag that gap. Layer 2 burst skills are Tier A delivery, not Tier A+ victimization outcomes. This distill is AI NHI synthesis across all site sections — not a new RCT. It shifts odds using the strongest evidence we have; it does not make you invincible."
   }
 }

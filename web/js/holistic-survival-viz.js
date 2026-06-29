@@ -221,7 +221,54 @@ function renderHolisticFinal() {
   if (!h) return;
   const v = document.getElementById('holistic-final-verdict');
   const l = document.getElementById('holistic-honest-limits');
-  if (v) v.innerHTML = `<p>${h.nhiUltimateVerdict}</p>`;
+  const d = h.ultimateVerdictDistill;
+
+  if (v) {
+    if (!d) {
+      v.innerHTML = `<p>${h.nhiUltimateVerdict}</p>`;
+    } else {
+      const tierCls = t => `tier tier-${t.replace(/[^A-D+]/g, '').replace('+', 'plus').toLowerCase() || 'b'}`;
+      v.innerHTML = `
+        <div class="holistic-final-distill">
+          <p class="holistic-final-lead">${d.lead}</p>
+
+          <h4 class="holistic-final-heading">${d.fourLayersTitle}</h4>
+          <ul class="holistic-final-layers">
+            ${d.fourLayers.map(l => `
+              <li>
+                <span class="holistic-final-layer-name">${l.name}</span>
+                <span class="holistic-final-layer-detail">${l.detail}</span>
+                <span class="${tierCls(l.tier)}">${l.tier}</span>
+              </li>`).join('')}
+          </ul>
+
+          <h4 class="holistic-final-heading">${d.contributionsTitle}</h4>
+          <ul class="holistic-final-contribs">
+            ${d.contributions.map(c => `
+              <li><strong>${c.system}</strong> — ${c.gives}</li>`).join('')}
+          </ul>
+
+          <h4 class="holistic-final-heading">${d.priorityTitle}</h4>
+          <div class="holistic-final-priority-grid">
+            <div class="holistic-final-priority holistic-priority-found">
+              <span class="holistic-priority-label">${d.prioritiesFoundation.label}</span>
+              <ul>${d.prioritiesFoundation.items.map(i => `<li>${i}</li>`).join('')}</ul>
+            </div>
+            <div class="holistic-final-priority holistic-priority-optional">
+              <span class="holistic-priority-label">${d.prioritiesOptional.label}</span>
+              <ul>${d.prioritiesOptional.items.map(i => `<li>${i}</li>`).join('')}</ul>
+            </div>
+          </div>
+
+          <h4 class="holistic-final-heading">${d.stepsTitle}</h4>
+          <ol class="holistic-final-steps">
+            ${d.steps.map((s, i) => `
+              <li class="${i === d.steps.length - 1 ? 'holistic-final-step-closer' : ''}">${s}</li>`).join('')}
+          </ol>
+        </div>`;
+    }
+  }
+
   if (l) l.textContent = h.honestLimits;
 }
 

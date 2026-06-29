@@ -3530,6 +3530,147 @@ footer a:hover { text-decoration: underline; }
   line-height: 1.45;
 }
 
+/* One System — final verdict distill */
+.holistic-final-distill {
+  text-align: left;
+}
+
+.holistic-final-lead {
+  margin: 0 0 1.25rem;
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.holistic-final-heading {
+  margin: 1.15rem 0 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #10b981;
+}
+
+.holistic-final-layers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.holistic-final-layers li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.65rem;
+  padding: 0.65rem 0.85rem;
+  background: var(--bg-elevated);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.holistic-final-layer-name {
+  font-weight: 800;
+  font-size: 0.88rem;
+  color: var(--text);
+  min-width: 4.5rem;
+}
+
+.holistic-final-layer-detail {
+  flex: 1;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.holistic-final-contribs {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.holistic-final-contribs li { margin-bottom: 0.35rem; }
+.holistic-final-contribs strong { color: var(--text); }
+
+.holistic-final-priority-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.holistic-final-priority {
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.holistic-priority-found {
+  background: rgba(16, 185, 129, 0.08);
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+.holistic-priority-optional {
+  background: rgba(245, 158, 11, 0.06);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.holistic-priority-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+}
+
+.holistic-priority-found .holistic-priority-label { color: #10b981; }
+.holistic-priority-optional .holistic-priority-label { color: #f59e0b; }
+
+.holistic-final-priority ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.holistic-final-steps {
+  margin: 0;
+  padding-left: 1.35rem;
+  font-size: 0.92rem;
+  color: var(--text);
+  line-height: 1.65;
+}
+
+.holistic-final-steps li { margin-bottom: 0.35rem; padding-left: 0.25rem; }
+
+.holistic-final-step-closer {
+  font-weight: 700;
+  color: #10b981 !important;
+  list-style: none;
+  margin-left: -1.35rem;
+  margin-top: 0.5rem;
+  padding: 0.65rem 0.85rem !important;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: 8px;
+  border-left: 3px solid #10b981;
+}
+
+@media (max-width: 600px) {
+  .holistic-final-priority-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .holistic-final-layers li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 .holistic-layers-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
