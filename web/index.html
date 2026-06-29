@@ -12,6 +12,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
   <script src="js/technique-viz.js" defer></script>
   <script src="js/system-viz.js" defer></script>
+  <script src="js/posture-viz.js" defer></script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
@@ -25,6 +26,7 @@
         <li><a href="#adversarial">How We Scored</a></li>
         <li><a href="#systems">Strategies & Systems</a></li>
         <li><a href="#techniques">Techniques</a></li>
+        <li><a href="#posture">Stance & Weapons</a></li>
         <li><a href="#domains">Violence Types</a></li>
         <li><a href="#stack">What To Do</a></li>
         <li><a href="#conclusion">Simple System</a></li>
@@ -505,6 +507,101 @@
     <div class="chart-container tall">
       <div class="chart-title">Police Grappling Training — What Improved</div>
       <canvas id="leChart"></canvas>
+    </div>
+  </section>
+
+  <!-- POSTURE, FOOTWORK, GUARD, WEAPONS -->
+  <section id="posture" class="container">
+    <div class="section-header">
+      <h2>Stance, Footwork, Guard & Weapon Response</h2>
+      <p class="section-intro">
+        Before you throw anything, how you stand and present your body decides whether you can leave, absorb a shot, or survive until help arrives. When a weapon appears, the rules change completely.
+      </p>
+    </div>
+
+    <div class="nhi-voice">
+      <div class="nhi-voice-label">AI NHI — Plain English</div>
+      <h3>Posture is for exit, not ego</h3>
+      <p>
+        A UFC fighter squares up to trade in a cage. On a sidewalk, your stance should answer one question: <strong>can I run in any direction right now?</strong>
+        Hands protect your jaw. Chin stays tucked. Feet stay under you on bad ground. None of this requires years of training — it requires stopping the movie-pose habit.
+      </p>
+      <p>
+        <strong>When a weapon is shown:</strong> roughly 3 in 4 U.S. murders involve guns. Compliance and distance beat disarm drills every time in the evidence we have.
+        Krav Maga weapon defenses score Tier C–D because nobody has measured real civilian disarm success. Treat every weapon as real. Give property. Exit when the window opens.
+      </p>
+    </div>
+
+    <div id="posture-nhi-summary" class="plain-box" style="margin-bottom:2rem"></div>
+
+    <!-- STANCE -->
+    <div class="posture-viz-section">
+      <h3>Stance — Exit-Ready, Not Squared Up</h3>
+      <p class="chart-explainer">Blade your body 45°. Lead foot forward, weight on the balls of your feet, knees soft. You are ready to angle off or sprint — not pose for a round.</p>
+      <div class="posture-diagram-row">
+        <div class="posture-diagram-box posture-good"><div id="posture-stance-good"></div><span class="posture-label-good">✓ Exit-ready</span></div>
+        <div class="posture-diagram-box posture-bad"><div id="posture-stance-bad"></div><span class="posture-label-bad">✗ Squared / planted</span></div>
+      </div>
+      <div class="posture-card-row" id="posture-stance-cards"></div>
+    </div>
+
+    <!-- FOOTWORK -->
+    <div class="posture-viz-section">
+      <h3>Footwork — Angle Off, Don't Shuffle Backward</h3>
+      <p class="chart-explainer">Straight retreat lets a motivated attacker close faster. Step 45° offline to open an escape lane. Never cross your feet — tangled legs on concrete end fights.</p>
+      <div class="posture-diagram-single"><div id="posture-footwork"></div></div>
+      <div class="posture-card-row" id="posture-footwork-cards"></div>
+    </div>
+
+    <!-- GUARD -->
+    <div class="posture-viz-section">
+      <h3>Hands & Arms — Compact Guard</h3>
+      <p class="chart-explainer">Hands at cheekbone height, elbows protecting ribs. Palms-out signals de-escalation and keeps palm-heel ready. Do not reach out to block — that pulls you into clinch range.</p>
+      <div class="posture-diagram-single"><div id="posture-guard"></div></div>
+      <div class="posture-card-row" id="posture-guard-cards"></div>
+    </div>
+
+    <!-- VITALS -->
+    <div class="posture-viz-section">
+      <h3>Head & Vitals — What to Hide First</h3>
+      <p class="chart-explainer">One clean shot to an untucked chin ends most encounters. Protect brain → throat → ribs → groin, in that order. Eyes watch their chest and hands, not the ground.</p>
+      <div class="posture-diagram-single"><div id="posture-vitals"></div></div>
+      <div class="posture-card-row" id="posture-vitals-cards"></div>
+    </div>
+
+    <div class="chart-row-2">
+      <div class="chart-container compact">
+        <div class="chart-title">Posture Elements — Street Safety Scores</div>
+        <canvas id="postureSafetyChart"></canvas>
+      </div>
+      <div class="chart-container compact">
+        <div class="chart-title">Weapon Protocols — Evidence Strength</div>
+        <canvas id="weaponPriorityChart"></canvas>
+      </div>
+    </div>
+
+    <!-- WEAPONS -->
+    <div class="posture-viz-section posture-weapon-section">
+      <h3>When a Weapon Is Presented</h3>
+      <p class="chart-explainer">Different weapons, same priority: survive and exit. Gun = comply. Knife = distance and run. Implied weapon = treat as real. Disarms are gym fiction until someone proves otherwise.</p>
+      <div class="posture-diagram-row">
+        <div class="posture-diagram-box"><div id="posture-weapon-gun"></div><span class="posture-label-bad">Firearm</span></div>
+        <div class="posture-diagram-box"><div id="posture-weapon-knife"></div><span class="posture-label-warn">Knife</span></div>
+      </div>
+      <div class="posture-weapon-grid" id="weapon-response-cards"></div>
+    </div>
+
+    <div class="dialogue">
+      <p class="dialogue-q">"Shouldn't I learn a gun disarm just in case?"</p>
+      <p class="dialogue-a">
+        Only if you accept Tier D evidence. Cooperative Krav drills look convincing on video, but no peer-reviewed study measures civilian disarm success against a resisting, armed attacker.
+        Inside close range, reaction time favors the person already holding the weapon. Police and military train weapon retention for <em>their</em> gun — not taking yours from a robber's hand.
+        Comply, exit, report. That is the A-tier protocol.
+      </p>
+      <p class="dialogue-q">"What about chin down — can't I see less?"</p>
+      <p class="dialogue-a">
+        Your eyes track from their chest and shoulders — you see hand movement earlier than staring at their face. Chin tuck protects the knockout button. Boxers do this for a reason; street fights end the same way.
+      </p>
     </div>
   </section>
 

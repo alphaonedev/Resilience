@@ -435,6 +435,9 @@ function renderAll() {
   if (typeof renderAllTechniqueVisualizations === 'function') {
     renderAllTechniqueVisualizations();
   }
+  if (typeof renderAllPostureVisualizations === 'function') {
+    renderAllPostureVisualizations();
+  }
   renderCrimeStats();
   renderFindings();
   renderStack();

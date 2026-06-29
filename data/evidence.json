@@ -545,5 +545,133 @@
     },
     "nhiVerdict": "After scoring seven strategies, fifteen tactics, eleven technique systems, and twenty-two individual techniques across three disagreeing reviewers, one conclusion survived every argument: the highest-return skill is not a punch or a choke — it is leaving before the fight exists. The AAA Exit Protocol distills the only approach with medical-trial proof (EAAA) into three daily habits and twenty minutes per week. Any human, any age, any fitness level can start today. Martial arts compound on top; they do not replace this.",
     "honestLimits": "No system guarantees survival. Guns, surprise, and size disparity can overwhelm any training. This protocol shifts odds using the strongest evidence we have — it does not make you invincible. Proactive 'I left before it started' is still not scientifically measured; we flag that gap openly."
+  },
+  "defensivePosture": {
+    "description": "How you stand, move, and present your body before and during contact — and what changes when a weapon appears",
+    "principle": "Posture exists to protect your brain and vitals, keep your feet mobile, and preserve exit options. It is not a fighting pose for cameras.",
+    "tier": "B",
+    "evidenceBasis": "Boxing guard biomechanics, wrestling stance literature, NCVS resistance outcomes, FBI/BJS weapon involvement statistics, LE armed-encounter doctrine (no civilian disarm RCTs)",
+    "stance": {
+      "name": "Exit-Ready Stance",
+      "plainEnglish": "Stand like you might need to run in any direction — not like a UFC weigh-in.",
+      "feet": "Shoulder-width or slightly wider. Lead foot (strong-side back) 12–18 inches ahead. Toes angled 30–45° — not squared like a sport fighter.",
+      "weight": "60% on balls of feet, knees soft (not locked). Heels light — you can pivot or sprint without shifting first.",
+      "hips": "Low enough to stay balanced on uneven ground; high enough to run. Think 'athletic ready,' not deep wrestling shot stance.",
+      "orientation": "Slightly bladed (45°) — presents narrower target, lead shoulder closer to threat, rear hand loaded.",
+      "streetSafety": 4,
+      "errors": ["Feet parallel and planted (can't move)", "Wide MMA square (exposes gut, can't run)", "Back on heels (falls backward)", "Deep crouch (frozen, can't exit)"]
+    },
+    "footwork": {
+      "name": "Distance & Angle Footwork",
+      "plainEnglish": "Move your feet to create space and exit lanes — never trade punches in place.",
+      "rules": [
+        { "rule": "Step off-line, not straight back", "why": "Straight retreat lets them chase faster; angling opens escape routes", "tier": "B" },
+        { "rule": "Never cross your feet", "why": "Cross-step = tangled legs = fall on concrete", "tier": "B" },
+        { "rule": "Push-step to exit", "why": "Rear foot drives forward past lead foot — fastest path to distance", "tier": "B" },
+        { "rule": "Don't shuffle in place", "why": "Sport footwork looks good; street needs meters not inches", "tier": "B" },
+        { "rule": "Scan while moving", "why": "Multi-attacker setups punish tunnel vision", "tier": "A" }
+      ],
+      "priorityMoves": ["Angle left or right 45°", "Push-step backward to open space", "Pivot toward exit/crowd/light", "Sprawl only if grabbed — then stand immediately"],
+      "streetSafety": 5
+    },
+    "handsArms": {
+      "name": "Compact Guard — Hands High, Elbows In",
+      "plainEnglish": "Protect your jaw and ribs without waving your hands like you're asking a question.",
+      "handPosition": "Both hands at cheekbone/temple height. Lead hand slightly forward (6–8 inches from chin). Rear hand glued to jaw.",
+      "elbows": "Tucked against floating ribs — not flared like a bodybuilder. Elbows in blocks hooks to the body.",
+      "forearms": "Angle 45° — catches straight shots on forearms if unavoidable; don't reach out to 'block.'",
+      "openVsClosed": "Street default: partially open palms (palms-out = de-escalation signal + ready palm-heel). Fists only if contact is imminent.",
+      "framing": "If grabbed: forearms form a frame against chest/throat — create space, don't pull them closer.",
+      "streetSafety": 4,
+      "errors": ["Hands at waist (telegraphs, slow to head)", "Single hand out (exposes chin)", "Wide karate chamber (opens centerline)", "Reaching to parry (gets you pulled into clinch)"]
+    },
+    "headVitals": {
+      "name": "Chin Down, Vitals Hidden",
+      "plainEnglish": "Your brain is the target. Tuck your chin and don't present your throat, solar plexus, or groin.",
+      "chin": "Tucked — chin touches collarbone area. One clean shot to an untucked chin ends most fights.",
+      "headPosition": "Eyes on threat's chest/shoulders (see hands without telegraphing fear). Peripheral vision for flanks.",
+      "shoulders": "Slightly hunched — shrinks target, protects carotid. Not rigid — stay loose to move.",
+      "torso": "Slight forward lean from ankles (not waist) — harder to push over, faster first step.",
+      "groin": "Hips neutral — not leaning back exposing groin for kicks. Lead leg slightly turned in.",
+      "throat": "Never chin-up posturing. Verbal de-escalation with chin up = invitation.",
+      "vitalZones": [
+        { "zone": "Brain/jaw", "priority": 1, "protection": "Chin tuck + high guard" },
+        { "zone": "Throat/carotid", "priority": 2, "protection": "Shoulder hunch + jaw angle" },
+        { "zone": "Solar plexus/liver", "priority": 3, "protection": "Elbows in + slight lean" },
+        { "zone": "Groin", "priority": 4, "protection": "Hip angle + lead leg turn" }
+      ],
+      "streetSafety": 5
+    },
+    "weaponResponses": [
+      {
+        "id": "firearm",
+        "weapon": "Firearm Presented",
+        "prevalence": "73.7% of U.S. murders involve firearms; 9% of NCVS violent victimizations (2023)",
+        "tier": "A",
+        "defaultRule": "Comply and exit — do not attempt disarm",
+        "whenDisplayed": [
+          { "step": 1, "action": "Freeze sudden movement. Hands visible, palms open at chest height.", "why": "Sudden motion triggers shot" },
+          { "step": 2, "action": "Verbal compliance: 'Okay. You can have it. Nobody needs to get hurt.'", "why": "De-escalation buys seconds; NCVS shows verbal resistance reduces injury when no shot fired yet" },
+          { "step": 3, "action": "Give demanded property slowly. Move items, not your whole body toward them.", "why": "Robbery motive = property; comply to end transaction" },
+          { "step": 4, "action": "Create distance only when they disengage or look away — then run to cover/crowd.", "why": "Exit when window opens — don't test if they're still aiming" },
+          { "step": 5, "action": "If they move you to secondary location (car, back room): reassess — fighting may become last resort.", "why": "LE doctrine: secondary location dramatically increases lethality" }
+        ],
+        "doNot": [
+          "Attempt a Hollywood disarm (no peer-reviewed civilian success rate)",
+          "Reach inside clothing quickly (reads as drawing)",
+          "Stare at the barrel — watch their hands and eyes",
+          "Charge a drawn gun at close range (reaction time favors shooter inside ~21 ft)",
+          "Assume it is fake — treat every presentation as real until you are safe"
+        ],
+        "evidence": "FBI UCR homicide data; BJS NCVS 2023; LE armed robbery protocols; Krav disarm drills rated Tier D (no outcome RCTs)"
+      },
+      {
+        "id": "edged",
+        "weapon": "Knife / Edged Weapon",
+        "prevalence": "Part of 27.6% aggravated assaults involving weapons (FBI aggregate)",
+        "tier": "A",
+        "defaultRule": "Distance is survival — do not clinch a knife",
+        "whenDisplayed": [
+          { "step": 1, "action": "Increase distance immediately — push-step back, object between you.", "why": "Knife wins clinch range; you will be cut getting 'control'" },
+          { "step": 2, "action": "Hands up, palms out — 'Stay back!' while moving.", "why": "Guard up protects slash lines to neck/face" },
+          { "step": 3, "action": "Angle offline — don't stand in front of their power hand.", "why": "Most people telegraph dominant-hand attacks" },
+          { "step": 4, "action": "Throw or toss available object (bag, chair) — not as fight finisher, as exit buy.", "why": "Moment of flinch creates run window" },
+          { "step": 5, "action": "Run toward people/light. Accept you may be cut — keep moving.", "why": "Fatal bleeds take time; distance stops repeated thrusts" }
+        ],
+        "doNot": [
+          "Attempt arm-trap disarms without years of live training",
+          "Go to ground — ground + knife = worst case",
+          "Focus on blocking one strike (knives attack in series)",
+          "Turn and run blindly (trip = death — run with awareness)"
+        ],
+        "evidence": "MacYoung/Thompson edged-weapon analysis; street footage; sport knife sparring shows cut accumulation; disarm drills Tier C–D for civilians"
+      },
+      {
+        "id": "blunt",
+        "weapon": "Blunt Weapon (bat, bottle, pipe)",
+        "tier": "B",
+        "defaultRule": "Close distance or create distance — middle range is worst",
+        "whenDisplayed": [
+          { "step": 1, "action": "If far: run immediately.", "why": "You cannot out-block a full swing" },
+          { "step": 2, "action": "If close: crash in with forearm shield, clinch, exit.", "why": "Inside swing arc reduces power — but high risk" },
+          { "step": 3, "action": "Protect head at all costs — turn shoulder, guard high.", "why": "Blunt trauma to skull is fight-ender" }
+        ],
+        "doNot": ["Trade at medium range", "Try to catch the weapon", "Stay at kicking range"],
+        "evidence": "Observational fight analysis; boxing headgear studies on blunt trauma"
+      },
+      {
+        "id": "implied",
+        "weapon": "Weapon Implied ('I have a gun')",
+        "tier": "B",
+        "defaultRule": "Treat as real until safe",
+        "whenDisplayed": [
+          { "step": 1, "action": "Same compliance protocol as visible firearm.", "why": "You cannot verify — betting wrong is fatal" },
+          { "step": 2, "action": "Comply, exit, report. Let police verify.", "why": "Property replaceable; confirmation impossible in moment" }
+        ],
+        "doNot": ["Call bluff in the moment", "Search them for weapon"],
+        "evidence": "LE encounter doctrine; robbery completion statistics"
+      }
+    ],
+    "nhiSummary": "Stance, footwork, guard, and vitals presentation are the physical layer beneath AAA Exit. You do not need a perfect boxing stance — you need feet that can run, hands that protect your jaw, a chin that is tucked, and the discipline to never square up for a duel when a weapon is involved. When a gun or knife appears, the evidence unanimously favors compliance and distance over disarm fantasies. Krav Maga weapon drills score Tier C–D because nobody has measured civilian disarm success in peer-reviewed outcomes. Your job is to go home — not to win Instagram."
   }
 }

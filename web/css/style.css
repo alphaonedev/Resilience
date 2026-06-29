@@ -1311,6 +1311,202 @@ footer a:hover { text-decoration: underline; }
   min-width: 20px;
 }
 
+/* Posture, footwork, guard, weapons */
+.posture-viz-section {
+  margin: 2.5rem 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.posture-viz-section h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid #3b82f6;
+}
+
+.posture-weapon-section h3 { border-left-color: #ef4444; }
+
+.posture-diagram-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin: 1.25rem 0;
+}
+
+.posture-diagram-single {
+  max-width: 480px;
+  margin: 1.25rem auto;
+}
+
+.posture-diagram-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.posture-diagram-box.posture-good { border-color: rgba(16, 185, 129, 0.4); }
+.posture-diagram-box.posture-bad { border-color: rgba(239, 68, 68, 0.4); }
+
+.posture-svg { width: 100%; height: auto; display: block; }
+
+.posture-label-good { font-size: 0.75rem; color: #10b981; font-weight: 700; }
+.posture-label-bad { font-size: 0.75rem; color: #ef4444; font-weight: 700; }
+.posture-label-warn { font-size: 0.75rem; color: #f59e0b; font-weight: 700; }
+
+.posture-card-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.posture-weapon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.posture-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.posture-card-good { border-left: 4px solid #10b981; }
+.posture-card-bad { border-left: 4px solid #ef4444; }
+.posture-card-weapon { border-left: 4px solid #ef4444; }
+
+.posture-card h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.posture-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.posture-detail-list {
+  margin: 0.75rem 0 0 1rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.posture-detail-list li { margin-bottom: 0.4rem; }
+.posture-detail-list strong { color: var(--text); }
+
+.posture-error-list {
+  margin: 0.5rem 0 0 1rem;
+  font-size: 0.82rem;
+  color: #ef4444;
+  line-height: 1.5;
+}
+
+.posture-rules {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-top: 0.75rem;
+}
+
+.posture-rule {
+  padding: 0.65rem 0.85rem;
+  background: var(--bg-deep);
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+
+.posture-rule strong {
+  display: block;
+  margin: 0.25rem 0;
+  color: var(--text);
+}
+
+.posture-rule span { color: var(--text-muted); }
+
+.posture-vital-zones {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.posture-vital-row {
+  display: grid;
+  grid-template-columns: 24px 1fr auto;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 0.78rem;
+  padding: 0.4rem 0.5rem;
+  background: var(--bg-deep);
+  border-radius: 6px;
+  border-left: 3px solid #ef4444;
+}
+
+.posture-vital-num {
+  font-family: var(--font-mono);
+  font-weight: 800;
+  color: #ef4444;
+}
+
+.posture-vital-prot {
+  color: var(--text-muted);
+  font-size: 0.72rem;
+}
+
+.posture-weapon-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.posture-weapon-rule {
+  color: var(--text) !important;
+  margin-bottom: 0.35rem !important;
+}
+
+.posture-weapon-steps {
+  margin: 0.75rem 0 0 1.1rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.posture-weapon-steps li {
+  margin-bottom: 0.65rem;
+  color: var(--text-muted);
+}
+
+.posture-weapon-steps strong { color: var(--text); display: block; }
+.posture-weapon-steps span { font-size: 0.78rem; }
+
+.posture-do-not {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: rgba(239, 68, 68, 0.08);
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+
+.posture-do-not ul {
+  margin: 0.35rem 0 0 1rem;
+  color: #ef4444;
+}
+
+.posture-evidence-note {
+  font-size: 0.72rem !important;
+  font-style: italic;
+  margin-top: 0.75rem !important;
+  margin-bottom: 0 !important;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav-links { display: none; }
