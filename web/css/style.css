@@ -524,6 +524,28 @@ footer a:hover { text-decoration: underline; }
   line-height: 1.65;
 }
 
+.adversarial-explainer {
+  border-left: 4px solid var(--accent);
+  margin-bottom: 2rem;
+}
+
+.adversarial-breakdown,
+.adversarial-waves {
+  margin: 0.75rem 0 0.75rem 1.25rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.adversarial-breakdown ul {
+  margin: 0.35rem 0 0.5rem 1rem;
+}
+
+.adversarial-breakdown strong,
+.adversarial-waves strong {
+  color: var(--text);
+}
+
 .dialogue {
   margin: 1rem 0;
 }

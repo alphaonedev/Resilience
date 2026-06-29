@@ -2,6 +2,18 @@
   "round": 2,
   "date": "2026-06-29",
   "focus": "Proactive avoidance, situational awareness, and multi-attacker threat recognition integrated with combat technique evidence",
+  "methodologyPlainEnglish": {
+    "name": "3×7 Adversarial Voting",
+    "whatThreeMeans": "3 AI reviewer personas — each deliberately biased in a different direction, forced to argue with each other",
+    "whatSevenMeans": "7 self-defense approaches scored on 7 evidence questions (49 scores per voter, 147 total before consensus)",
+    "threeWaves": [
+      { "wave": 1, "name": "Independent scoring", "plainEnglish": "Each reviewer scores all 7 programs on all 7 questions alone, using only cited sources (RCTs, NCVS, police data, fight footage). No groupthink yet." },
+      { "wave": 2, "name": "Adversarial challenge", "plainEnglish": "Reviewers attack each other's scores. Example: the fighter scientist says EAAA can't punch; the skeptic demands proof for the 90% ground myth; the pragmatist slashes MMA's avoidance scores because gyms train engagement." },
+      { "wave": 3, "name": "Consensus & penalties", "plainEnglish": "Scores are revised. Unanimous agreements become findings. Missing data (like proactive avoidance %) gets labeled DATA GAP — not filled with gym folklore. Weighted totals produce final rankings." }
+    ],
+    "whyItFindsRightData": "One biased expert cannot crown their favorite art. Claims must survive a skeptic who rejects anything without peer review AND a fighter who rejects awareness seminars without sparring proof. What survives all three is the strongest evidence. What fails gets ranked low or flagged.",
+    "notThis": "This is not a popularity vote, not one AI's opinion, and not proof beyond the underlying studies — it is a structured filter that reduces marketing noise into ranked, challenge-tested conclusions."
+  },
   "voters": [
     {
       "id": "V1",
